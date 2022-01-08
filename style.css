@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+    color: red;
+    
+}
+
+p {
+    text-align: center;
+}
+
+.link{
+    border: solid black 2px;
+    background-color: #4ea5ec;
+    width: 100px;
+}
+
+.element{
+    color: rgb(233, 10, 10);
+}
+
+body{
+    background-color: rgb(182, 202, 182);
+}

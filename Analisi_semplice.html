@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Analisi semplice</title>
+        <link rel="stylesheet" href="AS_style.css">
+    </head>
+    <body>
+        
+        <p> Benvenuti nella sezione di analisi semplice della biblioteca virtuale. qui potrete trovare informazaioni sull'analisi matematica rigurdante il biennio.
+            Se steste cercando informazioni maggiormente avanzate controllate nelle altre pagine nel sito.
+        </p>
+        <a href="Matematica.html"> Matematica </a>
+
+        <div class="Cap1">
+            <h1>Capitolo1: Parabole</h1>
+            <p> In matematica sono spesso oggetto di studio le curve. Una famiglia di esse sono le parabole.
+                Poichè rappresntono delle funzioni polinomiali di secondo grado hanno molte applicazioni.
+                Di seguito analizzeremo alcune caratteristiche delle parabole.
+                Una parabola, generalmente, appare nel seguente modo:
+            </p>
+
+            <img src="C:\Users\evakant\Pictures\Parabola.PNG">
+            <p style="font-style:italic; font-size: small; text-align: center;"> Immagine creata utilizzando Desmos</p>
+             
+            <p> Partiamo notando che una parabola è sempre descritta da una ed una soltanto
+                equazione di secondo grado. Sapendo questo possiamo facilmente scoprire alcuni punti
+                della parabola con la sua equazione e viceversa. 
+            </p>
+            <p> Notiamo ora che una parabola è sempre simmetrica rispetto al suo asse. Non riporteremo la dimostrazione
+                di questo ma lo prenderemo semplicemente come fatto.
+            </p>
+
+            <img src="C:\Users\evakant\Pictures\Parabola_asse_di_simmetria.PNG" style="position: relative; left: 37%;">
+            <p style="font-style:italic; font-size: small; text-align: center;"> Immagine creata utilizzando Desmos</p> 
+            
+            <p> Passiamo ora a definire l'equazione della parabola: y= ax^2 +bx +c. Notiamo che avremo sempre un'intersezione con l'asse y,
+                poichè ciò avviene quando x=0, che comporta y=c e poichè c esiste vale lo stesso per y. Se invece gurdiamo l'intersezioni con l'asse x,
+                notiamo che questo avviene quando y=0 e poichè otteniamo in tal modo l'equazione di secondo grado ax^2+bx+c, dal teorema 
+                fondamentale dell'algebra sappiamo che avremo al massimo 2 soluzioni reali. Possiamo usare la formula per la risoluzione delle equazioni
+                di secondo grado ottenendo così che le due x sono uguali a (-b± (Δ)^½)/2a.
+             </p>
+             <p> Notiamo ora, però, che se la nostra parabola ha 2 interesezioni, giacendo su un asse perpendicolare a quello di simmetria, disteranno lo stesso spazio da quest'ultimo.
+                 Quindi il loro punto medio dovrà giacere sull'asse di simmetria. Possiamo dunque calcolare l'ascissa di questo punto facendo la media aritmetica tra le due soluzioni. 
+            </p>
+            <p> 
+                Otteniamo quindi ((-b+(Δ)^½)/2a + (-b-(Δ)^½)/2a)/2. Notiamo che le due radice del delta si semplificheranno e i due -b si sommeranno. Otteniamo dunque:
+                -2b/4a, ovvero -b/2a. 
+            </p>
+            <p> Notiamo che il nostro vertice appartiene alla parabola e di conseguenza la sua ordinata è uguale alla nostra funzione al valore della sua ascissa. Sapendo quest'ultima possiamo
+                sostituirla nell'equazione ed effettuando dei semplici passaggi algebrici otterremo y= -Δ/4a.
+            </p>
+            <p> Nel caso in cui la nostra parabola non avesse due interesezioni con l'asse x, è comunque dimostrabile che la formula per calcolare le coordinate del vertice rimane corretta.
+            </p>
+            <p style="font-weight: bold;"> 
+                Abbiamo dunque che il nostro vertice sarà il punto (-b/2a,-Δ/4a).
+            </p>
+             
+            <!--Divisore-->
+            <p> --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+            
+            <p> Ora passiamo al trovare l'equazione di una parabole conosiendo 3 dei suoi punti o 2 punti ed il vertice.
+
+            </p>
+            <p> Supponiamo di conosciere le coordinate dei punti P (Xp,Yp),T(Xt,Yt) e R(Xr,Yr) appartenenti alla parabola. Poichè apprtengono alla parabola, le loro coordinate devono
+                soddisfare la nostra equaziona. Possiamo dunque sostituire ed ottenere il seguente sistema:
+            </p>
+            
+            <!--Sistema di equazioni-->
+            <div class="EqSy">
+                <p style="font-size: 55px; position:relative; bottom:47px;">{</p>
+                <ul>
+                    <li>Yp=Xp²*a +Xp*b +c</li>
+                    <li>Yt=Xt²*a +Xt*b +c</li>
+                    <li>Yr=Xr²*a +Xr*b +c</li>
+                </ul>
+            </div>
+            <p> Essendo un sistema con 3 incognite di primo grado, possiamo risolverlo. Avendo trovato a,b e c otteniamo di conseguenza la nostra equazione.</p>
+
+            <!-- spazio --> 
+            <p></p>
+
+            <p> Il vertice, come anticipato prima, è un punto molto importante per l'analisi di una parabola. grazie alle sue caratteristiche,
+                conosciendo esso e solo un altro punto possiamo trovare l'equazione dell'unica parabola che passa per i due. Infatti, avendo il vertice V(Xv,Yv) ed un punto 
+                U(Xu, Yu) possiamo trovare un sistema di equazioni. Sapendo la formula per trovare le coordinate precedenti (vedi sottocapitolo 1) otteniamo:
+            </p>
+
+            <div class="EqSy">
+                <p style="font-size: 55px; position:relative; bottom:47px;">{</p>
+                    <ul>
+                        <li>Xv=-b/2a</li>
+                        <li>Yv=(-b² + 4ac)/4a</li>
+                        <li>Yu=Xu²*a + Xu*b +c</li>
+                    </ul>
+            </div>
+            <p> Possiamo banalmente ricondurlo ad un sistema lineare di 3 equazioni e risolverlo.</p>
+            
+            <!--Divisore-->
+            <p> --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+            
+            <p> Ora analizzeremo per quali valori di una parabola l'ordinata è postiva e dove negativa.</p>
+
+            <p> Cominciamo analizzando la concavità della parabola. Per concavità si intende, in parole molto semplici, verso dove essa è rivolta. per capire meglio 
+                proponiamo un'esempio per entrambe le due categorie:
+            </p>
+            <div class="Immagine">
+                <img src="C:\Users\evakant\Pictures\Parabola_concavità_verso_l'alto.PNG">
+                <img src="C:\Users\evakant\Pictures\Parabola_concavità_verso_il_basso.PNG">
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+
+              <p style="font-size: small; font-style: italic; position:relative; left: 11.5%;"> Concavità verso l'alto (immagine creata con Desmos)</p>
+              <p style="font-size: small; font-style: italic; position:relative; left: 31%;"> Concavità verso il basso (immagine creata con Desmos)</p>
+             
+            </div>
+
+            <!--spazio-->
+            <p></p>
+            <p></p>
+
+            <p>Si può dimostrare che la concavità sarà verso l'alto se a sarà postivo, mentre sarà verso il basso per a negativi.
+                Questo è anche facilmente intuibile se si pensa che,poichè per x grandi il termine di grado più alto è quello dominante, se si prendono valori
+                sufficientemente grandi il segno della funzione sarà lo stesso del termine di grado superiore.
+            </p>
+
+            <!--spazio-->
+            <p></p>
+            <p></p>
+
+            <p>Ora possiamo possiamo notare che se il valore dell'ordinate è positivo, per diventare negativo, poichè la funzione è continua,
+                deve necessariamente esserci un intersezione con l'asse x. Quindi se la concavità è verso l'alto, potrà essere negativa solo fra le due intersezioni. 
+                Mentre per le parabole con cancavità verso il basso fra le due interesezioni sarà invece positiva. Osservando le immagni proposte precedentemente si può 
+                facilmente notare. 
+            </p>
+
+            <p> Grazie a questo guardando solamente i coefficienti dell'equazione possiamo dire per quali valori delle x le y saranno positive o negative. Questo è particolarmente utile
+                per la risoluzione delle disequazioni di secondo grado. 
+            </p>
+        </div>
+
+        <!--spazio-->
+        <p></p>
+
+        <div class="Cap2">
+            <h1> Capitolo2: Rette</h1>
+            <p>Ora passiamo ad analizzare le rette. Abbiamo deciso di porle dopo le parabole poiché, anche se di natura più basilare,
+                le vedremo da un punto di vista più approfondito.
+            </p>
+            <p> Una retta nel piano cartesiano si presenta nel seguente modo: </p>
+             
+            <!--spazio-->
+            <p></p>
+
+            <img src="C:\Users\evakant\Pictures\Retta.PNG">
+            
+            <p>Una retta viene descritta da una ed una soltanto equazione di primo grado. La funzione della nostra retta appare dunque del tipo:
+                y=m*x +q. Notare che quando x è 0, y è q. Dunque q indica dove avviene l'intersezione con l'asse y e per questo è detto intercetta. 
+                Si può inoltre dimostare che m indica l'inclinazione della retta rispetto all'asse x e viene per questo chiamato coefficiente angolare.
+            </p>
+
+            <p> Siccome per due punti passa una ed una sola retta, conosciendoli possiamo troavre anch'essa.
+                Supponiamo di avere un punto V(Xv, Yv) ed un punto U(Xu, Yu). Uno dei modi per trovare l'equazione della retta che 
+                passa per entrambi e quello di risolvere un sistema a due incognite ottenuto grazie all'appartenenza dei punti alla retta, ovvero, siccome 
+                i punti giaciono sulla retta, le loro coordinate devono soddisfare la loro equazione. Dunque:
+            </p>
+
+            <div class="EqSy">
+                <p style="font-size: 330%; position: relative; bottom: 30px;">{</p>
+                <ul>
+                  <p>Yv=m*Xv +q</p>
+                  <p>Yu=m*Xu +q</p>
+                </ul>
+
+                <p></p>
+            </div>
+        </div>
+
+        
+            </body>
+            
+            </html>
