@@ -13,6 +13,11 @@ p {
     background-color: #4ea5ec;
     width: 100px;
 }
+html {
+    font-family: normal;
+
+}
+
 
 .element{
     color: rgb(233, 10, 10);
@@ -21,3 +26,4 @@ p {
 body{
     background-color: rgb(182, 202, 182);
 }
+@font-face { font-family: normal; src: url('Josefin_sans/JosefinSans-Italic-VariableFont_wght.ttf'); } 
