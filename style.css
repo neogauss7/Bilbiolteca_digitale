@@ -9,10 +9,11 @@ p {
 }
 
 .link{
-    border: solid black 2px;
+    border: solid rgb(57, 162, 219) 2px;
     border-radius: 10px;
-    margin-left: auto;
+    margin-left: 15px;
     margin-right: auto;
+    padding: 10px;
     
 }
 html {
