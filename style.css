@@ -1,6 +1,6 @@
 h1 {
     text-align: center;
-    color: red;
+    color: rgb(5, 55, 66);
     font-family: bold; 
 }
 
@@ -15,6 +15,7 @@ p {
 }
 html {
     font-family: normal;
+    background-color: rgb(232, 240, 242);
 
 }
 
