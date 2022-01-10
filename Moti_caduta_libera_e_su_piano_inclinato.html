@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Moti_Cad_libera.css">
+    </head>
+    <body>
+        <h1>Moto di caduta libera e sul piano inclinato</h1>
+        <p> Di seguito spiegheremo i moti di caduta libera e su un piano inclinato liscio, ovvero privo di attrito.</p>
+        <div class="Cap1">
+            <h1>Capitolo1: Moti di caduta libera</h1>
+            <p>
+                Il moto di caduta libera non è altro che un particolare caso di moto rettilineo uniformemente accelerato con accelerazione pari a g (circa 9,8m/s²).
+            </p>
+             
+            <p>
+                Lasciando cadere un oggetto da un altezza h, toccherà terra dopo h metri. Grazie alla legge oraria del moto rettilineo uniformemente accelerato sappiamo che dunque:
+            </p>
+
+            <p class="Equation">
+                h=V0*tc + a* tc²/2
+            </p>
+
+            <p>
+                Dove V0 è la velocità iniziale, in questo caso 0, tc è il tempo di caduta e a è uguale a g. Isolando tc otteniamo:
+            </p>
+
+            <p class="Equation">
+                tc = √(2h/g)
+            </p>
+
+            <p>
+                Ora per trovare la velocità finale possiamo sostituire tc nella legge oraria della velocità:
+            </p>
+            
+            <p class="Equation">
+                V(tc)=V0 + a*tc = g*tc = g* √(2h/g) = √(2hg²/g)= √(2hg)
+            
+            </p>
+
+            <br>
+            <hr>
+            
+            <p>
+                Ora analiziamo il moto di un corpo lanciato verticalmente verso l'alto.
+            </p>
+
+            <p>
+                Percorrerà una certa velocità h ed arrivato al culmine si fermerà per un istante per poi tornare indietro. Usando la legge oraria
+                della velocità ed indicando con ts il tempo si salita otteniamo:
+            </p>
+
+            
+            <p class="Equation">
+                V(ts) = 0 ==> Vi + a*ts=0 ==> ts = -Vi/a 
+            </p>
+
+            <p>
+                Dove Vi sarebbe la velocità iniziale. In questo caso la forza di gravità si oppone al moto e sarà dunque uguale a -g.
+                Utilizzando ora la legge oraria dello spazio otteniamo che:
+            </p>
+
+            <p class="Equation">
+             h= Vi*ts -g*ts²/2 ==> h = Vi *(-Vi/-g) - g* (-Vi/-g)²/2
+            </p>
+
+            
+            <p class="Equation">
+                h = Vi²/2g
+            </p>
+
+            <p class="Equation">
+                Vi = √(2hg)
+            </p>
+
+            <p>
+                Notiamo dunque che la velocità iniziale è uguale alla velocità finale del moto di caduta libera seguente. Questo vuol dire che un oggetto lanciato
+                con una velocità v dal suolo, ritoccherà il suolo con la stessa velocità (trascurando l'attrito dell'aria).
+            </p>
+
+            <p>
+                Utilizzando la formula trovata prima (ts = Vi/g) otteniamo:
+            </p>
+
+            <p class="Equation">
+                ts = √(2hg) / g = √(2hg/g²) = √(2h/g) = tc
+            </p>
+
+            <p>
+                Questo dimostra che anche il tempo di salita è uguale al tempo di caduta.
+            </p>
+        </div>
+    </body>
+</html>
