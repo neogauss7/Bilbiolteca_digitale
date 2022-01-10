@@ -10,8 +10,8 @@ p {
 
 .link{
     border: solid black 2px;
+    border-radius: 10px;
     
-    width: 100px;
 }
 html {
     font-family: normal;
