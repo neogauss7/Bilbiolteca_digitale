@@ -16,6 +16,35 @@ p {
     padding: 10px;
     
 }
+ul {
+    list-style-type: none;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(5, 55, 66);
+    border-radius: 10px;
+    width: 342.8px;
+}
+li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: rgb(232, 240, 242);
+    font-family: bold;
+    text-align: center;
+    padding: 14px 16px;
+    
+    text-decoration: none;
+  }
+  .passive:hover {
+    background-color: rgb(25, 25, 25);
+  }
+  .active {
+    background-color: rgb(57, 162, 219);
+  }
 html {
     font-family: normal;
     background-color: rgb(232, 240, 242);
