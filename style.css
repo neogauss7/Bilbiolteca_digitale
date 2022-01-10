@@ -10,7 +10,7 @@ p {
 
 .link{
     border: solid black 2px;
-    background-color: #4ea5ec;
+    
     width: 100px;
 }
 html {
@@ -24,8 +24,6 @@ html {
     color: rgb(233, 10, 10);
 }
 
-body{
-    background-color: rgb(182, 202, 182);
-}
+
 @font-face { font-family: normal; src: url('Josefin_sans/JosefinSans-VariableFont_wght.ttf'); }
 @font-face { font-family: bold; src: url('Josefin_sans/static/JosefinSans-Bold.ttf'); } 
