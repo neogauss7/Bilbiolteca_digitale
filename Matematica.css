@@ -33,6 +33,24 @@ html {
     background-color: rgb(232, 240, 242);
 
 }
+li {
+    
+  }
+  .link {
+    display: block;
+    color: rgb(232, 240, 242);
+    font-family: bold;
+    text-align: center;
+    padding: 14px 16px;
+    
+    text-decoration: none;
+  }
+
+html {
+    font-family: normal;
+    background-color: rgb(232, 240, 242);
+
+}
 
 
 .element{
