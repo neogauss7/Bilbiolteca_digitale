@@ -1,8 +1,8 @@
 ul {
     list-style-type: none;
     margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
     padding: 0;
     overflow: hidden;
     background-color: rgb(5, 55, 66);
@@ -39,6 +39,7 @@ html {
     color: rgb(232, 240, 242);
     font-family: bold;
     text-align: center;
+    padding-right: auto
    
     
     text-decoration: none;
