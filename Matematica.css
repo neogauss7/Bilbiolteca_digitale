@@ -40,7 +40,7 @@ html {
     font-family: bold;
     text-align: center;
     padding-right: auto
-    justify-content: center;
+    
    
     
     text-decoration: none;
@@ -50,6 +50,8 @@ html {
 }
 .list2 { 
 background-color: rgb(251, 147, 0);
+    justify-content: center;
+    display: flex;
 
 }
 
