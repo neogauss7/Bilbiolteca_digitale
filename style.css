@@ -18,13 +18,13 @@ p {
 ul {
     list-style-type: none;
     margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20%;
+    margin-right:20%;
     padding: 0;
     overflow: hidden;
     background-color: rgb(5, 55, 66);
     border-radius: 10px;
-    width: 385.9px;
+    
 }
 li {
     float: left;
