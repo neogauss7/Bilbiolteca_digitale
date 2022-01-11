@@ -24,25 +24,19 @@ ul {
     overflow: hidden;
     background-color: rgb(5, 55, 66);
     border-radius: 10px;
+    width: 446.9px;
     
 }
 li {
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     float: left;
   }
   li a {
-    
-    
+    display: block;
     color: rgb(232, 240, 242);
     font-family: bold;
     text-align: center;
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 16px;
-    padding-bottom: 16px:
+    padding: 14px 16px;
+    
     text-decoration: none;
   }
   .passive:hover {
