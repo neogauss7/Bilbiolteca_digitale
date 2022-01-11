@@ -39,7 +39,7 @@ li {
     color: rgb(232, 240, 242);
     font-family: bold;
     text-align: center;
-    padding: 14px 16px;
+    padding: auto 16px;
     text-decoration: none;
   }
   .passive:hover {
