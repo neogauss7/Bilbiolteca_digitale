@@ -28,12 +28,7 @@ li {
   }
   .active {
     background-color: rgb(57, 162, 219);
-  }
-html {
-    font-family: normal;
-    background-color: rgb(232, 240, 242);
 
-}
 
 .link {
     display: block;
