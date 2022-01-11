@@ -13,6 +13,10 @@ ul {
 li {
     float: left;
   }
+html {
+    font-family: normal;
+    background-color: rgb(232, 240, 242);
+}
   li a {
     display: block;
     color: rgb(232, 240, 242);
