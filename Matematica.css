@@ -43,8 +43,11 @@ html {
     
     text-decoration: none;
   }
-.over:hover{
+.over:hover {
   background-color: rgb(251, 147, 0);
+}
+.list1 { 
+background-color: rgb(245, 71, 72);
 }
 
 html {
