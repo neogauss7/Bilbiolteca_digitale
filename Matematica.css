@@ -49,11 +49,13 @@ html {
 }
 .list2 { 
 background-color: rgb(251, 147, 0);
+justify-content: center;
 }
 
 html {
     font-family: normal;
     background-color: rgb(232, 240, 242);
+    
 
 }
 
