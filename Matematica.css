@@ -39,15 +39,15 @@ html {
     color: rgb(232, 240, 242);
     font-family: bold;
     text-align: center;
-    padding: 14px 16px;
+   
     
     text-decoration: none;
   }
 .over:hover {
-  background-color: rgb(251, 147, 0);
+  background-color: rgb(245, 71, 72);
 }
 .list2 { 
-background-color: rgb(245, 71, 72);
+background-color: rgb(251, 147, 0);
 }
 
 html {
@@ -57,9 +57,6 @@ html {
 }
 
 
-.element{
-    color: rgb(233, 10, 10);
-}
 
 
 @font-face { font-family: normal; src: url('Josefin_sans/JosefinSans-VariableFont_wght.ttf'); }
