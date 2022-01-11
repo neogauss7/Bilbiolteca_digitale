@@ -28,6 +28,26 @@ li {
   .active {
     background-color: rgb(57, 162, 219);
   }
+.link {
+    display: block;
+    color: rgb(232, 240, 242);
+    font-family: bold;
+    text-align: center;
+    padding-right: auto;
+    border-radius: 10px;
+    
+   
+    
+    text-decoration: none;
+  }
+.over:hover {
+  background-color: rgb(245, 71, 72);
+}
+.list2 { 
+background-color: rgb(251, 147, 0);
+    justify-content: center;
+    display: flex;
+}
 html {
     font-family: normal;
     background-color: rgb(232, 240, 242);
