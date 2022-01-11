@@ -8,13 +8,7 @@ p {
     text-align: center;
 }
 
-.link{
-    border: solid rgb(57, 162, 219) 2px;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-}
+
 ul {
     list-style-type: none;
     margin-top: 15px;
