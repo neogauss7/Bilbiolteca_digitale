@@ -41,10 +41,10 @@ li {
     text-decoration: none;
   }
 .over:hover {
-  background-color: rgb(245, 71, 72);
+  background-color: rgb(156, 25, 224);
 }
 .list2 { 
-background-color: rgb(251, 147, 0);
+background-color: rgb(255, 93, 162);
     justify-content: center;
     display: flex;
 }
