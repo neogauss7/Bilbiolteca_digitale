@@ -7,7 +7,17 @@
 
 .Cap2{
   
- background-color: #bc5e00 ;
- border: solid 3px #783c00;
- border-radius: 10px;
+  background-color: rgb(253, 166, 93);
+
+   
+    
+  border-radius: 10px;
+  
+  padding: 14px 16px;
 }
+
+
+@font-face { font-family: normal; src: url('Josefin_sans/JosefinSans-VariableFont_wght.ttf'); }
+@font-face { font-family: bold; src: url('Josefin_sans/static/JosefinSans-Bold.ttf'); } 
+
+
