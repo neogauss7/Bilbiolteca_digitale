@@ -85,3 +85,11 @@ html {
 @font-face { font-family: normal; src: url('Josefin_sans/JosefinSans-VariableFont_wght.ttf'); }
 @font-face { font-family: bold; src: url('Josefin_sans/static/JosefinSans-Bold.ttf'); } 
 
+hr { display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #ccc;
+    margin: 1em 0; 
+    padding: 0; 
+}
+
