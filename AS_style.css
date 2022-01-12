@@ -10,6 +10,7 @@ h1 {
 
 .Cap1 {
 <<<<<<< HEAD
+<<<<<<< HEAD
    
     background-color: rgb(255, 208, 127);
 =======
@@ -18,6 +19,9 @@ h1 {
     background-color: red;
 >>>>>>> 48190bda44e2df7bf40560405305a3bdd1ed928a
 =======
+=======
+    
+>>>>>>> e2bb210beda2f049317d87ffbac7bf9e7143b1c8
     background-color: rgb(152, 252, 219);
 >>>>>>> ed519cd78e016df14766a49b54f032ea0a16307e
     
@@ -54,7 +58,11 @@ summary {
 
 .Cap2 {
     
+<<<<<<< HEAD
     background-color: rgb(253, 166, 93);
+=======
+    background-color:rgb(58, 133, 35);
+>>>>>>> e2bb210beda2f049317d87ffbac7bf9e7143b1c8
     
     border-radius: 10px;
     border-radius: 10px;
