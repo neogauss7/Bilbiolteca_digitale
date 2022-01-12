@@ -14,7 +14,7 @@ h1 {
     background-color: rgb(255, 208, 127);
     border-radius: 10px;
     padding: 14px 16px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
 .EqSy{
@@ -54,11 +54,11 @@ figcaption {
     background-color: rgb(253, 166, 93);
 
    
-    
+    margin-top: 0px;
     border-radius: 10px;
     border-radius: 10px;
     padding: 14px 16px;
-    margin-top: 0;
+    
   
 }
 html {
