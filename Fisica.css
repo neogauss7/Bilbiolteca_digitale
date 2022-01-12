@@ -7,7 +7,7 @@ ul {
     overflow: hidden;
     background-color: rgb(5, 55, 66);
     border-radius: 10px;
-    width: 420.9px;
+    width: 383.1px;
 
     
 }
@@ -48,6 +48,7 @@ li {
 background-color: rgb(255, 93, 162);
     justify-content: center;
     display: flex;
+    margin-top: 30px;
 }
 html {
     font-family: normal;
