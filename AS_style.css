@@ -1,6 +1,7 @@
 img{
     position: relative;
     left: 33%;
+    border-radius: 5px;
 }
 
 h1 {
