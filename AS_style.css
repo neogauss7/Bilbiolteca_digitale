@@ -92,3 +92,6 @@ hr { display: block;
     padding: 0; 
 }
 
+figure {
+    display: inline-block;
+}
