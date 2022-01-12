@@ -9,8 +9,8 @@ h1 {
 }
 
 .Cap1 {
-    border: solid 2px rgb(14, 189, 151);
-    background-color: rgb(152, 252, 219);
+   
+    background-color: rgb(255, 208, 127);
     
     border-radius: 10px;
     padding: 14px 16px;
@@ -22,6 +22,11 @@ h1 {
 }
 summary {
     font-family: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
     
     
 
@@ -34,11 +39,13 @@ summary {
     justify-content: space-around;
     position: relative;
     right: 33%;
+    border-radius: 10px;
+    
 }
 
 .Cap2 {
-    border: solid 2px rgb(15,66,5);
-    background-color:rgb(58, 133, 35);
+    
+    background-color: rgb(253, 166, 93);
     
     border-radius: 10px;
     border-radius: 10px;
