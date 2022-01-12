@@ -11,13 +11,21 @@ h1 {
 .Cap1 {
     border: solid 2px rgb(14, 189, 151);
     background-color: rgb(152, 252, 219);
-    padding: 5px;
+    
     border-radius: 10px;
+    padding: 14px 16px;
 }
 
 .EqSy{
     display:flex;
     flex-direction: row;
+}
+summary {
+    font-family: bold;
+    
+    
+
+
 }
 
 .Immagine {
@@ -31,13 +39,35 @@ h1 {
 .Cap2 {
     border: solid 2px rgb(15,66,5);
     background-color:rgb(58, 133, 35);
-    padding: 5px;
+    
     border-radius: 10px;
+    border-radius: 10px;
+    padding: 14px 16px;
 }
 html {
      font-family: normal;
+     background-color: rgb(232, 240, 242);
 
 }
+.link1 {
+    border: solid;
+    border-radius: 10px;
+    padding: 14px 16px 14px 16px;
+    text-align: center;
+    margin-top: 15px;
+    font-family: bold;
+    color: rgb(232, 240, 242);
+    background-color: rgb(251, 147, 0);
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+}
+.link1:hover {
+        background-color: rgb(245, 71, 72);
+      }
+
+
+
 @font-face { font-family: normal; src: url('Josefin_sans/JosefinSans-VariableFont_wght.ttf'); }
 @font-face { font-family: bold; src: url('Josefin_sans/static/JosefinSans-Bold.ttf'); } 
 
