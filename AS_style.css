@@ -9,8 +9,13 @@ h1 {
 }
 
 .Cap1 {
+<<<<<<< HEAD
    
     background-color: rgb(255, 208, 127);
+=======
+    border: solid 2px rgb(14, 189, 151);
+    background-color: red;
+>>>>>>> 48190bda44e2df7bf40560405305a3bdd1ed928a
     
     border-radius: 10px;
     padding: 14px 16px;
