@@ -3,6 +3,8 @@
   background-color: rgb(255, 208, 127);
   border-radius: 10px;
   padding: 14px 16px;
+  margin-bottom: 10px;
+  
 }
 h1 {
   text-align: center;
@@ -34,14 +36,15 @@ h1 {
    
     
   border-radius: 10px;
-  
+  margin-top: 10px;
   padding: 14px 16px;
+  margin-bottom: 10px;
 }
 .Cap3{
   
-  background-color: rgb(253, 166, 93);
-
-   
+  background-color: rgb(255, 130, 67);
+  margin-top: 10px;
+  margin-bottom: 10px;
     
   border-radius: 10px;
   
