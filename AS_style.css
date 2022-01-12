@@ -9,7 +9,7 @@ h1 {
 }
 
 .Cap1 {
-    border: solid 2px rgb(14, 189, 151);
+    
     background-color: rgb(152, 252, 219);
     
     border-radius: 10px;
@@ -37,7 +37,7 @@ summary {
 }
 
 .Cap2 {
-    border: solid 2px rgb(15,66,5);
+    
     background-color:rgb(58, 133, 35);
     
     border-radius: 10px;
