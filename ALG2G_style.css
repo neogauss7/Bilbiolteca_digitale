@@ -1,8 +1,30 @@
-.Cap1{
-  background-color: #f0f075;
-  border: solid 3px #ffff1f;
+.Cap1 {
+
+  background-color: rgb(255, 208, 127);
   border-radius: 10px;
+  padding: 14px 16px;
 }
+h1 {
+  text-align: center;
+  font-family: bold;
+}
+.link1 {
+  border: solid;
+  border-radius: 10px;
+  padding: 14px 16px 14px 16px;
+  text-align: center;
+  margin-top: 15px;
+  font-family: bold;
+  color: rgb(232, 240, 242);
+  background-color: rgb(251, 147, 0);
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+}
+.link1:hover {
+      background-color: rgb(245, 71, 72);
+    }
+
 
 
 .Cap2{
@@ -15,7 +37,33 @@
   
   padding: 14px 16px;
 }
+.Cap3{
+  
+  background-color: rgb(253, 166, 93);
 
+   
+    
+  border-radius: 10px;
+  
+  padding: 14px 16px;
+}
+img{
+  position: relative;
+  left: 33%;
+  border-radius: 5px;
+}
+summary {
+  font-family: bold;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+html {
+  font-family: normal;
+  background-color: rgb(232, 240, 242);
+
+}
 
 @font-face { font-family: normal; src: url('Josefin_sans/JosefinSans-VariableFont_wght.ttf'); }
 @font-face { font-family: bold; src: url('Josefin_sans/static/JosefinSans-Bold.ttf'); } 
