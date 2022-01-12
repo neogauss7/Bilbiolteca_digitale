@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    
+    <body>
+
+        <div>
+
+            <details>
+                <summary>
+                   Capitolo 1: Moto rettilineo uniforme
+                </summary>
+
+                <p>
+                    Iniziamo analizzando il moto rettilineo uniforme. Come suggerisce il nome, si tratta di un moto su una retta con velocità uniforme. <br>
+                    Iniziamo dal definire la velocità media, che in questo caso è anche uguale alla velocità:
+                </p>
+
+                <p class="Equation">
+                    v = (s1 -s0)/(t1-t0)
+                </p>
+
+                <p>
+                    Ovvero, la velocità è uguale al cambiamento dello spazio fratto quello del tempo.
+                </p>
+
+                <p>
+                    Possiamo lasciare t1 libero di variare ed isolare s1 scrivendola in funzione di t:
+                </p>
+
+                <p class="Equation">
+                    S(t) = s0 + v*(t-t0)
+                </p>
+                
+                <br>
+                <hr>
+
+                <p>
+                    Ora passiamo ad analizzare la velocità media di due moti rettilinei con velocità costanti.
+                </p>
+
+                <p>
+                    Se percorriamo in un tempo t un tratto s1-s0 ad una velocità v1 ed in seguito un altro tragitto s2-s1 in un tempo uguale alla velocità v2, possiamo trovare
+                    la velocità media di tutto lo spostamento.
+                </p>
+
+                <p>
+                    Iniziamo notando che lo spazio percorso nel primo tragitto sarà uguale a: 
+                </p>
+
+                <p class="Equation">
+                    (s1-s0)= v1*t
+                </p>
+
+                <p>
+                    Mentre quello del secondo:
+                </p>
+
+                <p class="Equation">
+                    (s2-s1) = v2 *t  
+                </p>
+
+                <p>
+                    Possiamo dunque trovare la loro somma e dividerlo per il totale del tempo trascorso (vedi definizione di velocità media all'inizio del capitolo) ottenendo:
+                </p>
+
+                <p>
+                    Vm = (s2-s0)/2t = (v1*t + v2*t)/2t = (v1*v2)/2
+                </p>
+
+                <p>
+                    Ovvero la media aritmetica delle due velocità.
+                </p>
+
+                <br>
+                
+                <p>
+                    Se invece percorremiamo un tratto s alla velocità v1 in un tempo t1-t0 ed un secondo tratto uguale 
+                    ma ad una velocità v2 in un tempo t2-t1, avremo che il tempo percorso dal primo sarà:
+                </p>
+
+                <p class="Equation">
+                    (t1-t0)= s/v1
+                </p>
+
+                <p>
+                    E quello del secondo:
+                </p>
+
+                <p class="Equation">
+                    (t2-t1) = s/v2
+                </p>
+
+                <p>
+                    Possiamo quindi sommare i tempo e dividerli per lo spazio totale per ottenere la velocità media:
+                </p>
+
+                <p class="Equation">
+                    Vm = 2s/(t2-t0) = 2s/ (s* (1/v1 + 1/v2)= 2/(1/v1 +1/v2)
+                </p>
+
+                <p>
+                    Ovvero la media armonica delle due velocità.
+                </p>
+            </details>
+        </div>
+
+        <div>
+             <details>
+                 <summary>
+                    Capitolo 2: Moto rettilineo uniformemente accelerato
+                 </summary>
+                
+                 <p>
+                     Ora analizzeremo le carattestiche di un moto rettilineo con accelerazione costante. L'accelerazione media, in questo caso uguale proprio all'accelerazione, viene definita come:
+                 </p>
+
+                 <p class="Equation">
+                     a= (v1 -v0)/(t1-t0)
+                 </p>
+
+                 <p>
+                     Ovvero il cambiamento della velocità fratto quello del tempo. Infatti la sua unità di misura è il m/s².
+                 </p>
+
+
+                 <p>
+                     Cominciamo notando che mettento un tempo t1 variabile possiamo isolare v1 e scriverla in funzione di t:
+                 </p>
+
+                 <p class="Equation">
+                     V(t) = v0 + a*(t-t0)
+                 </p>
+
+                 <br>
+
+                 <p>
+                     Passiamo ora ad analizzare il grafico velocità-tempo di questo moto. Esso si presenterà nel seguente modo:
+                 </p>
+
+                 <img>
+
+                 <p>
+                     Si può dimostrare che l'area del sottografico (Ovvero l'area della figura formata dall'intervallo fra l'asse delle x, l'ordinata iniziale, l'ordinata finale a le funzione) è uguale allo spazio percorso.
+                 </p>
+
+                 <p>
+                     Notiamo che si tratta di un trapezio di cui conosciamo le basi e l'altezza e possiamo dunque trovare lo spazio in funzione di t:
+                 </p>
+
+                 <p class="Equation">
+                     S(t) - s0 = (v0 + V(t))*(t-t0)/2
+                 </p>
+
+                 <p>
+                     Utilizzando l'identità trovata prima otteniamo:
+                 </p>
+
+                 <p class="Equation">
+                     S(t) -s0 = (v0 +v0 + a*(t-t0)*)*(t-t0)/2
+                 </p>
+
+                 <p class="Equation">
+                     S(t) - s0 = (2v0*(t-t0) + a*(t-t0)²)/2
+                 </p>
+
+                 <p>
+                     Isoliamo quindi S(t):
+                 </p>
+
+                 <p class="Equation">
+                     S(t) = s0 + v0*(t-t0) + a*(t-t0)²/2
+                 </p>
+
+                 <p>
+                     Con questo possiamo calcolare lo spazio percorso conosciendo le altre incognite.
+                 </p>
+
+                 <br>
+                 <hr>
+
+                 <p>
+                     Si può notare che la formula di prima è riscrivibile in altri modi. <br>
+                     Ad esempio, notando che la somma della velocità iniziale e quella finale divisa 2 è uguale alla velocità media Vm, quando abbiamo:
+                 </p>
+
+                 <p class="Equation">
+                    S(t) - s0 = (v0 + V(t))*(t-t0)/2
+                 </p>
+
+                 <p>
+                     Possiamo riscriverla come:
+                 </p>
+
+                 <p>
+                     S(t) = s0 + Vm*(t-t0)
+                 </p>
+
+
+             </details>
+
+        </div>
+
+        <div>
+          <details>
+          <summary>
+              Capitolo 3: Moto circolare uniforme
+          </summary>
+          <p> Il moto circolare uniforme è molto importante in fisica in quanto accade spesso di compiere 
+              moti circolari.
+          </p>
+        
+          <p>
+              Iniziamo con notare le prime caratteristiche. La velocità è costante ed è un vettore tangente alla circonferenza, come nel grafico seguente:
+          </p>
+
+          <img>
+
+          <p>Siccome la velocità è pari allo spazio fratto il tempo, per calcolarla possiamo prendere la lunghezza del circonferenza fratto il tempo impiegato. <br>
+             Questo tempo impiegato prende il nome di periodo e si indica normalmente con la lettera T.<br>
+             Abbiamo dunque che v=2pi greco r/T.
+          </p>
+
+          <p>
+              Un'altra importante grandezza è la frequenza, definita come il numero di giri effettuati in un'unità di tempo. Poichè il moto uniforme e sapendo che impiegherà un
+              periodo a completare un giro la possiamo calcolare come 1/T.
+          </p>
+
+          <p>
+              La velocità angolare, spesso indicata con la lettera w, è invece la velocità con cui viene spazzato l'angolo del tratto percorso. Ovvero è come se si collegasse 
+              il centro con l'oggetto del moto tramite il raggio e questo raggio girasse insieme ad esso. <br>
+              L'angolo che crea la postazione iniziale del raggio con quella finale fratto il tempo impiegato è uguale a w. 
+          </p>
+
+          <p>
+              Per agevolare i calcoli gli angoli vengono calcolati in radianti. Essi appunto indicano quanta strada percorre un oggetto che si muove su una circonferenza di raggio unitario sull'arco da lui descritto. <br>
+              Proponiamo il seguente grafico per chiarire meglio: 
+          </p>
+
+          <img>
+
+          <p>
+              Per tramutare un angolo a in gradi nel suo valore b in radianti usiamo la seguente proporzione:
+          </p>
+
+          <p class="Equation">
+              a:360°=b:2 pi greco
+          </p>
+
+          <p>
+              Otteniamo quindi poi che w sarà uguale al valore in radianti di 360° fratto il periodo ovvero 2 pi greco/T, che notiamo essere uguale a v/r.
+          </p>
+
+          <p>
+              Esiste poi un'altra grandezza chiamta accelerazione centripeta. Il moto infatti, anche se uniforme, essendo non rettilieno ha bisogno di un'accelerazione verso il centro (per questo centripeta) per 
+              far rimanere v costante. Essa si può calcolare come:
+          </p>
+
+          
+          <p class="Equation">
+            Ac=v²/r
+          </p>
+
+          <p> Usando sapendo che v= w*r possiamo sostituire ed ottenere che è calcolabile anche come:
+          </p>
+
+          
+          <p class="Equation">
+            Ac=w²*r
+          </p>
+          </details>
+
+        </div>
+    </body>
+</html>
