@@ -94,4 +94,5 @@ hr { display: block;
 
 figure {
     display: inline-block;
+    border-radius: 5px;
 }
