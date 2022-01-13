@@ -12,7 +12,7 @@ h1 {
 
 .Cap1 {
 
-    background-color: rgb(255, 208, 127);
+    background-color: rgb(225, 204, 236);
     border-radius: 10px;
     padding: 14px 16px;
     margin-bottom: 0px;
@@ -52,10 +52,10 @@ figcaption {
 .Cap2 {
     
 
-    background-color: rgb(253, 166, 93);
+    background-color: rgb(201, 182, 228);
 
    
-    margin-top: 0px;
+    margin-top: 10px;
     border-radius: 10px;
     border-radius: 10px;
     padding: 14px 16px;
@@ -75,15 +75,24 @@ html {
     margin-top: 15px;
     font-family: bold;
     color: rgb(232, 240, 242);
-    background-color: rgb(251, 147, 0);
+    background-color: rgb(255, 93, 162);
     text-decoration: none;
     display: block;
     width: fit-content;
 }
 .link1:hover {
-        background-color: rgb(245, 71, 72);
+        background-color: rgb(156, 25, 224);
 }
-
+.Cap3{
+  
+    background-color: rgb(190, 159, 225);
+    margin-top: 10px;
+    margin-bottom: 10px;
+      
+    border-radius: 10px;
+    
+    padding: 14px 16px;
+  }
 
 
 @font-face { font-family: normal; src: url('Josefin_sans/JosefinSans-VariableFont_wght.ttf'); }
