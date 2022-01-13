@@ -3,4 +3,117 @@
     font-style: italic;
 
 }
-i
+img {
+    position: relative;
+    left: 25%;
+    border-radius: 5px;
+    width: 50%;
+    height: 50%;
+}
+
+h1 {
+    text-align: center;
+    font-family: bold;
+}
+
+
+.Cap1 {
+
+    background-color: rgb(225, 204, 236);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 0px;
+}
+
+.EqSy{
+    display:flex;
+    flex-direction: row;
+}
+summary {
+    font-family: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+figcaption {
+    display: inline-block;
+    text-align: center;
+}
+    
+    
+
+
+
+
+.Immagine {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    right: 33%;
+    border-radius: 10px;
+    
+}
+
+.Cap2 {
+    
+
+    background-color: rgb(201, 182, 228);
+
+   
+    margin-top: 10px;
+    border-radius: 10px;
+    border-radius: 10px;
+    padding: 14px 16px;
+    
+  
+}
+html {
+     font-family: normal;
+     background-color: rgb(232, 240, 242);
+
+}
+.link1 {
+    border: solid;
+    border-radius: 10px;
+    padding: 14px 16px 14px 16px;
+    text-align: center;
+    margin-top: 15px;
+    font-family: bold;
+    color: rgb(232, 240, 242);
+    background-color: rgb(255, 93, 162);
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+}
+.link1:hover {
+        background-color: rgb(156, 25, 224);
+}
+.Cap3{
+  
+    background-color: rgb(190, 159, 225);
+    margin-top: 10px;
+    margin-bottom: 10px;
+      
+    border-radius: 10px;
+    
+    padding: 14px 16px;
+  }
+
+
+@font-face { font-family: normal; src: url('Josefin_sans/JosefinSans-VariableFont_wght.ttf'); }
+@font-face { font-family: bold; src: url('Josefin_sans/static/JosefinSans-Bold.ttf'); } 
+
+hr { display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #ccc;
+    margin: 1em 0; 
+    padding: 0; 
+}
+
+figure {
+    display: inline-block;
+    border-radius: 5px;
+}
