@@ -39,7 +39,44 @@ li {
 .element{
     color: rgb(233, 10, 10);
 }
+h3 {
+  font-family: bold;
+  color: rgb(5, 55, 66);
+  text-align: center;
+  margin-bottom: 5px;
+  padding-bottom: 0;
+}
+p {
+   color: black;
+   text-align: center;
+   width: fit-content;
+   max-width: 400px;
+   padding: 14px;
+   padding-top: 0;
+   
+  margin-top: 0;
+   
 
+}
+.mail {
+  
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 2px;
+  border-radius: 10px;
+  text-align: center;
+
+}
+.mail1 {
+  font-family: bold;
+  color: rgb(57, 162, 219);
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  text-decoration: none;
+ 
+}
 
 @font-face { font-family: normal; src: url('Josefin_sans/JosefinSans-VariableFont_wght.ttf'); }
 @font-face { font-family: bold; src: url('Josefin_sans/static/JosefinSans-Bold.ttf'); } 
