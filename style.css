@@ -8,37 +8,110 @@ p {
     text-align: center;
 }
 
-
-ul {
-    list-style-type: none;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(5, 55, 66);
-    border-radius: 10px;
-    width: fit-content;
-    
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-li {
-    float: left;
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #5d4954;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+}
+
+.nav-links li{
+  list-style: none;
+}
+
+.nav-links a{
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.burger {
+  display:none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+@media screen and (max-width: 1020px){
+  .nav-links {
+    width: 50%;
   }
-  li a {
+}
+
+@media screen and (max-width: 768px){
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #5d4954;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  
+  .nav-links li{
+    opacity: 0;
+  }
+
+  .burger {
     display: block;
-    color: rgb(232, 240, 242);
-    font-family: bold;
-    text-align: center;
-    padding: 14px 16px;
+  }
+
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
     
-    text-decoration: none;
-  }
-  .passive:hover {
-    background-color: rgb(25, 25, 25);
-  }
-  .active {
-    background-color: rgb(57, 162, 219);
-  }
 html {
     font-family: normal;
     background-color: rgb(232, 240, 242);
