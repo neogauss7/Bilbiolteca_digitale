@@ -16,6 +16,11 @@ body.hidden-scrolling{
 	max-width: 1170px;
 	margin:auto;
 }
+.logo-img{
+	display: inline-block;
+	height: 50px;
+	border-radius: 50%;
+}
 ul{
 	list-style: none;
 	margin:0;
