@@ -19,7 +19,6 @@ body.hidden-scrolling{
 .logo-img{
 	display: inline-block;
 	height: 50px;
-	border-radius: 50%;
 }
 ul{
 	list-style: none;
