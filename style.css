@@ -18,6 +18,8 @@ body.hidden-scrolling{
 .logo-img{
 	display: inline-block;
 	height: 70px;
+	position: relative;
+	bottom: 10px;
 }
 ul{
 	list-style: none;
