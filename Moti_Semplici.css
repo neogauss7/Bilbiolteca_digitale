@@ -1,12 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 img {
     position: relative;
     left: 33%;
     border-radius: 5px;
 }
 
-h1 {
+h3 {
     text-align: center;
-    font-family: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+.the {
+	position: relative;
+	top: 200px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -16,6 +24,9 @@ h1 {
     border-radius: 10px;
     padding: 14px 16px;
     margin-bottom: 0px;
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .EqSy{
@@ -23,25 +34,18 @@ h1 {
     flex-direction: row;
 }
 summary {
-    font-family: bold;
+    
     padding-bottom: 10px;
     padding-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 figcaption {
     display: inline-block;
     text-align: center;
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-body{
-	line-height: 1.5;
-	font-family: 'Montserrat', sans-serif;
-}
-body.hidden-scrolling{
-	overflow-y: hidden;
-}
+
 *{
 	margin:0;
 	box-sizing: border-box;
@@ -99,6 +103,7 @@ a{
 	text-transform: capitalize;
 	font-weight: 600;
 	transition: all 0.3s ease;
+	font-family: 'Montserrat', sans-serif;
 }
 .header .menu > .menu-item > a .plus{
 	display: inline-block;
@@ -334,7 +339,9 @@ a{
     border-radius: 10px;
     border-radius: 10px;
     padding: 14px 16px;
-    
+    max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
   
 }
 html {
@@ -352,11 +359,12 @@ html {
     border-radius: 10px;
     
     padding: 14px 16px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1100px;
   }
 
 
-@font-face { font-family: normal; src: url('Josefin_sans/JosefinSans-VariableFont_wght.ttf'); }
-@font-face { font-family: bold; src: url('Josefin_sans/static/JosefinSans-Bold.ttf'); } 
 
 hr { display: block; 
     height: 1px;
