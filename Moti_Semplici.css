@@ -45,7 +45,13 @@ figcaption {
     text-align: center;
 }
 
-
+body{
+	line-height: 1.5;
+	font-family: 'Montserrat', sans-serif;
+}
+body.hidden-scrolling{
+	overflow-y: hidden;
+}
 *{
 	margin:0;
 	box-sizing: border-box;
