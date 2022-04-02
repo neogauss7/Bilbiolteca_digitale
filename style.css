@@ -34,8 +34,9 @@ ul{
 a{
 	text-decoration: none;
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 .welcome1{
-	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
 }
 .welcome {
      
