@@ -34,7 +34,11 @@ ul{
 a{
 	text-decoration: none;
 }
+.p2{
+	padding-top: 20px;
+	font-family: bold;
 
+}
 .welcome1{
 	font-family: bold;
 	font-size: 30px;
@@ -50,6 +54,7 @@ a{
 }
 .item1{
 	background-color: #F8F9FA;
+	
 	text-align: center;
 	width: 300px;
 	height: 300px;
@@ -301,7 +306,7 @@ a{
 .home-section{
 	width: 100%;
 	display: block;
-	min-height: 170vh;
+	min-height: 180vh;
 	background-position: center top;
 	background-size: cover;
 }
