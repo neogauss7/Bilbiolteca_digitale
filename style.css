@@ -34,9 +34,67 @@ ul{
 a{
 	text-decoration: none;
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 .welcome1{
-	font-family: 'Montserrat', sans-serif;
+	font-family: bold;
+	font-size: 30px;
+
+}
+.container1 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px 50px;
+
+}
+.item1{
+	background-color: #F8F9FA;
+	text-align: center;
+	width: 300px;
+	height: 300px;
+	border-radius: 5px;
+
+}
+.item2{
+	background-color: #F8F9FA;
+	text-align: center;
+	width: 300px;
+	height: 300px;
+	border-radius: 5px;
+
+}
+.item3{
+	background-color: #F8F9FA;
+	text-align: center;
+	width: 300px;
+	height: 300px;
+	border-radius: 5px;
+
+}
+.item4{
+	background-color: #F8F9FA;
+	text-align: center;
+	width: 300px;
+	height: 300px;
+	border-radius: 5px;
+
+}
+.item5{
+	background-color: #F8F9FA;
+	text-align: center;
+	width: 300px;
+	height: 300px;
+	border-radius: 5px;
+
+}
+.item6{
+	background-color: #F8F9FA;
+	text-align: center;
+	width: 300px;
+	height: 300px;
+	border-radius: 5px;
+
 }
 .welcome {
      
@@ -47,12 +105,12 @@ a{
 	 padding-left: 50px;
 	 padding-right: 50px;
 	 justify-self: center;
-	 
+	 margin-bottom: 30px;
 	 border-color: white;
 	 border: 20px solid whi;
 	 padding-top: 20px;
 	 padding-bottom: 20px;
-	 border-radius: 20px;
+	 border-radius: 5px;
 	 background-color: #F8F9FA;
 
 }
@@ -243,7 +301,7 @@ a{
 .home-section{
 	width: 100%;
 	display: block;
-	min-height: 100vh;
+	min-height: 170vh;
 	background-position: center top;
 	background-size: cover;
 }
@@ -484,4 +542,8 @@ a{
     margin-right:0;
     font-weight:600
   }
+}
+@font-face {
+	font-family: "bold";
+	src: url("Montserrat-Bold.ttf");
 }
