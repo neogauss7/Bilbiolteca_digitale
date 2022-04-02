@@ -40,16 +40,18 @@ a{
 .welcome {
      
 	text-align: center;
-	 margin-left: 20px;
-	 margin-right: 20px;
+	 margin-left: auto;
+	 margin-right: auto;
 	 max-width: 1000px;
 	 padding-left: 50px;
 	 padding-right: 50px;
 	 justify-self: center;
-
+	 
+	 border-color: white;
+	 border: 20px solid white;
 	 padding-top: 20px;
 	 padding-bottom: 20px;
-	 border-radius: 5px;
+	 border-radius: 20px;
 	 background-color: #F8F9FA;
 
 }
@@ -119,14 +121,16 @@ a{
 .header .menu > .menu-item > a .plus:before,
 .header .menu > .menu-item > a .plus:after{
 	content:'';
-	position: absolute;
+	
 	box-sizing: border-box;
+	position: absolute;
 	left: 50%;
 	top:50%;
+	transform: translate(-50%,-50%);
 	background-color: #000000;
 	height: 2px;
 	width: 100%;
-	transform: translate(-50%,-50%);
+	
 	transition: all 0.3s ease;
 }
 .header .menu > .menu-item:hover > a .plus:before,
