@@ -7,6 +7,11 @@ body{
 body.hidden-scrolling{
 	overflow-y: hidden;
 }
+.the {
+	position: relative;
+	top: 200px;
+	font-family: 'Montserrat', sans-serif;
+	}
 *{
 	margin:0;
 	box-sizing: border-box;
@@ -29,6 +34,44 @@ ul{
 a{
 	text-decoration: none;
 }
+.welcome1{
+	font-weight: 700;
+}
+.welcome {
+     
+	text-align: center;
+	 margin-left: 20px;
+	 margin-right: 20px;
+	 max-width: 1000px;
+	 padding-left: 50px;
+	 padding-right: 50px;
+	 justify-self: center;
+
+	 padding-top: 20px;
+	 padding-bottom: 20px;
+	 border-radius: 5px;
+	 background-color: #F8F9FA;
+
+}
+.btn{
+	
+		background-color: #1e76e9;
+		border: none;
+		color: white;
+		padding: 16px 32px;
+		text-align: center;
+		font-size: 16px;
+		margin: 4px 2px;
+		transition: all 0.3s ease;
+		border-radius: 5px;
+
+	  }
+	  
+	  .btn:hover {
+		background-color: #1665cc;
+		color: white;
+	  }
+
 .header{
 	position: absolute;
 	width: 100%;
