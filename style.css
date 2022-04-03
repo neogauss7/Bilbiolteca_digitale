@@ -11,6 +11,9 @@ body.hidden-scrolling{
 	position: relative;
 	top: 200px;
 	font-family: 'Montserrat', sans-serif;
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
 	}
 *{
 	margin:0;
@@ -45,6 +48,7 @@ a{
 
 }
 .container1 {
+	
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -70,13 +74,13 @@ a{
 	text-align: center;
 	 margin-left: auto;
 	 margin-right: auto;
-	 max-width: 1000px;
+	 max-width: 1040px;
 	 padding-left: 50px;
 	 padding-right: 50px;
 	 justify-self: center;
 	 margin-bottom: 30px;
 	 border-color: white;
-	 border: 20px solid whi;
+	 border: 20px solid white;
 	 padding-top: 20px;
 	 padding-bottom: 20px;
 	 border-radius: 5px;
@@ -271,16 +275,27 @@ a{
 }
 
 /*home section*/
+
 .home-section{
 	width: 100%;
 	display: block;
-	min-height: 180vh;
+	min-height: 160vh;
 	background-position: center top;
 	background-size: cover;
 }
 
 
+
+
 @media(max-width: 991px){
+    .home-section{
+		width: 100%;
+		display: block;
+		min-height: 220vh;
+		background-position: center top;
+		background-size: cover;
+}
+
 	.header .menu-overlay.active{
 	visibility: visible;
 	opacity: 1;
@@ -511,12 +526,24 @@ a{
 }
 @media (max-width:767px)
 {
-  .social-icons li.title
+	
+	.social-icons li.title
   {
     display:block;
     margin-right:0;
     font-weight:600
   }
+}
+@media (max-width:635px){
+	.home-section{
+		width: 100%;
+		display: block;
+		min-height: 370vh;
+		background-position: center top;
+		background-size: cover;
+	}
+
+
 }
 @font-face {
 	font-family: "bold";
