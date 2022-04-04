@@ -13,15 +13,21 @@ html {
 .element{
     color: rgb(233, 10, 10);
 }
+.mailll{
+  font-size: 25px;
+}
 h3 {
   
-  color: #1e76e9;
+  color: black;
+  
+  font-family: bold;
   text-align: center;
   margin-bottom: 5px;
   padding-bottom: 0;
 }
 .mail.text {
    color: #1e76e9;
+
    text-align: center;
    width: fit-content;
    max-width: 400px;
@@ -37,8 +43,12 @@ h3 {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
-  
-  
+  background-color: #F8F9FA;
+  padding-left: 50px;
+	 padding-right: 50px;
+   padding-top: 20px;
+	 padding-bottom: 20px;
+   border-radius: 5px;
   text-align: center;
 
 }
@@ -492,4 +502,8 @@ a{
     margin-right:0;
     font-weight:600
   }
+}
+@font-face {
+	font-family: "bold";
+	src: url("Montserrat-Bold.ttf");
 }
