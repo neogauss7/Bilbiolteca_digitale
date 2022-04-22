@@ -55,7 +55,7 @@ body {
 }
 
 .btn {
-  background-color: #312940;
+  background-color: #1e76e9;
   border: 0;
   border-radius: 50px;
   color: #fff;
@@ -66,6 +66,11 @@ body {
   top: 0;
   right: 0;
 }
+
+.btn:hover {
+	background-color: #1665cc;
+	color: white;
+  }
 
 .input:focus, .btn:focus {
   outline: 0;
