@@ -1,4 +1,9 @@
 
+function fn1()
+{
+  var str = document.getElementById("mail2").value;
+  export.(str) 
+}
 
 (() =>{
  
