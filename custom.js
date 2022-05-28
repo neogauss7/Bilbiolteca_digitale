@@ -1,7 +1,17 @@
 
-function fn1()
+function sendEmail()
 {
-  var str = document.getElementById("mail2").value;
+  Email.send({
+    Host : "smtp.gmail.com",
+    Username : "ggpignagg@gmail.com",
+    Password : "wlepigne",
+    To : 'theoremz.team@gmail.com',
+    From : document.getElementById("name").value,
+    Subject : "Nuova email per la newsletter",
+    Body : "Mail: " + document.getElementById("name").value,
+}).then(
+  message => alert(message)
+);
   
 }
 
