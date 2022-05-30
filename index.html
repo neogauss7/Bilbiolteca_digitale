@@ -18,6 +18,7 @@
   <meta name="description" content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti.">
 
 </head>
+<link rel="stylesheet" type="text/css" href="style.css">
 <body>
 
   <header class="header">
@@ -47,11 +48,10 @@
                       <li class="menu-item"><a href="Algebra-secondo-grado.html">Algebra di Secondo Grado</a></li>
                       <li class="menu-item"><a href="Analisi-intermedia.html">Analisi Intermedia</a></li>
                       <li class="menu-item"><a href="#">Matematica 4</a></li>
+                      
                   </ul>
                </li>
-                <li class="menu-item">
-                   <a href="#">Esercizi</a>
-                </li>
+                
                 <li class="menu-item menu-item-has-children">
                    <a href="#" data-toggle="sub-menu">Fisica <i class="plus"></i></a>
                    <ul class="sub-menu">
@@ -61,9 +61,20 @@
                        <li class="menu-item"><a href="#">Fisica 4</a></li>
                    </ul>
                 </li>
-                <li class="menu-item">
-                   <a href="#">Olimpiadi</a>
-                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">Scienze <i class="plus"></i></a>
+                  <ul class="sub-menu">
+                      <li class="menu-item"><a href="#">Scienze 1</a></li>
+                      <li class="menu-item"><a href="#">Scienze 2</a></li>
+                      <li class="menu-item"><a href="#">Scienze 3</a></li>
+                      <li class="menu-item"><a href="#">Scienze 4</a></li>
+                  </ul>
+               </li>
+               <li class="menu-item">
+                  <a href="esercizi.html">Esercizi</a>
+               </li>
+               
+               
                 <li class="menu-item">
                    <a href="Chi-siamo.html">Contatti</a>
                 </li>
@@ -77,19 +88,21 @@
     <div class="welcome"> 
        <h1 class="welcome1" >Benvenuti su Theoremz!</h1> <br>
        <h3 class="p1">Theoremz è una piattaforma gratuita creata da studenti dove sono presenti esercizi e spiegazioni utili per il ripasso e lo studio delle materie scientifiche.</h3>
-       <button class="btn">Sign Up</button>
+       <a href="newsletter.html"><button class="btn">Sign Up</button></a>
     </div>  
     <div class="container1">
-       <div class="item1"><img alt="Mathematics icon" class="imglogo1" src="maths.png"><h3 class="p2">Matematica</h3><p>Scopri la matematica spiegata da noi!</p></div>
-       <div class="item1"><img alt="Physics icon" class="imglogo1" src="5100205.png" alt=""><h3 class="p2">Fisica</h3><p>Scopri la fisica Spiegata da noi!</p></div>
-       <div class="item1"><img alt="Homework icon" class="imglogo1" src="homework.png" alt=""><h3 class="p2">Esercizi</h3><p>Allena ciò che hai appena imparato e mettiti alla prova con i nostri essercizi</p></div>
-       <div class="item1"><img alt="Science icon" class="imglogo1" src="2702060.png" alt=""><h3 class="p2">Scienze</h3><p>Scopri biologia e chimica spiegate da noi!</p></div>
+      <a href="Matematica.html"><div class="item1"><img alt="Mathematics icon" class="imglogo1" src="maths.png"><h3 class="p2">Matematica</h3><p class="p3" >Scopri la matematica spiegata da noi!</p></div></a>
+      <a href="Fisica.html"><div class="item1"><img alt="Physics icon" class="imglogo1" src="5100205.png" alt=""><h3 class="p2">Fisica</h3><p class="p3" >Scopri la fisica spiegata da noi!</p></div></a>
+      <a href="esercizi.html"><div class="item1"><img alt="Homework icon" class="imglogo1" src="homework.png" alt=""><h3 class="p2">Esercizi</h3><p class="p3" >Allena ciò che hai appena imparato e mettiti alla prova con i nostri esercizi</p></div></a>
+       <a href="scienze.html"><div class="item1"><img alt="Science icon" class="imglogo1" src="2702060.png" alt=""><h3 class="p2">Scienze</h3><p class="p3">Scopri biologia e chimica spiegate da noi!</p></div></a>
        <div class="item1"><img alt="Olympics icon" class="imglogo1" src="podium.png" alt=""><h3 class="p2">Olimpiadi</h3><p>Leggi la nostra guida per le Olimpiadi di Matematica</p></div>
-       <div class="item1"><img alt="Newsletter icon" class="imglogo1" src="envelope.png" alt=""><h3 class="p2">Newsletter</h3><p>Iscriviti alla nostra newsletter per  </p></div>
+       <a href="newsletter.html"><div class="item1"><img alt="Newsletter icon" class="imglogo1" src="envelope.png" alt=""><h3 class="p2">Newsletter</h3><p class="p3" >Iscriviti alla nostra newsletter per ricevere aggiornamenti </p></div></a>
 
     </div>
     </div>
  </section>
+ 
+
    <!-- Site footer -->
    <footer class="site-footer">
       <div class="container">
@@ -116,8 +129,8 @@
           <div class="col-md-4 col-sm-6 col-xs-12">
             <ul class="social-icons">
               <li><a class="facebook" href="mailto:team@theoremz.com"><img class="fff" src="mail (1).png" ><i class="fa fa-facebook"></i></a></li>
-              <li><a class="twitter" href="#"><img class="fff" src="" ><i class="fa fa-twitter"></i></a></li>
-              <li><a class="dribbble" href="https://instagram.com"><img class="fff" src="instagram (2).png" ><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="twitter" href="newsletter.html"><img class="fff" src="news.png" ><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="https://www.instagram.com/theoremz_/"><img class="fff" src="instagram (2).png" ><i class="fa fa-dribbble"></i></a></li>
               <li><a class="linkedin" href="#"><img class="fff" src="telegram (1).png" ><i class="fa fa-linkedin"></i></a></li>   
             </ul>
           </div>

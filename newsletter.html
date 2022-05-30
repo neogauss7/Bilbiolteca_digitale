@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="news.css">
+        <script>
+            const floating_btn = document.querySelector('.floating-btn');
+                const close_btn = document.querySelector('.close-btn');
+                const social_panel_container = document.querySelector('.social-panel-container');
+                
+                floating_btn.addEventListener('click', () => {
+                  social_panel_container.classList.toggle('visible')
+                });
+                
+                close_btn.addEventListener('click', () => {
+                  social_panel_container.classList.remove('visible')
+                });</script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2Z6FRX1VZF');
+</script>
+    <title>Theoremz | Newsletter</title>
+    <meta name="viewport" contenent="width=device-width-initial-scale=1">
+    <link rel="icon" href="favicon.png">
+    
+    <meta name="description" content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti.">
+
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <body>
+        <header class="header">
+            <div class="container">
+               <div class="header-main">
+                  <div class="logo">
+                     <a href="index.html"><img class="logo-img" src="Logo1.jpg"></a>
+                  </div>
+                  <div class="open-nav-menu">
+                     <span></span>
+                  </div>
+                  <div class="menu-overlay">
+                  </div>
+                  <!-- navigation menu start -->
+                  <nav class="nav-menu">
+                    <div class="close-nav-menu">
+                       <img src="close.svg" alt="close">
+                    </div>
+                    <ul class="menu">
+                       <li class="menu-item">
+                          <a href="index.html">Home</a>
+                       </li>
+                       <li class="menu-item menu-item-has-children">
+                         <a href="#" data-toggle="sub-menu">Matematica <i class="plus"></i></a>
+                         <ul class="sub-menu">
+                             <li class="menu-item"><a href="Analisi-semplice.html">Analisi Semplice</a></li>
+                             <li class="menu-item"><a href="Algebra-secondo-grado.html">Algebra di Secondo Grado</a></li>
+                             <li class="menu-item"><a href="Analisi-intermedia.html">Analisi Intermedia</a></li>
+                             <li class="menu-item"><a href="#">Matematica 4</a></li>
+                         </ul>
+                      </li>
+                     </li><li class="menu-item menu-item-has-children">
+                          <a href="#" data-toggle="sub-menu">Fisica <i class="plus"></i></a>
+                          <ul class="sub-menu">
+                              <li class="menu-item"><a href="Moti_semplici.html">Moti Semplici</a></li>
+                              <li class="menu-item"><a href="Moti_caduta_libera_e_su_piano_inclinato.html">Caduta Libera</a></li>
+                              <li class="menu-item"><a href="#">Fisica 3</a></li>
+                              <li class="menu-item"><a href="#">Fisica 4</a></li>
+                          </ul>
+                       </li>
+                     <li class="menu-item menu-item-has-children">
+                       <a href="#" data-toggle="sub-menu">Scienze <i class="plus"></i></a>
+                       <ul class="sub-menu">
+                           <li class="menu-item"><a href="#">Scienze 1</a></li>
+                           <li class="menu-item"><a href="#">Scienze 2</a></li>
+                           <li class="menu-item"><a href="#">Scienze 3</a></li>
+                           <li class="menu-item"><a href="#">Scienze 4</a></li>
+                       </ul>
+                    </li>
+                       
+                       
+                       <li class="menu-item">
+                        <a href="esercizi.html">Esercizi</a>
+                     </li>
+                       
+                       <li class="menu-item">
+                          <a href="Chi-siamo.html">Contatti</a>
+                       </li>
+                    </ul>
+                  </nav>
+               </div>
+            </div>
+         </header>
+        
+        
+        
+        </body>
+        
+        
+        <div class="the">
+        
+   
+<div class="box">
+    <img src="https://lh3.google.com/u/0/d/1-WTX2Kw4ZlgLnwT9gYyFOxVXowT9eS-t=w1375-h881-iv1" alt="" />
+    <h2>Inscriviti alla nostra Newsletter</h2>
+    <p>Inscrivendoti alla nostra newsletter riceverai aggiornamenti sulle nuove pubblicazioni e le nuove funzioni del sito.</p>
+    <div class="form-control">
+       <form action="https://formsubmit.co/team@theoremz.com" method="POST">
+       
+         <input type="text" id="name" class="input" name="email" placeholder="Enter e-mail adress" >
+         <button   class="btn">Subscribe</button>
+         <input type="hidden" name="_captcha" value="false">
+         <input type="hidden" name="_next" value="https://www.theoremz.com" >
+   </form>
+    </div>
+  </div>
+  
+  <script src="custom.js">
+
+</script>
+        
+</body>
+  </html>

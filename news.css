@@ -1,85 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-  
-html {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
   font-family: 'Montserrat', sans-serif;
-  background-color: rgb(255, 255, 255);
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }
 
-
-
-
-.element{
-    color: rgb(233, 10, 10);
-}
-.mailll{
-  font-size: 25px;
-}
-h3 {
-  
-  color: black;
-  
-  font-family: bold;
-  text-align: center;
-  margin-bottom: 5px;
-  padding-bottom: 0;
-}
-.mail.text {
-   color: #1e76e9;
-
-   text-align: center;
-   width: fit-content;
-   max-width: 400px;
-   padding: 14px;
-   padding-top: 0;
-   
-  margin-top: 0;
-   
-
-}
-.mail {
-  
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+.box {
   background-color: #F8F9FA;
-  padding-left: 50px;
-	 padding-right: 50px;
-   padding-top: 20px;
-	 padding-bottom: 20px;
-   border-radius: 5px;
+  border-radius: 20px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  padding: 30px;
   text-align: center;
+  max-width: 500px;
+}
 
+.box h2 {
+  margin: 10px 0 0;
 }
-.mail1 {
-  
-  color: rgb(250, 63, 63);
-  text-align: center;
-  margin-bottom: 0;
-  padding-bottom: 5px;
-  text-decoration: none;
- 
+
+.box p {
+  color: #312940;
+  margin: 10px;
 }
-.the {
+
+.box img {
+  max-width: 100%;
+  width: 400px;
+}
+
+.form-control {
   position: relative;
-  top: 200px;
+  margin: 30px 0 20px;
+}
+
+.input {
+  border: 0;
+  border-radius: 50px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  display: block;
   font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  height: 42px;
+  padding: 12px 25px;
+  width: 100%;
+}
+
+.btn {
+  background-color: #1e76e9;
+  border: 0;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  height: 42px;
+  padding: 12px 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn:hover {
+	background-color: #1665cc;
+	color: white;
   }
-body{
-	line-height: 1.5;
-	font-family: 'Montserrat', sans-serif;
+
+.input:focus, .btn:focus {
+  outline: 0;
 }
-body.hidden-scrolling{
-	overflow-y: hidden;
+
+
+.floating-btn {
+  border-radius: 26.5px;
+  background-color: #001F61;
+  border: 1px solid #001F61;
+  box-shadow: 0 16px 22px -17px #03153B;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
 }
-*{
-	margin:0;
-	box-sizing: border-box;
+
+
+
+.floating-btn:focus {
+  outline: none;
 }
-.container{
-	max-width: 1100px;
-	margin:auto;
+
+.floating-text {
+  background-color: #001F61;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif; 
+  padding: 7px 15px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 998;
+}
+
+.floating-text a {
+  color: #FF7500;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+
+  .social-panel-container.visible {
+    transform: translateX(0px);
+  }
+  
+  .floating-btn {
+    right: 10px;
+  }
 }
 .logo-img{
 	display: inline-block;
@@ -94,6 +141,14 @@ ul{
 }
 a{
 	text-decoration: none;
+}
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1100px;
+	margin:auto;
 }
 .header{
 	position: absolute;
@@ -338,171 +393,7 @@ a{
 		display: flex;
 	}
 }
-.site-footer
-{
-  background-color: #222222;
-  padding:45px 0 20px;
-  padding-left: 25px;
-  padding-right: 25px;
-  font-size:15px;
-  line-height:24px;
-  color:#737373;
-}
-.site-footer hr
-{
-  border-top-color:#bbb;
-  opacity:0.5
-}
-.site-footer hr.small
-{
-  margin:20px 0
-}
-.site-footer h6
-{
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
-}
-.site-footer a
-{
-  color:#737373;
-}
-.site-footer a:hover
-{
-  color:#1e76e9;
-  text-decoration:none;
-}
-.footer-links
-{
-  padding-left:0;
-  list-style:none
-}
-.footer-links li
-{
-  display:block
-}
-.footer-links a
-{
-  color:#737373
-}
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links.inline li
-{
-  display:inline-block
-}
-.site-footer .social-icons
-{
-  text-align:right
-}
-.site-footer .social-icons a
-{
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:100%;
-  background-color:#33353d
-}
-.copyright-text
-{
-  margin:0
-}
-@media (max-width:991px)
-{
-  .site-footer [class^=col-]
-  {
-    margin-bottom:30px
-  }
-}
-@media (max-width:767px)
-{
-  .site-footer
-  {
-    padding-bottom:0
-  }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
-  }
-}
-.social-icons
-{
-  padding-left:0;
-  margin-bottom:0;
-  list-style:none
-}
-.social-icons li
-{
-  display:inline-block;
-  margin-bottom:4px
-}
-.social-icons li.title
-{
-  margin-right:15px;
-  text-transform:uppercase;
-  color:#96a2b2;
-  font-weight:700;
-  font-size:13px
-}
-.social-icons a{
-  background-color:#eceeef;
-  color:#818a91;
-  font-size:16px;
-  display:inline-block;
-  line-height:44px;
-  width:44px;
-  height:44px;
-  text-align:center;
-  margin-right:8px;
-  border-radius:100%;
-  -webkit-transition:all .2s linear;
-  -o-transition:all .2s linear;
-  transition:all .2s linear
-}
-.social-icons a:active,.social-icons a:focus,.social-icons a:hover
-{
-  color:#fff;
-  background-color:#29aafe
-}
-.social-icons.size-sm a
-{
-  line-height:34px;
-  height:34px;
-  width:34px;
-  font-size:14px
-}
-.social-icons a.facebook:hover
-{
-  background-color:#3b5998
-}
-.social-icons a.twitter:hover
-{
-  background-color:#00aced
-}
-.social-icons a.linkedin:hover
-{
-  background-color:#007bb6
-}
-.social-icons a.dribbble:hover
-{
-  background-color:#ea4c89
-}
-@media (max-width:767px)
-{
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
-  }
-}
+
 .site-footer
 {
   background-color: #222222;
@@ -685,8 +576,4 @@ a{
 .fff{
 	height: 40px;
 	
-}
-@font-face {
-	font-family: "bold";
-	src: url("Montserrat-Bold.ttf");
 }

@@ -40,7 +40,11 @@ a{
 .p2{
 	padding-top: 20px;
 	font-family: bold;
+	color: #000000;
 
+}
+.p3{
+	color: #000000;
 }
 .welcome1{
 	font-family: bold;
@@ -549,6 +553,7 @@ a{
 	height: 40px;
 	
 }
+
 @font-face {
 	font-family: "bold";
 	src: url("Montserrat-Bold.ttf");
