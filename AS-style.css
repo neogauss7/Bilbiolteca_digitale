@@ -3,6 +3,7 @@
 .welcome1{
 	font-family: bold;
 	font-size: 30px;
+  color: #222222;
 
 }
 .welcome {
@@ -64,7 +65,7 @@ figure {
 
 .Cap1 {
 
-    background-color: rgb(244, 223, 186);
+    border: solid 4px #1e76e9;
     border-radius: 10px;
     padding: 14px 16px;
     margin-bottom: 0px;
@@ -95,9 +96,7 @@ h1 {
   .Cap2 {
     
 
-    background-color: rgb(238, 195, 115);
-
-   
+    border: solid 4px #1e76e9;
     margin-top: 10px;
     border-radius: 10px;
     border-radius: 10px;
@@ -105,15 +104,15 @@ h1 {
     max-width: 1100px;
 	margin-left: auto;
 	margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   
 }
 
   .Cap3{
   
-    background-color: rgb(202, 150, 92);
+    border: solid 4px #1e76e9;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
       
     border-radius: 10px;
     
@@ -139,8 +138,14 @@ h1 {
   display:flex;
   flex-direction: row;
 }
+.recap {
+  font-family: bold;
+
+}
 summary {
-  
+  color: #222222;
+  font-size: 20px;
+  font-family: bold;
   padding-bottom: 10px;
   padding-top: 10px;
   margin-left: 10px;
