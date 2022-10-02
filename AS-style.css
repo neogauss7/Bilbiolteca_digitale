@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.pp {
+  padding: 20px;
+
+}
+.policy {
+  color: #1e76e9;
+  
+  }
+.policy:hover{
+   color: red;
+  }
 
 .welcome1{
 	font-family: bold;
