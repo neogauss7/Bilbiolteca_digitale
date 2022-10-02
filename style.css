@@ -7,6 +7,12 @@ body{
 body.hidden-scrolling{
 	overflow-y: hidden;
 }
+.policy {
+color: #1e76e9;
+}
+.policy:hover{
+	color: red;
+   }
 .the {
 	position: relative;
 	top: 200px;
