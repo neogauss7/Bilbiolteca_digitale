@@ -80,6 +80,8 @@
                </div>
             </div>
          </header>
+         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <div class="the">
 
         
@@ -92,7 +94,7 @@
         <div class="Cap1">
                 <details>
                 <summary > <class="recap"> Parabole </class></summary>
-                <p> matematica sono spesso oggetto di studio le curve. Una famiglia di esse sono le <strong>parabole</strong>.
+                <p>In matematica sono spesso oggetto di studio le curve. Una famiglia di esse sono le <strong>parabole</strong>.
                 Poichè rappresentano delle funzioni polinomiali di secondo grado hanno molte applicazioni.
                 Di seguito analizzeremo alcune caratteristiche delle parabole.
                 Una parabola, generalmente, appare nel seguente modo:
@@ -112,63 +114,64 @@
             <img class="imgse" src="https://github.com/neogauss7/Bilbiolteca_digitale/blob/main/Parabola_asse_di_simmetria.PNG?raw=true" >
             
             
-            <p> Passiamo ora a definire l'equazione della parabola: y= ax^2 +bx +c. Notiamo che avremo sempre un'intersezione con l'asse y,
-                poichè ciò avviene quando x=0, che comporta y=c e poichè c esiste vale lo stesso per y. <br> 
-                Se invece gurdiamo l'intersezione con l'asse x, notiamo che questo avviene quando y=0 e poichè otteniamo in tal modo l'equazione di secondo grado ax^2+bx+c = 0, dal teorema 
-                fondamentale dell'algebra sappiamo che avremo al massimo 2 soluzioni reali. Possiamo usare la formula per la risoluzione delle equazioni
-                di secondo grado ottenendo così che le due x sono uguali a (-b± (Δ)^½)/2a.
+            <p> Passiamo ora a definire l'equazione della parabola: \(y= ax^2 +bx +c\). Notiamo che avremo sempre un'intersezione con l'asse \(y\),
+                poichè ciò avviene quando \(x=0\), che comporta \(y=c\) e poichè \(c\) esiste vale lo stesso per \(y\). <br> 
+                Se invece gurdiamo l'intersezione con l'asse \(x\), notiamo che questo avviene quando \(y=0\) e poichè otteniamo in tal modo l'equazione di secondo grado \(ax^2+bx+c = 0\), dal teorema 
+                fondamentale dell'algebra sappiamo che avremo al massimo \(2\) soluzioni reali. Possiamo usare la formula per la risoluzione delle equazioni
+                di secondo grado ottenendo così che le due \(x\) sono uguali a: \[-b \pm \sqrt{Δ} \over 2a\]
              </p>
-             <p> Notiamo ora, però, che se la nostra parabola ha 2 interesezioni, giacendo su un asse perpendicolare a quello di simmetria, disteranno lo stesso spazio da quest'ultimo.
+             <p> Notiamo ora, però, che se la nostra parabola ha \(2\) interesezioni, giacendo su un asse perpendicolare a quello di simmetria, disteranno lo stesso spazio da quest'ultimo.
                  Quindi il loro punto medio dovrà giacere sull'asse di simmetria. Possiamo dunque calcolare l'ascissa di questo punto facendo la media aritmetica tra le due soluzioni. 
             </p>
             <p> 
-                Otteniamo quindi ((-b+(Δ)^½)/2a + (-b-(Δ)^½)/2a)/2. Notiamo che le due radici del delta si semplificheranno e i due -b si sommeranno. Otteniamo dunque:
-                -2b/4a, ovvero -b/2a. 
+                Otteniamo quindi: \[(-b+\sqrt{Δ})+(-b-\sqrt{Δ}) \over 2a\] Notiamo che le due radici del delta si semplificheranno e i due \(-b\) si sommeranno. Otteniamo dunque:
+                \(-2b \over 4a\), ovvero \(-b \over 2a\). 
             </p>
             <p> Notiamo che il nostro vertice appartiene alla parabola e di conseguenza la sua ordinata è uguale alla nostra funzione al valore della sua ascissa. Sapendo quest'ultima possiamo
-                sostituirla nell'equazione ed effettuando dei semplici passaggi algebrici otterremo y= -Δ/4a.
+                sostituirla nell'equazione ed effettuando dei semplici passaggi algebrici otterremo: \[y= {-Δ \over 4a}\]
             </p>
-            <p> Nel caso in cui la nostra parabola non avesse due interesezioni con l'asse x, è comunque dimostrabile che la formula per calcolare le coordinate del vertice rimane corretta.
+            <p> Nel caso in cui la nostra parabola non avesse due interesezioni con l'asse \(x\), è comunque dimostrabile che la formula per calcolare le coordinate del vertice rimane corretta.
             </p>
             <p style="font-weight: bold;"> 
-                Abbiamo dunque che il nostro vertice sarà il punto (-b/2a,-Δ/4a).
+                Abbiamo dunque che il nostro vertice sarà il punto: \[{-b \over 2a},{-Δ \over 4a}\]
             </p>
              
             <!--Divisore-->
             <hr>
             
-            <p> Ora passiamo al trovare l'equazione di una parabole conosiendo 3 dei suoi punti o 2 punti ed il vertice.
+            <p> Ora passiamo al trovare l'equazione di una parabola conoscendo \(3\) dei suoi punti o \(2\) punti ed il vertice.
 
             </p>
-            <p> Supponiamo di conosciere le coordinate dei punti P (Xp,Yp),T(Xt,Yt) e R(Xr,Yr) appartenenti alla parabola. Poichè apprtengono alla parabola, le loro coordinate devono
+            <p> Supponiamo di conoscere le coordinate dei punti \(P(Xp,Yp)\), \(T(Xt,Yt)\) e \(R(Xr,Yr)\) appartenenti alla parabola. Poichè appartengono alla parabola, le loro coordinate devono
                 soddisfare la nostra equaziona. Possiamo dunque sostituire ed ottenere il seguente sistema:
             </p>
             
             <!--Sistema di equazioni-->
             <div class="EqSy">
-                <p style="font-size: 55px; position:relative; bottom:47px;">{</p>
-                <ul>
-                    <li>Yp=Xp²*a +Xp*b +c</li>
-                    <li>Yt=Xt²*a +Xt*b +c</li>
-                    <li>Yr=Xr²*a +Xr*b +c</li>
-                </ul>
+                <p ></p>
+                   
+                    \begin{cases}
+                    Yp=Xp²*a +Xp*b +c\\
+                    Yt=Xt²*a +Xt*b +c\\
+                    Yr=Xr²*a +Xr*b +c
+\end{cases} 
+                
             </div>
-            <p> Essendo un sistema con 3 incognite di primo grado, possiamo risolverlo. Avendo trovato a,b e c otteniamo di conseguenza la nostra equazione.</p>
+            <p> Essendo un sistema con \(3\) incognite di primo grado, possiamo risolverlo. Avendo trovato \(a\), \(b\) e \(c\) otteniamo di conseguenza la nostra equazione.</p>
 
             <br>
 
             <p> Il vertice, come anticipato prima, è un punto molto importante per l'analisi di una parabola. Grazie alle sue caratteristiche,
-                conosciendo esso e solo un altro punto possiamo trovare l'equazione dell'unica parabola che passa per i due. Infatti, avendo il vertice V(Xv,Yv) ed un punto 
-                U(Xu, Yu) possiamo trovare un sistema di equazioni. Sapendo la formula per trovare le coordinate precedenti (vedi sottocapitolo 1) otteniamo:
+                conoscendo esso e solo un altro punto possiamo trovare l'equazione dell'unica parabola che passa per i due. Infatti, avendo il vertice \(V(Xv,Yv)\) ed un punto 
+                \(U(Xu, Yu)\) possiamo trovare un sistema di equazioni. Sapendo la formula per trovare le coordinate precedenti <em>(vedi sottocapitolo 1)</em> otteniamo:
             </p>
 
             <div class="EqSy">
-                <p style="font-size: 55px; position:relative; bottom:47px;">{</p>
-                    <ul>
-                        <li>Xv=-b/2a</li>
-                        <li>Yv=(-b² + 4ac)/4a</li>
-                        <li>Yu=Xu²*a + Xu*b +c</li>
-                    </ul>
+                \begin{cases}
+                Xv={-b \over 2a}\\
+                Yv={(-b² + 4ac) \over 4a}\\
+                Yu=Xu²*a + Xu*b +c
+\end{cases} 
             </div>
             <p> Possiamo banalmente ricondurlo ad un sistema lineare di 3 equazioni e risolverlo.</p>
             
@@ -194,21 +197,21 @@
 
             <br>
 
-            <p>Si può dimostrare che <strong>la concavità sarà verso l'alto se a sarà postivo, mentre sarà verso il basso per valori negativi di a</strong>.
-                Questo è anche facilmente intuibile se si pensa che,poichè per x grandi il termine di grado più alto è quello dominante, se si prendono valori
+            <p>Si può dimostrare che <strong>la concavità sarà verso l'alto se a sarà postivo, mentre sarà verso il basso per valori negativi di \(a\)</strong>.
+                Questo è anche facilmente intuibile se si pensa che, poichè per \(x\) grandi il termine di grado più alto è quello dominante, se si prendono valori
                 sufficientemente grandi il segno della funzione sarà lo stesso del termine di grado superiore.
             </p>
 
             <br>
             <br>
 
-            <p>Ora possiamo possiamo notare che se il valore dell'ordinate è positivo, per diventare negativo, poichè la funzione è continua,
-                deve necessariamente esserci un intersezione con l'asse x. Quindi se la concavità è verso l'alto, potrà essere negativa solo fra le due intersezioni. 
-                Mentre per le parabole con cancavità verso il basso fra le due interesezioni sarà invece positiva. Osservando le immagni proposte precedentemente si può 
+            <p>Ora possiamo possiamo notare che se il valore delle ordinate è positivo, per diventare negativo, poichè la funzione è continua,
+                deve necessariamente esserci un intersezione con l'asse \(x\). Quindi se la concavità è verso l'alto, potrà essere negativa solo fra le due intersezioni. 
+                Mentre per le parabole con concavità verso il basso fra le due intersezioni sarà invece positiva. Osservando le immagini proposte precedentemente si può 
                 facilmente notare. 
             </p>
 
-            <p> Grazie a questo guardando solamente i coefficienti dell'equazione possiamo dire per quali valori delle x le y saranno positive o negative. Questo è particolarmente utile
+            <p> Grazie a questo guardando solamente i coefficienti dell'equazione possiamo dire per quali valori delle \(x\) le \(y\) saranno positive o negative. Questo è particolarmente utile
                 per la risoluzione delle disequazioni di secondo grado. 
             </p>
                  </details>
@@ -229,45 +232,43 @@
             <img class="imgse" src="https://github.com/neogauss7/Bilbiolteca_digitale/blob/main/Retta.PNG?raw=true">
             
             <p><strong>Una retta viene descritta da una ed una soltanto equazione di primo grado</strong>. La funzione della nostra retta appare dunque del tipo:
-                <em>y=m*x +q</em>. <br> 
-                Notare che quando x è 0, y è q. Dunque q indica dove avviene l'intersezione con l'asse y e per questo è detto intercetta. 
-                Si può inoltre dimostare che m indica l'inclinazione della retta rispetto all'asse x e viene per questo chiamato coefficiente angolare.
+                <em>\[y=m*x +q\]</em> <br> 
+                Notare che quando \(x\) è \(0\), \(y\) è \(q\). Dunque \(q\) indica dove avviene l'intersezione con l'asse \(y\) e per questo è detto intercetta. 
+                Si può inoltre dimostare che \(m\) indica l'inclinazione della retta rispetto all'asse \(x\) e viene per questo chiamato coefficiente angolare.
             </p>
 
-            <p> Siccome <em>per due punti passa una ed una sola retta</em>, conosciendoli possiamo troavre anch'essa.<br>
-                Supponiamo di avere un punto V(Xv, Yv) ed un punto U(Xu, Yu). Uno dei modi per trovare l'equazione della retta che 
+            <p> Siccome <em>per due punti passa una ed una sola retta</em>, conoscendoli possiamo troavre anch'essa.<br>
+                Supponiamo di avere un punto \(V(Xv, Yv)\) ed un punto \(U(Xu, Yu)\). Uno dei modi per trovare l'equazione della retta che 
                 passa per entrambi e quello di risolvere un sistema a due incognite ottenuto grazie all'appartenenza dei punti alla retta, ovvero, siccome 
                 i punti giaciono sulla retta, le loro coordinate devono soddisfare la loro equazione. Dunque:
             </p>
 
             <div class="EqSy">
-                <p style="font-size: 330%; position: relative; bottom: 30px;">{</p>
-                <ul>
-                  <p>Yv=m*Xv +q</p>
-                  <p>Yu=m*Xu +q</p>
-                </ul>
-
+                \begin{cases}
+                Yv=m*Xv +q\\
+                Yu=m*Xu +q
+\end{cases} 
                 <br>
             </div>
             
-            <p> Ora possiamo sottrarre la seconda equazione dalla prima, raccogliere m e dividere ottenendo che <em>m=(Yv-Yu)/(Xv-Xu)</em>. Sostituendo questo
-                nella prima equazione ed effettuando qualche semplificazione otteniamo anche che <em>q=(Yu*Xv - Yv*Xu)/(Xv-Xu)</em>. <br>
-                Essendo quest'ultima formula un pò complicata, si preferisce trovare prima m e quindi sostituire direttamente il suo valore numerico nell'equazione per trovare q.
+            <p> Ora possiamo sottrarre la seconda equazione dalla prima, raccogliere \(m\) e dividere ottenendo che <em>\[m={Yv-Yu \over Xv-Xu}\]</em> Sostituendo questo
+                nella prima equazione ed effettuando qualche semplificazione otteniamo anche che <em>\[q={Yu*Xv - Yv*Xu \over Xv-Xu}\]</em> <br>
+                Essendo quest'ultima formula un pò complicata, si preferisce trovare prima \(m\) e quindi sostituire direttamente il suo valore numerico nell'equazione per trovare \(q\).
             </p>
             
             <br>
             <br>
             
             <p> Precedentemente ci eravamo occupati di rette con equazioni scritte in forma esplicita, mentre ora analizzeremo la loro forma <em>implicita</em>. 
-                Essa si presenta nel seguente modo: <em>a*y + b*x +c=0</em>. <br>
+                Essa si presenta nel seguente modo: <em>\(a*y + b*x +c=0\)</em> <br>
                 Spesso infatti risulta essere più utile usare questa. Si può facilmente ricavare la forma esplicita da quella impicita e viceversa 
-                semplicemente isolando la y o portando tutto da uno stesso lato dell'uguale. 
+                semplicemente isolando la \(y\) o portando tutto da uno stesso lato dell'uguale. 
             </p>
             
             <br>
             
-            <p>Ora analizzeremo quello che viene chiamato un fascio di rette proprio, ovvero l'insieme delle rette passanti per un punto A. L'equazione di tale fascio è Y-Y0=m(X-X0). Tra tutte queste 
-                solo una è passante per un punto B. Essa sarà data dall'equazione <em>(Y-Ya)/(Ya-Yb)=(X-Xa)/(Xa-Xb)</em>. Con questo possiamo direttamente trovare l'equazione della retta.
+            <p>Ora analizzeremo quello che viene chiamato un fascio di rette proprio, ovvero l'insieme delle rette passanti per un punto \(A\). L'equazione di tale fascio è \(Y-Y_{0}=m(X-X_{0})\). Tra tutte queste 
+                solo una è passante per un punto \(B\). Essa sarà data dall'equazione <em>\[{Y-Ya \over Ya-Yb}={X-Xa \over Xa-Xb}\]</em> Con questo possiamo direttamente trovare l'equazione della retta.
             </p>
             
             <br>
@@ -277,9 +278,9 @@
             <br>
             
             <p> Due rette possono intersecarsi. Questo avviene quando entrambe le loro ordinate sono uguali. Quindi date due rette 
-                y= m1*x + q1 e y=m2+x + q2. Otteniamo dunque che se le loro y sono uguali allora m1*x +q1 = m2*x +q2 ed isolando x otteniamo 
-                x=(q1-q2)/(m2-m1).<br>
-                Si può notare che nel caso in cui m1=m2, se q1=q1 allora l'equazione è sempre verificata, mentre se q1 è diverso da q2 sarà impossibile. Nel primo caso le due rette 
+                \(y= m_{1}*x + q_{1}\) e \(y=m_{2}+x + q_{2}\) Otteniamo dunque che se le loro y sono uguali allora \(m_{1}*x +q_{1} = m_{2}*x +q_{2}\) ed isolando \(x\) otteniamo 
+                \[x={q_{1}-q_{2} \over m_{2}-m_{1}}\]<br>
+                Si può notare che nel caso in cui \(m_{1}=m_{2}\), se \(q_{1}=q_{1}\) allora l'equazione è sempre verificata, mentre se \(q_{1}\) è diverso da \(q_{2}\) sarà impossibile. Nel primo caso le due rette 
                 saranno <em>parallele e coincidenti</em>, mentre nel secondo caso saranno rette <em>parallele e distinte</em>. L'insieme di tutte le rette parallele ad una data retta 
                 è il suo fascio di rette improprio. 
             </p>
@@ -296,16 +297,12 @@
             <br>
             <figure>
                 <img class="imgse" src="https://github.com/neogauss7/Bilbiolteca_digitale/blob/main/Fascio_di_rette2.PNG?raw=true"> 
-                <figcaption>fascio di rette improprio <figcaption>
-            </figure>
-            
-            <p> Due rette che si intersecano  </p>
-            <p> Due rette parallele  </p>
-            <p> fascio di rette improprio  </p>
+                <figcaption>Fascio di rette improprio <figcaption>
+                </figure>
             
             <br>
             <br>
-            <p> Si può poi dimostrare che due rette sono perpendicolari tra di loro se e solo se m1= -1/m2. 
+            <p> Si può poi dimostrare che due rette sono perpendicolari tra di loro se e solo se \(m_{1}= {-1 \over m_{2}}\) 
             </p>
             <br>
             <img class="imgse" src="https://github.com/neogauss7/Bilbiolteca_digitale/blob/main/Due_rette_perpendicolare.PNG?raw=true">
@@ -313,8 +310,8 @@
             
             <br>
             
-            <p> Preso un punto P(Xp,Yp)si può calcolare la sua distanza d da una retta di equazione a*x + b*y +c = 0 con la seguente formula:
-                <em>d=|a*Xp + b*Yp + c|/√(a²+b²).</em> 
+            <p> Preso un punto \(P(Xp,Yp)\) si può calcolare la sua distanza \(d\) da una retta di equazione \(a*x + b*y +c = 0\) con la seguente formula:
+                <em>\[d={|a*Xp + b*Yp + c| \over  \sqrt{a²+b²}}\]</em> 
             </p>
             </details>
         </div> 
