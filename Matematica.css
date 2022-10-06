@@ -59,14 +59,14 @@ a{
 
 }
 .item1{
-	background-color: #fcda95;
-	
+	border: 4px solid;
+	border-color: #1e76e9;
+	border-radius: 10px;
 	text-align: center;
-	padding: 15px;
+	padding-top: 10px;
 	width: 300px;
 	height: 70px;
-	border-radius: 5px;
-
+	font-family: bold;
 }
 
 .welcome {
@@ -93,7 +93,7 @@ a{
 }
 .btn{
 	
-		background-color: #1e76e9;
+		background-color: c;
 		border: none;
 		color: white;
 		padding: 16px 32px;
