@@ -77,6 +77,9 @@
                </div>
             </div>
          </header>
+         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+            
     <div class="the">
         <div class="welcome"> 
             <h1 class="welcome1" >Analisi intermedia</h1>
@@ -91,21 +94,21 @@
             </summary>
 
             <p>
-                In matematica può capitare di avere a che fare con valori o espressioni impossibili o indeterminate, come ad esempio 1/0. <br>
+                In matematica può capitare di avere a che fare con valori o espressioni impossibili o indeterminate, come ad esempio \(1 \over 0\). <br>
                 Durante lo studio di un funzione, però, dobbiamo sapere come essa si comporta in un certo punto. Per fare utilizziamo un limite. Ovvero prendiamo 
                 un valore che è estremamente vicino a quel velore ma non esattamente quello.<br>
-                Nell'esempio di prima, se nella nsotra funzione appare 1/0, andiamo a prendere il limite di x che tende a 0 di 1/x.<br>
-                Per ragioni che spiegheremo successivamente, vedremo il limite per x² che tende a 0 e non di x.
-                Dunque prendiamo dei valori sempre più piccoli, come 0.1 o 0.000001 o 0.0000000000001 e notiamo che il nostro avlore va ad aumentare
+                Nell'esempio di prima, se nella nsotra funzione appare \(1 \over 0\), andiamo a prendere il limite di \(x\) che tende a \(0\) di \(1 \over x\):\[ \lim_{x \rightarrow 0} {1 \over x}\]<br>
+                Per ragioni che spiegheremo successivamente, vedremo il limite per \(x²\) e non per \(x\) che tende a \(0\).
+                Dunque prendiamo dei valori sempre più piccoli, come \(0.1\) o \(0.000001\) o \(0.0000000000001\) e notiamo che il nostro valore tende ad aumentare
                 sempre di più. In questo caso si dice che il limite tende ad infinito.
-                Attenzione però, questo non vuol dire che 1/0 è uguale ad infinito. Inoltre la solzione del limite non è esattamente infinito in quanto esso non
-                è un numero, ma sta a significare che più x² si avvicina a quel valore e più la frazione aumenterà senza avere un valore massimo. 
+                Attenzione però, questo NON vuol dire che \(1 \over 0\) è uguale ad infinito. Inoltre la solzione del limite non è esattamente infinito in quanto esso non
+                è un numero, ma sta a significare che più \(x²\) si avvicina a quel valore e più la frazione aumenterà senza avere un valore massimo. 
                 Questo potrebbe apparire come un'idea confusa all'inizio ma proseguendo con la lettura e con l'aiuto di altri esempi confidiamo che tutto vi sarà più chiaro.
             </p>
 
             <p>
                 Per risolvere un limite non possiamo certo metterci ad inserire una moltitudine di valori e calcolare ognuno di loro.<br>
-                Esistono infatti delle regole che ci permettono di calcolarli con molta più facilita.
+                Esistono infatti delle regole che ci permettono di calcolarli con molta più facilità.
             </p>
 
             <p>
@@ -113,15 +116,14 @@
             </p>
 
             <p>
-                Limite per x che tende a 3 di x+2 = 3+2 = 5
+                \[ \lim_{x \rightarrow 3} {x+2 = 3+2 = 5}\]
+            </p>
+
+            <p>\[ \lim_{x \rightarrow 2} {x²-3x = 4-3 = 1}\]
             </p>
 
             <p>
-                Limite per x che tende a 2 di x² - 3x = 4-3 = 1
-            </p>
-
-            <p>
-                I problemi si impogono invece quando abbiamo espressioni del tipo 0/0 o infinito - infinito o 0*infinito o n/0.<br>
+                I problemi emergono invece quando abbiamo espressioni del tipo \(0 \over 0\), \(\infty - \infty\), \(0*\infty\) o \(n \over 0\).<br>
                 In questi casi esistono varie vie percorribili e di seguito ve ne spigheremo alcune. Altre invece appariranno nella parte di Analisi avanzata. 
             </p>
 
@@ -142,15 +144,15 @@
             </p>
 
             <p>
-                Se x tende a 0 possiamo comunque dividere per x perchè non è 0. Quindi limiti del tipo:
+                Se \(x \rightarrow 0\) possiamo comunque dividere per \(x\) perchè non è \(0\). Quindi limiti del tipo:
             </p>
 
             <p>
-                limite per x che tende a 0 di x²/x = limite per x che tende a 0 di x = 0.
+                \[\lim_{x \rightarrow 0} {x² \over x} =  {\lim_{x \rightarrow 0}} {x = 0}\].
             </p>
 
             <p>
-                Un numero reale diverso da 0 moltiplicato per infinito da sempre infinito.
+                Un numero reale diverso da \(0\) moltiplicato per infinito da sempre infinito.
             </p>
 
             <br>
