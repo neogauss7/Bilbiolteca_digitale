@@ -66,8 +66,9 @@ body {
 
 .grid-element {
 	background-color: #F8F9FA;
-	border: 1px solid rgba(0, 0, 0, 0.8);
+	border: 0.7px solid #222222;
 	padding: 20px;
+	border-radius: 0.5%;
 	text-align: center;
 	cursor: pointer;
 	transition: transform 0.15s, box-shadow 0.15s;
