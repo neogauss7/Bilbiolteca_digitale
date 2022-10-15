@@ -27,14 +27,9 @@
     margin-bottom: 5px;
     font-weight: 600;
 }
-<<<<<<< HEAD
-  .site-footer a {
-    color: #737373;
-=======
 
 .site-footer a {
     color:#737373;
->>>>>>> a5e557307d930ca32048072b0062a1b616a40152
 }
   
   .site-footer a:hover {
@@ -80,13 +75,6 @@
     margin-right: 0;
     border-radius: 100%;
     background-color: #33353d;
-<<<<<<< HEAD
-}
-  
-.copyright-text {
-    margin:0;
-=======
->>>>>>> a5e557307d930ca32048072b0062a1b616a40152
 }
 
 
@@ -113,7 +101,7 @@
 }
   
 .social-icons li {
-    display: inline-block;
+    display:inline-block;
     margin-bottom: 4px;
 }
   
@@ -172,11 +160,7 @@
   @media (max-width:767px){
       .social-icons li.title {
           display: block;
-<<<<<<< HEAD
-          margin-right: 0;
-=======
           margin-right:0;
->>>>>>> a5e557307d930ca32048072b0062a1b616a40152
           font-weight: 600;
         }
   }
@@ -192,7 +176,7 @@
   }
   
 .social-image{
-    height: 40px; 
+    height: 40px;
 }
   
 .copyright-text {
