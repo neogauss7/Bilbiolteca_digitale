@@ -2,22 +2,11 @@
 
 /* General */
 
-* {
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Montserrat', sans-serif;
-}
-
 body {
 	line-height: 1.5;
 	padding-top: 120px;
 	background-color: white;
 }
-
-body.hidden-scrolling {
-	overflow-y: hidden;
-}
-
 
 /* Ex General Home-Section */
 
