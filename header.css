@@ -5,7 +5,7 @@
 	left: 0;
 	top: 0;
 	z-index: 99;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+	border-bottom: 0.7px solid #222222;
 	padding-left: 30px;
 	padding-right: 35px;
 	height: 75px;
