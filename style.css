@@ -66,15 +66,14 @@ body {
 
 .grid-element {
 	background-color: #fafcff;
-	border: 0.7px solid #222222;
+	border: 0.9px solid #222222;
 	padding: 20px;
-	border-radius: 0.5%;
 	text-align: center;
 	cursor: pointer;
 	transition: transform 0.15s, box-shadow 0.15s;
-  }
+}
 
-  .grid-element:hover {
+.grid-element:hover {
 	box-shadow: -8px 8px #222222;
 	transform: translate(4px, -4px);
 }
