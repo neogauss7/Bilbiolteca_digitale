@@ -66,7 +66,8 @@ body {
 
 .grid-element {
 	background-color: #fafcff;
-	border: 0.9px solid #222222;
+	border: 2px solid #050959;
+	border-radius: 1%;
 	padding: 20px;
 	text-align: center;
 	cursor: pointer;
@@ -74,7 +75,7 @@ body {
 }
 
 .grid-element:hover {
-	box-shadow: -8px 8px #222222;
+	box-shadow: -8px 8px #015fbe;
 	transform: translate(4px, -4px);
 }
 
