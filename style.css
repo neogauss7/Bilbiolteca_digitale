@@ -67,7 +67,6 @@ body {
 .grid-element {
 	background-color: #fafcff;
 	border: 1px solid black;
-	border-radius: 1%;
 	padding: 20px;
 	text-align: center;
 	cursor: pointer;
