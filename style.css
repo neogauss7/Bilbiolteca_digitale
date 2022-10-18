@@ -83,7 +83,7 @@ float: left;
 
 .grid-element {
 	background-color: #fafcff;
-	border: 2px solid #050959;
+	border: 0.9px solid black;
 	padding: 20px;
 	text-align: center;
 	cursor: pointer;
