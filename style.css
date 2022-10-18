@@ -20,19 +20,37 @@ body {
 	margin-bottom: 50px;
 }
 
+.wimage{
+text-align: left;
+max-width: 400px;
+width: 100%;
+border: solid;
+float: left;
+
+
+}
+
 .welcome {
+
 	margin-bottom: 60px;
 	padding: 20px;
+	border: solid;
 	text-align: center;
 }
 
 .welcome-title {
 	font-weight: 700;
 	margin-bottom: 20px;
+	text-align: right;
+	border: solid;
+	max-height: 30px;
 }
 
 .welcome-description {
 	margin-bottom: 25px;
+	text-align: center;
+	border: solid;
+	max-width: 400px;
 }
 
 .button {
@@ -46,7 +64,6 @@ body {
 	font-size: 15px;
 	font-family: Montserrat;
 	cursor: pointer;
-	transition: opacity 0.15s;
 }
 
 .button:hover {
