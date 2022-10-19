@@ -45,12 +45,7 @@ body {
 .welcome-title {
 	font-weight: 700;
 	margin-bottom: 20px;
-<<<<<<< HEAD
 	max-height: 30px;
-=======
-	text-align: right;
-	border: solid;
->>>>>>> c13c2bdb4edcd45a82c21efd1e1549da9f867442
 }
 
 .welcome-description {
@@ -88,7 +83,7 @@ body {
 
 .grid-element {
 	background-color: #fafcff;
-	border: 2px solid #050959;
+	border: 0.9px solid black;
 	padding: 20px;
 	text-align: center;
 	cursor: pointer;
@@ -131,4 +126,5 @@ body {
 
 
 /*End Responsive*/
+
 
