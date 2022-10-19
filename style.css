@@ -43,7 +43,6 @@ float: left;
 	margin-bottom: 20px;
 	text-align: right;
 	border: solid;
-	max-height: 30px;
 }
 
 .welcome-description {
@@ -83,7 +82,7 @@ float: left;
 
 .grid-element {
 	background-color: #fafcff;
-	border: 0.9px solid black;
+	border: 2px solid #050959;
 	padding: 20px;
 	text-align: center;
 	cursor: pointer;
