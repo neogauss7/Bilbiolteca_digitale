@@ -54,25 +54,49 @@ body {
 }
 
 .button {
-	background-color: #1e76e9;
-	border: none;
-	color: #ffffff;
-	height: 35px;
-	padding-left: 20px;
-	padding-right: 20px;
-	border-radius: 5px;
-	font-size: 15px;
-	font-family: Montserrat;
-	cursor: pointer;
+	text-decoration: none;
+	padding: 20px 50px;
+	font-weight: 700;
+	margin: 32px;
+	position: relative;
 }
+  
+  /* Button 1*/
+  
+  .btn-1 {
+	background: #1e76e9;
+	color: #fff;
+	border-radius: 30px;
+	transition: transform 0.3s ease;
+  }
+  
+  .btn-1::after,
+  .btn-1::before {
+	content: "";
+	position: absolute;
+	opacity: 0.3;
+	background: #1e76e9;
+	border-radius: inherit;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: transform 0.3s ease;
+  }
+  
+  .btn-1:hover {
+	transform: translate(-12px, -12px);
+  }
+  
+  .btn-1:hover::after {
+	transform: translate(6px, 6px);
+  }
+  
+  .btn-1:hover::before {
+	transform: translate(12px, 12px);
+  }
 
-.button:hover {
-	opacity: 0.8;
-}
-
-.button:active {
-	opacity: 0.6;
-}
 
 .grid-container {
 	display: grid;
