@@ -82,7 +82,7 @@ function sendEmail()
 })();
 
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['semplice', 'divertente', 'gratis'], 'text',['#1e76e9','#1e76e9','#1e76e9']);
+consoleText(['semplice', 'divertente', 'creativa', 'gratuita', 'originale'], 'text',['#1e76e9','#1e76e9','#1e76e9']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
