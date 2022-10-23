@@ -90,11 +90,11 @@ body {
 	transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
 }
 .btn1::before{
-transform: scaleX(0);
+	transform: scaleX(0);
 }
 
 .btn1:hover::before{
-		transform: scaleX(1);
+	transform: scaleX(1);
 }
 
 .grid-container {
