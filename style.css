@@ -15,7 +15,7 @@ body {
 	max-width: 1100px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 }
 
 .welcome-image{
@@ -62,13 +62,13 @@ body {
 
 .btn {
 	background: none;
-	border: 2px solid #050959;
+	border: 1.5px solid #050959;
 	text-transform: uppercase;
 	padding: 11px 26px;
 	cursor: pointer;
 	transition: color 0.4s linear;
 	position: relative;
-	font-weight: 600;
+	font-weight: 550;
 	color: #050959;
 	font-size: 16px;
 }
@@ -112,6 +112,8 @@ body {
 	text-align: center;
 	cursor: pointer;
 	transition: transform 0.15s, box-shadow 0.15s;
+	height: fit-content;
+	min-height: 270px;
 }
 
 .grid-element:hover {
@@ -135,11 +137,9 @@ body {
 /* Start Responsive */
 
 @media(max-width: 991px){
-
     .grid-container {
 		grid-template-columns: auto auto;
 	}
-
 }
 
 @media (max-width:865px){
