@@ -3,7 +3,6 @@
 
   
 html {
-  font-family: 'Montserrat', sans-serif;
   background-color: rgb(255, 255, 255);
 
 }
@@ -19,26 +18,22 @@ html {
 }
 h3 {
   
-  color: black;
-  
-  font-family: bold;
+  color: #222222;
   text-align: center;
   margin-bottom: 5px;
   padding-bottom: 0;
 }
 .mail.text {
    color: #1e76e9;
-
    text-align: center;
    width: fit-content;
    max-width: 400px;
    padding: 14px;
    padding-top: 0;
+   margin-top: 0;
    
-  margin-top: 0;
-   
-
 }
+
 .mail {
   
   max-width: 400px;
@@ -66,8 +61,7 @@ h3 {
 .the {
   position: relative;
   top: 200px;
-  font-family: 'Montserrat', sans-serif;
-  }
+}
 
 body{
 	line-height: 1.5;
