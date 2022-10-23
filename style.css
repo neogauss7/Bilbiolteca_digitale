@@ -105,6 +105,7 @@ transform: scaleX(0);
 }
 
 .grid-element {
+	color: #222222;
 	background-color: #fafcff;
 	border: 0.9px solid black;
 	padding: 20px;
