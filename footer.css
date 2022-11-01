@@ -143,19 +143,19 @@
 }
   
 .social-icons a.facebook:hover {
-    background-color: #e6443e;
+    background-color: #fb4b4b;
 }
   
 .social-icons a.twitter:hover {
-    background-color: #00aced;
+    background-color: #00d7ac;
 }
   
 .social-icons a.linkedin:hover {
-    background-color: #00aced;
+    background-color: #59d3ff;
 }
   
 .social-icons a.dribbble:hover{
-    background-color: #ed4bbf;
+    background-color: #ff6ccb;
 }
   
   @media (max-width:767px){
