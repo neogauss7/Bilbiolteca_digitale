@@ -70,7 +70,7 @@ body {
 .btn:hover {
 	background-color: #1665cc;
 	color: white;
-  }
+}
 
 .input:focus, .btn:focus {
   outline: 0;
