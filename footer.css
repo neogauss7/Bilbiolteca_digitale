@@ -1,21 +1,23 @@
 .site-footer {
     background-color: #222222;
     padding: 45px 0 20px;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-size:15px;
-    line-height:24px;
-    color:#737373;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
     margin-bottom: 0;
+    display: flex;
+    justify-content: center;
 }
-  
+
 .site-footer hr {
-    border-top-color:#bbb;
-    opacity:0.5;
+    border-top-color: #bbb;
+    opacity: 0.5;
 }
   
 .site-footer hr.small {
-    margin:20px 0;
+    margin: 20px 0;
 }
   
 .site-footer h6 {
@@ -23,13 +25,13 @@
     font-size: 18px;
     text-transform: uppercase;
     margin-top: 5px;
-    letter-spacing:2px;
-    margin-bottom: 5px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
     font-weight: 600;
 }
 
 .site-footer a {
-    color:#737373;
+    color: #737373;
 }
   
   .site-footer a:hover {
@@ -77,7 +79,6 @@
     background-color: #33353d;
 }
 
-
 @media (max-width:767px) {
     .site-footer .copyright-text,
     .site-footer .social-icons {
@@ -101,7 +102,7 @@
 }
   
 .social-icons li {
-    display:inline-block;
+    display: inline-block;
     margin-bottom: 4px;
 }
   
@@ -142,19 +143,19 @@
 }
   
 .social-icons a.facebook:hover {
-    background-color:#e6443e;
+    background-color: #e6443e;
 }
   
 .social-icons a.twitter:hover {
-    background-color:#00aced;
+    background-color: #00aced;
 }
   
 .social-icons a.linkedin:hover {
-    background-color:#007bb6;
+    background-color: #00aced;
 }
   
-.social-icons a.dribbble:hovern{
-    background-color:#ea4c89;
+.social-icons a.dribbble:hover{
+    background-color: #ed4bbf;
 }
   
   @media (max-width:767px){
@@ -163,16 +164,6 @@
           margin-right:0;
           font-weight: 600;
         }
-  }
-  
-  @media (max-width:635px){
-      .home-section {
-          width: 100%;
-          display: block;
-          min-height: 120vh;
-          background-position: center top;
-          background-size: cover;
-      }
   }
   
 .social-image{
