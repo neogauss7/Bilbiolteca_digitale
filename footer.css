@@ -35,7 +35,7 @@
 }
   
   .site-footer a:hover {
-    color: #1e76e9;
+    color: var(--pc);
     text-decoration: none;
 }
   
