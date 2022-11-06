@@ -85,7 +85,7 @@ a {
 
 .header .menu > .menu-item:hover > a .plus:before,
 .header .menu > .menu-item:hover > a .plus:after{
-	 background-color: #1e76e9;
+	 background-color: var(--pc);
 }
 
 .header .menu > .menu-item > a .plus:after{
@@ -94,7 +94,7 @@ a {
 	 
 .header .menu > .menu-item > .sub-menu > .menu-item > a:hover,
 .header .menu > .menu-item:hover > a {
-	color: #1e76e9;
+	color: var(--pc);
 }
 
 .header .menu > .menu-item > .sub-menu {
@@ -105,7 +105,7 @@ a {
 	top: 100%;
 	background-color: #ffffff;
 	padding: 10px 0;
-	border-top: 3px solid #1e76e9;
+	border-top: 3px solid var(--pc)s;
 	transform: translateY(10px);
 	transition: all 0.3s ease;
 	opacity: 0;
