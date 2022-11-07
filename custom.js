@@ -1,4 +1,12 @@
 
+var icon = document.getElementById("icon");
+
+icon.onclick = function(){
+  document.body.classList.toggle("darktheme");
+
+}
+
+
 function sendEmail()
 {
   Email.send({
