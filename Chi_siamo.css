@@ -1,12 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-  
-html {
-  background-color: rgb(255, 255, 255);
-
-}
-
 .element{
     color: rgb(233, 10, 10);
 }
@@ -15,7 +9,7 @@ html {
 }
 h3 {
   
-  color: #222222;
+  color: var(--gray);
   text-align: center;
   margin-bottom: 5px;
   padding-bottom: 0;
