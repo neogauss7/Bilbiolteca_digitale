@@ -3,11 +3,9 @@
 body {
 	line-height: 1.5;
 	padding-top: 100px;
-	background-color: white;
 }
 
 /* Home-Section */
-
 
 .home {
 	padding-left: 50px;
@@ -74,7 +72,7 @@ body {
 }
   
 .btn:hover{
-	color: #fff;
+	color: white;
 }
 .btn::before{
 	content: "";
@@ -105,9 +103,9 @@ body {
 }
 
 .grid-element {
-	color: #222222;
+	color: var(--gray);
 	background-color: #fafcff;
-	border: 0.9px solid black;
+	border: 0.9px solid var(--blk);
 	padding: 20px;
 	text-align: center;
 	cursor: pointer;
