@@ -5,17 +5,17 @@
 	--blk: black; 
 	--gray: #222222;
 	--white: #fff;
-
 }
 .darktheme{
 	--pc: #1e76e9;
 	--blk: #fff; 
 	--gray: #222222;
-	--white: black;
-	--white1: black;
+	--white: rgb(47, 47, 47);
+	--white1: #222222;
 }
 body{
 	background-color: var(--white1);
+	color: var(--blk);
 }
 
  
