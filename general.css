@@ -12,10 +12,10 @@
 	--blk: #fff; 
 	--gray: #222222;
 	--white: black;
-	
+	--white1: black;
 }
 body{
-	background-color: var(--white);
+	background-color: var(--white1);
 }
 
  
