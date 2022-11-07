@@ -16,7 +16,7 @@ body{
 }
 .p2{
 	padding-top: 7px;
-	color: #222222;
+	color: var(--gray);
 
 }
 .welcome1{
