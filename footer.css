@@ -1,14 +1,16 @@
 .site-footer {
     background-color: var(--gray);
-    padding: 45px 0 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 15px;
+    padding: 45px 50px 20px 50px;
     line-height: 24px;
     color: #737373;
     margin-bottom: 0;
     display: flex;
+    align-items: center;
     justify-content: center;
+}
+
+.footer-container {
+    width: 1100px;
 }
 
 .site-footer hr {
