@@ -104,7 +104,7 @@ body {
 
 .grid-element {
 	color: var(--gray);
-	background-color: #fafcff;
+	background-color: #fff;
 	border: 1.5px solid #050959;
 	padding: 20px;
 	text-align: center;
