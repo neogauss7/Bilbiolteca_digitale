@@ -1,18 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&display=swap');
 /* General */
-:root{
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+:root {
 	--pc: #1e76e9;
 	--blk: black; 
 	--gray: #222222;
 	--white: #fff;
 }
-.darktheme{
+
+.darktheme {
 	--pc: #1e76e9;
 	--blk: #fff; 
 	--gray: #222222;
 	--white: rgb(47, 47, 47);
 	--white1: #222222;
 }
+
 body{
 	background-color: var(--white1);
 	color: var(--blk);
@@ -23,12 +32,7 @@ html {
 	background-color: var(--white);
 }
 
-* {
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Noto Sans', sans-serif;
-}
-
 body.hidden-scrolling {
 	overflow-y: hidden;
+	overflow-x: hidden;
 }
