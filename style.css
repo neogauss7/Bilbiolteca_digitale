@@ -25,8 +25,12 @@ body {
 	color: var(--pc);
 }
 
+hr {
+	margin-bottom: 30px;
+}
+
 .welcome {
-	margin-bottom: 44px;
+	margin-bottom: 30px;
 	padding: 20px 3px 35px 3px;
 	display: flex;
 	align-items: center;
@@ -59,40 +63,17 @@ body {
 }
 
 .btn {
-	background: none;
-	border: 1.5px solid #050959;
-	text-transform: uppercase;
-	padding: 11px 26px;
-	cursor: pointer;
-	transition: color 0.4s linear;
-	position: relative;
-	font-weight: 550;
-	color: #050959;
-	font-size: 16px;
-}
-  
-.btn:hover{
-	color: white;
-}
-.btn::before{
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: var(--pc);
-	z-index: -1;
-	transition: transform 0.5s;
-	transform-origin: 0 0;
-	transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
-}
-.btn1::before{
-	transform: scaleX(0);
+	background-color: rgb(166, 255, 33);
 }
 
-.btn1:hover::before{
-	transform: scaleX(1);
+.general-grid-title {
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.general-grid-description {
+	margin-bottom: 30px;
 }
 
 .grid-container {
@@ -104,18 +85,18 @@ body {
 
 .grid-element {
 	color: var(--gray);
-	background-color: #fff;
-	border: 1.5px solid #050959;
+	border: 1.5px solid black;
+	background-color: white;
 	padding: 20px;
 	text-align: center;
 	cursor: pointer;
 	transition: transform 0.15s, box-shadow 0.15s;
 	height: fit-content;
-	min-height: 270px;
+	min-height: 284px;
 }
 
 .grid-element:hover {
-	box-shadow: -8px 8px var(--pc);
+	box-shadow: -8px 8px var(--gray);
 	transform: translate(4px, -4px);
 }
 
@@ -129,9 +110,9 @@ body {
 
 .grid-title {
 	font-weight: 800;
-	font-size: 18px;
+	font-size: 21px;
+	margin-bottom: 4px;
 }
-
 
 /* Start Responsive */
 
@@ -140,30 +121,27 @@ body {
 		grid-template-columns: auto auto;
 	}
 
-	.welcome-title {
+	.welcome-title,
+	.general-grid-title {
 		font-size: 26px;
 		margin-bottom: 0;
 	}
 
-	.welcome-description {
+	.welcome-description,
+	.general-grid-description {
 		font-size: 17px;
 	}
 }
 
 @media (max-width:865px){
 	.home {
-		padding-left: 26px;
-		padding-right: 26px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
 	.grid-container {
 		row-gap: 40px;
 		column-gap: 40px;
-	}
-
-	.welcome {
-		flex-direction: column-reverse;
-		text-align: center;
 	}
 
 	.right-side {
