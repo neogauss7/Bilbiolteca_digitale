@@ -12,7 +12,6 @@
   --blk: black;
   --gray: #222222;
   --white: #fff;
-  --drkblue: #050959;
 }
 
 .darktheme {
@@ -21,7 +20,6 @@
   --gray: #222222;
   --white: rgb(47, 47, 47);
   --white1: #222222;
-  --drkblue: #fff;
 }
 
 .hidden {
