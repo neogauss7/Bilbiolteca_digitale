@@ -28,8 +28,8 @@ hr {
 }
 
 .welcome {
-  margin-bottom: 30px;
-  padding: 20px 3px 35px 3px;
+  margin-bottom: 20px;
+  padding: 20px 3px 20px 3px;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -62,14 +62,14 @@ hr {
 
 .btn {
   background: none;
-  border: 1.5px solid #050959;
+  border: 1.5px solid var(--drkblue);
   text-transform: uppercase;
   padding: 11px 26px;
   cursor: pointer;
   transition: color 0.4s linear;
   position: relative;
   font-weight: 550;
-  color: #050959;
+  color: var(--drkblue);
   font-size: 16px;
 }
 
@@ -89,10 +89,27 @@ hr {
   transform-origin: 0 0;
   transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
+.btn1::before {
+  transform: scaleX(0);
+}
+
 .btn1:hover::before {
   transform: scaleX(1);
 }
 
+.form {
+  height: 500px;
+  width: 350px;
+  background-color: white;
+  position: absolute;
+  border: solid 1.5px var(--drkblue);
+  border-radius: 20px;
+  z-index: 98;
+  top: 200px;
+  left: 500px;
+  right: auto;
+  bottom: 200px;
+}
 .grid-container {
   display: grid;
   column-gap: 50px;
@@ -109,7 +126,6 @@ hr {
   cursor: pointer;
   transition: transform 0.15s, box-shadow 0.15s;
   height: fit-content;
-  min-height: 270px;
 }
 
 .grid-element:hover {
@@ -127,7 +143,7 @@ hr {
 
 .grid-title {
   font-weight: 800;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* Start Responsive */
