@@ -1,38 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&display=swap");
 /* General */
 
 * {
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
 }
 
 :root {
-	--pc: #1e76e9;
-	--blk: black; 
-	--gray: #222222;
-	--white: #fff;
+  --pc: #1e76e9;
+  --blk: black;
+  --gray: #222222;
+  --white: #fff;
+  --drkblue: #050959;
 }
 
 .darktheme {
-	--pc: #1e76e9;
-	--blk: #fff; 
-	--gray: #222222;
-	--white: rgb(47, 47, 47);
-	--white1: #222222;
+  --pc: #1e76e9;
+  --blk: #fff;
+  --gray: #222222;
+  --white: rgb(47, 47, 47);
+  --white1: #222222;
+  --drkblue: #fff;
 }
 
-body{
-	background-color: var(--white1);
-	color: var(--blk);
+.divider {
+  border-color: var(--drkblue);
+  margin: 0 auto 30px;
+  width: 800px;
+  border-top: 0.5px solid var(--drkblue);
 }
 
- 
+body {
+  background-color: var(--white1);
+  color: var(--blk);
+}
+
 html {
-	background-color: var(--white);
+  background-color: var(--white);
 }
 
 body.hidden-scrolling {
-	overflow-y: hidden;
-	overflow-x: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
