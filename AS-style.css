@@ -1,6 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .pp {
   padding: 20px;
+}
+p {
+  font-size: 18px;
+}
+h2 {
+  font-size: 25px;
+  color: var(--pc);
+}
+.bbk {
+  font-weight: bold;
+  font-style: italic;
+}
+.blue {
+  color: var(--pc);
+  font-weight: bold;
 }
 .policy {
   color: var(--pc);
@@ -10,6 +24,7 @@
   font-size: 30px;
   color: var(--gray);
 }
+
 .welcome {
   text-align: center;
   margin-left: auto;
@@ -38,9 +53,17 @@
   padding: 3px 5px;
   text-align: center;
   max-width: 100px;
-
   flex-grow: 1;
   margin-bottom: 5px;
+}
+.easy:hover {
+  background-color: rgb(0, 206, 69);
+}
+.medium:hover {
+  background-color: rgb(255, 140, 0);
+}
+.hard:hover {
+  background-color: rgb(253, 4, 4);
 }
 .minitext {
   font-size: 10px;
@@ -73,81 +96,10 @@ figure {
   border-radius: 5px;
 }
 
-.Cap1 {
-  border: solid 4px var(--pc);
-  border-radius: 10px;
-  padding: 14px 16px;
-  margin-bottom: 0px;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-}
 h1 {
   text-align: center;
 }
-.link1 {
-  border: solid;
-  border-radius: 10px;
-  padding: 14px 16px 14px 16px;
-  text-align: center;
-  margin-top: 15px;
-  color: rgb(232, 240, 242);
-  background-color: rgb(251, 147, 0);
-  text-decoration: none;
-  display: block;
-  width: fit-content;
-}
 
-.Cap2 {
-  border: solid 4px var(--pc);
-  margin-top: 10px;
-  border-radius: 10px;
-  border-radius: 10px;
-  padding: 14px 16px;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-}
-
-.Cap3 {
-  border: solid 4px var(--pc);
-  margin-top: 10px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  padding: 14px 16px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1100px;
-}
-
-.Immagine {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  position: relative;
-  right: 33%;
-  border-radius: 10px;
-}
-img {
-  width: 100%;
-  text-align: center;
-  max-width: 350px;
-}
-
-.EqSy {
-  display: flex;
-  flex-direction: row;
-}
-
-summary {
-  color: var(--gray);
-  font-size: 20px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
 figcaption {
   display: inline-block;
   text-align: center;
@@ -170,8 +122,4 @@ body.hidden-scrolling {
 
 .fff {
   height: 40px;
-}
-
-html {
-  background-color: rgb(255, 255, 255);
 }
