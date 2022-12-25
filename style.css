@@ -101,7 +101,7 @@ hr {
   height: 500px;
   width: 350px;
   background-color: white;
-  position: absolute;
+  position: fixed;
   border: solid 1.5px var(--drkblue);
   border-radius: 20px;
   z-index: 98;
