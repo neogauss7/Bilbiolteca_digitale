@@ -1,69 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .pp {
   padding: 20px;
-
 }
 .policy {
   color: var(--pc);
-  
-  }
-.policy:hover{
-   color: red;
-  }
+}
 
-.welcome1{
-	font-size: 30px;
+.welcome1 {
+  font-size: 30px;
   color: var(--gray);
-
 }
 .welcome {
-     
-	text-align: center;
-	 margin-left: auto;
-	 margin-right: auto;
-	 max-width: 1040px;
-	 padding-left: 50px;
-	 padding-right: 50px;
-	 justify-self: center;
-	 margin-bottom: 30px;
-	 border-color: white;
-	 border: 20px solid white;
-	 padding-top: 20px;
-	 padding-bottom: 20px;
-	 border-radius: 5px;
-	 background-color: #F8F9FA;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1040px;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-self: center;
+  margin-bottom: 30px;
+  border-color: white;
+  border: 20px solid white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+.minimenu {
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+}
+.mini-item {
+  color: var(--gray);
+  background-color: #fff;
+  border: 1.5px solid #050959;
+  padding: 3px 5px;
+  text-align: center;
+  width: 150px;
 
+  flex-grow: 1;
+  margin-bottom: 5px;
+}
+.minitext {
+  font-size: 10px;
 }
 .imgse {
   display: block;
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 5px;
 }
 /*home section*/
-.home-section{
-	width: 100%;
-	display: block;
-	min-height: 100vh;
-	background-position: center top;
-	background-size: cover;
+.home-section {
+  width: 100%;
+  display: block;
+  min-height: 100vh;
+  background-position: center top;
+  background-size: cover;
 }
-
 
 h3 {
   text-align: center;
 }
 .the {
-position: relative;
-top: 100px;
-}
-
-hr { display: block; 
-  height: 1px;
-  border: 0; 
-  border-top: 1px solid #ccc;
-  margin: 1em 0; 
-  padding: 0; 
+  position: relative;
+  top: 100px;
 }
 
 figure {
@@ -71,17 +73,14 @@ figure {
   border-radius: 5px;
 }
 
-
 .Cap1 {
-
-    border: solid 4px var(--pc);
-    border-radius: 10px;
-    padding: 14px 16px;
-    margin-bottom: 0px;
-    max-width: 1100px;
-	margin-left: auto;
-	margin-right: auto;
-
+  border: solid 4px var(--pc);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 0px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 h1 {
   text-align: center;
@@ -99,52 +98,45 @@ h1 {
   width: fit-content;
 }
 
-
-  .Cap2 {
-    
-
-    border: solid 4px var(--pc);
-    margin-top: 10px;
-    border-radius: 10px;
-    border-radius: 10px;
-    padding: 14px 16px;
-    max-width: 1100px;
-	margin-left: auto;
-	margin-right: auto;
+.Cap2 {
+  border: solid 4px var(--pc);
+  margin-top: 10px;
+  border-radius: 10px;
+  border-radius: 10px;
+  padding: 14px 16px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 10px;
-  
 }
 
-  .Cap3{
+.Cap3 {
   border: solid 4px var(--pc);
   margin-top: 10px;
   margin-bottom: 20px;
   border-radius: 10px;
   padding: 14px 16px;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 1100px;
-  }
-
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+}
 
 .Immagine {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   position: relative;
   right: 33%;
   border-radius: 10px;
-  
 }
-img{
-width: 100%;
-text-align: center;
-max-width: 350px;
+img {
+  width: 100%;
+  text-align: center;
+  max-width: 350px;
 }
 
-
-.EqSy{
-  display:flex;
+.EqSy {
+  display: flex;
   flex-direction: row;
 }
 
@@ -161,30 +153,25 @@ figcaption {
   text-align: center;
 }
 
-body{
-line-height: 1.5;
+body {
+  line-height: 1.5;
 }
-body.hidden-scrolling{
-overflow-y: hidden;
+body.hidden-scrolling {
+  overflow-y: hidden;
 }
-*{
-margin:0;
-box-sizing: border-box;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
-.container{
-max-width: 1100px;
-margin:auto;
+.container {
+  max-width: 1100px;
+  margin: auto;
 }
 
-
-.fff{
-	height: 40px;
-	
+.fff {
+  height: 40px;
 }
 
 html {
   background-color: rgb(255, 255, 255);
-
 }
-
-
