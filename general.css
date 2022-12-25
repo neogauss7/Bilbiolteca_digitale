@@ -59,3 +59,11 @@ body.hidden-scrolling {
   overflow-y: hidden;
   overflow-x: hidden;
 }
+.home {
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
