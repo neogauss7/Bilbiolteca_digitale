@@ -16,6 +16,9 @@ h2 {
   color: var(--pc);
   font-weight: bold;
 }
+.underlined {
+  text-decoration: underline var(--drkblue);
+}
 .policy {
   color: var(--pc);
 }
