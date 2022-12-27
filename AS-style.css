@@ -64,6 +64,7 @@ h2 {
   background-color: var(--drkblue);
   color: var(--white);
   border-radius: 5px;
+  transition: 0.3s;
 }
 .minitext {
   font-size: 10px;

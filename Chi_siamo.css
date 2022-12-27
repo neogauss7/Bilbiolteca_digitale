@@ -1,65 +1,85 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-.element{
-    color: rgb(233, 10, 10);
+.element {
+  color: rgb(233, 10, 10);
 }
-.mailll{
+.mailll {
   font-size: 25px;
 }
+.avatar {
+  min-width: 100px;
+  max-width: 150px;
+  flex-grow: 1;
+  width: 100%;
+  transition: 1s;
+}
+.avatar:hover {
+  max-width: 160px;
+  transition: 1s;
+}
+.team-member {
+  flex-grow: 1;
+  text-align: center;
+  width: 100%;
+}
+.team {
+  display: flex;
+  justify-content: center;
+  column-gap: 35px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
 h3 {
-  
-  color: var(--gray);
+  color: var(--drkblue);
   text-align: center;
   margin-bottom: 5px;
   padding-bottom: 0;
 }
 .mail.text {
-   color: var(--pc);
-   text-align: center;
-   width: fit-content;
-   max-width: 400px;
-   padding: 14px;
-   padding-top: 0;
-   margin-top: 0;
-   
+  color: var(--pc);
+  text-align: center;
+  width: fit-content;
+  max-width: 400px;
+  padding: 14px;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .mail {
-  
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #F8F9FA;
+  background-color: #f8f9fa;
   padding-left: 50px;
-	 padding-right: 50px;
-   padding-top: 20px;
-	 padding-bottom: 20px;
-   border-radius: 5px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
   text-align: center;
-
 }
 .mail1 {
   color: rgb(250, 63, 63);
   text-align: center;
   padding-bottom: 5px;
   text-decoration: none;
- 
 }
 
 .the {
   position: relative;
-  top: 200px;
+  top: 130px;
+}
+h2 {
+  color: var(--drkblue);
+  font-size: 30px;
+  margin-left: 10px;
 }
 
-body{
-	line-height: 1.5;
+body {
+  line-height: 1.5;
 }
-.home-section{
+
+.home-section {
   min-height: 80vh;
-
 }
-.container2{
-	max-width: 1100px;
-	margin:auto;
+.container2 {
+  max-width: 1100px;
+  margin: auto;
 }
