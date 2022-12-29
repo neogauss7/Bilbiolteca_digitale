@@ -39,13 +39,6 @@
   background-color: rgba(172, 172, 172, 0.4);
 }
 
-.divider {
-  border-color: var(--drkblue);
-  margin: 0 20px 30px 20px;
-  max-width: 1200px;
-  border-top: 0.5px solid var(--drkblue);
-}
-
 body {
   background-color: var(--white1);
   color: var(--blk);
