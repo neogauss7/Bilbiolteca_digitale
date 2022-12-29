@@ -60,3 +60,9 @@ body.hidden-scrolling {
   margin-right: auto;
   margin-bottom: 50px;
 }
+.mini-divider {
+  border-color: var(--drkblue);
+  margin: 0 20px 30px 0px;
+  max-width: 200px;
+  border-top: 0.5px solid var(--drkblue);
+}
