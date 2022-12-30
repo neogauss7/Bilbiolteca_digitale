@@ -97,19 +97,6 @@ hr {
   transform: scaleX(1);
 }
 
-.form {
-  height: 500px;
-  width: 350px;
-  background-color: white;
-  position: fixed;
-  border: solid 1.5px var(--drkblue);
-  border-radius: 20px;
-  z-index: 98;
-  top: 200px;
-  left: 500px;
-  right: auto;
-  bottom: 200px;
-}
 .grid-container {
   display: grid;
   column-gap: 50px;
