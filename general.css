@@ -29,6 +29,12 @@
   position: absolute;
   z-index: -10;
 }
+.divider {
+  border-color: var(--drkblue);
+  margin: 0 20px 30px 20px;
+  max-width: 1200px;
+  border-top: 0.5px solid var(--drkblue);
+}
 .overlay {
   position: absolute;
   top: 0;
