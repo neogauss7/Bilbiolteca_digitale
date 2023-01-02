@@ -136,3 +136,4 @@ function consoleText(words, id, colors) {
     }
   }, 120);
 }
+
