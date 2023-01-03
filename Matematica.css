@@ -37,11 +37,30 @@ hr {
 .photo {
   width: 262px;
   height: 150px;
-  background-color: aqua;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+.level {
+  position: absolute;
+  height: 25px;
+  top: 10px;
+  right: 10px;
+  z-index: 20;
+}
+.level:hover {
+  transition: 0.3s;
+}
+.blob {
+  height: 150px;
+  position: absolute;
+  z-index: 20;
+  bottom: 0;
+  left: 0;
 }
 .text {
   height: 47px;
   background-color: var(--gray);
+  position: relative;
 }
 
 .grid-element {
