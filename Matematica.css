@@ -35,9 +35,9 @@ hr {
   grid-template-columns: auto auto auto auto;
 }
 .photo {
-  width: auto;
+  width: 262px;
   height: 150px;
-  background-color: var(--white);
+  background-color: aqua;
 }
 .text {
   height: 47px;
