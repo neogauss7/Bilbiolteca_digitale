@@ -136,7 +136,3 @@ function consoleText(words, id, colors) {
     }
   }, 120);
 }
-$(function () {
-  $("#header").load("header.html");
-  $("#footer").load("footer.html");
-});
