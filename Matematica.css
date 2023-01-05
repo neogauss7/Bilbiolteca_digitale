@@ -43,7 +43,7 @@ hr {
   transition: 0.3s;
 }
 .blob {
-  height: 150px;
+  height: 110px;
   position: absolute;
   z-index: 0;
   bottom: 0;

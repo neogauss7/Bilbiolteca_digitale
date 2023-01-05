@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2Z6FRX1VZF');
+    </script>
+    <!-- Titolo -->
+        <title>Theoremz | Scomposizione</title>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="funzioni.css">
+        <link rel="stylesheet" type="text/css" href="header.css">
+        <link rel="stylesheet" type="text/css" href="footer.css">
+        <link rel="stylesheet" type="text/css" href="general.css">
+        <meta charset="UTF-8">
+        <link rel="icon" href="favicon.png">
+        <meta name="description" content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti.">
+        <meta name="viewport" contenent="width=device-width-initial-scale=1">
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Including header and footer -->
+     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+     <script>
+       $(function () {
+         $("#header").load("header.html");
+         $("#footer").load("footer.html");
+       });
+     </script>
+         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+         <div id="header"></div>
+        
+      <section class="home">
+
+        
+            <div class="welcome"> 
+                <h1 class="welcome1" >Scomposizione dei polinomi</h1>
+                <h3 class="p1">Di seguito vedremo i metodi.</h3>
+             </div>  
+             <!-- Mini-index -->
+    <div class="minimenu">
+<a href="#classif" class="mini-item" ><div class=""><p class="minitext">R. totale</p></div></a>
+<a href="#classif2" class="mini-item" ><div class=""><p class="minitext">R. parziale</p></div></a>
+<a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Prodotti notevoli</p></div></a>
+<a href="#classif4" class="mini-item" ><div class=""><p class="minitext">Trinomio notevole</p></div></a>
+
+    </div>
+              <!-- Divider -->
+         <hr class="divider"></hr>  
+      <body>
+         <h2>Scomposizione dei polinomi</h2>
+         <br>
+         <p>Molto spesso, può capitare di ritrovarsi a fare calcoli con <span class="blue">polinomi</span> di grado molto alto e che sono quindi molto difficili da maneggiare. Scomporre un polinomio consiste semplicemente nel riscrivere questo come prodotto tra polinomi di grado inferiore in modo da semplificare molto i calcoli.</p>
+         <br>
+         <p class="bbk">Esempi:</p>
+         <br>
+         <p>• &nbsp&nbsp \(x^2-4 \longrightarrow (x-2)(x+2)\)</p>
+         <br>
+         <p>• &nbsp&nbsp \(3a^3-24 \longrightarrow 3(a-2)(a^2+2a+4)\)</p>
+         <br>
+         <p>• &nbsp&nbsp \(-6x+x^2+9\longrightarrow (x-3)^2\)</p>
+         <br>
+
+        <!-- Divider -->
+        <hr class="divider"></hr> 
+         <h2>Metodi di scomposizione</h2>
+         <br>
+         <p>Per scomporre un polinomio ci sono varie alternative che sono più o meno frequenti a seconda dei casi.
+         </p>
+         <br>
+         <p>Il metodo più frequente è quello di <span class="blue">raccoglimento</span> di uno o più fattori ma sono anche molto utili il <span class="blue">metodo di Ruffini</span>, a cui abbiamo dedicato una lezione apposita che trovate qui, la <span class="blue">regola del trinomio notevole</span> <i>(o speciale)</i> e le <span class="blue">regole dei prodotti notevoli</span>.
+        </p>
+        <br>
+        <p id="classif">Di seguito una spiegazione dettagliata di ogni metodo.</p>
+        <br>
+
+        <!-- Divider -->
+        <hr class="divider"></hr> 
+        <h2>Raccoglimento totale <i>(o a fattore comune)</i></h2>
+        <br>
+        <p>Il <span class="blue">raccoglimento totale</span> è una tecnica di scomposizione dei polinomi che permette di raccogliere un <span class="blue">fattore comune</span> <i>(se presente)</i> tra tutti i <u>termini</u> di un polinomio.</p>
+        <br>
+        <p>Per effettuare un raccoglimento totale bisogna prima verificare se i termini del polinomio abbiamo uno o più fattori comuni e effettuare la divisione tra il polinomio e questi fattori.
+        </p>
+        <br>
+        <p>Una fatto questo basterà riscrivere il polinomio come prodotto tra i fattori comuni e il risultato della <u>divisione</u>.</p>
+        <br>
+        <p>Il risultato sarà una moltiplicazione tra polinomio e monomio <i>(o tra polinomio e polinomio in presenza di \(2\) o più fattori comuni)</i>.</p>
+        <br>
+        <p class="bbk">Esempi:</p>
+        <br>
+        <p class="bbk">• &nbsp&nbsp\(6x^2-2x+4x^4 \longrightarrow 2x(3x-1+2x^2)\) &nbsp Fattori comuni: \(2x\)</p>
+        <br>
+        <p class="bbk">• &nbsp&nbsp\(x^3-x^2-x \longrightarrow x(x^2-x-1)\) &nbsp Fattore comune: \(x\)</p>
+        <br>
+        <p class="bbk">• &nbsp&nbsp\(3ab-4a^2b^2+ab \longrightarrow ab(3-4ab+1)\) &nbsp Fattori comuni: \(ab\)</p>
+        <br>
+        <p id="classif2" class="bbk">• &nbsp&nbsp\(2x-4y+6 \longrightarrow 2(x-2y+3)\) &nbsp Fattore comune: \(2\)</p>
+        <br>
+
+        <!-- Divider -->
+        <hr class="divider"></hr> 
+        <h2>Raccoglimento parziale</h2>
+        <br>
+        <p>Il raccoglimento parziale consiste nel dividere il polinomio <u>in coppie di termini</u> <i>(il polinomio deve avere un numero pari di termini)</i> con uno a più fattori in comune, <u>raccogliere i fattori in comune in ogni coppia</u> e poi <u>raccogliere i fattori in comune del nuovo polinomio</u> <i>(se non si può raccogliere non si può svolgere il raccoglimento parziale)</i>.</p>
+        <br>
+        <p>Può suonare complicato ma in realtà si tratta di \(3\) soli passaggi:</p>
+        <br>
+        <p>1) &nbsp&nbsp <span class="blue">Suddivisione</span> in coppie <i>(in base ai fattori in comune)</i> </p>
+        <p>2) &nbsp&nbsp <span class="blue">Raccoglimento</span> dei fattori all’interno delle coppie </p>
+        <p>3) &nbsp&nbsp <span class="blue">Raccoglimento</span> dei fattori tra tutte le coppie
+        </p>
+        <br>
+        <p class="bbk">Ecco alcuni esempi:</p>
+        <br>
+        <p>• &nbsp&nbsp \(4x^2-2x-2xy+y \longrightarrow 2x(2x-1)-y(2x-1) \longrightarrow (2x-1)(2x-y)\)</p>
+        <br>
+        <p>• &nbsp&nbsp \(3ac-c+6a-2a \longrightarrow c(3a-1)+2(3a-1) \longrightarrow (3a-1)(c+2)\)</p>
+        <br>
+        <p>• &nbsp&nbsp \(x^2+2x^3-3-6x \longrightarrow x^2(1+2x)-3(1+2x) \longrightarrow (1+2x)(x^2-3)\)</p>
+        <br>
+        <p>Questo semplifica incredibilmente i calcoli ed è molto facile da applicare ma ci vuole occhio per riconoscere i prodotti notevoli, per questo è molto importante averli tutti bene in mente <i>(la nostra spiegazione su i prodotti notevoli <a href="index.html"><span id="classif3" class="link">qui</span></a>)</i>.</p>
+        <br>
+        
+        <!-- Divider -->
+        <hr class="divider"></hr> 
+        <h2>Scomposizione con i prodotti notevoli</h2>
+        <br>
+        <p>Questa tecnica di scomposizione consiste nel riconoscere un polinomio come <span class="blue">prodotto notevole</span> e riscriverlo come i fattori del prodotto notevole.
+        </p>
+        <br>
+        <p class="bbk">Ecco alcuni esempi:</p>
+        <br>
+        <p>• &nbsp&nbsp \(25-10x+x^2 \longrightarrow (x-5)^2\) &nbsp -<i> Quadrato di un binomio</i></p>
+        <br>
+        <p>• &nbsp&nbsp \(x^3+8 \longrightarrow (x+2)(x^2-2x+4)\) &nbsp -<i> Somma di due cubi</i>
+        </p>
+        <br>
+        <p>• &nbsp&nbsp \(4x^2+9+y^2+12x+4xy+6y \longrightarrow (2x+3+y)^2\) &nbsp -<i id="classif4"> Quadrato di un trinomio</i></p>
+        <br>
+        
+        <!-- Divider -->
+        <hr class="divider"></hr> 
+        <h2>Regola del trinomio notevole</h2>
+        <br>
+        <p>La regola del trinomio notevole si usa per scomporre alcuni trinomi particolari ed è particolarmente veloce se ci si prende la mano. </p>
+        <br>
+        <p>I trinomi che possono essere scomposti con questa regola sono quelli del tipo:</p>
+        <p>\[x^2+sx+p\]</p>
+        <p>Hanno come coefficiente del termine al quadrato \(1\) ed è spesso possibile <i>(non sempre)</i> scomporlo trovando \(2\) numeri che la cui somma da \(s\) e il cui prodotto è \(p\).
+        </p>
+        <br>
+        <p>Per trovare i due numeri che ci permettono di scomporre il polinomio si può impostare un sistema, anche se spesso le soluzioni si trovano a colpo d’occhio.</p>
+        <br>
+        <p>\(\begin{cases}a+b = s\\a\cdot b = p\end{cases}\)</p>
+        <br>
+        <p>Trovate le soluzioni del sistema ci basterà riscrivere il polinomio come:</p>
+        <p>\[(x+a)(x+b)\]</p>
+        <p class="bbk">Esempi:</p>
+        <br>
+        <p>• &nbsp&nbsp \((x+a)(x+b)\)</p>
+        <br>
+        <p>• &nbsp&nbsp \(x^2-x-2 \longrightarrow (x-2)(x+1)\)</p>
+        <br>
+        <p>• &nbsp&nbsp \(x^2+6x+5 \longrightarrow (x+1)(x+5)\)</p>
+        </body>
+        </section>
+        <!-- Site footer -->
+        <div id="footer"></div>
+        <script src="custom.js"></script>
+        <!-- Including MathJax -->
+        <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    </body>
+            
+</html>
