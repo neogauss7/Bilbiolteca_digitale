@@ -17,6 +17,9 @@ h2 {
   color: var(--pc);
   font-weight: bold;
 }
+.link {
+  color: var(--pc);
+}
 .underlined {
   text-decoration: underline var(--drkblue);
 }
@@ -61,7 +64,7 @@ h2 {
   padding-right: 50px;
   justify-self: center;
   margin-bottom: 10px;
-
+  margin-top: 100px;
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 5px;
@@ -91,12 +94,6 @@ h2 {
 }
 .minitext {
   font-size: 10px;
-}
-.imgse {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 5px;
 }
 .funzione {
   max-height: 400px;
@@ -132,10 +129,6 @@ h2 {
 
 h3 {
   text-align: center;
-}
-.the {
-  position: relative;
-  top: 100px;
 }
 
 figure {

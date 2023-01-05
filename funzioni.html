@@ -2,16 +2,18 @@
 <html lang="it">
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-2Z6FRX1VZF');
-</script>
+      gtag('config', 'G-2Z6FRX1VZF');
+    </script>
+    <!-- Titolo -->
         <title>Theoremz | Funzioni</title>
-        <link rel="stylesheet" href="AS-style.css">
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="funzioni.css">
         <link rel="stylesheet" type="text/css" href="header.css">
         <link rel="stylesheet" type="text/css" href="footer.css">
         <link rel="stylesheet" type="text/css" href="general.css">
@@ -31,7 +33,6 @@
      </script>
          <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
          <div id="header"></div>
-    <div class="the ">
         
       <section class="home">
 
@@ -40,6 +41,7 @@
                 <h1 class="welcome1" >Funzioni</h1>
                 <h3 class="p1">Di seguito analizzeremo le funzioni.</h3>
              </div>  
+             <!-- Mini-index -->
     <div class="minimenu">
 <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Classificazione</p></div></a>
 <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Studio</p></div></a>
@@ -53,7 +55,7 @@
          <hr class="divider"></hr>  
       <body>
          <h2>Cos'è una funzione?</h2>
-<br>
+         <br>
          <p> <i>Una <span class="blue">funzione</span> è una corrispondenza (o legge) tra gli elementi di un insieme, <span class="blue">dominio</span>, e quelli di un altro insieme, il <span class="blue">codominio</span>. Ad ogni elemento del dominio non può essere associato più di un elemento del <span class="underlined">codominio</span>.</i> In una rappresentazione cartesiana di una funzione dai numeri reali a i numeri reali (con una sola variabile) il domino comprende i valori delle <span class="blue">ascisse</span>, mentre il codominio quelli delle <span class="blue">ordinate</span>.
          </p>
          <br>
@@ -70,9 +72,11 @@
          <br>
          <div class="funzioni">
          <img class='funzione' src="images/funzione.png" alt="funzione">
-         <img  id="classif" class='funzione' src="images/nonfunzione.png" alt="nonfunzione">
+         <img class='funzione' src="images/nonfunzione.png" alt="nonfunzione">
       </div>
-
+      <br id="classif">
+      <br>
+      <hr class="divider"></hr>  
 
          <h2>Classificazione delle funzioni</h2>
          <br>
@@ -98,7 +102,8 @@
          <br id="classif2">
          <p>\(y = 2x\)</p>
          <br>
-         
+         <br>
+         <hr class="divider"></hr>  
          
          <h2>Studio di funzione basilare</h2>
          <br>
@@ -192,6 +197,9 @@
          <p>grafico</p>
          <p>Finito, abbiamo studiato la nostra funzione!</p>
          <br>
+
+         <!-- Divider -->
+         <hr class="divider"></hr>  
          <h2>Funzioni iniettive, suriettive e biettive</h2>
          <br>
          <p>Nella come visto in precedenza, ogni funzione è rappresentabile tramite due insiemi e una freccia che mette in relazione i loro elementi.</p>
@@ -199,7 +207,8 @@
          <p id='classif3'>In molti casi è utile sapere se una funzione è iniettiva, suriettiva e biettiva. Ma cosa sono queste definizioni e cosa servono?</p>
          <br>
          
-         
+         <!-- Divider -->
+         <hr class="divider"></hr> 
          <h2>Funzioni iniettive
          </h2>
          <br>
@@ -210,7 +219,8 @@
       <img  id="classif" class='funzione' src="images/funzionei.png" alt="Funzione Iniettiva">
          <br id="classif4">
          <br>
-         
+         <!-- Divider -->
+         <hr class="divider"></hr>  
          
          <h2>Funzioni suriettive</h2>
          <br>
@@ -219,13 +229,17 @@
          <img  id="classif" class='funzione' src="images/funziones.png" alt="Funzione Suriettiva">
          <br id="classif5">
          <br>
-         
+          <!-- Divider -->
+         <hr class="divider"></hr>  
          <h2>Funzioni biettive</h2>
          <br> 
          <p><i>Una funzione si dice <span class="blue">biettiva</span> se è sia <span class="underlined">suriettiva</span> che <span class="underlined">iniettiva</span> allo stesso tempo. Quindi ogni elemento del <span class="underlined">dominio</span> è collegato a un elemento del <span class="underlined">codominio</span>.</i></p>
          <br>
-         <img  id="classif" class='funzione' src="images/funzioneb.png" alt="Funzione Biettiva">
-         <br>
+         <img class='funzione' src="images/funzioneb.png" alt="Funzione Biettiva">
+         <br id="classif">
+
+         <!-- Divider -->
+         <hr class="divider"></hr>  
          <h2>Funzione invertibile</h2>
          <br>
          <p>Una funzione è invertibile solo se è <span class="underlined">biettiva</span>.
@@ -242,7 +256,8 @@
          <img  id="classif" class='funzione' src="images/funzioneinversa.png" alt="Funzione Inversa">
          <br id="classif6">
          <br>
-         
+         <!-- Divider -->
+         <hr class="divider"></hr> 
          <h2>Come trovare una funzione inversa</h2>
          <br>
          <p>Per trovare una funzione inversa bisogna per prima cosa verificare se la funzione di partenza è sia <span class="underlined">iniettiva</span> che <span class="underlined">suriettiva</span> è quindi <span class="underlined">biunivoca</span>.</p>
@@ -261,22 +276,15 @@
          <br>
          <p>Ricordate che i valori di \(x\) per cui la funzione inversa è definita non sono sempre gli stessi della funzione di partenza, quindi ricordatevi di studiare il dominio di nuovo se necessario.
          </p>
-
-
-
-
-      
-         
-      </body>
-           </section>
-           <!-- Site footer -->
-           <div id="footer"></div>
+        </body>
+        </section>
+        <!-- Site footer -->
+        <div id="footer"></div>
         <script src="custom.js"></script>
         <!-- Including MathJax -->
         <script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
     </body>
-    </div>
             
 </html>
