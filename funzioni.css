@@ -118,6 +118,10 @@ h2 {
   margin-right: auto;
   display: block;
 }
+.divisione {
+  max-height: 400px;
+  max-width: 500px;
+}
 /*home section*/
 .home-section {
   width: 100%;
@@ -129,6 +133,7 @@ h2 {
 
 h3 {
   text-align: center;
+  color: var(--gray);
 }
 
 figure {
