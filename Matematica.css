@@ -31,13 +31,17 @@ hr {
   height: 150px;
   background-color: rgb(255, 255, 255);
   position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .level {
   position: absolute;
   height: 25px;
   top: 10px;
   right: 10px;
-  z-index: 20;
+  z-index: 0;
+  display: block;
 }
 .level:hover {
   transition: 0.3s;
@@ -53,6 +57,10 @@ hr {
 .grid-element:hover .blob {
   height: 0px;
   transition: 0.5s;
+}
+.photodiv {
+  display: block;
+  width: 100%;
 }
 
 .text {
@@ -78,6 +86,11 @@ hr {
 }
 
 /* Start Responsive */
+@media (max-width: 1250px) {
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+}
 
 @media (max-width: 991px) {
   .grid-container {
