@@ -11,7 +11,7 @@
       gtag('config', 'G-2Z6FRX1VZF');
     </script>
     <!-- Titolo -->
-        <title>Theoremz | Funzioni</title>
+        <title>Theoremz | Circonferenza</title>
         <!-- Stylesheets -->
         <link rel="stylesheet" href="funzioni.css">
         <link rel="stylesheet" type="text/css" href="header.css">
@@ -38,17 +38,14 @@
 
         
             <div class="welcome"> 
-                <h1 class="welcome1" >Funzioni</h1>
-                <h3 class="p1">Di seguito analizzeremo le funzioni.</h3>
+                <h1 class="welcome1" >Circonferenza</h1>
+                <h3 class="p1">La figura piana perfetta.</h3>
              </div>  
              <!-- Mini-index -->
     <div class="minimenu">
-<a href="#classif" class="mini-item" ><div class=""><p class="minitext">Classificazione</p></div></a>
-<a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Studio</p></div></a>
-<a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Iniettive</p></div></a>
-<a href="#classif4" class="mini-item" ><div class=""><p class="minitext">Suriettive</p></div></a>
-<a href="#classif5" class="mini-item" ><div class=""><p class="minitext">Biettive</p></div></a>
-<a href="#classif6" class="mini-item" ><div class=""><p class="minitext">Inverse</p></div></a>
+<a href="#classif" class="mini-item" ><div class=""><p class="minitext">Eq. implicita</p></div></a>
+<a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Trovare l'eq.</p></div></a>
+<a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Circ. e retta </p></div></a>
 
     </div>
               <!-- Divider -->
@@ -72,8 +69,10 @@
         <br>
         <p>Quindi se il centro della circonferenza coincide con il centro \(\alpha\) e \(\beta\) sono \(0\) e l’equazione risulta:
         </p>
-        <p>\[x^2 + y^2=r^2\]</p>
+        <p id="classif">\[x^2 + y^2=r^2\]</p>
         <br>
+        <!-- Divider -->
+        <hr class="divider"></hr> 
 
 
         <h2>Equazione in forma implicita
@@ -97,8 +96,112 @@
         <p>L’equazione di una circonferenza si distingue da quella di una conica generica perché rispetta \(3\) condizioni:
         </p>
         <br>
-        <p></p>
+        <p>1. &nbsp I coefficienti dei termini al quadrato sono uguali
+        </p>
+        <br>
+        <p>2. &nbsp Non compare il termine rettangolare
+        </p>
+        <br>
+        <p id="classif2">3. &nbsp Il raggio \(\sqrt{a^2+b^2-c}\) &nbsp è &nbsp \(\geq 0\) </p>
+        <br>
+        <!-- Divider -->
+        <hr class="divider"></hr> 
 
+
+        <h2>Trovare l’equazione di una circonferenza
+        </h2>
+        <br>
+        <p>Conoscendo il raggio e il centro di una circonferenza è possibile trovare la sua equazione.
+        </p>
+        <br>
+        <p>Il metodo consiste nell’applicare la formula vista prima sostituendo le coordinate del centro a \(\alpha\) e \(\beta\) mentre a \(r\) la misura del raggio.
+        </p>
+        <p>\[(x-\alpha)^2 + (y-\beta)^2=r^2\]</p>
+        <p>Un’altra è percorribile avendo \(3\) punti appartenenti alla circonferenza da cui, come dimostrato dal teorema che dice che <i>per \(3\) punti non allineati passa una e una sola circonferenza</i>.
+        </p>
+        <br>
+        <p>Per fare questo ci basterà sostituire le coordinate dei punti all’equazione generale e risolvere un sistema a \(3\) equazioni e \(3\) incognite.
+        </p>
+        <br>
+        <p class="bbk">Esempio:
+        </p>
+        <br>
+        <p>\(A(0, 2)\) &nbsp \(B(2, 4)\) &nbsp \(C(1, 0)\) </p>
+        <br>
+        <p>Equazione generica della circonferenza: \(x^2+y^2+ax+by+c =0\)</p>
+        <br>
+        <p>Impostiamo il sistema:
+        </p>
+        <br>
+        <p>\( \begin{cases} 4+2b+c =0\\ 4+16+2a+4b+c =0\\ 1+a+c =0\end{cases} \) &nbsp&nbsp \(\longrightarrow\) &nbsp&nbsp \( \begin{cases} b={-3+a \over 2}\\ 20+2a+4b+c =0\\ c =-a-1\end{cases} \)</p>
+        <br>
+        <p>\( \begin{cases} b={-3+a \over 2}\\ 20+2a-6+2a-a-1 =0\\ c =-a-1\end{cases} \) &nbsp&nbsp \(\longrightarrow\) &nbsp&nbsp \( \begin{cases} b={-3+a \over 2}\\ a =-{13 \over 3}\\ c =-a-1\end{cases} \)</p>
+        <br>
+        <br>
+        <p>\(a = -{13 \over 3}\), &nbsp&nbsp \(b = - {11 \over 3}\), &nbsp&nbsp \(c= {10 \over 3}\)</p>
+        <br>
+        <p>\(x^2+y^2- {13 \over 3}x+- {11\over 3}y+{10 \over 3} =0\) &nbsp&nbsp\(\longleftarrow\) &nbsp&nbsp \(soluzione\) </p>
+        <br>
+        <!-- Divider -->
+        <hr class="divider"></hr> 
+
+
+        <h2>Metodo alternativo
+        </h2>
+        <br>
+        <p>Come avrete intuito risolvere un sistema a \(3\) equazioni e \(3\) incognite è un metodo abbastanza ostico per trovare l’equazione della circonferenza dati \(3\) punti. Per questo motivo suggeriamo quest’altro metodo che può rivelarsi più veloce:
+        </p>
+        <img class=' quadrato' src="images/circonferenza2.png" alt="Circonferenza2">
+        <br>
+        <p>Conoscendo le proprietà dell'<span class="blue">asse di un segmento</span> sappiamo che <i> ogni punto ad esso appartenente è equidistante da gli estremi</i>. E con questo? 
+        </p>
+        <br>
+        <p>Sfruttando questa proprietà troviamo \(2\) l’equazioni di  degli assi dei segmenti che uniscono i nostri \(3\) punti e, mettendole a sistema, troviamo il loro <span class="blue">punto di intersezione</span>.
+        </p>
+        <br>
+        <p>Ora avendo tracciato i \(2\) assi ci accorgiamo facilmente che il loro punto di intersezione è <u>equidistante</u> dai \(3\) punti di partenza. Ecco trovato il nostro <span class="blue">centro</span>.
+        </p>
+        <br>
+        <p id="classif3">L’ultimo passo è calcolare il <span class="blue">raggio</span> che è semplicemente la distanza tra il centro e uno qualsiasi dei nostri punti.
+        </p>
+        <br>
+        <!-- Divider -->
+        <hr class="divider"></hr> 
+
+
+        <h2>Posizione di una retta rispetto a una circonferenza
+        </h2>
+        <br>
+        <p>Una retta può essere posizionata in  \(3\) modi rispetto a una circonferenza:
+        </p>
+        <br>
+        <p>• &nbsp <i><span class="bbk">Tangente</span> (2 intersezioni coincidenti, perpendicolare al raggio)</i> \(\Delta = 0\)
+        </p>
+        <br>
+        <p>• &nbsp <i><span class="bbk">Secante </span>(2 intersezioni) </i>\(\Delta > 0\)</p>
+        <br>
+        <p>• &nbsp <i><span class="bbk">Esterna </span>(nessuna intersezione)</i> \(\Delta < 0 \)</p>
+        <br>
+        <p>Date una retta e una circonferenza possiamo verificare la loro posizione reciproca analizzando il \(\Delta\) della <span class="blue">risolvente</span> <i>(equazione a una sola incognita ottenuta in un sistema eliminando le altre incognite)</i>.</p>
+        <br>
+        <p>Se il \(\Delta\) è maggiore di \(0\) la retta sarà secante, se uguale a \(0\) la retta sarà tangente, mentre se il \(\Delta\) è minore di \(0\) la retta sarà esterna.
+        </p>
+        <br>
+        <p class="bbk">Esempio:
+        </p>
+        <br>
+        <p>Verifica che la retta \(y-3x=0\) sia tangente alla circonferenza \(x^2+y^2-6x-2y=0\)</p>
+        <br>
+        <p>\(\begin{cases}y-3x=0\\x^2+y^2-6x-2y=0\end{cases} \) &nbsp&nbsp \(\longrightarrow\) &nbsp&nbsp \(\begin{cases}y=3x\\x^2+y^2-6x-2y=0\end{cases} \)</p>
+        <br>
+        <p>\(\begin{cases}y=3x\\x^2+9x^2=0\end{cases}\) &nbsp&nbsp \(\longrightarrow\) &nbsp \(x^2+9x^2=0\) &nbsp \(\longrightarrow\) &nbsp \(\Delta = 0\) &nbsp - <span class="bbk">Tangente</span></p>
+        <br>
+        <p>Un altro modo per verificare la posizione retta-circonferenza è quello di calcolare la distanza tra la retta e il centro della circonferenza e confrontarlo con il raggio, se è maggiore sarà <u>esterna</u>, se minore <u>secante</u> e se uguale <u>tangente</u>.
+        </p>
+
+
+
+ 
 
 
 
