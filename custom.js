@@ -2,21 +2,13 @@ var icon = document.getElementById("icon");
 const login = document.querySelector(".btn");
 const form = document.querySelector(".form");
 const overlay = document.querySelector(".overlay");
-
-icon.onclick = function () {
-  document.body.classList.toggle("darktheme");
-};
-login.addEventListener("click", function () {
-  form.classList.remove("hidden");
-  overlay.classList.remove("hidden");
-  login.classList.add("hidden");
-});
-overlay.addEventListener("click", function () {
-  form.classList.add("hidden");
-  overlay.classList.add("hidden");
-  login.classList.remove("hidden");
-});
-
+const menu = 0;
+const openNavMenu = document.querySelector(".open-nav-menu");
+const closeNavMenu = document.querySelector(".close-nav-menu");
+const navMenu = document.querySelector(".nav-menu");
+const menuOverlay = document.querySelector(".menu-overlay");
+const mediaSize = 991;
+//send email newsletter
 function sendEmail() {
   Email.send({
     Host: "smtp.gmail.com",
@@ -30,22 +22,17 @@ function sendEmail() {
 }
 
 (() => {
-  const openNavMenu = document.querySelector(".open-nav-menu"),
-    closeNavMenu = document.querySelector(".close-nav-menu"),
-    navMenu = document.querySelector(".nav-menu"),
-    menuOverlay = document.querySelector(".menu-overlay"),
-    mediaSize = 991;
+  const toggleNav = function () {
+    navMenu.classList.toggle("open");
+    console.log(888);
+    menuOverlay.classList.toggle("active");
+    document.body.classList.toggle("hidden-scrolling");
+  };
 
   openNavMenu.addEventListener("click", toggleNav);
   closeNavMenu.addEventListener("click", toggleNav);
 
   menuOverlay.addEventListener("click", toggleNav);
-
-  function toggleNav() {
-    navMenu.classList.toggle("open");
-    menuOverlay.classList.toggle("active");
-    document.body.classList.toggle("hidden-scrolling");
-  }
 
   navMenu.addEventListener("click", (event) => {
     if (
@@ -69,7 +56,8 @@ function sendEmail() {
     }
   });
   function collapseSubMenu() {
-    navMenu
+    navMenu;
+    document
       .querySelector(".menu-item-has-children.active .sub-menu")
       .removeAttribute("style");
     navMenu
