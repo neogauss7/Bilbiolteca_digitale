@@ -4,12 +4,16 @@
 .mailll {
   font-size: 25px;
 }
+.homepage{
+  margin-top: 100px;
+}
 .avatar {
   min-width: 100px;
   max-width: 150px;
   flex-grow: 1;
   width: 100%;
   transition: 1s;
+  margin-bottom: 20px;
 }
 .avatar:hover {
   max-width: 160px;
