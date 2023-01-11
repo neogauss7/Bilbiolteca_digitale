@@ -71,7 +71,7 @@ hr {
 
 .grid-element {
   color: var(--gray);
-  background-color: #fff;
+  background-color: var(--gray);
   border: 1.5px solid var(--drkblue);
   text-align: center;
   cursor: pointer;
