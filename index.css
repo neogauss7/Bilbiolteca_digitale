@@ -68,6 +68,7 @@ input {
 #button_container button {
   width: 50%;
   height: 100%;
+  color: #fff;
   float: left;
   background: var(--pc);
   font-size: 15px;
