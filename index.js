@@ -55,6 +55,9 @@ function register() {
       // DOne
       alert("User Created!!");
     })
+    .then(() => {
+      window.location.replace("http://www.theoremz.com");
+    })
     .catch(function (error) {
       // Firebase will use this to alert of its errors
       var error_code = error.code;
