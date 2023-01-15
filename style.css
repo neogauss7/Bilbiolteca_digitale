@@ -106,8 +106,8 @@ hr {
 
 .grid-element {
   color: var(--gray);
-  background-color: #fff;
-  border: 1.5px solid #050959;
+  background-color: var(--white);
+  border: 1.5px solid var(--drkblue);
   padding: 20px;
   text-align: center;
   cursor: pointer;
