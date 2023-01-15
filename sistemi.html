@@ -38,16 +38,15 @@
         
             <div class="welcome"> 
                 <h1 class="welcome1" >Sistemi</h1>
-                <h3 class="p1">Di seguito analizzeremo i sistemi.</h3>
+                <h3 class="p1">Di seguito analizzeremo i sistemi lineari a due incognite.</h3>
              </div>  
              <!-- Mini-index -->
       <div class="minimenu">
-         <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Classificazione</p></div></a>
-         <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Studio</p></div></a>
-         <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Iniettive</p></div></a>
-         <a href="#classif4" class="mini-item" ><div class=""><p class="minitext">Suriettive</p></div></a>
-         <a href="#classif5" class="mini-item" ><div class=""><p class="minitext">Biettive</p></div></a>
-         <a href="#classif6" class="mini-item" ><div class=""><p class="minitext">Inverse</p></div></a>
+         <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Definizione</p></div></a>
+         <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Sostituzione</p></div></a>
+         <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Confronto</p></div></a>
+         <a href="#classif4" class="mini-item" ><div class=""><p class="minitext">Riduzione</p></div></a>
+         <a href="#classif5" class="mini-item" ><div class=""><p class="minitext">Cramer</p></div></a>
       </div>
 
          <!-- Divider -->
@@ -62,9 +61,12 @@
             </h2>
             <br>
             <p>
-               Un’equazione nelle incognite \(x\) e \(y\) del tipo \(ax+by+c=0\) è un’equazione di primo grado sia rispetto alla \(x\) sia rispetto alla \(y\). Ogni equazione di questo tipo si chiama equazione lineare a due incognite. Le soluzioni di queste equazioni sono tutte le coppie ordinate \((x,y)\) che le verificano. 
+               Un’<span class="blue">equazione</span> nelle incognite \(x\) e \(y\) del tipo \(ax+by+c=0\) è un’equazione di primo grado sia rispetto alla \(x\) sia rispetto alla \(y\). </p>
+               <br>
+              <p> Ogni equazione di questo tipo si chiama <span class="blue">equazione lineare a due incognite</span>. Le soluzioni di queste equazioni sono tutte le coppie ordinate \((x,y)\) che le verificano. 
             </p>
             <br>
+            
             <ul class="lesson-list">
                <li>
                   <p>
@@ -74,9 +76,10 @@
             </ul>
             <br>
             <p>
-               Per capire quale sia il numero di soluzioni di un’equazione lineare a due incognite, dobbiamo notare che \(ax+by+c=0\) è l’equazione in forma implicita di una retta sul piano cartesiano. Essa può essere anche posta nella sua forma esplicita \(y=mx+q\), isolando la \(y\). Vista in questo modo, possiamo notare che le soluzioni dell’equazione corrispondono ai punti della retta e quindi sono infinite. 
+               Per capire quale sia il numero di soluzioni di un’equazione lineare a due incognite, dobbiamo notare che \(ax+by+c=0\) è l’equazione in forma implicita di una retta sul piano. </p><br><p id="classif"> Essa può essere anche posta nella sua forma esplicita \(y=mx+q\), isolando la \(y\). Vista in questo modo, possiamo notare che le soluzioni dell’equazione corrispondono ai punti della retta e quindi sono infinite. 
             </p>
             <br>
+            <hr class="divider"></hr> 
             <h2>
                2. Sistema di equazioni
             </h2>
@@ -214,12 +217,14 @@
                      \end{cases}\)
                   </p>
                   <br>
-                  <p>
+                  <p id="classif2">
                      Il sistema è indeterminato perché le due equazioni sono identiche e quindi hanno le stesse soluzoni (che sono infinite).
                   </p>
                </li>
             </ul>
             <br>
+            <!-- Divider -->
+         <hr class="divider"></hr>  
             <h2>
                3. Metodo di sostituzione
             </h2>
@@ -287,13 +292,16 @@
                \end{cases}\)
             </p>
             <br>
-            <p>
+            <p id="classif3">
                Quindi le soluzioni del nostro sistema sono la coppia di valori \((a,b)=(-4,5)\).
             </p>
             <br>
+            <!-- Divider -->
+         <hr class="divider"></hr>  
             <h2>
                4. Metodo del confronto
             </h2>
+            <br>
             <p>
                Come nel caso del primo metodo, iniziamo la spiegazione del metodo del confronto partendo da un esempio:
             </p>
@@ -366,10 +374,12 @@
                \end{cases}\)
             </p>
             <br>
-            <p>
+            <p id="classif4">
                Quindi le soluzioni del nostro sistema sono la coppia di valori \((x,y)=(-2;1)\).
             </p>
             <br>
+            <!-- Divider -->
+         <hr class="divider"></hr>  
             <h2>
                5. Metodo di riduzione
             </h2>
@@ -444,10 +454,12 @@
                \end{cases}\)
             </p>
             <br>
-            <p>
+            <p id="classif5">
                Quindi le soluzioni del nostro sistema sono la coppia di valori \((a,b)=(2;-3)\).
             </p>
             <br>
+            <!-- Divider -->
+         <hr class="divider"></hr>  
             <h2>
                6. Metodo di Cramer
             </h2>
