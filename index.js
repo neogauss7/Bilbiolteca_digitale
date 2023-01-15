@@ -97,6 +97,9 @@ function login() {
       // DOne
       alert("User Logged In!!");
     })
+    .then(() => {
+      window.location.replace("http://www.theoremz.com");
+    })
     .catch(function (error) {
       // Firebase will use this to alert of its errors
       var error_code = error.code;
@@ -138,3 +141,11 @@ function validate_field(field) {
     return true;
   }
 }
+
+auth.onAuthStateChanged((user) => {
+  if (user) {
+    console.log(user.email + " is logged in!");
+  } else {
+    console.log("User is logged out!");
+  }
+});
