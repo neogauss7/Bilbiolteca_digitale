@@ -10,8 +10,8 @@
 }
 
 #form_header_container {
-  width: 100%;
-  height: 10%;
+  max-width: 400px;
+  height: 40px;
 
   display: flex;
   justify-content: center;
