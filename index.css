@@ -1,11 +1,12 @@
 #form_container {
-  width: 400px;
+  max-width: 400px;
   height: 400px;
   background-color: white;
   box-shadow: 0 0 50px -20px #000;
   border-radius: 10px;
-  margin: auto;
   overflow: hidden;
+  margin: auto;
+  width: 100%;
 }
 
 #form_header_container {
@@ -15,7 +16,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  float: left;
   padding: 20px;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -34,15 +34,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  padding-top: 30px;
+  margin-top: 35px;
 }
 
 #form_content_inner_container {
   width: 75%;
   height: 100%;
-
-  float: left;
 }
 
 input {
@@ -76,4 +73,8 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home-section {
+  margin-top: 120px;
+  margin-bottom: 50px;
 }

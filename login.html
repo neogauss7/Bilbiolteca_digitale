@@ -7,8 +7,40 @@
     <!-- Our stylesheet -->
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="stylesheet" type="text/css" href="general.css" />
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-2Z6FRX1VZF");
+    </script>
+    <!-- Title of the page -->
+    <!-- Including header and footer -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
   </head>
+  <div class="home-section">
   <body>
+    <div id="header"></div>
     <div id="form_container">
       <div id="form_header_container">
         <h2>Theoremz login</h2>
@@ -26,15 +58,8 @@
         </div>
       </div>
     </div>
+  </div>
+    <div id="footer"></div>
   </body>
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
-
-  <!-- Our script must be loaded after firebase references -->
   <script src="index.js"></script>
 </html>
