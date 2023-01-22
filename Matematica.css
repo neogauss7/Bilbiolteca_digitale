@@ -84,6 +84,45 @@ hr {
   box-shadow: -8px 8px var(--pc);
   transform: translate(4px, -4px);
 }
+.esercizi-container {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 40px;
+  grid-template-columns: auto auto auto auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.es-item {
+  color: var(--gray);
+  background-color: transparent;
+  border: 2px solid var(--drkblue);
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  z-index: 5;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: black;
+  border-radius: 100px;
+  text-align: end;
+  display: flex;
+  width: fit-content;
+}
+.es-text {
+  font-weight: bold;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.es-item:hover {
+  border-color: var(--pc);
+  transition: 0.1s;
+}
+.es-level {
+  height: 25px;
+  z-index: 0;
+  margin-left: 8px;
+  margin-top: 1.3px;
+  margin-right: 10px;
+}
 
 /* Start Responsive */
 @media (max-width: 1250px) {
@@ -156,6 +195,9 @@ hr {
 @media (max-width: 650px) {
   .grid-container {
     grid-template-columns: auto;
+  }
+  .es-item {
+    width: 600px;
   }
 }
 
