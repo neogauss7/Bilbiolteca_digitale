@@ -36,22 +36,102 @@
         
             <div class="welcome"> 
                 <h1 class="welcome1" >Moto rettilineo uniformemente accelerato</h1>
-                <h3 class="p1">Di seguito analizzeremo l'M.R.U.A.</h3>
+                <h3 class="p1">Di seguito analizzeremo il M.R.U.A.</h3>
              </div>  
              <!-- Mini-index -->
     <div class="minimenu">
-<a href="#classif" class="mini-item" ><div class=""><p class="minitext">Classificazione</p></div></a>
-<a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Studio</p></div></a>
-<a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Iniettive</p></div></a>
-<a href="#classif4" class="mini-item" ><div class=""><p class="minitext">Suriettive</p></div></a>
-<a href="#classif5" class="mini-item" ><div class=""><p class="minitext">Biettive</p></div></a>
-<a href="#classif6" class="mini-item" ><div class=""><p class="minitext">Inverse</p></div></a>
+<a href="#classif" class="mini-item" ><div class=""><p class="minitext">Legge oraria</p></div></a>
+
 
     </div>
               <!-- Divider -->
          <hr class="divider"></hr>  
          <body>
-         
+         <h2>Moto rettilineo uniformemente accelerato
+        </h2>
+        <br>
+        <p>Il <span class="blue">moto rettilineo uniformemente accelerato</span> è sempre un moto che avviene su una retta, ma questa volta la velocità <span class="blue">non</span> è più costante. Introduciamo infatti una nuova grandezza fisica: l’<span class="blue">accelerazione media</span>. Se al tempo \(t_0\) il corpo ha una velocità \(v_0\) ed al tempo \(t_1\) ha una velocità \(v_1\), avremo: 
+        </p>
+        <br>
+        <p>\(a_m=\frac{v_1-v_0}{t_1-t_0}\)</p>
+        <br>
+        <p>L’accelerazione media è uguale al cambiamento della velocità diviso il cambiamento del tempo. Usando la notazione con i \(\Delta\), avremo: 
+        </p>
+        <br>
+        <p>Possiamo isolare \(v_1\) in funzione di \(t\) ed ottenere: 
+        </p>
+        <br>
+        <p>\(v(t)-v_0=a_m(t-t_0)\)</p>
+        <br>
+        <p>\(v(t)=v_0+a_m(t-t_0)\)</p>
+        <br>
+        <p>Siccome \(a_m\) è costante, possiamo riscriverla come una più generica accelerazione \(a\).
+        </p>
+        <br>
+        <p>La formula appena trovata viene spesso chiamata “<span id="classif" class="blue">legge oraria della velocità di un moto rettilineo uniformemente accelerato</span>”. 
+        </p>
+        <br>
+        <!-- Divider -->
+        <hr class="divider"></hr>
+
+
+        <h2>Legge oraria del moto rettilineo uniformemente accelerato
+        </h2>
+        <br>
+        <p>Come per il <span class="blue">moto rettilineo uniforme</span>, sarebbe molto utile trovare la posizione del corpo in funzione del tempo. Per fare questo dobbiamo guardare al <span class="blue">grafico velocità-tempo</span>: 
+        </p>
+        <img class='funzione' src="images/mrua.png" alt="Funzione Iniettiva">
+        <p>Otteniamo un <span class="blue">trapezio rettangolo</span>. Si può dimostrare usando matematica più avanzata <i>(infatti a scuola viene spesso dato come fatto caduto dal cielo)</i> che l’<u>area</u> del trapezio è uguale allo spazio percorso. 
+        </p>
+        <br>
+        <p>L’<u>altezza</u> del trapezio è uguale al tempo trascorso \(\Delta t). La prima base è uguale a \(v_0\), mentre la seconda è uguale a \(v(t)\). Di conseguenza, usando la formula dell’area di un trapezio: 
+        </p>
+        <br>
+        <p>\(A={(b_1+b_2)\cdot h \over 2}\)</p>
+        <br>
+        <p>\(\Delta S = {(v(t)+v_0)\cdot \Delta t \over 2}\)</p>
+        <br>
+        <p>Possiamo usare la <span class="blue">legge oraria della velocità</span> per sostituire \(v(t)\): 
+        </p>
+        <br>
+        <p>\(\Delta S= \) \(\frac{(v_0+a(\Delta t)+v_0)\cdot (\Delta t)}{2}\)</p>
+        <br>
+        <p>\(S(t)-S_0=\) \(\frac{(2v_0+a(t-t_0))\cdot (t-t_0)}{2}\)</p>
+        <br>
+        <p>\(S(t)-S_0= \) \(v_0(t-t_0)+{a(t-t_0)^2 \over 2}\)</p>
+        <br>
+        <p>\(S(t)=\) \(S_0+v_0(t-t_0)+{a(t-t_0)^2 \over 2}\)</p>
+        <br>
+        <p>E questa è la <span class="blue">legge oraria del moto rettilineo uniformemente accelerato</span>. 
+        </p>
+        <br>
+        <p>Se poi abbiamo \(t_0=0\) e \(S_0=0\), la legge oraria si semplifica in: 
+        </p>
+        <br>
+        <p>\(S(t)=v_0t+{at^2 \over 2}\)</p>
+        <br>
+        <p>Legge oraria del moto rettilineo uniformemente accelerato usando la <span class="blue">velocità media</span>. 
+        </p>
+        <br>
+        <p>Riprendiamo la formula di prima: 
+        </p>
+        <br>
+        <p>\(S(t)-S_0=\frac{(v_0+v(t))\cdot (t-t_0)}{2}\)</p>
+        <br>
+        <p>Ovvero:</p>
+        <br>
+        <p>\(S(t)-S_0=\frac{v_0+v(t)}{2}\cdot (t-t_0)\)</p>
+        <br>
+        <p>Notiamo che la velocità media \(v_m\) è proprio uguale a \({v_0+v(t) \over 2}\) e quindi: 
+        </p>
+        <br>
+        <p>\(S(t)-S_0=v_m(t-t_0)\)</p>
+        <br>
+        <p>\(S(t)=S_0+v_m(t-t_0)\)</p>
+        <br>
+        <p>Questa formula è utile perché se tra i dati avete la velocità media vi permette di fare qualche calcolo in meno, ma non è fondamentale saperla. Le formula che dovete assolutamente ricordare sono la legge oraria della velocità e la legge oraria dello spazio <i>(la formula ricavata nel paragrafo precedente)</i>. </p>
+
+
         </body>
         </section>
         <!-- Site footer -->
