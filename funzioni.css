@@ -4,8 +4,14 @@
 p {
   font-size: 18px;
 }
+
 h2 {
   font-size: 25px;
+  color: var(--pc);
+}
+
+h4 {
+  font-size: 21px;
   color: var(--pc);
 }
 
