@@ -110,7 +110,7 @@ function consoleText(words, id, colors) {
         target.setAttribute("style", "color:" + colors[0]);
         letterCount += x;
         waiting = false;
-      }, 1000);
+      }, 100);
     } else if (letterCount === words[0].length + 1 && waiting === false) {
       waiting = true;
       window.setTimeout(function () {
