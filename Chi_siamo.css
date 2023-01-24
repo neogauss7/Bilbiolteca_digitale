@@ -4,16 +4,15 @@
 .mailll {
   font-size: 25px;
 }
-.homepage{
+.homepage {
   margin-top: 100px;
 }
 .avatar {
-  min-width: 100px;
   max-width: 150px;
   flex-grow: 1;
   width: 100%;
   transition: 1s;
-  margin-bottom: 20px;
+  border-radius: 200px;
 }
 .avatar:hover {
   max-width: 160px;
@@ -78,4 +77,55 @@ body {
 .container2 {
   max-width: 1100px;
   margin: auto;
+}
+.card {
+  width: 200px;
+  height: 220px;
+  background: var(--drkblue);
+  border-radius: 5px;
+  text-align: center;
+  color: #f0f0f0;
+  font-family: inherit;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+.img {
+  display: flex;
+  margin: 40px auto 10px auto;
+  width: 75px;
+  height: 75px;
+  border: 1px solid #f0f0f0;
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  z-index: 99;
+  background-color: var(--drkblue);
+}
+
+.description {
+  display: none;
+  transition: all 0.5s;
+}
+
+.heading {
+  padding: 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+svg {
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.card:hover .img {
+  transform: scale(1.1);
+  border: 1px solid #f0f0f0;
+}
+.card:hover .desciption {
+  display: block;
+  position: relative;
 }
