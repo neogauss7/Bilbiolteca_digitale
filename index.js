@@ -101,7 +101,7 @@ function login() {
       alert("User Logged In!!");
     })
     .then(() => {
-      window.location.replace("https://www.theoremz.com");
+      window.location.replace("index.html");
     })
     .catch(function (error) {
       // Firebase will use this to alert of its errors
