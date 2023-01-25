@@ -184,3 +184,13 @@ body.hidden-scrolling {
 .fff {
   height: 40px;
 }
+@media (max-width: 550px) {
+  .minimenu {
+    justify-content: left;
+    width: 18.5rem;
+    overflow: scroll;
+  }
+  .mini-item {
+    min-width: 80px;
+  }
+}
