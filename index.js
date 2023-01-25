@@ -56,7 +56,7 @@ function register() {
       alert("User Created!!");
     })
     .then(() => {
-      window.location.replace("http://www.theoremz.com");
+      window.location.replace("https://www.theoremz.com");
     })
     .catch(function (error) {
       // Firebase will use this to alert of its errors
@@ -101,7 +101,7 @@ function login() {
       alert("User Logged In!!");
     })
     .then(() => {
-      window.location.replace("http://www.theoremz.com");
+      window.location.replace("https://www.theoremz.com");
     })
     .catch(function (error) {
       // Firebase will use this to alert of its errors
