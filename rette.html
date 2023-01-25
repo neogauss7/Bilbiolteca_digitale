@@ -36,16 +36,16 @@
 
         
             <div class="welcome"> 
-                <h1 class="welcome1" >Equazioni parametriche</h1>
-                <h3 class="p1">Di seguito analizzeremo le equazioni parametriche.</h3>
+                <h1 class="welcome1" >Rette</h1>
+                <h3 class="p1">Di seguito analizzeremo le rette sul piano certesiano.</h3>
              </div>  
              <!-- Mini-index -->
         <div class="minimenu">
-            <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Parametro</p></div></a>
-            <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Eq. 1°grado</p></div></a>
-            <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Eq. 2°grado</p></div></a>
-            <a href="#classif4" class="mini-item" ><div class=""><p class="minitext">Delta</p></div></a>
-            <a href="#classif5" class="mini-item" ><div class=""><p class="minitext">Somma e molt.</p></div></a>
+            <a href="#classif" class="mini-item" ><div class=""><p class="minitext">D. tra 2 punti</p></div></a>
+            <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Intro.</p></div></a>
+            <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Particolari</p></div></a>
+            <a href="#classif4" class="mini-item" ><div class=""><p class="minitext">Generiche</p></div></a>
+            <a href="#classif5" class="mini-item" ><div class=""><p class="minitext">Retta per 2 p.</div></a>
         </div>
 
         <!-- Divider -->
@@ -62,7 +62,7 @@
             <p>
                 Prima di iniziare con lo studio delle rette analizziamo il <b class="blue">piano cartesiano</b>. Il piano cartesiano è uno strumento che ci permette di descrivere la posizione di oggetti in uno spazio geometrico a due dimensioni. Sono presenti due rette, chiamate <b class="blue">assi</b>, che si incontrano in un punto chiamato <b class="blue">origine</b>. La retta orizzontale si chiama asse delle \(x\) (o <b class="blue">asse delle ascisse</b>) e quella verticale si chiama asse delle \(y\) (o <b class="blue">asse delle ordinate</b>). Gli assi sono orientati e su essi è fissata un’unità di misura. L’origine corrisponde a \(0\) e su essi è possibile inserire ogni numero reale. 
             </p>
-            <br>
+            <img class='image' src="images/piano.png" alt="Piano cartesiano Theoremz">
             <p>
                 Prendiamo un punto \(A\) nel piano e tracciamo le rette parallele agli assi. Chiamiamo con \(x_A\) il punto di intersezione di una retta con l’asse delle ascisse e con \(y_A\) il punto di intersezione dell’altra retta con l’asse delle ordinate.
             </p>
@@ -92,12 +92,16 @@
                     </p>
                 </li>
                 <li>
-                    <p>
+                    <p id="classif">
                         nel quarto quadrante ha ascissa positiva e ordinata negativa \((+,-)\).
                     </p>
                 </li>
             </ul>
             <br>
+            <!-- Divider -->
+        <hr class="divider"></hr>
+
+
             <h2>
                 Distanza fra due punti e punto medio 
             </h2>   
@@ -142,10 +146,14 @@
                 \( M\big(\frac{x_A+x_B}{2},\frac{y_A+y_B}{2} \big) \)
             </p>
             <br>
-            <p>
+            <p id="classif2">
                 dove \(A(x_A,y_A)\) e \(B(x_B,y_B)\) sono le coordinate dei due estremi del segmento. 
             </p>
             <br>
+            <!-- Divider -->
+        <hr class="divider"></hr>
+
+
             <h2>
                 Rette: introduzione
             </h2>
@@ -182,10 +190,14 @@
                 è l'equazione generica che, al variare di \(a\), di \(b\) e di \(c\), rappresenta tutte le rette del piano cartesiano. Essa viene detta <b class="blue">equazione della retta in forma implicita.</b>
             </p>
             <br>
-            <p>
+            <p id="classif3">
                 Trovata questa formula importante abbiamo le basi per iniziare lo studio delle rette. Per prima cosa, analizziamo alcuni casi di rette particolari sul piano cartesiano. 
             </p>
             <br>
+            <!-- Divider -->
+        <hr class="divider"></hr>
+
+
             <h2>
                 Rette particolari
             </h2>
@@ -197,7 +209,7 @@
             <p>
                 Analizziamo, come prima cosa, il caso di una retta parallela all'asse delle \(x\). Prendiamo quindi una qualsisi retta di questo tipo e chiamiamo con \(k\) il punto di intersezione della retta con l'asse delle \(y\). Notiamo che tutti i punti della retta hanno la stessa ordinata e che quindi hanno coordinate \(P(x_P, k)\), con \(x_P\) variabile \(k\) costante. Per questo possiamo dire che l'equazione di una generica retta parallela all'asse delle ascisse è
             </p>
-            <br>
+            <img class='funzione' src="images/parallelax.png" alt="Retta parellela asse x Theoremz">
             <p>
                 \(y=k\) 
             </p>
@@ -233,7 +245,7 @@
             <p>
                 Analogamente possiamo procedere per ricavare la formula generale delle rette parallele all'asse delle \(y\). Prendiamo anche in questo caso una retta di questo tipo e chiamiamo con \(h\) il punto di intersezione della retta con l'asse delle \(x\). Notiamo che tutti i punti della retta hanno la stessa ascissa e che quindi hanno coordinate \(P(h, y_P)\), con \(h\) costante e \(y_P\) variabile. Per questo possiamo dire che l'equazione generica di una retta parallela all'asse \(y\) è
             </p>
-            <br>
+            <img class='funzione' src="images/parallelay.png" alt="Retta parellela asse y Theoremz">
             <p>
                 \(x=h\)
             </p>
@@ -269,7 +281,7 @@
             <p>
                 Ricordiamo che l'equazione di una qualsiasi retta in forma implicita è \(ax+by+c=0\). Se poniamo \(c=0\) l'equazione diventa
             </p>
-            <br>
+            <img class='funzione' src="images/pcentro.png" alt="Retta passante per il centro Theoremz">
             <p>
                 \(ax+by=0\). Esplicitando la \(y\) otteniamo \(y=-\frac{a}{b}x\).
             </p>
@@ -295,9 +307,13 @@
             </p>
             <br>
             <p>
-                Notiamo che il coefficiente angolare è il rapporto tra l'ordinata e l'ascissa di un punto. Questo rapporto rimane sempre costante per ogni punto della retta e quindi possiamo affermare che il coefficiente angolare è unico e costante per ogni retta, ed è una delle caratteristiche che permette di distinguere una retta da un'altra. 
+                Notiamo che il coefficiente angolare è il rapporto tra l'ordinata e l'ascissa di un punto. Questo rapporto rimane sempre costante per ogni punto della retta e quindi possiamo affermare che il coefficiente angolare è unico e costante per ogni retta, ed è una delle caratteristiche <span id="classif4">che</span> permette di distinguere una retta da un'altra. 
             </p>
             <br>
+            <!-- Divider -->
+        <hr class="divider"></hr>
+
+        
             <h2>
                 Retta generica non parallela all'asse delle \(y\)
             </h2>
@@ -321,11 +337,15 @@
             <p>
                 dove \(m\) è il coefficiente angolare della retta e \(q\) il termine noto che sul piano cartesiano sarebbe il punto di intersezione della retta con l'asse delle \(y\). 
             </p>
-            <br>
+            <img class='funzione' src="images/generica.png" alt="Retta generica Theoremz">
             <p>
-                Essa, come abbiamo già accennato precedentemente, a differenza dell'equazione in forma implicita non rappresenta tutte le rette del piano. Infatti sono da escludere le rette parallele all'asse delle ordinate in quanto non esiste nessun valore di \(m\) corrispondente.
+                Essa, come abbiamo già accennato precedentemente, a differenza dell'equazione in forma implicita non rappresenta tutte le rette del piano. Infatti sono da escludere le rette parallele all'asse <span id="classif5">delle</span> ordinate in quanto non esiste nessun valore di \(m\) corrispondente.
             </p>
             <br>
+            <!-- Divider -->
+        <hr class="divider"></hr>
+
+
             <h2>
                 Retta passante per due punti
             </h2>
