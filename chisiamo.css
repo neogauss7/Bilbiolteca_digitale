@@ -81,8 +81,15 @@ body {
 .card {
   width: 200px;
   height: 220px;
-  background: var(--drkblue);
+  background: rgb(255, 217, 156);
+  background: linear-gradient(
+    180deg,
+    rgb(156, 222, 255) 26%,
+    var(--drkblue) 96%
+  );
+
   border-radius: 5px;
+  border: solid 3px var(--drkblue);
   text-align: center;
   color: #f0f0f0;
   font-family: inherit;
@@ -106,8 +113,19 @@ body {
 }
 
 .description {
-  display: none;
-  transition: all 0.5s;
+  opacity: 0%;
+  display: inline-block;
+  height: 25px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.5s;
+}
+#avatarinsta {
+  padding-right: 15px;
+}
+#avatartwitter {
+  padding-right: 8px;
 }
 
 .heading {
@@ -125,7 +143,7 @@ svg {
   transform: scale(1.1);
   border: 1px solid #f0f0f0;
 }
-.card:hover .desciption {
-  display: block;
-  position: relative;
+.card:hover .description {
+  opacity: 100%;
+  transition: 0.5s;
 }

@@ -181,9 +181,8 @@ a {
 }
 
 .header .close-nav-menu {
-  height: 40px;
-  width: 40px;
-  background-color: #ffffff;
+  height: 30px;
+  width: 30px;
   margin: 0 0 15px 15px;
   cursor: pointer;
   display: none;
@@ -192,7 +191,7 @@ a {
 }
 
 .header .close-nav-menu img {
-  width: 16px;
+  width: 20px;
 }
 
 .header .menu-overlay {
