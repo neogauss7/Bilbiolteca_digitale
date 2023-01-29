@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+      <link rel="icon" href="favicon.png">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2Z6FRX1VZF');
+    </script>
+    <!-- Titolo -->
+        <title>Theoremz | Moto parabolico</title>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="funzioni.css">
+        <link rel="stylesheet" type="text/css" href="general.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti.">
+        <meta name="viewport" contenent="width=device-width-initial-scale=1">
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Including header and footer -->
+     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+     <script>
+       $(function () {
+         $("#header").load("header.html");
+         $("#footer").load("footer.html");
+       });
+     </script>
+         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+         <div id="header"></div>
+        
+      <section class="home">
+
+        
+            <div class="welcome"> 
+                <h1 class="welcome1" >Moto parabolico</h1>
+                <h3 class="p1">Di seguito analizzeremo il moto parabolico.</h3>
+             </div>  
+             <!-- Mini-index -->
+    <div class="minimenu">
+<a href="#classif" class="mini-item" ><div class=""><p class="minitext">Orizzontale</p></div></a>
+<a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Obliquo</p></div></a>
+
+
+    </div>
+              <!-- Divider -->
+         <hr class="divider"></hr>  
+         <body>
+            
+            <h2>
+                Moto di un proiettile
+            </h2>
+
+            <br>
+
+            <p>
+                Adesso che abbiamo studiato il moto di caduta libera, guardiamo al moto di un proiettile. Un proiettile è un corpo che viene lanciato con una certa velocità ed un certo angolo. Viene talvolta chiamato moto parabolico perché, come vedremo, traccia una parabola. 
+
+            </p>
+
+            <br>
+
+            <p id="classif">
+                Iniziamo studiato un caso particolare: 
+
+            </p>
+
+            <br>
+
+            <!-- Divider -->
+         <hr class="divider"></hr>  
+
+            <h2>
+                Moto di un proiettile con velocità iniziale orizzontale
+
+            </h2>
+
+            <br>
+
+            <p>
+                Cosa succede quando lanci orizzontalmente un oggetto da una certa altezza h? 
+
+            </p>
+
+            <br>
+
+            <p>
+                Iniziamo notando che possiamo scomporre il moto nel moto effettuato su due assi, ovvero come si muove sull’asse \(x\) e come sull’asse \(y\). 
+
+            </p>
+
+            <br>
+
+            <p>
+                Sull’asse x, non c’è alcuna forza (e quindi alcuna accelerazione) che agisce sul corpo se si trascurano gli attriti. Di conseguenza continuerà a muoversi alla velocità iniziale \(v_0\) di moto rettilineo uniforme. Avremo quindi: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(x(t)=v_0t\)
+            </p>
+
+            <br>
+
+            <p>
+                Sull’asse y invece, agisce la forza di gravità. Avremo quindi un’accelerazione verso il basso pari a g. La velocità iniziale sull’asse y è uguale a 0, quindi avremo un moto di caduta libera da un’altezza h. Di conseguenza: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(y(t)=h-{gt^2 \over 2}\)
+            </p>
+
+            <br>
+
+            <p>
+                Isoliamo t nell’equazione del moto sull’asse x e sostituiamola in quella del moto sull’asse y: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(t={x(t) \over v_0}\)
+            </p>
+
+            <br>
+            <p>
+                \(y(t)=h-{g({x(t)\over v_0})^2 \over 2}\)
+            </p>
+
+            <br>
+
+            <p>
+                Siccome \(x(t)\) ed \(y(t)\) non dipendono più da t, richiamiamole in generale \(x\) ed \(y\) e riordiniamole: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(y=-\frac{gx^2}{2{v_0}^2}+h\)
+            </p>
+
+            <br>
+
+            <p>
+                \(y=-{g\over {2{v_0}^2}}x^2 +h\)
+            </p>
+
+            <br>
+
+            <p>
+                Notiamo che si tratta dell’equazione di una parabola. Infatti traccerà una parabola: 
+
+            </p>
+
+            <br>
+
+            <p>
+                Se vogliamo calcolare quanto tempo impiegherà a cadere, siccome sull’asse y abbiamo un moto di caduta libera, sappiamo già che sarà uguale a: 
+            </p>
+
+            <br>
+
+            <p>
+                \(t_c=\sqrt{{2h\over g}}\)
+            </p>
+
+            <br>
+
+            <p>
+                Se ci viene chiesto invece quanto andrà lontano, possiamo calcolarlo guardando a che punto sta sull’asse x quando tocca terra (ovvero nell’istante \(t_c\)) . Possiamo farlo sostituendo il tempo di caduta nella legge oraria del moto sull’asse x: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(x(t)=v_0t\) 
+            </p>
+
+            <br>
+
+            <p>
+                \(x(t_c)=v_0 \sqrt{2h\over g}\)
+            </p>
+
+            <br>
+
+            <p id="classif2">
+                Ora sapete tutto quello che c’è da sapere su questo tipo di moto
+
+            </p>
+
+            <br>
+
+            <!-- Divider -->
+         <hr class="divider"></hr>  
+
+            <h2>
+                Moto di un proiettile con pure velocità verticale
+
+            </h2>
+
+            <br>
+
+            <p>
+            Cosa succede se, invece di lanciarlo orizzontalmente, lo lanciamo con un certo angolo \(\theta\) ?
+
+            </p>
+
+            <br>
+
+            <p>
+
+                Come nel caso di prima, scomponiamo il moto sui due assi cartesiani. 
+
+            </p>
+
+            <br>
+
+            <p>
+                Iniziamo dall’asse x perché è il più semplice. 
+            </p>
+
+            <br>
+
+            <p>
+                Usando un pò di trigonometria possiamo scomporre la velocità iniziale sui due assi: 
+
+            </p>
+
+            <br>
+
+            <p>
+                Avremo quindi: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(v_{0x}=v_0 \cos(\theta)\)
+            </p>
+
+            <br>
+
+            <p>
+                \(v_{0y}=v_0 \sin (\theta)\)
+            </p>
+
+            <br>
+
+            <p>
+                Se non ci sono attriti, non abbiamo forze ( e quindi neanche accelerazioni) che agiranno sul corpo. Di conseguenza, sull’asse x continuerà a muoversi con velocità \(v_{0x}\) di moto rettilineo uniforme. La legge oraria sarà quindi: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(x(t)=v_{0x}t\)
+            </p>
+
+            <br>
+
+            <p>
+                Sull’asse y, invece, avremo un moto di salita libera seguito da un moto di caduta libera. Infatti, guardando solo al moto sull’asse y, stiamo lanciando un oggetto verso l’alto per poi farlo ricadere. 
+
+            </p>
+
+            <br>
+
+            <p>
+                Di conseguenza avremo: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(y(t)=v_{0y}t- {gt^2 \over 2}\)
+            </p>
+
+            <br>
+
+            <p>
+                Isoliamo t nella legge oraria del moto sull’asse x e sostituiamolo in quella sull’asse y: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(t={x(t) \over v_{0x}}\)
+            </p>
+
+            <br>
+
+            <p>
+                \(y(t)=v_{0y} \cdot {x(t)\over v_{0x}} -{g({x(t)\over v_{0x}})^2 \over 2}\)
+            </p>
+
+            <br>
+
+            <p>
+                Siccome non è più presente t nell’equazione, richiamiamo \(y(t)\) e \(x(t)\) come \(x\) e \(y\) e riordiniamola: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(y=-\frac{g}{2v_{0x}^2} x^2 + {v_{0y} \over {v_{0x}}}x\)
+            </p>
+
+            <br>
+
+            <p>
+                Anche in questo caso otteniamo una parabola: 
+
+            </p>
+
+            <br>
+
+            <p>
+                Di questa parabola potremmo voler trovare il vertice e l’intersezione con l’asse x. 
+
+            </p>
+
+            <br>
+
+            <p>
+                L’intersezione con l’asse x avviene quando il corpo ricade a terra. La distanza percorsa sull’asse x si chiama gittata. 
+
+            </p>
+
+            <br>
+
+            <p>
+                Per trovare le intersezioni dobbiamo imporre \(y=0\) e risolvere per x: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(0=-\frac{g}{2v_{0x}^2} x^2 + {v_{0y} \over {v_{0x}}}x\)
+            </p>
+
+            <br>
+
+            <p>
+                \(x(-{g\over 2v_{0x}^2}x + {v_{0y} \over v_{0x}})=0\)
+            </p>
+
+            <br>
+
+            <p>
+                La prima soluzione è quando \(x=0\), che è infatti quando lanciamo l’oggetto. La seconda, che è quella che ci interessa, sarà: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(-{g\over 2v_{0x}^2} x + {v_{0y} \over v_{0x}}=0\)
+            </p>
+
+            <br>
+
+            <p>
+                \({g\over 2v_{0x}^2} x = {v_{0y} \over v_{0x}}\)
+            </p>
+
+            <br>
+
+            <p>
+                \(x={2v_{0y} v_{0x}^2 \over v_{0x} g} = {2v_{0y} v_{0x} \over g}\)
+            </p>
+
+            <br>
+
+            <p>
+                Se vogliamo possiamo riscriverla in funzione di \(v_0\) e \(theta\) : 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(x={2v_0 \sin(\theta) v_0 \cos (\theta) \over g}= {2 \sin(\theta) \cos(\theta) v_0^2 \over g}\)
+            </p>
+
+            <br>
+
+            <p>
+                Una formula più avanzata di trigonometria ci dice che: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(\sin (2\theta)=2\sin(\theta)\cos(\theta)\)
+            </p>
+
+            <br>
+
+
+            <p>
+                e possiamo quindi semplificare l’equazione per la gittata: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(G={\sin(2\theta) v_0 ^2 \over g}\)
+            </p>
+
+            <br>
+
+            <p>
+                Se vogliamo calcolare il vertice, sappiamo che siccome la concavità è verso il basso, esso sarà il punto più alto del moto. La sua altezza (ovvero la sua ordinata) sarà dunque h: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(V_y=h\)
+            </p>
+
+            <br>
+
+            <p>
+                Siccome sull’asse y abbiamo un moto di caduta libera, avremo: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(v_{0y} = \sqrt{2hg}\)
+            </p>
+
+            <br>
+
+            <p>
+                \(h={v_{0y}^2 \over 2g}\)
+            </p>
+
+            <br>
+
+            <p>
+                E quindi: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(V_y={v_{0y}^2 \over 2g}\) 
+            </p>
+
+            <br>
+
+            <p>
+                Per la sua ascissa, invece, ci basta ricordare che una parabola è simmetrica rispetto al suo asse. Di conseguenza. L’ascissa del vertice si troverà a metà tra le due intersezioni. Siccome la prima è \(x=0\) e la seconda è uguale alla gittata, avremo: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(V_x = {{2v_{0x}v_{0y} \over g} \over 2}={v_{0x} v_{0y} \over g}\)
+            </p>
+
+            <br>
+
+            <p>
+                Per il tempo totale del moto, ci basta ricordare ancora una volta che abbiamo un moto di caduta libera sull’asse y. Quindi siccome prima sale e poi scende, avremo: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(t_{tot} =t_s +t_c=\sqrt{2h\over g}+\sqrt{2h\over g}=2\sqrt{2h\over g}\)
+            </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+         
+        </body>
+        </section>
+        <!-- Site footer -->
+        <div id="footer"></div>
+        <script src="custom.js"></script>
+        <!-- Including MathJax -->
+        <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    </body>
+            
+</html>

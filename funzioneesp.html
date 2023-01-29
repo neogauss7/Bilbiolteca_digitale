@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+      <link rel="icon" href="favicon.png">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2Z6FRX1VZF');
+    </script>
+    <!-- Titolo -->
+        <title>Theoremz | Funzioni esponenziali</title>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="funzioni.css">
+        <link rel="stylesheet" type="text/css" href="general.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti.">
+        <meta name="viewport" contenent="width=device-width-initial-scale=1">
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Including header and footer -->
+     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+     <script>
+       $(function () {
+         $("#header").load("header.html");
+         $("#footer").load("footer.html");
+       });
+     </script>
+         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+         <div id="header"></div>
+        
+      <section class="home">
+
+        
+            <div class="welcome"> 
+                <h1 class="welcome1" >Funzioni esponenziali</h1>
+                <h3 class="p1">Di seguito analizzeremo le funzioni esponenziali.</h3>
+             </div>  
+             <!-- Mini-index -->
+    <div class="minimenu">
+<a href="#classif" class="mini-item" ><div class=""><p class="minitext">Base > 1</p></div></a>
+<a href="#classif2" class="mini-item" ><div class=""><p class="minitext"> 0 < Base < 1</p></div></a> 
+
+    </div>
+              <!-- Divider -->
+         <hr class="divider"></hr>  
+         <body>
+
+            <h2> Cos’è una funzione esponenziale?
+            </h2>
+
+            <br>
+
+            <p>Una funzione esponenziale è una funzione espressa da una potenza con base fissa ed esponente variabile, ovvero una funzione del tipo: 
+            </p>
+
+            <br>
+
+            <p>
+                \(f(x)=a^x\)
+
+            </p>
+
+            <br>
+
+            <p>
+                Esempi di funzioni esponenziali sono: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(f(x)=2^x\)
+
+            </p>
+
+            <br>
+
+            <p>
+                \(f(x)=4^x\)
+
+            </p>
+
+            <br>
+
+            <p>
+                \(f(x)={0.5}^{x}\)
+
+            </p>
+
+            <br>
+
+            <p>
+                \(g(x)={13.179}^x\)
+
+            </p>
+
+            <br>
+
+            <p>
+                Non sono invece funzioni esponenziali le seguenti: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(f(x)=x^2\)            perché è espressa da una potenza con base variabile ed esponente fisso.
+
+            </p>
+
+            <br>
+
+            <p id="classif">
+                \(f(x)=2^3\)           perché è espressa da una potenza con base ed esponente fisso ed è infatti una funzione costante in realtà. 
+
+            </p>
+
+            <br>
+
+            <!-- Divider -->
+         <hr class="divider"></hr> 
+
+            <h2>
+                Funzioni esponenziali con base maggiore di 1
+
+            </h2>
+
+            <br>
+
+            <p>Le funzioni esponenziali con base maggiore di 1 hanno alcune proprietà.
+            </p>
+
+            <br>
+
+            <p> Innanzitutto è una funzione positiva. Infatti la sua immagine I è l’intervallo \((0;+\infty)\). 
+            </p>
+
+            <br>
+            <p>
+                Inoltre è una funzione monotona crescente ed è quindi anche biunivoca. Questo è molto importante perché ci permette di definire una funzione inversa, il logaritmo, che vedremo in un’altra lezione. 
+
+            </p>
+
+            <br>
+
+            <p>
+                Utilizzando alcuni strumenti più complicati, ovvero le derivate, possiamo definire il fatto che più si fa aumentare x e più \(f(x)\) aumenta velocemente. Questo andamento viene chiamato crescita esponenziale.
+
+            </p>
+
+            <br>
+
+            <p id="classif2">
+                Se avete mai sentito dire che qualcosa sta “aumentando in modo esponenziale” e vi siete chiesti da dove venga questa espressione, ora sapete che si dice così per via dia questa sua proprietà. 
+
+            </p>
+
+            <br>
+
+            <!-- Divider -->
+         <hr class="divider"></hr> 
+
+            <h2>
+                Funzione esponenziale con base compresa tra 0 ed 1 
+
+            </h2>
+
+            <br>
+
+            <p>
+                Nel caso in cui la base sia 1, siccome \(1^n=1\) per ogni n, otterremo la funzione continua: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(f(x)=1\)
+
+            </p>
+
+            <br>
+
+            <p>
+                Stessa cosa nel caso in cui la base sia uguale a 0. L’unica differenza è che ad \(x=0\) otterremo \(0^0\) che non è definito. 
+
+            </p>
+
+            <br>
+
+            <p>
+                Per gli altri valori tra 0 ed 1, però, otteniamo delle funzioni più interessanti. Queste funzioni si comportano esattamente come quelle con base maggiore di 1, ma al contrario. Ovvero, sono anche loro sempre positive, ma questa volta sono monotone decrescenti e “diminuiscono sempre più lentamente”. 
+
+            </p>
+
+            <br>
+
+            <p>
+                Perché avviene questo?
+
+            </p>
+
+            <br>
+
+            <p>
+                Prendiamo un numero \(b>1\). La funzione simmetrica rispetto all’asse y di f(x) è \(f(-x)\). Se troviamo il simmetrico della funzione: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(f(x)=b^x\)
+
+            </p>
+
+            <br>
+
+            <p>
+                Otteniamo: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(f(-x)=b^{-x}={1\over {b^x}}=({1\over b})^x\)
+
+            </p>
+
+            <br>
+
+            <p>
+                Abbiamo che \(1/b=a\) dove a è un numero minore di 1. Quindi per via di questa simmetria tra funzioni esponenziali con basi maggiori di 1 e funzioni esponenziali con basi tra 0 ed 1 che abbiamo questo comportamento opposto. 
+
+            </p>
+
+            <br>
+
+            <p>
+                Perché non possiamo prendere basi negative?
+
+            </p>
+
+            <br>
+
+            <p>
+                Questo perché funzioni esponenziali con basi negative hanno valori che non appartengono ai numeri reali. Ad esempio nel punto \(x={1\over 2}\), la funzione vale: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(f({1\over 2}=a^{1\over 2}=\sqrt{a}\)
+
+            </p>
+
+            <br>
+
+            <p>
+                Ed è impossibile nei numeri reali fare la radice quadrata di un numero negativo.
+
+            </p>
+
+            <br>
+
+            <p>
+                Oltre al caso \(x={1\over 2}\) abbiamo infiniti altri casi analoghi in cui non otteniamo valori reali, per questo non ci interessano per ora. 
+
+            </p>
+
+            <br>
+
+            <p>
+                La funzione esponenziale \(e^x\)
+
+            </p>
+
+            <br>
+
+            <p>
+                Tra tutte le funzioni esponenziali ce n’è una che è più importante di tutte: quella che ha come base il Numero di Nepero. 
+
+            </p>
+
+            <br>
+
+            <p>
+                Essa ha infatti alcune proprietà extra che la rendono veramente speciale, facendole ottenere un posto nell’Olimpo delle funzioni matematiche. Queste proprietà extra richiedono però matematica più avanzata e le studieremo più avanti. 
+
+            </p>
+
+            <br>
+
+            <p>
+                Talvolta infatti quando si dice “funzione esponenziale” è sottinteso che ci stiamo riferendo ad essa e non ad una funzione esponenziale generica. Spesso la troverete scritta come \(exp(x)\) (notazione usata dalla maggior parte delle calcolatrici scientifiche). 
+
+            </p>
+
+            <br>
+
+            <p>
+
+            </p>
+            
+
+
+
+
+
+        
+
+        
+  
+        </body>
+        </section>
+        <!-- Site footer -->
+        <div id="footer"></div>
+        <script src="custom.js"></script>
+        <!-- Including MathJax -->
+        <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    </body>
+            
+</html>
