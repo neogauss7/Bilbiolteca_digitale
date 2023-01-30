@@ -130,9 +130,11 @@ body {
 }
 #avatarinsta {
   padding-right: 15px;
+  cursor: pointer;
 }
 #avatartwitter {
   padding-right: 8px;
+  cursor: pointer;
 }
 
 .heading {
