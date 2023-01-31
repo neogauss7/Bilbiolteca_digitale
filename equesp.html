@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+      <link rel="icon" href="favicon.png">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2Z6FRX1VZF');
+    </script>
+    <!-- Titolo -->
+        <title>Theoremz | Equazione esponenziali</title>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="funzioni.css">
+        <link rel="stylesheet" type="text/css" href="general.css">
+        <link rel="stylesheet" type="text/css" href="header.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti.">
+        <meta name="viewport" contenent="width=device-width-initial-scale=1">
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Including header and footer -->
+     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+     <script>
+       $(function () {
+         $("#header").load("header.html");
+         $("#footer").load("footer.html");
+       });
+     </script>
+         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+         <div id="header"></div>
+        
+      <section class="home">
+
+        
+            <div class="welcome"> 
+                <h1 class="welcome1" >Equazioni esponenziali</h1>
+                <h3 class="p1">Di seguito analizzeremo le equazioni esponenziali.</h3>
+             </div>  
+             <!-- Mini-index -->
+    <div class="minimenu">
+<a href="#classif" class="mini-item" ><div class=""><p class="minitext">Con logaritmi</p></div></a>
+
+    </div>
+              <!-- Divider -->
+         <hr class="divider"></hr>  
+         <body>
+
+            <h2>
+                Cos'è un'equazione esponenziale
+            </h2>
+
+            <br>
+
+            <p>
+                Un'equazione esponenziale è un'equazione con almeno un'incognita come esponente di una potenza. In generale quindi è un'equazione del tipo: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(a^{f(x)}=g(x)
+                \)
+            </p>
+
+            <br>
+
+            <p>
+                Iniziamo vedendo solo il caso in cui \(f(x)=x\) e \(g(x)=b\), dove b è una qualche costante. Le equazioni che ora studieremo saranno quindi del tipo: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(a^x = b 
+                \)
+            </p>
+
+            <br>
+
+            <p>
+                Iniziamo notando che se \(b < 0\) l'equazione è impossibile perché come abbiamo visto nella lezione delle funzioni esponenziali \(a^x\) è sempre positiva. 
+
+            </p>
+
+            <br>
+
+            <p>
+                Dobbiamo escludere il caso \(a=1\) perché sarebbe impossibile per \(b\neq 1\) e si avrebbero inginite soluzioni. Per un ragionamento simile escludiamo il caso \(a=1\) (l'unica differenza è che questa volta \(x=0\) non è una soluzione perché \(0^0 \neq 0\), ma è indefinito). 
+
+            </p>
+
+            <br>
+
+            <p>
+                Esclusi questi due casi, se \(b>0\) , avremo una sola soluzione. 
+
+            </p>
+
+            <br>
+
+            <p>
+                Se si riesce a scrivere b nella forma \(a^y\), allora la soluzione immediata è \(x=y\). Vediamo qualche esempio: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(3^x = 81
+                \)
+            </p>
+
+            <br>
+
+            <p>
+                \(3^x = 3^4\) 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(x= 4\)
+
+            </p>
+
+            <br>
+
+            <p>
+                \(2^x =32\)
+
+            </p>
+
+            <br>
+
+            <p>
+                \(2^x = 2^5\)
+
+            </p>
+
+            <br>
+
+            <p id="classif">
+                \(x=5\)
+
+            </p>
+
+            <br>
+
+            <!-- Divider -->
+         <hr class="divider"></hr>
+
+            <h2>
+                Equazioni esponenziali con logaritmi
+
+            </h2>
+
+            <br>
+
+            <p>
+                Possiamo invece usare i logaritmi per i casi più complicati: 
+
+            </p>
+
+            <br>
+
+            <p>
+                In generale avremo infatti: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(a^x =b 
+                \)
+            </p>
+
+            <br>
+
+            <p>
+                \(x=\log _{a} (b)\)
+
+            </p>
+
+            <br>
+
+            <p>
+                Vediamo qualche esempio: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(3^x = 7\)
+
+            </p>
+
+            <br>
+
+            <p>
+                \(x= \log_{3} (7)
+                \)
+            </p>
+
+            <br>
+
+            <p>
+                \(5^x = 29\)
+
+            </p>
+
+            <br>
+
+            <p>
+                \(x=\log_{5} (29)\)
+
+            </p>
+
+            <br>
+
+            <p>
+                Grazie ai logaritmi possiamo risolvere anche equazioni con più potenze con incognite come esponente. Basterà infatti prendere un logaritmo (solitamente base 10) da entrambi i lati ed usare la proprietà del logaritmo di una potenza. Facciamo qualche esempio: 
+
+            </p>
+
+            <br>
+
+            <p>
+                Vogliamo risolvere l'equazione: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(3\cdot 5^{3x}=11^{x+1}
+                \)
+            </p>
+
+            <br>
+
+            <p>
+                Siccome abbiamo quantità positive da entrambi i lati, prendiamo il logaritmo base 10 da entrambi i lati: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(\log_{10} (3 \cdot 5^{3x})=\log_{10}(11^{x+1}\)
+
+            </p>
+
+            <br>
+
+            <p>
+                Usiamo la proprietà del logaritmo di un prodotto per dividere il logaritmo di sinistra in due logaritmi: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \( \log_{10}(3) + \log_{10}((5^3)^x)=\log_{10}(11^{x+1})
+                \)
+            </p>
+
+            <br>
+
+            <p>
+                Applichiamo la proprietà del logaritmo di una potenza ed isoliamo x: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(\log_{10}(3) +x \log_{10}(5^3) =(x+1) \log_{10}(11)
+                \)
+            </p>
+
+            <br>
+
+            <p>
+                \(\log_{10}(3) + x \log_{10}(125) = x \log_{10} (11) + \log_{10} (11)\)
+
+            </p>
+
+            <br>
+
+            <p>
+                \(x \log_{10}(125) - x \log_{10} (11)=\log_{10}(11) - \log_{10} (3)
+                \)
+            </p>
+
+            <br>
+
+            <p>
+                \(x (\log_{10}(125) - \log_{10}(11)) = \log_{10} (11) - \log_{10}(3)
+                \)
+            </p>
+
+            <br>
+
+            <p>
+                Usiamo la proprietà della differenza tra due logaritmi con stessa base (ovvero la proprietà del logaritmo di un quoziente applicata al contrario) per semplificare: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(x \log_{10} ({125\over 11})= \log_{10} ({11\over 3})\)
+
+            </p>
+
+            <br>
+
+            <p>
+                \(x= {{\log_{10} ({11\over 3})} \over {\log_{10}({125 \over 11}))}}
+                \)
+            </p>
+
+            <br>
+
+            <p>
+                Se vogliamo avere un risultato approssimativo, possiamo usare la calcolatrice per scoprire che: 
+
+            </p>
+
+            <br>
+
+            <p>
+                \(x \approx 0.53459
+                \)
+            </p>
+
+
+
+
+
+
+
+
+
+         
+         
+         
+        </body>
+        </section>
+        <!-- Site footer -->
+        <div id="footer"></div>
+        <script src="custom.js"></script>
+        <!-- Including MathJax -->
+        <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    </body>
+            
+</html>
