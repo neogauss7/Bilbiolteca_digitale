@@ -5,14 +5,6 @@ body {
 
 /* Home-Section */
 
-.home {
-  padding-left: 50px;
-  padding-right: 50px;
-  max-width: 1250px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-}
 
 .welcome-image {
   text-align: left;
@@ -37,40 +29,40 @@ hr {
 }
 
 .left-side {
-  flex: 1;
+  width: 45%;
   margin-right: 30px;
-  max-width: 530px;
 }
 
 .right-side {
-  width: 450px;
+  width: 55%;
+  margin-right: 30px;
 }
 
 .welcome-title {
   font-weight: 700;
   margin-bottom: 10px;
   line-height: 1.3;
-  font-size: 31px;
+  font-size: 40px;
   min-height: 3em;
 }
 
 .welcome-description {
   margin-bottom: 20px;
-  max-width: 400px;
-  font-size: 16.5px;
+  max-width: 650px;
+  font-size: 21px;
 }
 
 .btn {
   background: none;
   border: 1.5px solid var(--drkblue);
   text-transform: uppercase;
-  padding: 11px 26px;
+  padding: 15px 26px;
   cursor: pointer;
   transition: color 0.4s linear;
   position: relative;
   font-weight: 550;
   color: var(--drkblue);
-  font-size: 16px;
+  font-size: 21px;
 }
 
 .btn:hover {
@@ -133,6 +125,10 @@ hr {
   font-size: 20px;
 }
 
+#text {
+  display: inline-block;
+}
+
 /* Start Responsive */
 
 @media (max-width: 991px) {
@@ -151,10 +147,6 @@ hr {
 }
 
 @media (max-width: 865px) {
-  .home {
-    padding-left: 26px;
-    padding-right: 26px;
-  }
 
   .grid-container {
     row-gap: 40px;
@@ -162,11 +154,10 @@ hr {
   }
   .welcome {
     flex-direction: column-reverse;
-    text-align: center;
   }
 
   .right-side {
-    width: 540px;
+    width: 100%;
   }
 
   .welcome-description {

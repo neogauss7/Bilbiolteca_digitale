@@ -6,8 +6,8 @@
   top: 0;
   z-index: 99;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  padding-left: 30px;
-  padding-right: 35px;
+  padding-left: 50px;
+  padding-right: 50px;
   height: 75px;
 }
 
@@ -15,8 +15,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 9px 0;
-  max-width: 1085px;
+  padding: 9px 0; 
+  max-width: 1250px;
   margin: auto;
   margin-top: 4px;
 }
@@ -35,10 +35,6 @@
 
 a {
   text-decoration: none;
-}
-
-.header .logo {
-  padding: 0 15px;
 }
 
 .header .nav-menu {
