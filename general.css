@@ -31,7 +31,7 @@
 }
 .divider {
   border-color: var(--drkblue);
-  margin: 0 0 30px 0;
+  margin: 0px 20px 30px 20px;
   max-width: 1350px;
   border-top: 0.5px solid var(--drkblue);
 }
@@ -62,7 +62,7 @@ body.hidden-scrolling {
 .home {
   padding-left: 50px;
   padding-right: 50px;
-  max-width: 1350px;
+  max-width: 1320px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
@@ -78,12 +78,18 @@ body.hidden-scrolling {
   .home {
     padding-left: 30px;
     padding-right: 30px;
+  }
 }
 
-  @media (max-width: 560px) {
-    .home {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
+@media (max-width: 865px) {
+  .home {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 560px) {
+  .home {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
