@@ -1,10 +1,7 @@
 body {
   line-height: 1.5;
-  padding-top: 100px;
+  padding-top: 110px;
 }
-
-/* Home-Section */
-
 
 .welcome-image {
   text-align: left;
@@ -20,12 +17,16 @@ hr {
 }
 
 .welcome {
-  margin-bottom: 20px;
-  padding: 20px 3px 20px 3px;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 
 .left-side {
@@ -47,7 +48,7 @@ hr {
 }
 
 .welcome-description {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   max-width: 650px;
   font-size: 21px;
 }
@@ -94,7 +95,10 @@ hr {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
-  background-color: rgb(238, 238, 238);
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 
 .argument{
@@ -102,19 +106,18 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-right: 1.5px solid rgb(181, 181, 181);
   height: 125px;
   justify-content: center;
+  border-right: var(--gray) 1.5px solid;
 }
 
 .argument-image {
   width: 70px;
   margin-bottom: 17px;
-  cursor: pointer;
 }
 
 .argument-text {
-  font-size: 17px;
+  font-size: 20px;
 }
 
 #last-argument {
@@ -126,6 +129,12 @@ hr {
   column-gap: 50px;
   row-gap: 50px;
   grid-template-columns: auto auto auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 
 .grid-element {
@@ -179,7 +188,6 @@ hr {
 }
 
 @media (max-width: 865px) {
-
   .grid-container {
     row-gap: 40px;
     column-gap: 40px;
