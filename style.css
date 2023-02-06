@@ -1,3 +1,9 @@
+.index-container {
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
   line-height: 1.5;
   padding-top: 110px;
@@ -23,9 +29,6 @@ hr {
   justify-content: space-between;
   padding-left: 50px;
   padding-right: 50px;
-  max-width: 1350px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 50px;
 }
 
@@ -36,7 +39,7 @@ hr {
 
 .right-side {
   width: 58%;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .welcome-title {
@@ -95,9 +98,6 @@ hr {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
-  max-width: 1350px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 50px;
 }
 
@@ -131,9 +131,6 @@ hr {
   grid-template-columns: auto auto auto;
   padding-left: 50px;
   padding-right: 50px;
-  max-width: 1350px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 50px;
 }
 
