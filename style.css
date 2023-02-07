@@ -102,7 +102,6 @@ hr {
   background-color: rgb(239, 235, 228);
   height: 170px;
 }
-
 .argument {
   flex: 1;
   display: flex;
@@ -110,7 +109,7 @@ hr {
   align-items: center;
   height: 100px;
   justify-content: center;
-  border-right: var(--gray) 1.5px solid;
+  border-right: rgb(75, 75, 75) 1.5px solid;
 }
 
 .argument-image {
@@ -122,7 +121,7 @@ hr {
   text-align: center;
   font-size: 30px;
   font-weight: 900;
-  color: rgb(74, 74, 74);
+  color: rgb(62, 62, 62);
   max-width: 250px;
 }
 
@@ -228,22 +227,23 @@ hr {
   .welcome-description {
     max-width: none;
   }
+  .arguments-container {
+    height: 500px;
+    flex-direction: column;
+  }
+  .argument {
+    width: 350px;
+    border: none;
+    border-bottom: rgb(75, 75, 75) solid 1.5px;
+  }
+  .argument-text {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 650px) {
   .grid-container {
     grid-template-columns: auto;
-  }
-  .arguments-container {
-    height: 600px;
-    flex-direction: column;
-  }
-  .argument {
-    border: none;
-    border-bottom: solid 1.5px;
-  }
-  .argument-text {
-    font-size: 20px;
   }
 }
 
