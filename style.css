@@ -119,9 +119,11 @@ hr {
 }
 
 .argument-text {
+  text-align: center;
   font-size: 30px;
   font-weight: 900;
   color: rgb(74, 74, 74);
+  max-width: 250px;
 }
 
 #last-argument {
