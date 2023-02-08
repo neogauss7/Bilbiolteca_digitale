@@ -48,6 +48,8 @@
 body {
   background-color: var(--white1);
   color: var(--blk);
+}
+img {
   user-select: none;
 }
 

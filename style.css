@@ -131,7 +131,13 @@ hr {
   border-right: none;
   border-bottom: none;
 }
-
+.quote {
+  font-size: 24px;
+}
+.rating {
+  height: 25px;
+  margin-top: 5px;
+}
 .grid-container {
   display: grid;
   column-gap: 50px;
@@ -240,6 +246,10 @@ hr {
   }
   .argument-text {
     font-size: 20px;
+  }
+  .quote {
+    font-size: 18px;
+    float: right;
   }
 }
 

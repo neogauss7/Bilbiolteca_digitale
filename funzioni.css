@@ -3,6 +3,7 @@
 }
 p {
   font-size: 18px;
+  user-select: none;
 }
 
 h2 {
