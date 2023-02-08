@@ -48,6 +48,7 @@ hr {
   line-height: 1.3;
   font-size: 40px;
   min-height: 3em;
+  padding-bottom: 10px;
 }
 
 .welcome-description {
@@ -219,9 +220,31 @@ hr {
     width: 400px;
     margin-bottom: 10px;
   }
+  .arguments-container {
+    height: 400px;
+    flex-direction: column;
+  }
+  .argument {
+    width: 650px;
+    border: none;
+    border-bottom: rgb(75, 75, 75) solid 1.5px;
+  }
+  .argument-text {
+    font-size: 20px;
+  }
+  .quote {
+    font-size: 18px;
+    float: right;
+  }
 }
 
 @media (max-width: 745px) {
+  .arguments-container {
+    height: 360px;
+  }
+  .argument {
+    width: 320px;
+  }
   .left-side {
     width: 350px;
     margin-bottom: 25px;
@@ -234,22 +257,6 @@ hr {
 
   .welcome-description {
     max-width: none;
-  }
-  .arguments-container {
-    height: 360px;
-    flex-direction: column;
-  }
-  .argument {
-    width: 350px;
-    border: none;
-    border-bottom: rgb(75, 75, 75) solid 1.5px;
-  }
-  .argument-text {
-    font-size: 20px;
-  }
-  .quote {
-    font-size: 18px;
-    float: right;
   }
 }
 
