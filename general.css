@@ -83,15 +83,9 @@ body.hidden-scrolling {
   }
 }
 
-@media (max-width: 865px) {
-  .home {
-    max-width: 500px;
-  }
-}
-
 @media (max-width: 560px) {
   .home {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
