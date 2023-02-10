@@ -22,6 +22,10 @@
    <meta name="description" content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti.">
    <!-- Including header and footer -->
    <script src="custom.js"></script>
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+   <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
    <script>
      $(function () {
@@ -43,9 +47,9 @@
                <p class="welcome-description">
                   Scopri le nostre lezioni gratuite con grafici e schemi, abbiamo trattato tutti gli argomenti delle scuole superiori. Nuove lezioni in arrivo ogni giorno... <b>Inizia ora a ripassare!</b>
                </p>
-               <a href="login.html"><button class="btn btn1">
+               <button onclick="location.href = 'login.html'" class="btn btn1" id="login-button">
                   Sign Up
-               </button></a>
+               </button>
             </div> 
             <div class="left-side">
                <img class="welcome-image" alt="Welcome image Theoremz" src="images/wimage.svg" id="icon">
@@ -123,5 +127,6 @@
       </section>
       <div id="footer"></div>
    </body>
+   <script src="index.js"></script>
 </html>
 

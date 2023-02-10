@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 9px 0; 
+  padding: 9px 0;
   max-width: 1250px;
   margin: auto;
   margin-top: 4px;
@@ -35,6 +35,11 @@
 
 a {
   text-decoration: none;
+}
+.account {
+  height: 30px;
+  width: 30px;
+  background-color: rgb(81, 21, 220);
 }
 
 .header .nav-menu {

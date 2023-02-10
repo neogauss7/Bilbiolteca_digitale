@@ -13,7 +13,6 @@ firebase.initializeApp(firebaseConfig);
 // Initialize variables
 const auth = firebase.auth();
 const database = firebase.database();
-
 // Set up our register function
 function register() {
   // Get all our input fields
@@ -53,10 +52,10 @@ function register() {
       database_ref.child("users/" + user.uid).set(user_data);
 
       // DOne
-      alert("User Created!!");
+      alert("Utente creato!!");
     })
     .then(() => {
-      window.location.replace("https://www.theoremz.com");
+      location.href = "index.html";
     })
     .catch(function (error) {
       // Firebase will use this to alert of its errors
@@ -101,7 +100,7 @@ function login() {
       alert("User Logged In!!");
     })
     .then(() => {
-      window.location.replace("index.html");
+      location.href = "index.html";
     })
     .catch(function (error) {
       // Firebase will use this to alert of its errors
@@ -144,11 +143,43 @@ function validate_field(field) {
     return true;
   }
 }
+function logout() {
+  firebase
+    .auth()
+    .signOut()
+    .then(function () {
+      location.href = "index.html";
+    })
+    .catch(function (error) {
+      // An error happened
+    });
+}
 
 auth.onAuthStateChanged((user) => {
   if (user) {
     console.log(user.email + " is logged in!");
+    document.getElementById("login-button").textContent = "Il mio account";
+    document.getElementById("login-button").onclick = function () {
+      location.href = "account.html";
+    };
   } else {
     console.log("User is logged out!");
   }
 });
+
+firebase
+  .auth()
+  .setPersistence(firebase.auth.Auth.Persistence.LOCAL)
+  .then(() => {
+    // Existing and future Auth states are now persisted in the current
+    // session only. Closing the window would clear any existing state even
+    // if a user forgets to sign out.
+    // ...
+    // New sign-in will be persisted with session persistence.
+    return firebase.auth().signInWithEmailAndPassword(email, password);
+  })
+  .catch((error) => {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+  });
