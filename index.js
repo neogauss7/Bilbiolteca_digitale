@@ -18,17 +18,12 @@ function register() {
   // Get all our input fields
   email = document.getElementById("email").value;
   password = document.getElementById("password").value;
-  full_name = document.getElementById("full_name").value;
 
   // Validate input fields
   if (validate_email(email) == false) {
     alert("L'email non è valida, riprova");
     return;
     // Don't continue running the code
-  }
-  if (validate_field(full_name) == false) {
-    alert("Ricorda di inserire il tuo nome");
-    return;
   }
   if (document.getElementById("policy").checked == false) {
     alert("Ricorda di accettare il trattamento dei tuoi dati");
@@ -48,7 +43,6 @@ function register() {
       // Create User data
       var user_data = {
         email: email,
-        full_name: full_name,
         last_login: Date.now(),
       };
 
@@ -158,15 +152,20 @@ function logout() {
       // An error happened
     });
 }
+const loggedIn = function (user) {
+  console.log(user.email + " is logged in!");
+  document.getElementById("login-button").textContent = "Il mio account";
+  document.getElementById("login-button").onclick = function () {
+    location.href = "account.html";
+  };
+};
 
 auth.onAuthStateChanged((user) => {
   if (user) {
-    console.log(user.email + " is logged in!");
-    document.getElementById("login-button").textContent = "Il mio account";
-    document.getElementById("account-name").textContent = "Il mio account";
-    document.getElementById("login-button").onclick = function () {
-      location.href = "index.html";
-    };
+    if (window.location.href.indexOf("account.html") > -1) {
+      document.getElementById("account-name").innerHTML = user.email;
+    }
+    loggedIn(user);
   } else {
     console.log("User is logged out!");
   }
