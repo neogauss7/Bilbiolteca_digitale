@@ -58,14 +58,19 @@
 
       <div id="form_content_container">
         <div id="form_content_inner_container">
-          <input type="text" id="full_name" placeholder="Full name" />
-          <input type="email" id="email" placeholder="Email" />
-          <input type="password" id="password" placeholder="Password" />
+          <input class="input" type="text" id="full_name" placeholder="Full name" />
+          <input class="input" type="email" id="email" placeholder="Email" />
+          <input class="input" type="password" id="password" placeholder="Password" /> <p style="font-size: 14px;">Ho letto e accettato il trattamento dei miei dati secondo la <span>privacy policy </span>(obbligatorio)</p><label class="container" style="margin-top: 10px;">
+            <input id="policy" type="checkbox">
+            <div class="checkmark"></div>
+          </label>
+          <br>
           <div id="button_container">
             <button id="login" onclick="login()">Login</button>
             <button onclick="register()">Register</button>
           </div>
         </div>
+        
       </div>
     </div>
   </div>

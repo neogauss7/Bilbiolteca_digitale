@@ -30,6 +30,10 @@ function register() {
     alert("Ricorda di inserire il tuo nome");
     return;
   }
+  if (document.getElementById("policy").checked == false) {
+    alert("Ricorda di accettare il trattamento dei tuoi dati");
+    return;
+  }
 
   // Move on with Auth
   auth
@@ -159,8 +163,9 @@ auth.onAuthStateChanged((user) => {
   if (user) {
     console.log(user.email + " is logged in!");
     document.getElementById("login-button").textContent = "Il mio account";
+    document.getElementById("account-name").textContent = "Il mio account";
     document.getElementById("login-button").onclick = function () {
-      location.href = "account.html";
+      location.href = "index.html";
     };
   } else {
     console.log("User is logged out!");
