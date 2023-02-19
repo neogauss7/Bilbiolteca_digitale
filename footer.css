@@ -86,21 +86,9 @@
 }
 
 @media (max-width: 767px) {
-  .site-footer .copyright-text,
-  .site-footer .social-icons {
-    text-align: center;
-  }
   .donations {
     margin: auto;
     width: 100%;
-  }
-
-  h6 {
-    text-align: center;
-  }
-
-  .text-justify {
-    text-align: center;
   }
 }
 

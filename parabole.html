@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <link rel="icon" href="favicon.png">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2Z6FRX1VZF');
+    </script>
+    <!-- Titolo -->
+        <title>Theoremz | Equazioni parametriche</title>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="funzioni.css">
+        <link rel="stylesheet" type="text/css" href="general.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti.">
+        <meta name="viewport" contenent="width=device-width-initial-scale=1">
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Including header and footer -->
+     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+     <script>
+       $(function () {
+         $("#header").load("header.html");
+         $("#footer").load("footer.html");
+       });
+     </script>
+         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <body>
+            <div id="header"></div>
+            
+            <section class="home">
+                <div class="welcome"> 
+                    <h1 class="welcome1" >Equazioni parametriche</h1>
+                    <h3 class="p1">Di seguito analizzeremo le equazioni parametriche.</h3>
+                </div>  
+                <!-- Mini-index -->
+                <div class="minimenu">
+                <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Parametro</p></div></a>
+                <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Eq. 1°grado</p></div></a>
+                <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Eq. 2°grado</p></div></a>
+                <a href="#classif4" class="mini-item" ><div class=""><p class="minitext">Delta</p></div></a>
+                <a href="#classif5" class="mini-item" ><div class=""><p class="minitext">Somma e molt.</p></div></a>
+                </div>
+
+                <hr class="divider"></hr>  
+                
+                <h2>
+                    Cos'è una parabola?
+                </h2>
+                <br>
+                <p>
+                    Presi un punto \(F\) detto fuoco e una retta \(d\) detta direttrice chiamiamo <span class="blue">parabola</span> la curva <i>luogo dei punti</i> equidistanti da \(F\) e da \(d\). Questo significa che, preso un punto qualsiasi della parabola, esso avrà la stessa distanza dal fuoco e dalla direttrice (ricorda che la distanza da un punto ad una retta è il segmento che parte dal punto e arriva perpendicolare alla retta stessa).
+                </p>
+                <br>
+                <p>
+                    La retta passante per il fuoco e perpendicolare alla direttrice si chiama <span class="blue">asse</span> della parabola. Esso è anche l’asse di simmetria della parabola. Infatti, se prendiamo un punto qualsiasi della parabola esisterà sicuramente un altro punto simmetrico al primo rispetto all’asse. Chiamiamo infine <span class="blue">vertice</span> della parabola il punto di intersezione della parabola con l’asse e lo indichiamo con la lettera \(V\).
+                </p>
+                <br>
+                <p>
+                    In generale una parabola si indica con una lettera greca minuscola, come ad esempio \(\alpha\) (alfa), \(\beta\) (beta), \(\gamma\) (gamma), etc... In geometria analitica interessa lo studio delle parabole sul piano cartesiano. Iniziamo analizzando alcuni casi particolari
+                </p>
+                <br>
+                <h2>
+                    Parabola con asse coincidente con l’asse y e vertice nell’origine
+                </h2>
+                <br>
+                <p>
+                    Per prima cosa cerchiamo di ricavare l’equazione della generica parabola con l'asse coincidente all’asse delle ordinate e con vertice nell’origine. Per iniziare possiamo notare che il fuoco della parabola è un punto dell’asse delle \(y\) e per questo ha coordinate \((0, f)\), con \(f\neq 0\).
+                </p>
+                <br>
+                <p>
+                    La direttrice per definizione è perpendicolare all’asse della parabola e per questo è parallela all’asse delle \(x\). Quindi, la direttrice interseca l’asse delle \(y\) in un punto \(D\) e questo, visto che il vertice deve essere equidistante dal fuoco e dalla direttrice, ha coordinate \((0;-f)\). L’equazione della direttrice sarà quindi 
+                </p>
+                <br>
+                <p>
+                    \(y = -f\)
+                </p>
+                <br>
+                <p>
+                    Prendiamo ora un generico punto della parabola \(A(x,y)\) e cerchiamo le distanze \(\overline{AF}\) e \(\overline{AH}\) rispettivamente dal fuoco e dalla direttrice, dove \(H\) è il piede della distanza che parte da \(A\).
+                </p>
+                <br>
+                <p>
+                    \(\overline{AF}= \sqrt{(x-0)^2+(y-f)^2} = \sqrt{x^2+(y-f)^2}\)
+                </p>
+                <br>
+                <p>
+                    \(\overline{AH}= |y+f|\)
+                </p>
+                <br>
+                <p>
+                    Per definizione di parabola queste due distanze devono essere uguali:
+                </p>
+                <br>
+                <p>
+                    \(\sqrt{x^2+(y-f)^2} = |y+f|\)
+                </p>
+                <br>
+                <p>
+                    \(x^2+(y-f)^2 = (y+f)^2 \longrightarrow \)
+
+                    \(x^2+ \require{cancel} \cancel{y^2}-2yf+\cancel{f^2} = \cancel{y^2} + 2yf +\cancel{f^2}\longrightarrow\)
+
+                    \(x^2-4yf=0\)
+                </p>
+                <br>
+                <p>
+                    Ora isoliamo la \(y\) e ricaviamo l’equazione \(y= \frac{1}{4f}x^2\).
+                </p>
+                <br>
+                <p>
+                    Per semplificare un po’ l’equazione, poniamo \(a=\frac{1}{4f}\) e otteniamo
+                </p>
+                <br>
+                <p>
+                    \(y=ax^2\)
+                </p>
+                <br>
+                <p>
+                    che è l’equazione generica di una parabola con asse coincidente con l’asse delle  e con vertice nell’origine. Per concludere possiamo ricavare le formule sintetiche per trovare il fuoco e la direttrice in parabole di questo tipo.
+                </p>
+                <br>
+                <p>
+                    Partendo dalla relazione \(a=\frac{1}{4f}\) otteniamo \(f=\frac{1}{4a}\) e da questa possiamo ricavare le coordinate del fuoco
+                </p>
+                <br>
+                <p>
+                    \(F\big(0; \frac{1}{4a}\big)\)
+                </p>
+                <br>
+                <p>
+                    e l’equazione della direttrice
+                </p>
+                <br>
+                <p>
+                    \(d=-\frac{1}{4a}\).
+                </p>
+                <br>
+                <p>
+                    Da questa dimostrazione deduciamo che ogni punto della parabola verifica l’equazione \(y=ax^2\). Analogamente si può dimostrare che tutti i punti che verificano l’equazione appartengono alla parabola e che questi sono <i>i soli</i> che appartengono alla parabola.
+                </p>
+                <br>
+                <h2>
+                    Concavità e apertura 
+                </h2>
+                <br>
+                <p>
+                    Una parabola con equazione \(y=ax^2\) che ha la \(a>0\), avrà per forza la \(y \geq 0\) e quindi tutti i suoi punti (a eccezione del vertice) si troveranno al di sopra dell’asse delle \(x\), e quindi saranno situati nel primo e nel secondo quadrante. Una parabola di questo tipo ha anche \(f>0\) e quindi anche il fuoco si troverà sul semiasse positivo delle \(y\): si dice che la parabola volge la sua concavità <i>verso l’alto</i>.
+                </p>
+                <br>
+                <p>
+                    Analogamente, una parabola di equazione \(y=ax^2\) che ha la \(a>0\), avrà per forza \(y \leq 0\) e quindi tutti i suoi punti (a eccezione del vertice) si troveranno al di sotto dell’asse delle \(x\), e quindi saranno situati nel terzo e nel quarto quadrante. Una parabola di questo tipo ha anche \(f < 0\) e quindi anche il fuoco si troverà sul semiasse negativo delle : si dice che la parabola volge la sua concavità verso il basso
+                </p>
+                <br>
+                <p>
+                    Nel caso in cui \(a\neq0\) si avrebbe l’equazione \(y=0\), che è l’equazione dell’asse delle \(x\). In questo caso si dice che la parabola è degenere.
+                </p>
+                <br>
+                <h2>
+                    Parabola con asse parallelo all’asse y
+                </h2>
+                <br>
+                <p>
+                    Alle scuole superiori vengono affrontate soltanto particolari tipologie di parabole, ovvero quelle con asse parallelo all'asse \(y\) e quelle con asse paralleo all'asse \(x\). In questa sezione parleremo della prima categoria e cercheremo di ricavare la sua equazione. 
+                <br>
+                <p>
+                    
+                </p>
+
+            
+            </section>
+            <!-- Site footer -->
+            <div id="footer"></div>
+        </body>
+        <script src="custom.js"></script>
+        <!-- Including MathJax -->
+        <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    </body>
+            
+</html>

@@ -2,6 +2,8 @@
   max-width: 1350px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 body {
@@ -10,7 +12,6 @@ body {
 }
 
 .welcome-image {
-  text-align: left;
   width: 100%;
 }
 
@@ -18,17 +19,11 @@ body {
   color: var(--pc);
 }
 
-hr {
-  margin-bottom: 30px;
-}
-
 .welcome {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 50px;
   margin-bottom: 50px;
 }
 
@@ -124,7 +119,7 @@ hr {
   text-align: center;
   font-size: 30px;
   font-weight: 900;
-  color: rgb(62, 62, 62);
+  color: rgb(33, 33, 33);
   max-width: 300px;
 }
 
@@ -144,8 +139,6 @@ hr {
   column-gap: 50px;
   row-gap: 50px;
   grid-template-columns: auto auto auto;
-  padding-left: 50px;
-  padding-right: 50px;
   margin-bottom: 50px;
 }
 
@@ -248,7 +241,6 @@ hr {
   .left-side {
     width: 350px;
     margin-bottom: 25px;
-    margin-right: 0;
   }
 
   .right-side {
@@ -269,6 +261,15 @@ hr {
 @media (max-width: 600px) {
   .right-side {
     width: auto;
+  }
+}
+
+@media (max-width: 499px) {
+  .index-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
