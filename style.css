@@ -2,8 +2,6 @@
   max-width: 1350px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 body {
@@ -13,6 +11,7 @@ body {
 
 .welcome-image {
   width: 100%;
+  text-align: left;
 }
 
 .word {
@@ -25,6 +24,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .left-side {
@@ -63,6 +64,9 @@ body {
   font-weight: 550;
   color: var(--drkblue);
   font-size: 21px;
+}
+hr {
+  margin-bottom: 30px;
 }
 
 .btn:hover {
@@ -139,6 +143,8 @@ body {
   column-gap: 50px;
   row-gap: 50px;
   grid-template-columns: auto auto auto;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-bottom: 50px;
 }
 
@@ -241,6 +247,7 @@ body {
   .left-side {
     width: 350px;
     margin-bottom: 25px;
+    margin-right: 0;
   }
 
   .right-side {
@@ -261,15 +268,6 @@ body {
 @media (max-width: 600px) {
   .right-side {
     width: auto;
-  }
-}
-
-@media (max-width: 499px) {
-  .index-container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
