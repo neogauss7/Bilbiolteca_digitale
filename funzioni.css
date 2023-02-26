@@ -10,6 +10,11 @@ h2 {
   font-size: 25px;
   color: var(--pc);
 }
+.bookmark {
+  color: rgb(230, 34, 77);
+  font-size: 20px;
+  font-weight: bold;
+}
 
 h4 {
   font-size: 21px;
@@ -44,7 +49,7 @@ h4 {
 }
 
 .container input:checked ~ .checkmark path {
-  fill: #ff5353;
+  fill: var(--drkblue);
   stroke-width: 0;
 }
 
