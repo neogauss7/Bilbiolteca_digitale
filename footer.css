@@ -1,6 +1,6 @@
 .site-footer {
   background-color: var(--gray);
-  padding: 45px 50px 20px 50px;
+  padding: 45px 30px 20px 30px;
   line-height: 24px;
   color: #737373;
   margin-bottom: 0;
@@ -12,7 +12,7 @@
 }
 
 .footer-container {
-  width: 1100px;
+  width: 1280px;
 }
 
 .site-footer hr {
@@ -102,14 +102,6 @@
   list-style: none;
   margin-top: 15px;
   margin-bottom: 40px;
-}
-
-h6 {
-  text-align: center;
-}
-
-.text-justify {
-  text-align: center;
 }
 .social-icons li {
   display: inline-block;
