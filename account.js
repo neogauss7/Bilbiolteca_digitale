@@ -38,7 +38,7 @@ for (let i = 0; i < array.length; i++) {
     paragraph.href = `${array[i].slice(9)}`;
     let parent = document.getElementById("parent1");
     parent.appendChild(paragraph);
-    let p = document.createElement("button");
+    let p = document.createElement("p");
     parent.appendChild(p);
   }
 }
