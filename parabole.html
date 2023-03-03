@@ -12,7 +12,7 @@
       gtag('config', 'G-2Z6FRX1VZF');
     </script>
     <!-- Titolo -->
-        <title>Theoremz | Equazioni parametriche</title>
+        <title>Theoremz | Parabole</title>
         <!-- Stylesheets -->
         <link rel="stylesheet" href="funzioni.css">
         <link rel="stylesheet" type="text/css" href="general.css">
@@ -43,14 +43,14 @@
                     </div>
                   </label>
                 <div class="welcome"> 
-                    <h1 class="welcome1" >Equazioni parametriche</h1>
-                    <h3 class="p1">Di seguito analizzeremo le equazioni parametriche.</h3>
+                    <h1 class="welcome1" >Parabole</h1>
+                    <h3 class="p1">Di seguito analizzeremo le parabole.</h3>
                 </div>  
                 <!-- Mini-index -->
                 <div class="minimenu">
-                <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Parametro</p></div></a>
-                <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Eq. 1°grado</p></div></a>
-                <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Eq. 2°grado</p></div></a>
+                <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Concavità</p></div></a>
+                <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">P. ascisse</p></div></a>
+                <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">P. ordinate</p></div></a>
                 <a href="#classif4" class="mini-item" ><div class=""><p class="minitext">Delta</p></div></a>
                 <a href="#classif5" class="mini-item" ><div class=""><p class="minitext">Somma e molt.</p></div></a>
                 </div>
@@ -64,15 +64,19 @@
                 <p>
                     Presi un punto \(F\) detto fuoco e una retta \(d\) detta direttrice chiamiamo <span class="blue">parabola</span> la curva <i>luogo dei punti</i> equidistanti da \(F\) e da \(d\). Questo significa che, preso un punto qualsiasi della parabola, esso avrà la stessa distanza dal fuoco e dalla direttrice (ricorda che la distanza da un punto ad una retta è il segmento che parte dal punto e arriva perpendicolare alla retta stessa).
                 </p>
-                <br>
+                <img class='funzione' src="images/parab1.webp" alt="Parabola">
                 <p>
                     La retta passante per il fuoco e perpendicolare alla direttrice si chiama <span class="blue">asse</span> della parabola. Esso è anche l’asse di simmetria della parabola. Infatti, se prendiamo un punto qualsiasi della parabola esisterà sicuramente un altro punto simmetrico al primo rispetto all’asse. Chiamiamo infine <span class="blue">vertice</span> della parabola il punto di intersezione della parabola con l’asse e lo indichiamo con la lettera \(V\).
                 </p>
-                <br>
+                <img class='funzione' src="images/parab2.webp" alt="Parabola 2">
                 <p>
                     In generale una parabola si indica con una lettera greca minuscola, come ad esempio \(\alpha\) (alfa), \(\beta\) (beta), \(\gamma\) (gamma), etc... In geometria analitica interessa lo studio delle parabole sul piano cartesiano. Iniziamo analizzando alcuni casi particolari
                 </p>
                 <br>
+                <p>La parabola è descritta da un'<u>equazione di secondo grado</u>, ed è una <span class="blue">funzione</span> solo in caso di <u>asse</u> parallelo all'asse \(x\)</p>
+                <br>
+
+                <hr class="divider"></hr> 
                 <h2>
                     Parabola con asse coincidente con l’asse y e vertice nell’origine
                 </h2>
@@ -81,7 +85,7 @@
                     Nello studio delle parabole (e più in generele in tutta la geometria analitica) interessa trovare una relazione che permette di riconoscere una parabola da un altra. Questa relazione prende il nome di <span class="blue">equaizione di una parabola</span>.
                     Cerchiamo di trovare l’equazione di una generica parabola con asse coincidente all’asse delle \(y\) e con vertice nell’origine. Per iniziare possiamo notare che il fuoco della parabola è un punto dell’asse delle \(y\) e per questo ha coordinate \((0, f)\), con \(f\neq 0\).
                 </p>
-                <br>
+                <img class='funzione' src="images/parab3.webp" alt="Parabola con vertice nell'origine degli assi">
                 <p>
                     La direttrice per definizione è perpendicolare all’asse della parabola e per questo è parallela all’asse delle \(x\). Quindi, la direttrice interseca l’asse delle \(y\) in un punto \(D\) e questo, visto che il vertice deve essere equidistante dal fuoco e dalla direttrice, ha coordinate \((0;-f)\). L’equazione della direttrice sarà quindi 
                 </p>
@@ -147,9 +151,12 @@
                 </p>
                 <br>
                 <p>
-                    Da questa dimostrazione deduciamo che <b class="blue">ogni punto della parabola</b>  verifica l’equazione \(y=ax^2\). Analogamente si può dimostrare che tutti i punti che verificano l’equazione appartengono alla parabola e che questi sono <i>i soli</i> che appartengono alla parabola.
+                    Da questa dimostrazione deduciamo che <b class="blue">ogni punto della parabola</b>  verifica l’equazione \(y=ax^2\). Analogamente <span id="classif">si</span> può dimostrare che tutti i punti che verificano l’equazione appartengono alla parabola e che questi sono <i>i soli</i> che appartengono alla parabola.
                 </p>
                 <br>
+                <hr class="divider"></hr> 
+
+
                 <h2>
                     Concavità e apertura 
                 </h2>
@@ -163,9 +170,11 @@
                 </p>
                 <br>
                 <p>
-                    Nel caso in cui \(a\neq0\) si avrebbe l’equazione \(y=0\), che è l’equazione dell’asse delle \(x\). In questo caso si dice che la parabola è <span class="blue">degenere</span>. In generale tutte le rette sono considerate parabole degeneri.
+                    Nel caso in cui \(a\neq0\) si avrebbe l’equazione \(y=0\), che è l’equazione dell’asse delle \(x\). <span id="classif2">In</span> questo caso si dice che la parabola è <span class="blue">degenere</span>. In generale tutte le rette sono considerate parabole degeneri.
                 </p>
                 <br>
+
+                <hr class="divider"></hr> 
                 <h2>
                     Parabola con asse parallelo all’asse y
                 </h2>
@@ -173,7 +182,7 @@
                 <p>
                     Alle scuole superiori vengono affrontate soltanto particolari tipologie di parabole, ovvero quelle con asse parallelo all'asse \(y\) e quelle con asse paralleo all'asse \(x\). In questa sezione parleremo della prima categoria e analizzeremo la loro equazione.
                 </p>
-                <br>
+                <img class='funzione' src="images/parab4.webp" alt="Parabola con asse parallelo a y">
                 <p>
                     Si può dimostrare che una parabola con asse parallelo all'asse delle ordinate ha equazione
                 </p>
@@ -239,7 +248,7 @@
                         </p>
                     </li>
                     <li>
-                        <p>
+                        <p id="classif3">
                             se \(\Delta = 0\) c'è un'unica intersezione (la parabola è tangente all'asse delle \(x\));
                         </p>
                     </li>
@@ -250,10 +259,12 @@
                     </li>
                 </ul>
                 <br>
+                <hr class="divider"></hr> 
+
                 <h2>
                     Parabola con asse parallelo all'asse x
                 </h2>
-                <br>
+                <img class='funzione' src="images/parab5.webp" alt="Parabola con asse parallelo alle x">
                 <p>
                     
                 </p>
