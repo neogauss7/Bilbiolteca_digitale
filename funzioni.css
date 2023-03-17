@@ -11,7 +11,7 @@ h2 {
   color: var(--pc);
 }
 .bookmark {
-  color: rgb(230, 34, 77);
+  color: var(--drkblue);
   font-size: 20px;
   font-weight: bold;
 }
