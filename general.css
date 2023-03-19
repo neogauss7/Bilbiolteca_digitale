@@ -35,6 +35,9 @@
   max-width: 1350px;
   border-top: 0.5px solid var(--drkblue);
 }
+.invisible {
+  opacity: 0%;
+}
 .overlay {
   position: absolute;
   top: 0;

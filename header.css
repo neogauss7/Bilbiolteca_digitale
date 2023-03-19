@@ -10,7 +10,9 @@
   padding-right: 50px;
   height: 75px;
 }
-
+.account {
+  display: none;
+}
 .header-main {
   display: flex;
   justify-content: space-between;
@@ -36,12 +38,6 @@
 a {
   text-decoration: none;
 }
-.account {
-  height: 30px;
-  width: 30px;
-  background-color: rgb(81, 21, 220);
-}
-
 .header .nav-menu {
   padding: 0 15px;
 }
@@ -215,7 +211,18 @@ a {
     visibility: visible;
     opacity: 1;
   }
-
+  .account {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 120px;
+    height: 30px;
+    width: 30px;
+  }
+  .account-img {
+    height: 30px;
+    width: 30px;
+  }
   .header .nav-menu {
     position: fixed;
     right: -280px;
