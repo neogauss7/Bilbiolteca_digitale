@@ -153,8 +153,8 @@ function logout() {
 }
 const loggedIn = function (user) {
   console.log(user.email + " is logged in!");
-  document.getElementById("login-button").textContent = "Il mio account";
   document.getElementById("account-img").classList.remove("invisible");
+  document.getElementById("login-button").textContent = "Il mio account";
   document.getElementById("login-button").onclick = function () {
     location.href = "account.html";
   };
