@@ -19,7 +19,11 @@
   padding: 20px;
   padding-bottom: 30px;
   padding-top: 30px;
-  background: var(--gray);
+  background: rgba(30, 118, 233, 1);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   font-size: 15px;
   text-transform: uppercase;
   color: var(--white);
@@ -97,7 +101,11 @@ button:disabled {
 
 button:hover {
   color: #fff;
-  background-color: var(--pc);
+  background: rgba(30, 118, 233, 1);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
