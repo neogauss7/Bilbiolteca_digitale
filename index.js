@@ -31,8 +31,7 @@ function register() {
   }
 
   // Move on with Auth
-  auth
-    .createUserWithEmailAndPassword(email, password)
+  firebase.auth().createUserWithEmailAndPassword(email, password)
     .then(function () {
       // Declare user variable
       var user = auth.currentUser;
@@ -45,10 +44,9 @@ function register() {
         email: email,
         last_login: Date.now(),
       };
-
+      location.href = "index.html";
       // Push to Firebase Database
       database_ref.child("users/" + user.uid).set(user_data);
-
       // DOne
       alert("Utente creato!!");
     })
@@ -60,7 +58,6 @@ function register() {
       var error_code = error.code;
       var error_message = error.message;
 
-      alert(error_message);
     });
 }
 
@@ -77,8 +74,7 @@ function login() {
     // Don't continue running the code
   }
 
-  auth
-    .signInWithEmailAndPassword(email, password)
+  firebase.auth().signInWithEmailAndPassword(email, password)
     .then(function () {
       // Declare user variable
       var user = auth.currentUser;
