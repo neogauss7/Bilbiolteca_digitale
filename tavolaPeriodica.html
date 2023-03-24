@@ -1,239 +1,236 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-      <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8ffc82e5-ed8c-43b1-997c-5038a49290f0" data-blockingmode="auto" type="text/javascript"></script>
-      <link rel="icon" href="favicon.png">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"></script>
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <head>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8ffc82e5-ed8c-43b1-997c-5038a49290f0" data-blockingmode="auto" type="text/javascript"></script>
+    <link rel="icon" href="favicon.png">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
-        <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-      gtag('config', 'G-2Z6FRX1VZF');
+    gtag('config', 'G-2Z6FRX1VZF');
     </script>
+
     <!-- Titolo -->
-        <title>Theoremz | Tavola periodica</title>
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="funzioni.css">
-        <link rel="stylesheet" type="text/css" href="general.css">
-        <link rel="stylesheet" type="text/css" href="header.css">
-        <meta charset="UTF-8">
-        <meta name="description" content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti.">
-        <meta name="viewport" contenent="width=device-width-initial-scale=1">
-    </head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-     <!-- Including header and footer -->
-     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-     <script>
-       $(function () {
-         $("#header").load("header.html");
-         $("#footer").load("footer.html");
-       });
-     </script>
-         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-         <div id="header"></div>
-        
-      <section class="home">
+    <title>Theoremz | Termini e condizioni</title>
 
-        <label class="container">
-          <input onclick="save()" id="bookmark" type="checkbox">
-          <div class="checkmark">
-            <svg viewBox="0 0 256 256">
-            <rect fill="none" height="256" width="256"></rect>
-            <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
-          </div>
-        </label>
-            <div class="welcome"> 
-                <h1 class="welcome1" >Tavola periodica</h1>
-                <h3 class="p1">Di seguito analizzeremo la tavola periodica degli elementi.</h3>
-             </div>  
-             <!-- Mini-index -->
-    <div class="minimenu">
-<a href="#classif" class="mini-item" ><div class=""><p class="minitext">Organiz.</p></div></a>
-<a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Nomencl.</p></div></a>
-<a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Proprietà</p></div></a>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="funzioni.css">
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti.">
+    <meta name="viewport" contenent="width=device-width-initial-scale=1">
 
-
-    </div>
-              <!-- Divider -->
-         <hr class="divider"></hr>  
-         <body>
-         <h2>Cos'è la tavola periodica?</h2>
-         <br>
-         <p>La <span class="blue">tavola periodica degli elementi</span> o <i>(tavola di <span class="blue">Mendeleev</span>)</i>. La tavola è uno schema che ordina tutti gli elementi chimici in base alle loro <u>proprietà</u>, il loro <span class="blue">numero atomico</span>, il numero degli <span class="blue">elettroni di valenza</span>. La prima tavola periodica fu pubblicata da <b>Antoine Lavoisier</b>, che nel \(1789\) pubblicò una lista di \(33\) elementi chimici raggruppandoli in gas, metalli, <u>non-metalli e terrosi</u>.
-         </p>
-         <br>
-         <img class='image' src="images/tavolaperiodica.webp" alt="Tavola periodica">
-            <br>
-            <p>La <u>tavola di Mendeleev</u> è definita periodica a causa delle proprietà chimiche degli elementi che periodicamente tornano ad essere <u>molto simili</u>. Abbiamo gli elementi simili ordinati nelle stesse colonne affiancate da <span id="classif"></span> colonne con proprietà che gradualmente cambiano muovendosi nella tavola.</p>
-            <br>
-<!-- Divider -->
-<hr class="divider"></hr> 
-
-            <h2>Organizzazione della tavola</h2>
-            <br>
-            <p>La tavola è divisa in <span class="blue">gruppi</span> e <span class="blue">periodi</span>. 
-            </p>
-            <br>
-            <p>• I <span class="blue">gruppi</span> <i>(le colonne)</i> sono classi di elementi con <u>caratteristiche chimiche simili</u>.
-            </p>
-            <br>
-            <p>• I <span class="blue">periodi</span> <i>(le righe)</i> sono insiemi degli elementi che hanno una <u>variazione continua</u> delle caratteristiche chimiche.
-            </p>
-            <br>
-            <p>Gli elementi sono raggruppati in \(3\) insiemi:
-            </p>
-            <br>
-            <h2>Metalli
-            </h2>
-            <br>
-            <p>• Si combinano con <u>non metalli</u> e <u>semimetalli</u>. Tra loro formano leghe <i>(miscugli omogenei)</i>
-            </p>
-            <br>
-            <p>• Sono tutti <i>solidi</i> a temperatura ambiente <i>(tranne il mercurio <span class="blue">Hg</span>)</i>
-            </p>
-            <br>
-            <p>• Conducibilità elettrica e termica, duttilità <i>(sono lavorabili)</i>
-            </p>
-            <br>
-            <p>• Colore argenteo (tranne alcune eccezioni come l’oro <span class="blue">Au</span> e il rame <span class="blue">Cu</span>) 
-            </p>
-            <br>
-            <p>• Vanno dal gruppo \(1\) al gruppo \(12\) <i>(tranne qualche eccezione)</i>
-            </p>
-            <br>
-
-
-            <h2>Semimetalli</h2>
-            <br>
-            <p>• Si combinano sia con <u>metalli</u> che con <u>non metalli</u>. Non si legano tra loro
-            </p>
-            <br>
-            <p>• Sono pessimi conduttori di energia e di calore
-            </p>
-            <br>
-            <p>• Aspetto simile ai <u>metalli</u>
-            </p>
-            <br>
-            
-            
-            <h2>Non metalli
-            </h2>
-            <br>
-            <p>• Si combinano tra loro, con i <u>metalli</u> e con i <u>semimetalli</u>
-            </p>
-            <br>
-            <p>• Non conducono elettricità e calore
-            </p>
-            <br>
-            <p>• Si trovano in diversi stati di aggregazione a temperatura ambiente <i>(solo <span  class="blue">Br</span> è liquido)</i>
-            </p>
-            <br id="classif2" >
-            <p>• Non sono lavorabili
-            </p>
-            <br>
-            <!-- Divider -->
-         <hr class="divider"></hr> 
-
-
-            <h2>Nomenclatura dei gruppi e dei periodi
-            </h2>
-            <br>
-            <p>Gruppo 1 - <span class="blue">Metalli Alcalini
-            </span></p>
-            <br>
-            <p>Gruppo 2 - <span class="blue">Metalli alcalino-terrosi</span >
-            </p>
-            <br>
-            <p id="classif3" >Gruppi di transizione - <span class="blue">Terre rare</span>
-            </p>
-            <br>
-            <!-- Divider -->
-         <hr class="divider"></hr> 
-
-
-            <h2>Proprietà periodiche
-            </h2>
-            <br>
-            <p>Come detto in precedenza, gli elementi della tavola hanno proprietà chimico fisiche che tendono a ripresentarsi periodicamente e sono:
-            </p>
-            <br>
-            <ol>
-                <li>La <span class="blue">carica nucleare efficace</span> <i>(c.n.e.)</i>
-                </li>
-                <li>Il <span class="blue">raggio atomico</span> <i>(le dimensioni degli atomi)</i>
-                </li>
-                <li>L’<span class="blue"    >energia di ionizzazione</span> <i>(E.I.)</i>
-                </li>
-                <li>L’<span class="blue">affinità elettronica</span> <i>(A.E.)</i>
-                </li>
-            </ol>
-            <br>
-
-            <h2>Carica nucleare efficace
-            </h2>
-            <br>
-            <p>È il valore della <u>carica elettrica positiva</u> o la forza con la quale il nucleo attrae gli <span class="blue">elettroni di valenza</span>.
-            </p>
-            <br>
-            <p>La <u>carica nucleare efficace</u> consiste nel numero di elettroni del <u>guscio di valenza</u>. In pratica è il numero del gruppo che va da \(+1\) a \(+8\). Questo valore quindi aumenta lungo il <span class="blue">periodo</span> e rimane costante lungo il <span class="blue">gruppo</span>.
-            </p>
-            <br>
-
-
-            <h2>Raggio atomico
-            </h2>
-            <br>
-            <p>Il <u>raggio atomico</u>, che consiste nella dimensione dell’atomo aumenta lungo il gruppo e diminuisce lungo il periodo. 
-            </p>
-            <br>
-            <p>Aumenta lungo il <span class="blue">gruppo</span> perché aumenta il valore del <b>numero quantico principale</b> \(n\) e la massa atomica.
-            </p>
-            <br>
-            <p>Diminuisce lungo il <span class="blue">periodo</span> perché con l’aumentare della <u>carica nucleare efficace</u> il nucleo attrae di più gli elettroni che quindi sono più vicini.
-            </p>
-            <br>
-
-
-            <h2>Energia di ionizzazione
-            </h2>
-            <br>
-            <p>É il <u>lavoro</u> necessario per togliere gli elettroni da un atomo. Quando un atomo viene privato di un elettrone diventa uno <u>ione</u>, nello specifico un <b>catione </b> e da questo nasce il nome energia di ionizzazione.
-            </p>
-            <br>
-            <p>Quanto più questa grandezza è bassa tanto più l’atomo tende a diventare un catione.
-            </p>
-            <br>
-            <p>L’energia di ionizzazione diminuisce lungo il <span class="blue">gruppo</span>, perché le dimensioni aumentano, e aumenta lungo il <span class="blue">periodo</span>, perché la carica nucleare efficace aumenta.
-            </p>
-            <br>
-
-
-            <h2>Affinità elettronica
-            </h2>
-            <br>
-            <p>É la differenza di <u>energia potenziale</u> dovuta all’aggiunta di un <u>elettrone</u> a un atomo. Il poche parole quanto un atomo è più stabile diventando un anione. Quindi più alto è questo valore più un atomo tende a diventare un anione in un legame.
-            </p>
-            <br>
-            <p>L’affinità elettronica diminuisce scendendo lungo il <span class="blue">gruppo</span>, perché con l’aumentare delle dimensioni l’atomo ha più difficoltà ad accettare elettroni, e aumenta muovendosi lungo il <span class="blue">periodo</span>, perché con il diminuire del raggio atomico l’atomo tende ad accettare elettroni.
-            </p>
-            <br>
-        </body>
-        </section>
-        <!-- Site footer -->
-        <div id="footer"></div>
-        <script src="custom.js"></script>
-        <script src="bookmark.js"></script>
-        <script src="index.js"></script>
-        <!-- Including MathJax -->
-        <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    <!-- Including header and footer -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
     </script>
-    </body>
-            
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <div id="header"></div>
+  </head>
+
+  <body>
+    <section class="home">
+      <label class="container">
+        <input onclick="save()" id="bookmark" type="checkbox">
+        <div class="checkmark">
+          <svg viewBox="0 0 256 256">
+          <rect fill="none" height="256" width="256"></rect>
+          <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
+        </div>
+      </label>
+      <div class="welcome"> 
+        <h1 class="welcome1" >Tavola periodica</h1>
+        <h3 class="p1">Di seguito analizzeremo la tavola periodica degli elementi.</h3>
+      </div>  
+
+      <!-- Mini-index -->
+      <div class="minimenu">
+        <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Organiz.</p></div></a>
+        <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Nomencl.</p></div></a>
+        <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Proprietà</p></div></a>
+      </div>
+              
+      <!-- Divider -->
+      <hr class="divider"></hr>  
+
+      <h2>Cos'è la tavola periodica?</h2>
+      <br>
+      <p>La <span class="blue">tavola periodica degli elementi</span> o <i>(tavola di <span class="blue">Mendeleev</span>)</i>. La tavola è uno schema che ordina tutti gli elementi chimici in base alle loro <u>proprietà</u>, il loro <span class="blue">numero atomico</span>, il numero degli <span class="blue">elettroni di valenza</span>. La prima tavola periodica fu pubblicata da <b>Antoine Lavoisier</b>, che nel \(1789\) pubblicò una lista di \(33\) elementi chimici raggruppandoli in gas, metalli, <u>non-metalli e terrosi</u>.
+      </p>
+      <br>
+      <img class='image' src="images/tavolaperiodica.webp" alt="Tavola periodica">
+      <br>
+      <p>La <u>tavola di Mendeleev</u> è definita periodica a causa delle proprietà chimiche degli elementi che periodicamente tornano ad essere <u>molto simili</u>. Abbiamo gli elementi simili ordinati nelle stesse colonne affiancate da <span id="classif"></span> colonne con proprietà che gradualmente cambiano muovendosi nella tavola.</p>
+      <br>
+
+      <!-- Divider -->
+      <hr class="divider"></hr> 
+
+      <h2>Organizzazione della tavola</h2>
+      <br>
+      <p>La tavola è divisa in <span class="blue">gruppi</span> e <span class="blue">periodi</span>. 
+      </p>
+      <br>
+      <p>• I <span class="blue">gruppi</span> <i>(le colonne)</i> sono classi di elementi con <u>caratteristiche chimiche simili</u>.
+      </p>
+      <br>
+      <p>• I <span class="blue">periodi</span> <i>(le righe)</i> sono insiemi degli elementi che hanno una <u>variazione continua</u> delle caratteristiche chimiche.
+      </p>
+      <br>
+      <p>Gli elementi sono raggruppati in \(3\) insiemi:
+      </p>
+      <br>
+      <h2>Metalli
+      </h2>
+      <br>
+      <p>• Si combinano con <u>non metalli</u> e <u>semimetalli</u>. Tra loro formano leghe <i>(miscugli omogenei)</i>
+      </p>
+      <br>
+      <p>• Sono tutti <i>solidi</i> a temperatura ambiente <i>(tranne il mercurio <span class="blue">Hg</span>)</i>
+      </p>
+      <br>
+      <p>• Conducibilità elettrica e termica, duttilità <i>(sono lavorabili)</i>
+      </p>
+      <br>
+      <p>• Colore argenteo (tranne alcune eccezioni come l’oro <span class="blue">Au</span> e il rame <span class="blue">Cu</span>) 
+      </p>
+      <br>
+      <p>• Vanno dal gruppo \(1\) al gruppo \(12\) <i>(tranne qualche eccezione)</i>
+      </p>
+      <br>
+
+      <h2>Semimetalli</h2>
+      <br>
+      <p>• Si combinano sia con <u>metalli</u> che con <u>non metalli</u>. Non si legano tra loro
+      </p>
+      <br>
+      <p>• Sono pessimi conduttori di energia e di calore
+      </p>
+      <br>
+      <p>• Aspetto simile ai <u>metalli</u>
+      </p>
+      <br>
+      
+      <h2>Non metalli
+      </h2>
+      <br>
+      <p>• Si combinano tra loro, con i <u>metalli</u> e con i <u>semimetalli</u>
+      </p>
+      <br>
+      <p>• Non conducono elettricità e calore
+      </p>
+      <br>
+      <p>• Si trovano in diversi stati di aggregazione a temperatura ambiente <i>(solo <span  class="blue">Br</span> è liquido)</i>
+      </p>
+      <br id="classif2" >
+      <p>• Non sono lavorabili
+      </p>
+      <br>
+
+      <!-- Divider -->
+      <hr class="divider"></hr> 
+
+      <h2>Nomenclatura dei gruppi e dei periodi
+      </h2>
+      <br>
+      <p>Gruppo 1 - <span class="blue">Metalli Alcalini
+      </span></p>
+      <br>
+      <p>Gruppo 2 - <span class="blue">Metalli alcalino-terrosi</span >
+      </p>
+      <br>
+      <p id="classif3" >Gruppi di transizione - <span class="blue">Terre rare</span>
+      </p>
+      <br>
+      
+      <!-- Divider -->
+      <hr class="divider"></hr> 
+
+      <h2>Proprietà periodiche
+      </h2>
+      <br>
+      <p>Come detto in precedenza, gli elementi della tavola hanno proprietà chimico fisiche che tendono a ripresentarsi periodicamente e sono:
+      </p>
+      <br>
+      <ol>
+          <li>La <span class="blue">carica nucleare efficace</span> <i>(c.n.e.)</i>
+          </li>
+          <li>Il <span class="blue">raggio atomico</span> <i>(le dimensioni degli atomi)</i>
+          </li>
+          <li>L’<span class="blue"    >energia di ionizzazione</span> <i>(E.I.)</i>
+          </li>
+          <li>L’<span class="blue">affinità elettronica</span> <i>(A.E.)</i>
+          </li>
+        </ol>
+      <br>
+      <h2>Carica nucleare efficace
+      </h2>
+      <br>
+      <p>È il valore della <u>carica elettrica positiva</u> o la forza con la quale il nucleo attrae gli <span class="blue">elettroni di valenza</span>.
+      </p>
+      <br>
+      <p>La <u>carica nucleare efficace</u> consiste nel numero di elettroni del <u>guscio di valenza</u>. In pratica è il numero del gruppo che va da \(+1\) a \(+8\). Questo valore quindi aumenta lungo il <span class="blue">periodo</span> e rimane costante lungo il <span class="blue">gruppo</span>.
+      </p>
+      <br>
+      <h2>Raggio atomico
+      </h2>
+      <br>
+      <p>Il <u>raggio atomico</u>, che consiste nella dimensione dell’atomo aumenta lungo il gruppo e diminuisce lungo il periodo. 
+      </p>
+      <br>
+      <p>Aumenta lungo il <span class="blue">gruppo</span> perché aumenta il valore del <b>numero quantico principale</b> \(n\) e la massa atomica.
+      </p>
+      <br>
+      <p>Diminuisce lungo il <span class="blue">periodo</span> perché con l’aumentare della <u>carica nucleare efficace</u> il nucleo attrae di più gli elettroni che quindi sono più vicini.
+      </p>
+      <br>
+
+      <h2>Energia di ionizzazione
+      </h2>
+      <br>
+      <p>É il <u>lavoro</u> necessario per togliere gli elettroni da un atomo. Quando un atomo viene privato di un elettrone diventa uno <u>ione</u>, nello specifico un <b>catione </b> e da questo nasce il nome energia di ionizzazione.
+      </p>
+      <br>
+      <p>Quanto più questa grandezza è bassa tanto più l’atomo tende a diventare un catione.
+      </p>
+      <br>
+      <p>L’energia di ionizzazione diminuisce lungo il <span class="blue">gruppo</span>, perché le dimensioni aumentano, e aumenta lungo il <span class="blue">periodo</span>, perché la carica nucleare efficace aumenta.
+      </p>
+      <br>
+
+      <h2>Affinità elettronica
+      </h2>
+      <br>
+      <p>É la differenza di <u>energia potenziale</u> dovuta all’aggiunta di un <u>elettrone</u> a un atomo. Il poche parole quanto un atomo è più stabile diventando un anione. Quindi più alto è questo valore più un atomo tende a diventare un anione in un legame.
+      </p>
+      <br>
+      <p>L’affinità elettronica diminuisce scendendo lungo il <span class="blue">gruppo</span>, perché con l’aumentare delle dimensioni l’atomo ha più difficoltà ad accettare elettroni, e aumenta muovendosi lungo il <span class="blue">periodo</span>, perché con il diminuire del raggio atomico l’atomo tende ad accettare elettroni.
+      </p>
+    </section>
+    <!-- Site footer -->
+    <div id="footer"></div>
+  </body>
+
+  <script src="custom.js"></script>
+  <script src="bookmark.js"></script>
+  <script src="index.js"></script>
+  
+  <!-- Including MathJax -->
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
 </html>
