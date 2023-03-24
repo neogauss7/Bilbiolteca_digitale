@@ -28,6 +28,15 @@ h4 {
   width: 0;
 }
 
+.arrow-container {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  height: 45px;
+}
+
 .container {
   display: block;
   position: absolute;
