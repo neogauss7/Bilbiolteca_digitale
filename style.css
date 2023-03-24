@@ -127,9 +127,6 @@ body {
 .donate:hover .arrow:before {
   right: 0;
 }
-hr {
-  margin-bottom: 30px;
-}
 
 .btn:hover {
   color: white;
