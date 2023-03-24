@@ -8,12 +8,17 @@
       data-blockingmode="auto"
       type="text/javascript"
     ></script>
-    <link rel="icon" href="favicon.webp" />
+    <link rel="icon" href="favicon.png" />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"
     ></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -23,32 +28,32 @@
 
       gtag("config", "G-2Z6FRX1VZF");
     </script>
-    <!-- Title of the page -->
-    <title>Theoremz | Scienze</title>
+
+    <!-- Titolo -->
+    <title>Theoremz | Termini e condizioni</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="funzioni.css" />
+    <link rel="stylesheet" type="text/css" href="general.css" />
+    <link rel="stylesheet" type="text/css" href="header.css" />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti."
+    />
+    <meta name="viewport" contenent="width=device-width-initial-scale=1" />
+
     <!-- Including header and footer -->
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
     <script>
       $(function () {
         $("#header").load("header.html");
         $("#footer").load("footer.html");
       });
     </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="Matematica.css" />
-    <link rel="stylesheet" type="text/css" href="general.css" />
-    <!-- Meta description -->
-    <meta
-      name="description"
-      content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti."
-    />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   </head>
+
   <body>
     <!-- Header -->
     <div id="header"></div>
