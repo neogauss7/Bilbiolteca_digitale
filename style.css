@@ -6,7 +6,10 @@
 
 body {
   line-height: 1.5;
-  padding-top: 110px;
+}
+
+#header {
+  margin-bottom: 110px;
 }
 
 .welcome-image {
