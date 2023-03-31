@@ -15,6 +15,14 @@
   --drkblue: #050959;
 }
 
+
+#CybotCookiebotDialog {
+  max-width: 200px!important;
+}
+#CybotCookiebotDialog{
+  opacity: 0%!important;
+}
+
 .darktheme {
   --pc: #1e76e9;
   --blk: #fff;
@@ -83,6 +91,10 @@ body.hidden-scrolling {
   .home {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  #CybotCookiebotDialog {
+    max-width: 400px;
+    max-height: 250px;
   }
 }
 
