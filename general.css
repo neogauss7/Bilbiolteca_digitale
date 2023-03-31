@@ -15,12 +15,28 @@
   --drkblue: #050959;
 }
 
-
 #CybotCookiebotDialog {
-  max-width: 200px!important;
+  font-family: "Noto Sans", sans-serif !important;
+  color: var(--gray) !important;
 }
-#CybotCookiebotDialog{
-  opacity: 0%!important;
+#CybotCookiebotDialogPoweredByText {
+  display: none !important;
+}
+#CybotCookiebotDialogHeader {
+  display: none !important;
+}
+.CybotCookiebotDialogBodyButton {
+  border: 2px solid var(--pc) !important;
+}
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll {
+  background-color: var(--pc) !important;
+}
+#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogBodyEdgeMoreDetails a {
+  color: #1032cf !important;
+}
+#CybotCookiebotDialogBodyContent {
+  overflow-x: visible !important;
+  padding: 0.5em 0.625em !important;
 }
 
 .darktheme {
@@ -93,8 +109,27 @@ body.hidden-scrolling {
     padding-right: 30px;
   }
   #CybotCookiebotDialog {
-    max-width: 400px;
-    max-height: 250px;
+    max-width: 600px !important;
+    max-height: 350px !important;
+    top: 75% !important;
+  }
+  #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll {
+    grid-row-start: 1 !important;
+    grid-column-end: 5 !important;
+    grid-column-start: 1 !important;
+  }
+  #CybotCookiebotDialogBodyButtonsWrapper {
+    display: grid !important;
+    width: 100% !important;
+    grid-template-columns: auto auto !important;
+  }
+
+  #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection {
+    width: 167px !important;
+  }
+  #CybotCookiebotDialogBodyButtonDecline {
+    width: 167px !important;
+    margin-right: 10px !important;
   }
 }
 
