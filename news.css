@@ -3,7 +3,7 @@
 }
 body {
   line-height: 1.5;
-  padding-top: 100px;
+  padding-top: 100px !important;
 }
 .box {
   background-color: #f8f9fa;
