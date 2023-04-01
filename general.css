@@ -32,13 +32,30 @@
   background-color: var(--pc) !important;
 }
 #CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogBodyEdgeMoreDetails a {
-  color: #1032cf !important;
+  color: var(--pc) !important;
 }
 #CybotCookiebotDialogBodyContent {
   overflow-x: visible !important;
   padding: 0.5em 0.625em !important;
 }
+#CybotCookiebotDialogBodyContentTitle {
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
 
+#CybotCookiebotDialog .CybotCookiebotScrollContainer {
+  position: unset !important;
+  min-height: unset !important;
+}
+
+#CybotCookiebotDialog
+  input:checked
+  + .CybotCookiebotDialogBodyLevelButtonSlider {
+  background-color: var(--pc) !important;
+}
+#CybotCookiebotDialog #CybotCookiebotDialogBodyContentText a {
+  color: var(--pc) !important;
+}
 .darktheme {
   --pc: #1e76e9;
   --blk: #fff;
@@ -110,8 +127,18 @@ body.hidden-scrolling {
   }
   #CybotCookiebotDialog {
     max-width: 600px !important;
-    max-height: 350px !important;
+    max-height: 300px !important;
     top: 75% !important;
+  }
+  #CookiebotWidget .CookiebotWidget-body .CookiebotWidget-main-logo {
+    display: none !important;
+  }
+  #CookiebotWidget #CookiebotWidget-buttons #CookiebotWidget-btn-change {
+    background-color: var(--pc) !important;
+    border-color: var(--pc) !important;
+  }
+  #CookiebotWidget #CookiebotWidget-buttons #CookiebotWidget-btn-withdraw {
+    border-color: var(--pc) !important;
   }
   #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll {
     grid-row-start: 1 !important;

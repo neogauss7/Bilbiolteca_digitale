@@ -4,7 +4,6 @@
   margin-right: auto;
 }
 
-
 body {
   line-height: 1.5;
 }
@@ -70,8 +69,10 @@ body {
   font-size: 21px;
 }
 .donate {
-  position: fixed;
-  right: 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 90px;
+  right: 20px;
   z-index: 20;
   --primary-color: var(--pc);
   --secondary-color: var(--white);
@@ -82,7 +83,7 @@ body {
   border: 0;
   border-radius: 20px;
   color: var(--white);
-  padding: 1em 1.8em;
+  padding: 0.8em 1.5em;
   background: var(--pc);
   display: flex;
   transition: 0.2s background;
