@@ -39,496 +39,331 @@
         </script>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     </head>
-         <div id="header"></div>
-        
-      <section class="home">
 
-        <label class="container">
-            <input onclick="save()" id="bookmark" type="checkbox">
-            <div class="checkmark">
-              <svg viewBox="0 0 256 256">
-              <rect fill="none" height="256" width="256"></rect>
-              <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
-            </div>
-          </label>
+    <body>
+        <div id="header"></div>
+        <section class="home">
+            <label class="container">
+                <input onclick="save()" id="bookmark" type="checkbox">
+                <div class="checkmark">
+                    <svg viewBox="0 0 256 256">
+                    <rect fill="none" height="256" width="256"></rect>
+                    <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
+                </div>
+            </label>
+
             <div class="welcome"> 
                 <h1 class="welcome1" >Disquazioni esponenziali</h1>
                 <h3 class="p1">Di seguito analizzeremo le disquazioni esponenziali.</h3>
-             </div>  
-             <!-- Mini-index -->
-    <div class="minimenu">
-<a href="#classif" class="mini-item" ><div class=""><p class="minitext">Base > 0</p></div></a>
-<a href="#classif2" class="mini-item" ><div class=""><p class="minitext">0 < Base < 1</p></div></a>
-<a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Con logaritmi</p></div></a>
+            </div>  
 
-    </div>
-              <!-- Divider -->
-         <hr class="divider"></hr>  
-         <body>
+            <!-- Mini-index -->
+            <div class="minimenu">
+                <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Base > 0</p></div></a>
+                <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">0 < Base < 1</p></div></a>
+                <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Con logaritmi</p></div></a>
+            </div>
+
+            <!-- Divider -->
+            <hr class="divider"></hr> 
 
             <h2>
                 Cos'è una diseqauzione esponenziale?
-
             </h2>
-
             <br>
-
             <p>
                 Una disequazione esponenziale è una disequazioni in cui appare almeno una potenza con l'incognita nell'esponente. Esse sono quindi disequazioni del tipo: 
-
             </p>
-
             <br>
-
             <p>
                 \(a^f(x) > g(x)
                 \)
             </p>
-
             <br>
-
             <p>
                 o con \(<\) ,\(\geq\) o \(\leq\) al posto di \(>\). 
-
             </p>
-
             <br>
-
             <p>
                 Iniziamo vedendo al caso particolare in cui \(f(x) = x\) e \(g(x)\) è costante. Avremo quindi disequazioni del tipo: 
-
             </p>
-
             <br>
-
             <p>
                 \(a^x > b
                 \)
             </p>
-
             <br>
-
             <p id="classif">
                 Dobbiamo dividere queste disequazioni in due casi:
-
             </p>
-<br>
-
- 
-
+            <br>
             <h2>
                 La base a è maggiore di 1
             </h2>
-
             <br>
-
             <p>
                 In questo caso per prima cosa risolviamo l'equazione associata: 
-
             </p>
-
             <br>
-
             <p>
                 \(a^x =b\) 
-
+            </p>
+            <br>
+            <p>
+                Una volta questo, sapendo che la funzione \(a^x\) è monotona crescente (ovvero aumenta sempre), troviamo la soluzione della disequazione. 
             </p>
 
-            <br>
+            <img class='funzione' src="images/dis1.webp" alt="Disequazione esponenziale 1">
 
             <p>
-                Una volta questo, sapendo che la funzione \(a^x\) è monotona crescente (ovvero aumenta sempre), troviamo la soluzione della disequazione. </p>
-                <img class='funzione' src="images/dis1.webp" alt="Disequazione esponenziale 1">
-
-                <p>
-
-                
                 Vediamo qualche esempio. 
-
             </p>
-
             <br>
-
             <p>
                 Risolviamo la disequazione esponenziale: 
-
             </p>
-
             <br>
-
             <p>
                 \(3^x > 81 
                 \)
             </p>
-
             <br>
-
             <p>
                 Risolviamo l'equazione associata: 
-
             </p>
-
             <br>
-
             <p>
                 \(3^x = 81
                 \)
-            </p>
-
+            </p>    
             <br>
-
             <p>
                 \(3^x = 3^4\)
-
             </p>
-
             <br>
-
             <p>
                 \(x= 4 
                 \)
             </p>
-
             <br>
-
             <p>
                 Sappiamo che \(3^x\) aumenta sempre, quindi per \(x > 4\) sarà sempre maggiore di 81. Quindi la soluzione è \(x>4\). 
-
             </p>
-
             <br>
-
             <p>
                 Risolviamo la disequazione esponenziale: 
-
             </p>
-
             <br>
-
             <p>
                 \(5^x \leq 125
                 \)
             </p>
-
             <br>
-
             <p>
                 Risolviamo l'equazione associata: 
-
             </p>
-
             <br>
-
             <p>
                 \(5^x = 125\)
-
             </p>
-
             <br>
-
             <p>
                 \(5^x = 5^3 
                 \)
             </p>
-
             <br>
-
             <p>
                 \(x= 3\)
-
             </p>
-
             <br>
-
             <p id="classif2">
                 Sappiamo che \(5^x\) aumenta sempre, quindi per \(x>3\) sarà sempre maggiore di 125, mentre per \(x < 3\) sarà sempre minore di 125. La soluzione è quindi \(x \leq 3\). 
-
             </p>
 
             <!-- Divider -->
-         <hr class="divider"></hr> 
-            
+            <hr class="divider"></hr> 
 
             <h2>
                 La base a è compresa tra 0 e 1 
-
             </h2>
-
             <br>
-
             <p>
                 In tal caso il procedimento è lo stesso, ma questa volta dobbiamo considerare che la funzione è monotona decrescente (ovvero diminuisce sempre).
-                </p>
-                <img class='funzione' src="images/dis2.webp" alt="Disequazione esponenziale 2">
-<p>Vediamo qualche esempio: 
-
             </p>
-
+            <img class='funzione' src="images/dis2.webp" alt="Disequazione esponenziale 2">
+            <p>
+                Vediamo qualche esempio: 
+            </p>
             <br>
-
             <p>
                 Risolviamo la disequazione esponenziale: 
-
             </p>
-
             <br>
-
             <p>
                 \(({1 \over 2})^x < {1\over 32}
                 \)
             </p>
-
             <br>
-
             <p>
                 Risolviamo l'equazione associata: 
-
             </p>
-
             <br>
-
             <p>
                 \(({1\over 2})^x ={1\over 32}
                 \)
             </p>
-
             <br>
-
             <p>
                 \(({1\over 2})^x =({1\over 2})^5
                 \)
             </p>
-
             <br>
-
             <p>
                 \(x=5
                 \)
             </p>
-
             <br>
-
             <p>
                 Siccome \(({1\over 2})^x\) diminuisce sempre, per \(x>5\) sarà sempre minore di \({1\over 32}\), quindi la soluzione è proprio \(x>5\). 
-
             </p>
-
             <br>
-
             <p>
                 Risolviamo la disequazione esponenziale: 
-
             </p>
-
             <br>
-
             <p>
                 \(({1\over 3})^x \geq {1\over 9}
                 \)
             </p>
-
             <br>
-
             <p>
                 Risolviamo l'equazione associata: 
-
             </p>
-
             <br>
-
             <p>
                 \(({1\over 3})^x ={1\over 9}\)
-
             </p>
-
             <br>
-
             <p>
                 \(({1\over 3})^x =({1\over 3})^2
                 \)
             </p>
-
             <br>
-
             <p>
                 \(x=2
                 \)
             </p>
-
             <br>
-
             <p id="classif3">
                 Siccome \(({1\over 3})^x\) diminuisce sempre, per \(x>2\) sarà sempre minore di \({1\over 9}\) e sarà invece maggiore di \({1\over 9}\) per \(x < 2\), quindi la soluzione è proprio \(x\leq 2\). 
-
             </p>
-
-
             <br>
 
             <!-- Divider -->
-         <hr class="divider"></hr> 
+            <hr class="divider"></hr> 
 
             <h2>
                 Disequazioni esponenziali risolvibili con i logaritmi
-
             </h2>
-
             <br>
-
             <p>
                 Usando i logaritmi possiamo risolvere disequazioni più complicate, dove possono apparire più potenze con incognite all'esponente. Ci basterà applicare il logaritmo base 10 da entrambi i lati e semplificare. Possiamo pure applicare logaritmi con altre basi, ma se è compresa tra 0 ed 1 dobbiamo cambiare il segno della disequazione, perché: 
-
             </p>
-
             <br>
-
             <p>
                 Dato \(x>y\), se \(a>1\), avremo: 
-
             </p>
-
             <br>
-
             <p>
                 \(\log_{a} (x) >\log_{a} (y)\)
-
             </p>
-
             <br>
-
             <p>
                 Mentre se \(0 < a < 1\) , avremo: 
-
             </p>
-
             <br>
-
             <p>
                 \(\log_{a} (x) < \log_{a} (y)
                 \)
             </p>
-
             <br>
-
             <p>
                 In generale conviene quindi applicare sempre il logaritmo base 10 e non avere paura di dover cambiare qualcosa. 
-
             </p>
-
             <br>
-
             <p>
                 Vediamo qualche esempio: 
-
             </p>
-
             <br>
-
             <p>
                 Risolviamo la disequazione esponenziale: 
-
             </p>
-
             <br>
-
             <p>
                 \(5\cdot 3^x > 2^{x-3}
                 \)
             </p>
-
             <br>
-
             <p>
                 Abbiamo quantità positive da entrambi i lati, quindi applichiamo il logaritmo base 10 da entrambi i lati:
-
             </p>
-
             <br>
-
             <p>
                 \(\log_{10}(5 \cdot 3^x) > \log_{10}(2^{x-3})
                 \)
             </p>
-
             <br>
-
             <p>
                 Applichiamo la proprietà  del logaritmo di un prodotto e sottintendiamo \(\log_{10}\) con \(\log\): 
-
             </p>
-
             <br>
-
             <p>
                 \(\log (5) + \log (3^x) > \log (2^{x-3})
                 \)
             </p>
-
             <br>
-
             <p>
                 Applichiamo la proprietà del logaritmo di una potenza ed isoliamo x: 
-
             </p>
-
             <br>
-
             <p>
                 \(\log(5) + x \log(3) > (x-3) \log(2)
                 \)
             </p>
-
             <br>
-            
             <p>
                 \(\log (5) + x\log (3) >x\log(2) -3\log(2)
                 \)
             </p>
-
             <br>
-
             <p>
                 \(x\log(3) - x\log(2) > -\log(5) -3\log(2)\)
-
             </p>
-
             <br>
-
             <p>
                 \(x( \log(3) -\log(2))>-(\log(5)+3\log(2))
                 \)
             </p>
-
             <br>
-
             <p>
                 Siccome \(\log(3) -\log(2)\) è una quantità positiva, possiamo dividere entrambi i lati per essa: 
-
             </p>
-
             <br>
-
             <p>
                 \(x> -\frac{\log(5+3\log(2))}{\log(3)-\log(2)}
                 \)
             </p>
-
-
-
-         
-         
-         
-        </body>
         </section>
+
         <!-- Site footer -->
         <div id="footer"></div>
         <script src="custom.js"></script>
         <script src="bookmark.js"></script>
         <script src="index.js"></script>
+
         <!-- Including MathJax -->
         <script type="text/javascript" async
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
-    </body>
-            
+        </script>
+    </body>        
 </html>

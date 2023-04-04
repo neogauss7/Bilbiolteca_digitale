@@ -39,10 +39,10 @@
       </script>
       <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
    </head>
-         <div id="header"></div>
-        
-      <section class="home">
 
+   <body>
+      <div id="header"></div>
+      <section class="home">
          <label class="container">
             <input onclick="save()" id="bookmark" type="checkbox">
             <div class="checkmark">
@@ -50,202 +50,197 @@
               <rect fill="none" height="256" width="256"></rect>
               <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
             </div>
-          </label>
-            <div class="welcome"> 
-                <h1 class="welcome1" >Disequazioni di 2°grado</h1>
-                <h3 class="p1">Di seguito analizzeremo le disequazioni di 2°grado.</h3>
-             </div>  
-             <!-- Mini-index -->
-    <div class="minimenu">
-<a href="#classif" class="mini-item" ><div class=""><p class="minitext">Risoluzione</p></div></a>
-<a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Parabola</p></div></a>
-<a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Soluzioni</p></div></a>
-<a href="#classif4" class="mini-item" ><div class=""><p class="minitext">2°metodo</p></div></a>
+         </label>
+         <div class="welcome"> 
+            <h1 class="welcome1" >Disequazioni di 2°grado</h1>
+            <h3 class="p1">Di seguito analizzeremo le disequazioni di 2°grado.</h3>
+         </div> 
 
-    </div>
-              <!-- Divider -->
+         <!-- Mini-index -->
+         <div class="minimenu">
+            <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Risoluzione</p></div></a>
+            <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Parabola</p></div></a>
+            <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Soluzioni</p></div></a>
+            <a href="#classif4" class="mini-item" ><div class=""><p class="minitext">2°metodo</p></div></a>
+         </div>
+
+         <!-- Divider -->
          <hr class="divider"></hr>  
-        <body>
-            <h2>Disequazioni di secondo grado
-            </h2>
-            <br>
-            <p>Le disequazioni di secondo grado sono equazioni di secondo grado con la differenza che al posto di porre una condizione di uguaglianza tra i membri se ne pone una di disuguaglianza che può essere <span class="blue">maggiore</span> o <span class="blue">minore</span>, ma anche <span class="blue">maggiore o uguale</span> o <span class="blue">minore o uguale</span>
-            </p>
-            <br>
-            <p class="bbk">Di seguito alcuni esempi di disequazioni di secondo grado:
-            </p>
-            <br>
-            <p>• \(3x^2-x+ \sqrt3 \geq 0\)</p>
-            <br>
-            <p>• \(x^2+6x-16<0\)</p>
-            <br>
-            <p id="classif">• \(\sqrt2x^2-2x+3 \leq 0\)</p>
-            <br>
-            <!-- Divider -->
+         <h2>Disequazioni di secondo grado
+         </h2>
+         <br>
+         <p>Le disequazioni di secondo grado sono equazioni di secondo grado con la differenza che al posto di porre una condizione di uguaglianza tra i membri se ne pone una di disuguaglianza che può essere <span class="blue">maggiore</span> o <span class="blue">minore</span>, ma anche <span class="blue">maggiore o uguale</span> o <span class="blue">minore o uguale</span>
+         </p>
+         <br>
+         <p class="bbk">Di seguito alcuni esempi di disequazioni di secondo grado:
+         </p>
+         <br>
+         <p>• \(3x^2-x+ \sqrt3 \geq 0\)</p>
+         <br>
+         <p>• \(x^2+6x-16<0\)</p>
+         <br>
+         <p id="classif">• \(\sqrt2x^2-2x+3 \leq 0\)</p>
+         <br>
+
+         <!-- Divider -->
          <hr class="divider"></hr> 
 
+         <h2>Risoluzione delle equazioni di secondo grado</h2>
+         <br>
+         <p>Per risolvere una disequazione di secondo grado basterà studiare il variare del segno della disequazione in funzione di \(x\) e prendere quei valori per i quali è soddisfatta la condizione di disuguaglianza.
+         </p>
+         <br>
+         <p class="bbk">Vediamo un esempio:
+         </p>
+         <br>
+         <p>\(3x-x+5 \leq 2x^2+1\)</p>
+         <br>
+         <p>Portiamo tutti i termini da un lato in modo da ottenere \(0\) dall’altro:
+         </p>
+         <br>
+         <p>\(-x^2+x+2 \leq 0\)</p>
+         <br>
+         <p>Ora risolviamo come con <span class="blue">la formula di risoluzione delle equazioni di secondo grado</span> come se fosse un’equazione:
+         </p>
+         <br>
+         <p>\(-x^2+x+2 =0 \longrightarrow\) \(x={-1 \pm \sqrt{1+4 \cdot2} \over -2} \longrightarrow\) \(x_1=-1; x_2 =2\)</p>
+         <br>
+         <p id="classif2">Avendo calcolato le soluzioni, sappiamo per quali \(x\) la disequazione sarà \(0\). Come si può sapere quando invece sarà positiva o negativa?
+         </p>
+         <br>
 
-            <h2>Risoluzione delle equazioni di secondo grado</h2>
-            <br>
-            <p>Per risolvere una disequazione di secondo grado basterà studiare il variare del segno della disequazione in funzione di \(x\) e prendere quei valori per i quali è soddisfatta la condizione di disuguaglianza.
-            </p>
-            <br>
-            <p class="bbk">Vediamo un esempio:
-            </p>
-            <br>
-            <p>\(3x-x+5 \leq 2x^2+1\)</p>
-            <br>
-            <p>Portiamo tutti i termini da un lato in modo da ottenere \(0\) dall’altro:
-            </p>
-            <br>
-            <p>\(-x^2+x+2 \leq 0\)</p>
-            <br>
-            <p>Ora risolviamo come con <span class="blue">la formula di risoluzione delle equazioni di secondo grado</span> come se fosse un’equazione:
-            </p>
-            <br>
-            <p>\(-x^2+x+2 =0 \longrightarrow\) \(x={-1 \pm \sqrt{1+4 \cdot2} \over -2} \longrightarrow\) \(x_1=-1; x_2 =2\)</p>
-            <br>
-            <p id="classif2">Avendo calcolato le soluzioni, sappiamo per quali \(x\) la disequazione sarà \(0\). Come si può sapere quando invece sarà positiva o negativa?
-            </p>
-            <br>
-            <!-- Divider -->
+         <!-- Divider -->
          <hr class="divider"></hr> 
 
+         <h2>Studio della parabola
+         </h2>
+         <br>
+         <p>Per rispondere a questa domanda possiamo fare un passo indietro e ragionare sull’equazione di secondo grado in se: come visto nelle lezioni precedenti, il grafico di un’equazione di secondo grado sul piano cartesiano è una <span class="blue">parabola</span>.
+         </p>
+         <br>
+         <p><img class='funzione' src="images/2sol.png" alt="2 soluzioni reali"></p>
+         <br>
 
-            <h2>Studio della parabola
-            </h2>
-            <br>
-            <p>Per rispondere a questa domanda possiamo fare un passo indietro e ragionare sull’equazione di secondo grado in se: come visto nelle lezioni precedenti, il grafico di un’equazione di secondo grado sul piano cartesiano è una <span class="blue">parabola</span>.
-            </p>
-            <br>
-            <p><img class='funzione' src="images/2sol.png" alt="2 soluzioni reali"></p>
-            <br>
-            <!-- Divider -->
+         <!-- Divider -->
          <hr class="divider"></hr> 
 
+         <h2>Posizione rispetto alle ascisse
+         </h2>
+         <br>
+         <p>E quindi? Osservando con uno sguardo attento ci si può accorgere che la parabola può solo essere posizionata in \(3\) modi rispetto all’asse delle ascisse (\(x\)):
+         </p>
+         <br>
+         <p>1. Intersecarla in \(2\) punti distinti <i>(il nostro caso)</i>
+         </p>
+         <p><img class='funzione' src="images/2sol.png" alt="2 soluzioni reali"></p>
+         <br>
+         <p>2. Intersecarla in \(2\) punti coincidenti
+         </p>
+         <img class='funzione' src="images/2solcoi.png" alt="2 soluzioni coincidenti"></p>
+         <br>
+         <p>3. Non intersecarla affatto <i>(2 soluzioni complesse e coniugate)</i>
+         </p>
+         <img class='funzione' src="images/0sol.png" alt="Nessuna soluzione reale"></p>
+         <br>
+         <br>
+         <p>Questa informazione la ricaviamo dalle \(2\) soluzioni trovate in precedenza.
+         </p>
+         <br>
+         <p>\(x_1=-1; x_2 =2\)</p>
+         <br>
 
-            <h2>Posizione rispetto alle ascisse
-            </h2>
-            <br>
-            <p>E quindi? Osservando con uno sguardo attento ci si può accorgere che la parabola può solo essere posizionata in \(3\) modi rispetto all’asse delle ascisse (\(x\)):
-            </p>
-            <br>
-            <p>1. Intersecarla in \(2\) punti distinti <i>(il nostro caso)</i>
-            </p>
-            <p><img class='funzione' src="images/2sol.png" alt="2 soluzioni reali"></p>
-            <br>
-            <p>2. Intersecarla in \(2\) punti coincidenti
-            </p>
-            <img class='funzione' src="images/2solcoi.png" alt="2 soluzioni coincidenti"></p>
-            <br>
-            <p>3. Non intersecarla affatto <i>(2 soluzioni complesse e coniugate)</i>
-            </p>
-            <img class='funzione' src="images/0sol.png" alt="Nessuna soluzione reale"></p>
-            <br>
-            <br>
-            <p>Questa informazione la ricaviamo dalle \(2\) soluzioni trovate in precedenza.
-            </p>
-            <br>
-            <p>\(x_1=-1; x_2 =2\)</p>
-            <br>
-            <!-- Divider -->
+         <!-- Divider -->
          <hr class="divider"></hr> 
 
+         <h2>Orientamento</h2>
+         <br>
+         <p>Per l’orientamento della parabola invece, basterà guardare il coefficiente del primo termine dell’equazione <i>(il coefficiente di \(x^2\))</i>. Se questo è positivo avrà una <span class="blue">concavità verso l’alto</span>, se negativo invece <span class="blue">verso il basso</span>.
+         </p>
+         <br>
+         <p>\(\rightarrow -x^2\leftarrow +x+2 \leq 0\)</p>
+         <img class='funzione' src="images/concavitabasso.png" alt="Concavità verso il basso"></p>
+         <br>
+         <p>Questo si può ricordare facilmente pensando a una faccia, se positiva la bocca sarà una parabola verso l’alto, se negativa questa sarà verso il basso.</p>
+         <img class='funzione' src="images/smile.png" alt="Faccine parabola">
+         <p id="classif3">Ora che sappiamo tutto su questa parabola possiamo arrivare al risultato finale:
+         </p>
+         <br>
 
-            <h2>Orientamento</h2>
-            <br>
-            <p>Per l’orientamento della parabola invece, basterà guardare il coefficiente del primo termine dell’equazione <i>(il coefficiente di \(x^2\))</i>. Se questo è positivo avrà una <span class="blue">concavità verso l’alto</span>, se negativo invece <span class="blue">verso il basso</span>.
-            </p>
-            <br>
-            <p>\(\rightarrow -x^2\leftarrow +x+2 \leq 0\)</p>
-            <img class='funzione' src="images/concavitabasso.png" alt="Concavità verso il basso"></p>
-            <br>
-            <p>Questo si può ricordare facilmente pensando a una faccia, se positiva la bocca sarà una parabola verso l’alto, se negativa questa sarà verso il basso.</p>
-            <img class='funzione' src="images/smile.png" alt="Faccine parabola">
-            <p id="classif3">Ora che sappiamo tutto su questa parabola possiamo arrivare al risultato finale:
-            </p>
-            <br>
-            <!-- Divider -->
+         <!-- Divider -->
          <hr class="divider"></hr> 
 
-            <h2>Trovare le soluzioni
-            </h2>
-            <br>
-            <p>Nel grafico le soluzioni positive corrispondono alla parte di parabola sopra all’asse delle <span class="blue">ascisse</span>, dato che il segno della disequazione che stiamo risolvendo è \(\leq\) le \(x\) la parte di parabola che la verifica è quella sotto l’asse delle <span class="blue">ascisse</span> più le \(2\) intersezioni trovate in precedenza.
-            </p>
-            <br>
-            <p>La parabola in questo caso è <span class="blue">concava verso il basso</span> perché il coefficiente del primo termine è negativo.
-            </p>
-            <img class='funzione' src="images/intersezioni.png" alt="Intersezioni parabola">
-            <p>In questo caso l’equazione è verificata per le \(x\) che la rendono minore o uguale a \(0\), Quindi, guardando il grafico, il risultato della disequazione sono tutte le \(x\) minori o uguali alla radice più piccola dell’equazione iniziale e tutte le \(x\) maggiori o uguale alla radice più grande.
-            </p>
-            <br>
-            <p>\(x_1=-1; x_2 =2\)</p>
-            <img class='funzione' src="images/soluzioni.png" alt="Soluzioni parabola">
-            <p class="bbk" id="classif4">Soluzione:&nbsp&nbsp&nbsp \(]-\infty, -1] \cup [2, +\infty[\)</p>
-            <br>
-            <!-- Divider -->
+         <h2>Trovare le soluzioni
+         </h2>
+         <br>
+         <p>Nel grafico le soluzioni positive corrispondono alla parte di parabola sopra all’asse delle <span class="blue">ascisse</span>, dato che il segno della disequazione che stiamo risolvendo è \(\leq\) le \(x\) la parte di parabola che la verifica è quella sotto l’asse delle <span class="blue">ascisse</span> più le \(2\) intersezioni trovate in precedenza.
+         </p>
+         <br>
+         <p>La parabola in questo caso è <span class="blue">concava verso il basso</span> perché il coefficiente del primo termine è negativo.
+         </p>
+         <img class='funzione' src="images/intersezioni.png" alt="Intersezioni parabola">
+         <p>In questo caso l’equazione è verificata per le \(x\) che la rendono minore o uguale a \(0\), Quindi, guardando il grafico, il risultato della disequazione sono tutte le \(x\) minori o uguali alla radice più piccola dell’equazione iniziale e tutte le \(x\) maggiori o uguale alla radice più grande.
+         </p>
+         <br>
+         <p>\(x_1=-1; x_2 =2\)</p>
+         <img class='funzione' src="images/soluzioni.png" alt="Soluzioni parabola">
+         <p class="bbk" id="classif4">Soluzione:&nbsp&nbsp&nbsp \(]-\infty, -1] \cup [2, +\infty[\)</p>
+         <br>
+
+         <!-- Divider -->
          <hr class="divider"></hr> 
 
+         <h2>Metodo alternativo
+         </h2>
+         <br>
+         <p>Un altro modo per risolvere le disequazioni di secondo grado è di <span class="blue">fattorizzare il nostro polinomio</span> e controllare il segno ogni fattore singolarmente e poi quello del loro prodotto.
+         </p>
+         <br>
+         <p class="bbk">Esempio:</p>
+         <br>
+         <p>\(x^2+x-2 \geq0\)</p>
+         <br>
+         <p class="bbk">Fattorizzazione:</p>
+         <br>
+         <p>\((x+2)\cdot (x-1) \geq 0\)</p>
+         <br>
+         <p><i>Un modo semplice per fattorizzare un polinomio è cercare i due numeri la cui somma sia il coefficiente di \(x\) e il cui prodotto sia il <span class="blue">termine noto</span>.</i>
+         </p>
+         <br>
+         <p>Una volta fattorizzato il polinomio otterremo qualcosa del genere \((x+g) \cdot (x+r)\). 
+         </p>
+         <br>
+         <p>Prima ci chiederemo quando \(x+g\) è positivo e quando negativo. 
+         </p>
+         <br>
+         <p>Dunque <i><u>negli intervalli in cui il loro segno sarà uguale</u>, il prodotto sarà <span class="blue">positivo</span>, mentre dove saranno di <u>segni discordi</u> il prodotto sarà <span class="blue">negativo</span></i>. Forniamo un esempio per chiarire meglio:
+         </p>
+         <br>
+         <p>Dato il polinomio \( x^2+3x-4\) trovare per quali valori di \(x\) esso risulta essere maggiore di \(0\).
+         </p>
+         <br>
+         <p>Notiamo che esso è fattorizzabile in \((x+4) \cdot (x-1)\). Dunque analizziamo i singoli termini.
+         </p>
+         <br>
+         <p>\(x+4\) è uguale a \(0\) quando \(x=-4\), è maggiore di \(0\) quando \(x > -4\) e minore di \(0\) quando \(x<-4\). 
+         </p>
+         <br>
+         <p>\(x-1\) è uguale a \(0\) quando \(x=1\), è maggiore di \(0\) quando \(x>1\) e minore di \(0\) quando \(x<1\). 
+         </p>
+         <br>
+         <p>Soprattutto in casi più complicati tracciamo il seguente grafico, dove indichiamo con una retta continua i valori positivi, con una retta tratteggiata i valori negativi e con delle rette verticali gli \(0\):
+         </p>
+         <img class='funzione' src="images/graficodiseq.png" alt="Grafico disequazione">
+      </section>
 
-            <h2>Metodo alternativo
-            </h2>
-            <br>
-            <p>Un altro modo per risolvere le disequazioni di secondo grado è di <span class="blue">fattorizzare il nostro polinomio</span> e controllare il segno ogni fattore singolarmente e poi quello del loro prodotto.
-            </p>
-            <br>
-            <p class="bbk">Esempio:</p>
-            <br>
-            <p>\(x^2+x-2 \geq0\)</p>
-            <br>
-            <p class="bbk">Fattorizzazione:</p>
-            <br>
-            <p>\((x+2)\cdot (x-1) \geq 0\)</p>
-            <br>
-            <p><i>Un modo semplice per fattorizzare un polinomio è cercare i due numeri la cui somma sia il coefficiente di \(x\) e il cui prodotto sia il <span class="blue">termine noto</span>.</i>
-            </p>
-            <br>
-            <p>Una volta fattorizzato il polinomio otterremo qualcosa del genere \((x+g) \cdot (x+r)\). 
-            </p>
-            <br>
-            <p>Prima ci chiederemo quando \(x+g\) è positivo e quando negativo. 
-            </p>
-            <br>
-            <p>Dunque <i><u>negli intervalli in cui il loro segno sarà uguale</u>, il prodotto sarà <span class="blue">positivo</span>, mentre dove saranno di <u>segni discordi</u> il prodotto sarà <span class="blue">negativo</span></i>. Forniamo un esempio per chiarire meglio:
-            </p>
-            <br>
-            <p>Dato il polinomio \( x^2+3x-4\) trovare per quali valori di \(x\) esso risulta essere maggiore di \(0\).
-            </p>
-            <br>
-            <p>Notiamo che esso è fattorizzabile in \((x+4) \cdot (x-1)\). Dunque analizziamo i singoli termini.
-            </p>
-            <br>
-            <p>\(x+4\) è uguale a \(0\) quando \(x=-4\), è maggiore di \(0\) quando \(x > -4\) e minore di \(0\) quando \(x<-4\). 
-            </p>
-            <br>
-            <p>\(x-1\) è uguale a \(0\) quando \(x=1\), è maggiore di \(0\) quando \(x>1\) e minore di \(0\) quando \(x<1\). 
-            </p>
-            <br>
-            <p>Soprattutto in casi più complicati tracciamo il seguente grafico, dove indichiamo con una retta continua i valori positivi, con una retta tratteggiata i valori negativi e con delle rette verticali gli \(0\):
-            </p>
-            <img class='funzione' src="images/graficodiseq.png" alt="Grafico disequazione">
-            
-            
-
-
-
-         
-        </body>
-        </section>
-        <!-- Site footer -->
-        <div id="footer"></div>
-        <script src="custom.js"></script>
-        <script src="bookmark.js"></script>
-        <!-- Including MathJax -->
-        <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
-    <script src="index.js"></script>
-    </body>
-            
+      <!-- Site footer -->
+      <div id="footer"></div>
+      <script src="custom.js"></script>
+      <script src="bookmark.js"></script>
+      
+      <!-- Including MathJax -->
+      <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script src="index.js"></script>
+   </body>         
 </html>

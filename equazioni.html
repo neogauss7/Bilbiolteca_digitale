@@ -39,176 +39,173 @@
     </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   </head>
-         <div id="header"></div>
-        
-      <section class="home">
 
-        <label class="container">
-          <input onclick="save()" id="bookmark" type="checkbox">
-          <div class="checkmark">
-            <svg viewBox="0 0 256 256">
-            <rect fill="none" height="256" width="256"></rect>
-            <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
-          </div>
-        </label>
-            <div class="welcome"> 
-                <h1 class="welcome1" >Equazioni di 1°grado</h1>
-                <h3 class="p1">Di seguito analizzeremo le equazioni di 1°grado.</h3>
-             </div>  
-             <!-- Mini-index -->
-    <div class="minimenu">
-<a href="#classif" class="mini-item" ><div class=""><p class="minitext">Equivalenza</p></div></a>
-<a href="#classif2" class="mini-item" ><div class=""><p class="minitext">1°principio</p></div></a>
-<a href="#classif3" class="mini-item" ><div class=""><p class="minitext">2°principio</p></div></a>
+  <body>
+    <div id="header"></div>
+    <section class="home">
+      <label class="container">
+        <input onclick="save()" id="bookmark" type="checkbox">
+        <div class="checkmark">
+          <svg viewBox="0 0 256 256">
+          <rect fill="none" height="256" width="256"></rect>
+          <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
+        </div>
+      </label>
 
+      <div class="welcome"> 
+        <h1 class="welcome1" >Equazioni di 1°grado</h1>
+        <h3 class="p1">Di seguito analizzeremo le equazioni di 1°grado.</h3>
+      </div>  
+      
+      <!-- Mini-index -->
+      <div class="minimenu">
+        <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Equivalenza</p></div></a>
+        <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">1°principio</p></div></a>
+        <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">2°principio</p></div></a>
+      </div>
 
-    </div>
-              <!-- Divider -->
-         <hr class="divider"></hr>  
-        <body>
-            <h2>Equazioni</h2>
-            <br>
-            <p>Le <span class="blue">equazioni</span>, in matematica e non solo, sono molto importanti. Impararle bene adesso vi permetterà in un secondo momento di capire concetti più avanzati della matematica, dove queste vengono utilizzate. Ma insomma, <span class="blue">cos’è un equazione?</span> 
-            </p>
-            <br>
-            <p>Prima di darti la definizione matematicamente rigorosa proviamo a capirlo con una spiegazione semplice, partendo dalle basi:
-            </p>
-            <br>
-            <p>Possiamo affermare per esempio che
-            </p>
-            <br>
-            <p>• <i>dire \(10\) calamite è uguale a dire 7 calamite più \(3\) calamite</i>;
-            </p>
-            <br>
-            <p>• <i>dire \(2\) arance è come dire \(8\) arance meno \(6\) arance</i>;
-            </p>
-            <br>
-            <p>• <i>dire \(9\) caramelle è come dire il triplo di \(3\) caramelle</i>.
-            </p>
-            <br>
-            <p>Ora se proviamo a scriverlo in forma matematica otteniamo:
-            </p>
-            <br>
-            <p>• \(10=7+3\)</p>
-            <br>
-            <p>• \(2=8-6\)</p>
-            <br>
-            <p>• \(9=3\cdot 3\)</p>
-            <br>
-            <p>Queste sono sono semplici formule dette <span class="blue">chiuse</span>, dove il valore a sinistra dell’uguale è uguale al valore a destra dell’uguale <i>(uguaglianza)</i>.
-            </p>
-            <br>
-            <p>In questo caso sono tutti numeri ma dall’algebra studiata alle scuole medie sappiamo che potremmo anche avere delle <span class="blue">incognite</span>, come la \(x\) e la \(y\), ma nulla impedisce di utilizzare anche le altre lettere dell’alfabeto. Queste formule vengono dette invece <span class="blue">aperte</span> e sono delle equazioni, come ad esempio:
-            </p>
-            <br>
-            <p>• \(10=x+3\)</p>
-            <br>
-            <p>• \(a=8-6\)</p>
-            <br>
-            <p>• \(9=3\cdot x\)</p>
-            <br>
-            <p>La risoluzione di un’equazione consiste semplicemente nel trovare quei valori che sostituiti all’incognita <i>(o alle incognite)</i>, rendano vera l’uguaglianza. Nelle tre equazioni esempio risulta banale trovare la soluzione ma, nel caso di equazioni più complesse bisognerà ricorrere ad eventuali “trucchetti” che trovate nei prossimi paragrafi.
-            </p>
-            <br>
-            <p>Per generalizzare meglio quanto i concetti appresi finora vi lascio la definizione generale di equazione, che probabilmente troverete scritta nei vostri libri di testo molto simile:
-            </p>
-            <br>
-            <p><i>Un’equazione è un’uguaglianza fra due espressioni letterali (chiamate <span class="blue">membri</span>) per la quale cerchiamo gli eventuali valori che, sostituiti a una o più lettere, dette <span class="blue">incognite</span>, la rendono vera. Tutto quello a sinistra dell’uguale viene chiamato <span class="blue" id="classif">primo membro</span> mentre tutto quello a destra dell’uguale <span class="blue">secondo membro</span>.</i>
-            </p>
-            <br>
-            <!-- Divider -->
-         <hr class="divider"></hr> 
+      <!-- Divider -->
+      <hr class="divider"></hr>  
 
+      <h2>Equazioni</h2>
+      <br>
+      <p>Le <span class="blue">equazioni</span>, in matematica e non solo, sono molto importanti. Impararle bene adesso vi permetterà in un secondo momento di capire concetti più avanzati della matematica, dove queste vengono utilizzate. Ma insomma, <span class="blue">cos’è un equazione?</span> 
+      </p>
+      <br>
+      <p>Prima di darti la definizione matematicamente rigorosa proviamo a capirlo con una spiegazione semplice, partendo dalle basi:
+      </p>
+      <br>
+      <p>Possiamo affermare per esempio che
+      </p>
+      <br>
+      <p>• <i>dire \(10\) calamite è uguale a dire 7 calamite più \(3\) calamite</i>;
+      </p>
+      <br>
+      <p>• <i>dire \(2\) arance è come dire \(8\) arance meno \(6\) arance</i>;
+      </p>
+      <br>
+      <p>• <i>dire \(9\) caramelle è come dire il triplo di \(3\) caramelle</i>.
+      </p>
+      <br>
+      <p>Ora se proviamo a scriverlo in forma matematica otteniamo:
+      </p>
+      <br>
+      <p>• \(10=7+3\)</p>
+      <br>
+      <p>• \(2=8-6\)</p>
+      <br>
+      <p>• \(9=3\cdot 3\)</p>
+      <br>
+      <p>Queste sono sono semplici formule dette <span class="blue">chiuse</span>, dove il valore a sinistra dell’uguale è uguale al valore a destra dell’uguale <i>(uguaglianza)</i>.
+      </p>
+      <br>
+      <p>In questo caso sono tutti numeri ma dall’algebra studiata alle scuole medie sappiamo che potremmo anche avere delle <span class="blue">incognite</span>, come la \(x\) e la \(y\), ma nulla impedisce di utilizzare anche le altre lettere dell’alfabeto. Queste formule vengono dette invece <span class="blue">aperte</span> e sono delle equazioni, come ad esempio:
+      </p>
+      <br>
+      <p>• \(10=x+3\)</p>
+      <br>
+      <p>• \(a=8-6\)</p>
+      <br>
+      <p>• \(9=3\cdot x\)</p>
+      <br>
+      <p>La risoluzione di un’equazione consiste semplicemente nel trovare quei valori che sostituiti all’incognita <i>(o alle incognite)</i>, rendano vera l’uguaglianza. Nelle tre equazioni esempio risulta banale trovare la soluzione ma, nel caso di equazioni più complesse bisognerà ricorrere ad eventuali “trucchetti” che trovate nei prossimi paragrafi.
+      </p>
+      <br>
+      <p>Per generalizzare meglio quanto i concetti appresi finora vi lascio la definizione generale di equazione, che probabilmente troverete scritta nei vostri libri di testo molto simile:
+      </p>
+      <br>
+      <p><i>Un’equazione è un’uguaglianza fra due espressioni letterali (chiamate <span class="blue">membri</span>) per la quale cerchiamo gli eventuali valori che, sostituiti a una o più lettere, dette <span class="blue">incognite</span>, la rendono vera. Tutto quello a sinistra dell’uguale viene chiamato <span class="blue" id="classif">primo membro</span> mentre tutto quello a destra dell’uguale <span class="blue">secondo membro</span>.</i>
+      </p>
+      <br>
 
-            <h2>Principi di equivalenza
-            </h2>
-            <br>
-            <p id="classif2">Per risolvere un’equazione cerchiamo di sostituirla con una equivalente più semplice. Ripetendo questo procedimento arriveremo in breve tempo a un equazione con soluzione immediata. Per passare da un’equazione a un altra più semplice si utilizzano i cosiddetti principi di equivalenza.
-            </p>
-            <br>
-            <!-- Divider -->
-         <hr class="divider"></hr> 
+      <!-- Divider -->
+      <hr class="divider"></hr> 
 
+      <h2>Principi di equivalenza
+      </h2>
+      <br>
+      <p id="classif2">Per risolvere un’equazione cerchiamo di sostituirla con una equivalente più semplice. Ripetendo questo procedimento arriveremo in breve tempo a un equazione con soluzione immediata. Per passare da un’equazione a un altra più semplice si utilizzano i cosiddetti principi di equivalenza.
+      </p>
+      <br>
 
-            <h2>Primo principio
-            </h2>
-            <br>
-            <p>Sommando o sottraendo al primo e al secondo membro uno stesso numero (ad esempio un \(5\) o un \(13\) o un \(22\), ecc...) o una stessa espressione (ad esempio un \(x+1\) o un \(2x-3\), ecc..) si ha un'equazione equivalente, ossia con la stessa soluzione (o lo stesso insieme si soluzioni).
-            </p>
-            <br>
-            <p>In pratica se sommo \(10\) al primo membro, devo farlo anche al secondo membro. Stesso discorso per la sottrazione. In questo modo la soluzione non cambierà, sarà la stessa.
-            </p>
-            <br>
-            <p><span class="bbk">Esempio:</span> risolvi l’equazione \(x+12=15\)
-            </p>
-            <br>
-            <p>Proviamo a risolvere questa semplice equazione utilizzando il primo principio di equivalenza. Per farlo sottraiamo a sinistra e a destra il numero \(12\) in modo da isolare la \(x\):
-            </p>
-            <br>
-            <p>\(x+12-12=15-12\longrightarrow \)\( x=3\)</p>
-            <br>
-            <p>Ed ecco fatto, avete risolto la vostra prima equazione! Vi starete chiedendo perché vale questo principio. Per farvelo capire vi faccio un esempio. Fate finta di avere due cose uguali, facciamo \(3\) mele:
-            </p>
-            <br>
-            <p>\(3\) mele \(=\) \(3\) mele
-            </p>
-            <br>
-            <p>Se aggiungiamo a destra e sinistra una stessa cosa, \(2\)  biscotti, l’equazione che otteniamo rimane comunque vera:
-            </p>
-            <br>
-            <p>\(3\) mele \(+2\) biscotti \(=\) \(3\) mele \(+2\) biscotti
-            </p>
-            <br>
-            <p id="classif3">Come potete vedere, finché la cosa viene fatta sia a primo che a secondo membro, l’uguaglianza rimane sempre vera.
-            </p>
-            <br>
-            <!-- Divider -->
-            <hr class="divider"></hr> 
+      <!-- Divider -->
+      <hr class="divider"></hr> 
 
+      <h2>Primo principio
+      </h2>
+      <br>
+      <p>Sommando o sottraendo al primo e al secondo membro uno stesso numero (ad esempio un \(5\) o un \(13\) o un \(22\), ecc...) o una stessa espressione (ad esempio un \(x+1\) o un \(2x-3\), ecc..) si ha un'equazione equivalente, ossia con la stessa soluzione (o lo stesso insieme si soluzioni).
+      </p>
+      <br>
+      <p>In pratica se sommo \(10\) al primo membro, devo farlo anche al secondo membro. Stesso discorso per la sottrazione. In questo modo la soluzione non cambierà, sarà la stessa.
+      </p>
+      <br>
+      <p><span class="bbk">Esempio:</span> risolvi l’equazione \(x+12=15\)
+      </p>
+      <br>
+      <p>Proviamo a risolvere questa semplice equazione utilizzando il primo principio di equivalenza. Per farlo sottraiamo a sinistra e a destra il numero \(12\) in modo da isolare la \(x\):
+      </p>
+      <br>
+      <p>\(x+12-12=15-12\longrightarrow \)\( x=3\)</p>
+      <br>
+      <p>Ed ecco fatto, avete risolto la vostra prima equazione! Vi starete chiedendo perché vale questo principio. Per farvelo capire vi faccio un esempio. Fate finta di avere due cose uguali, facciamo \(3\) mele:
+      </p>
+      <br>
+      <p>\(3\) mele \(=\) \(3\) mele
+      </p>
+      <br>
+      <p>Se aggiungiamo a destra e sinistra una stessa cosa, \(2\)  biscotti, l’equazione che otteniamo rimane comunque vera:
+      </p>
+      <br>
+      <p>\(3\) mele \(+2\) biscotti \(=\) \(3\) mele \(+2\) biscotti
+      </p>
+      <br>
+      <p id="classif3">Come potete vedere, finché la cosa viene fatta sia a primo che a secondo membro, l’uguaglianza rimane sempre vera.
+      </p>
+      <br>
 
-            <h2>Secondo principio
-            </h2>
-            <br>
-            <p>Moltiplicando o dividendo sia il primo che il secondo membro per uno stesso numero o una stessa espressione si ha un'<span class="blue">equazione equivalente.</span>
-            </p>
-            <br>
-            <p>La dimostrazione logica di questo principio è equivalente a quella del primo, quindi possiamo passare direttamente alla risoluzione di un’equazione utilizzando i due principi. 
-            </p>
-            <br>
-            <p><span class="bbk">Esempio:</span> risolvi l’equazione \(4x-6=2\)
-            </p>
-            <br>
-            <p>\(4x-6+6=2+6\)\(\longrightarrow 4x=8\)</p>
-            <br>
-            <p>Ora utilizziamo il secondo principio di equivalenza e dividiamo a sinistra e a destra per \(4\) in modo da isolare la \(x\). 
-            </p>
-            <br>
-            <p>\(\begin{align}\frac{4x}{4}=\frac{8}{4}\longrightarrow x=2\end{align}\)</p>
-            <br>
-            <p>Ed ecco risolta anche la nostra seconda equazione!</p>
-            <br>
-            <p>Per controllare se il valore trovato risolve effettivamente l'equazione si può fare la <i>prova</i> che consiste semplicemente nel sostituire il valore soluzione all'interno dell'equazione di partenza:</p>
-            <br>
-            <p>
-              \(4\cdot{2}-6=2\longrightarrow 2=2\)
-            </p>
-            <br>
-            <p>Come potete notare l'uguaglianza è verificata e quindi il valore trovato è corretto perché verifica l'equazione.</p>
+      <!-- Divider -->
+      <hr class="divider"></hr> 
 
+      <h2>Secondo principio
+      </h2>
+      <br>
+      <p>Moltiplicando o dividendo sia il primo che il secondo membro per uno stesso numero o una stessa espressione si ha un'<span class="blue">equazione equivalente.</span>
+      </p>
+      <br>
+      <p>La dimostrazione logica di questo principio è equivalente a quella del primo, quindi possiamo passare direttamente alla risoluzione di un’equazione utilizzando i due principi. 
+      </p>
+      <br>
+      <p><span class="bbk">Esempio:</span> risolvi l’equazione \(4x-6=2\)
+      </p>
+      <br>
+      <p>\(4x-6+6=2+6\)\(\longrightarrow 4x=8\)</p>
+      <br>
+      <p>Ora utilizziamo il secondo principio di equivalenza e dividiamo a sinistra e a destra per \(4\) in modo da isolare la \(x\). 
+      </p>
+      <br>
+      <p>\(\begin{align}\frac{4x}{4}=\frac{8}{4}\longrightarrow x=2\end{align}\)</p>
+      <br>
+      <p>Ed ecco risolta anche la nostra seconda equazione!</p>
+      <br>
+      <p>Per controllare se il valore trovato risolve effettivamente l'equazione si può fare la <i>prova</i> che consiste semplicemente nel sostituire il valore soluzione all'interno dell'equazione di partenza:</p>
+      <br>
+      <p>
+        \(4\cdot{2}-6=2\longrightarrow 2=2\)
+      </p>
+      <br>
+      <p>Come potete notare l'uguaglianza è verificata e quindi il valore trovato è corretto perché verifica l'equazione.</p>
+    </section>
 
+    <!-- Site footer -->
+    <div id="footer"></div>
+    <script src="custom.js"></script>
+    <script src="bookmark.js"></script>
+    <script src="index.js"></script>
 
-         
-        </body>
-        </section>
-        <!-- Site footer -->
-        <div id="footer"></div>
-        <script src="custom.js"></script>
-        <script src="bookmark.js"></script>
-        <script src="index.js"></script>
-        <!-- Including MathJax -->
-        <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    <!-- Including MathJax -->
+    <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
-    </body>
-            
+  </body>        
 </html>

@@ -39,100 +39,94 @@
     </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   </head>
-         <div id="header"></div>
+
+  <body>
+    <div id="header"></div> 
+    <section class="home">
+      <label class="container">
+        <input onclick="save()" id="bookmark" type="checkbox">
+        <div class="checkmark">
+          <svg viewBox="0 0 256 256">
+          <rect fill="none" height="256" width="256"></rect>
+          <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
+        </div>
+      </label>
+
+      <div class="welcome"> 
+        <h1 class="welcome1" >Divisione tra polinomi</h1>
+        <h3 class="p1">Di seguito spiegeremo come effettuarla.</h3>
+      </div>  
+
+      <!-- Divider -->
+      <hr class="divider"></hr>  
+        <h2>Divisione tra polinomi
+        </h2>
+        <br>
+        <p>La <span class="blue">divisione tra polinomi</span> è utile in molte situazioni e spesso ci aiuta a semplificare i calcoli, tenerla a mente è importante anche perché si tratta di un’operazione di base e potrebbe capitare in alcuni esercizi.
+        </p>
+        <br>
+        <p>Un teorema dell’algebra afferma che <i></i> è sempre possibile dividere un polinomio per qualsiasi altro polinomio e avere come risultati  nuovi polinomi, il <span class="blue">polinomio quoziente</span> e il <span class="blue">polinomio resto</span></i>.
+        </p>
+        <p>\[P(x) = Q(x)D(x)+R(x)\]</p>
+        <br>
         
-      <section class="home">
+        <!-- Divider -->
+        <hr class="divider"></hr>  
 
-        <label class="container">
-          <input onclick="save()" id="bookmark" type="checkbox">
-          <div class="checkmark">
-            <svg viewBox="0 0 256 256">
-            <rect fill="none" height="256" width="256"></rect>
-            <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
-          </div>
-        </label>
-            <div class="welcome"> 
-                <h1 class="welcome1" >Divisione tra polinomi</h1>
-                <h3 class="p1">Di seguito spiegeremo come effettuarla.</h3>
-             </div>  
-             <!-- Mini-index -->
-    
-              <!-- Divider -->
-         <hr class="divider"></hr>  
-        <body>
-            <h2>Divisione tra polinomi
-            </h2>
-            <br>
-            <p>La <span class="blue">divisione tra polinomi</span> è utile in molte situazioni e spesso ci aiuta a semplificare i calcoli, tenerla a mente è importante anche perché si tratta di un’operazione di base e potrebbe capitare in alcuni esercizi.
-            </p>
-            <br>
-            <p>Un teorema dell’algebra afferma che <i></i> è sempre possibile dividere un polinomio per qualsiasi altro polinomio e avere come risultati  nuovi polinomi, il <span class="blue">polinomio quoziente</span> e il <span class="blue">polinomio resto</span></i>.
-            </p>
-            <p>\[P(x) = Q(x)D(x)+R(x)\]</p>
-            <br>
-            
-            <!-- Divider -->
-         <hr class="divider"></hr>  
-            <h2>Come svolgere la divisione
-            </h2>
-            <br>
-            <p>Per svolgere la divisione basta seguire pochi semplici passaggi e ripeterli. Bisogna prima ricordare per che in caso di polinomio diviso per un polinomio di grado superiore non è necessario svolgere nessun passaggio, il <span class="blue">quoziente</span> sarà il polinomio nullo e il <span class="blue">resto</span> sarà il polinomio di partenza:
-            </p>
-            <br>
-            <p class="bbk">Esempio:</p>
-            <br>
-            <p>• \(x^2-1: x^3+x-6 = 0 \), \(R=x^2-1\)</p>
-            <br>
-            <p>Chiarito questo passiamo all’algoritmo di svolgimento della divisione.
-            </p>
-            <br>
-            <p>Per prima cosa scriviamo in una <u>tabella</u> di questo tipo prima il polinomio e poi il <span class="blue">divisore</span>, ordinando i termini in modo decrescente secondo il grado <i>(se il polinomio non è completo si scrive uno \(0\) al posto dei termini mancanti)</i>:
-            </p>
-            <br>
-            <p class="bbk">Esempio:</p>
-            <br>
-            <p>\(x^2+4x+2:x+1\)</p>
-            <br>
-            <img class="image divisione" src="images/divisione3.png" alt="Divisione">
-            <br>
-            <p>Fatto questo, procediamo con la divisione del primo termine del polinomio di partenza con il primo termine del <span class="blue">divisore</span> e scriviamo il risultato sotto al divisore <i>(semplice divisione tra monomi trattata nella lezione sui monomi)</i>:
-            </p>
-            <br>
-            <img class="image divisione" src="images/divisione4.png" alt="Divisione">
-            <br>
-            <p>Poi moltiplichiamo quest’ultimo per ogni termine del <span class="blue">divisore</span> e scriviamo i risultati cambiati di segno sotto i termini di grado corrispondente del polinomio di partenza:
-            </p>
-            <br>
-            <img class="image divisione" src="images/divisione2.png" alt="Divisione">
-            <br>
-            <p>Ora facciamo la somma tra i termini del polinomio e i termini appena scritti al disotto di essi e scriviamo sotto, separato da una linea orizzontale il risultato:
-            </p>
-            <br>
-            <img class="image divisione" src="images/divisione1.png" alt="Divisione">
-            <br>
-            <p>Ripetiamo il processo finché il polinomio a sinistra è di grado inferiore al divisore, quando è di grado superiore ci fermiamo. Il polinomio a sinistra sarà il nostro resto, mentre quello a destra il quoziente.
-            </p>
-            <br>
-            <img class="image divisione" src="images/divisione.png" alt="Divisione">
-            <br>
-            <p>Speriamo di avervi reso chiaro il concetto, ricordate che se il divisore è di primo grado potete anche usare la <span class="blue">regola di Ruffini</span> per la divisione.</p>
+        <h2>Come svolgere la divisione
+        </h2>
+        <br>
+        <p>Per svolgere la divisione basta seguire pochi semplici passaggi e ripeterli. Bisogna prima ricordare per che in caso di polinomio diviso per un polinomio di grado superiore non è necessario svolgere nessun passaggio, il <span class="blue">quoziente</span> sarà il polinomio nullo e il <span class="blue">resto</span> sarà il polinomio di partenza:
+        </p>
+        <br>
+        <p class="bbk">Esempio:</p>
+        <br>
+        <p>• \(x^2-1: x^3+x-6 = 0 \), \(R=x^2-1\)</p>
+        <br>
+        <p>Chiarito questo passiamo all’algoritmo di svolgimento della divisione.
+        </p>
+        <br>
+        <p>Per prima cosa scriviamo in una <u>tabella</u> di questo tipo prima il polinomio e poi il <span class="blue">divisore</span>, ordinando i termini in modo decrescente secondo il grado <i>(se il polinomio non è completo si scrive uno \(0\) al posto dei termini mancanti)</i>:
+        </p>
+        <br>
+        <p class="bbk">Esempio:</p>
+        <br>
+        <p>\(x^2+4x+2:x+1\)</p>
+        <br>
+        <img class="image divisione" src="images/divisione3.png" alt="Divisione">
+        <br>
+        <p>Fatto questo, procediamo con la divisione del primo termine del polinomio di partenza con il primo termine del <span class="blue">divisore</span> e scriviamo il risultato sotto al divisore <i>(semplice divisione tra monomi trattata nella lezione sui monomi)</i>:
+        </p>
+        <br>
+        <img class="image divisione" src="images/divisione4.png" alt="Divisione">
+        <br>
+        <p>Poi moltiplichiamo quest’ultimo per ogni termine del <span class="blue">divisore</span> e scriviamo i risultati cambiati di segno sotto i termini di grado corrispondente del polinomio di partenza:
+        </p>
+        <br>
+        <img class="image divisione" src="images/divisione2.png" alt="Divisione">
+        <br>
+        <p>Ora facciamo la somma tra i termini del polinomio e i termini appena scritti al disotto di essi e scriviamo sotto, separato da una linea orizzontale il risultato:
+        </p>
+        <br>
+        <img class="image divisione" src="images/divisione1.png" alt="Divisione">
+        <br>
+        <p>Ripetiamo il processo finché il polinomio a sinistra è di grado inferiore al divisore, quando è di grado superiore ci fermiamo. Il polinomio a sinistra sarà il nostro resto, mentre quello a destra il quoziente.
+        </p>
+        <br>
+        <img class="image divisione" src="images/divisione.png" alt="Divisione">
+        <br>
+        <p>Speriamo di avervi reso chiaro il concetto, ricordate che se il divisore è di primo grado potete anche usare la <span class="blue">regola di Ruffini</span> per la divisione.</p>
+      </section>
 
-
-
-
-
-
-         
-        </body>
-        </section>
-        <!-- Site footer -->
-        <div id="footer"></div>
-        <script src="custom.js"></script>
-        <script src="bookmark.js"></script>
-        <!-- Including MathJax -->
-        <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
-    </body>
-    <script src="index.js"></script>
+      <!-- Site footer -->
+      <div id="footer"></div>
+      <script src="custom.js"></script>
+      <script src="bookmark.js"></script>
+      <script src="index.js"></script>
+      
+      <!-- Including MathJax -->
+      <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+  </body>
 </html>
