@@ -304,7 +304,7 @@ body.hidden-scrolling {
 @media (max-width: 550px) {
   .minimenu {
     justify-content: left;
-    width: 19.5rem;
+
     overflow: scroll;
   }
   .mini-item {
