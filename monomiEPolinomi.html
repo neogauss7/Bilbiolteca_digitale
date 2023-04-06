@@ -39,290 +39,287 @@
     </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   </head>
-         <div id="header"></div>
-        
-      <section class="home">
 
-        <label class="container">
-          <input onclick="save()" id="bookmark" type="checkbox">
-          <div class="checkmark">
-            <svg viewBox="0 0 256 256">
-            <rect fill="none" height="256" width="256"></rect>
-            <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
-          </div>
-        </label>
-            <div class="welcome"> 
-                <h1 class="welcome1" >Monomi e polinomi</h1>
-                <h3 class="p1">Di seguito analizzeremo i monomi e i polinomi.</h3>
-             </div>  
-             <!-- Mini-index -->
-    <div class="minimenu">
-<a href="#classif" class="mini-item" ><div class=""><p class="minitext">Forma normale</p></div></a>
-<a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Grado</p></div></a>
-<a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Operazioni</p></div></a>
-<a href="#classif4" class="mini-item" ><div class=""><p class="minitext">Polinomi</p></div></a>
-<a href="#classif5" class="mini-item" ><div class=""><p class="minitext">Forma normale</p></div></a>
-<a href="#classif6" class="mini-item" ><div class=""><p class="minitext">Grado</p></div></a><a href="#classif7" class="mini-item" ><div class=""><p class="minitext">Operazioni</p></div></a>
+  <body>
+    <div id="header"></div> 
+    <section class="home">
 
-    </div>
-              <!-- Divider -->
-         <hr class="divider"></hr>  
-        <body>
-        <h2>Cos’è un monomio?</h2>
-        <br>
-        <p>Un <span class="blue">monomio</span> è un espressione letterale in cui compaiono soltanto <u>moltiplicazioni</u> fra numeri, <span class="blue">coefficiente</span>, e potenze di lettere, la <span class="blue">parte letterale</span>, con numeri naturali per esponenti. Prima di approfondirne le caratteristiche, ecco a voi qualche esempio di monomi:</p>
-        <br>
-        <p>• &nbsp&nbsp \(5ab\)</p>
-        <br>
-        <p>• &nbsp&nbsp\((\sqrt 3 + 2)a\)</p>
-        <br>
-        <p>• &nbsp&nbsp \(-{1 \over 2} xy\)</p>
-        <br>
-        <p>• &nbsp&nbsp \(2ax^2\)</p>
-        <br>
-        <p>Per chiarire meglio vi proponiamo alcune espressioni letterali che, per un motivo o per un altro, non sono di monomi. Ecco qua:</p>
-        <br>
-        <p>• &nbsp&nbsp \(2a^{-1}\) &nbsp perchè \(x\) ha un esponente negativo e quindi non naturale</p>
-        <br>
-        <p>• &nbsp&nbsp \(2x+y\) &nbsp perché compare un’operazione diversa da una moltiplicazione</p>
-        <br>
-        <p>• &nbsp&nbsp \(2a \over b\) &nbsp perché non c’è nessuna moltiplicazione tra numeri e parte letterale</p>
-        <br>
-        <p>Tutti i numeri sono monomi compreso \(0\) che è detto <span class="blue">monomio nullo</span>.</p>
-        <br>
-        <p id="classif">\(2=2a^0\) (per \(a \neq 0\))</p>
-        <br>
-        <!-- Divider -->
-        <hr class="divider"></hr> 
+      <label class="container">
+        <input onclick="save()" id="bookmark" type="checkbox">
+        <div class="checkmark">
+          <svg viewBox="0 0 256 256">
+          <rect fill="none" height="256" width="256"></rect>
+          <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
+        </div>
+      </label>
 
+      <div class="welcome"> 
+          <h1 class="welcome1" >Monomi e polinomi</h1>
+          <h3 class="p1">Di seguito analizzeremo i monomi e i polinomi.</h3>
+      </div> 
 
-        <h2>Forma normale dei monomi</h2>
-        <br>
-        <p>Un monomio si dice ridotto in <span class="blue">forma normale</span> se è espresso come prodotto tra un solo fattore numerico e una o più potenze letterali <i>(se il coefficiente è , è sottinteso per convenzione)</i>. Per ridurre un monomio in forma normale si usano alle proprietà delle moltiplicazione e delle potenze.
-        </p>
-        <br>
-        <p class="bbk">Esempio:</p>
-        <br>
-        <p id="classif2">\(4(x^2y)^3 = 4x^6y^3\)</p>
-        <br>
-        <!-- Divider -->
-        <hr class="divider"></hr> 
+      <!-- Mini-index -->
+      <div class="minimenu">
+        <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Forma normale</p></div></a>
+        <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Grado</p></div></a>
+        <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Operazioni</p></div></a>
+        <a href="#classif4" class="mini-item" ><div class=""><p class="minitext">Polinomi</p></div></a>
+        <a href="#classif5" class="mini-item" ><div class=""><p class="minitext">Forma normale</p></div></a>
+        <a href="#classif6" class="mini-item" ><div class=""><p class="minitext">Grado</p></div></a><a href="#classif7" class="mini-item" ><div class=""><p class="minitext">Operazioni</p></div></a>
+      </div>
 
+      <!-- Divider -->
+      <hr class="divider"></hr>  
+      <body>
+      <h2>Cos’è un monomio?</h2>
+      <br>
+      <p>Un <span class="blue">monomio</span> è un espressione letterale in cui compaiono soltanto <u>moltiplicazioni</u> fra numeri, <span class="blue">coefficiente</span>, e potenze di lettere, la <span class="blue">parte letterale</span>, con numeri naturali per esponenti. Prima di approfondirne le caratteristiche, ecco a voi qualche esempio di monomi:</p>
+      <br>
+      <p>• &nbsp&nbsp \(5ab\)</p>
+      <br>
+      <p>• &nbsp&nbsp\((\sqrt 3 + 2)a\)</p>
+      <br>
+      <p>• &nbsp&nbsp \(-{1 \over 2} xy\)</p>
+      <br>
+      <p>• &nbsp&nbsp \(2ax^2\)</p>
+      <br>
+      <p>Per chiarire meglio vi proponiamo alcune espressioni letterali che, per un motivo o per un altro, non sono di monomi. Ecco qua:</p>
+      <br>
+      <p>• &nbsp&nbsp \(2a^{-1}\) &nbsp perchè \(x\) ha un esponente negativo e quindi non naturale</p>
+      <br>
+      <p>• &nbsp&nbsp \(2x+y\) &nbsp perché compare un’operazione diversa da una moltiplicazione</p>
+      <br>
+      <p>• &nbsp&nbsp \(2a \over b\) &nbsp perché non c’è nessuna moltiplicazione tra numeri e parte letterale</p>
+      <br>
+      <p>Tutti i numeri sono monomi compreso \(0\) che è detto <span class="blue">monomio nullo</span>.</p>
+      <br>
+      <p id="classif">\(2=2a^0\) (per \(a \neq 0\))</p>
+      <br>
 
-        <h2>Grado di un monomio</h2>
-        <br>
-        <p>Il grado di un monomio rispetto a una lettera è l’esponente che la lettera ha nel monomio. Il <span class="blue">grado complessivo</span> del monomio è la somma degli esponenti delle lettere.
-        Per fissare meglio il concetto vediamo alcuni esempi:
-        </p>
-        <br>
-        <p>• &nbsp&nbsp \(7a^2b^3c\) &nbsp - questo monomio è di grado \(3\) rispetto a \(b\) e il suo grado complessivo è \(6\)
-        </p>
-        <br>
-        <p>• &nbsp&nbsp \(-{1 \over 4}x^5yz^2\) &nbsp - questo monomio è di grado \(5\) rispetto a \(x\) e il suo grado complessivo è \(8\)
-        </p>
-        <br>
-        <!-- Divider -->
-        <hr class="divider"></hr> 
-        
+      <!-- Divider -->
+      <hr class="divider"></hr> 
 
-        <h2>Monomi simili, opposti e uguali</h2>
-        <br>
-        <p>Due monomi in forma normale sono detti <span class="blue">simili</span> se hanno la stessa parte letterale:
-        </p>
-        <br>
-        <p>\(3a^3b \)&nbsp  si dice simile a &nbsp \(\sqrt {2}a^3b\)&nbsp perché hanno la parte letterale &nbsp \(a^3b\) &nbsp in comune.</p>
-        <br>
-        <p>Due monomi in forma normale sono detti <span class="blue">opposti</span> se sono simili e hanno i coefficienti opposti:</p>
-        <br>
-        <p>\({1\over 2}xyz\) &nbsp si dice opposto a &nbsp \(-{1\over 2}xyz\) &nbsp perché il coefficiente &nbsp \(1 \over 2\) &nbsp  è di segno opposto.</p>
-        <br>
-        <p>Due monomi in forma normale sono detti <span class="blue">uguali</span> se sono simili e hanno lo stesso coefficiente:</p>
-        <br>
-        <p id="classif3">\(16xy\) &nbsp si dice uguale a &nbsp \((2^2)^2xy\) &nbsp perché hanno la stessa parte letterale e &nbsp \(16 = (2^2)^2\).</p>
-        <br>
-        <!-- Divider -->
-        <hr class="divider"></hr> 
+      <h2>Forma normale dei monomi</h2>
+      <br>
+      <p>Un monomio si dice ridotto in <span class="blue">forma normale</span> se è espresso come prodotto tra un solo fattore numerico e una o più potenze letterali <i>(se il coefficiente è , è sottinteso per convenzione)</i>. Per ridurre un monomio in forma normale si usano alle proprietà delle moltiplicazione e delle potenze.
+      </p>
+      <br>
+      <p class="bbk">Esempio:</p>
+      <br>
+      <p id="classif2">\(4(x^2y)^3 = 4x^6y^3\)</p>
+      <br>
 
+      <!-- Divider -->
+      <hr class="divider"></hr> 
 
-        <h2>Somma e differenza di monomi simili</h2>
-        <br>
-        <p>Dalla somma o dalla differenza tra monomi simili e non opposti si ottiene sempre un monomio simile ai monomi di partenza. Se i monomi coinvolti non sono simili si ottiene un’espressione che <span class="blue">non</span> può essere semplificata per ottenere un monomio, queste espressioni si chiamano <span class="blue">polinomi</span> e le approfondiremo in seguito.
-        </p>
-        <br>
-        <p class="bbk">Esempi:</p>
-        <br>
-        <p>• &nbsp&nbsp \(3ac+ac =4ac\)</p>
-        <br>
-        <p>• &nbsp&nbsp \(3x-5x=-2x\)</p>
-        <br>
-        <p class="bbk">Esempio di somma tra monomi non simili:</p>
-        <br>
-        <p>• &nbsp&nbsp 2ac -2x = 2(ac-x)</p>
-        <br>
-        <p><i>Il risultato della somma tra monomi opposti è il <u>monomio nullo</u>:</i></p>
-        <br>
-        <p>\(2xy+(-2xy)= 2xy-2xy=0\)</p>
-        <br>
-        <!-- Divider -->
-        <hr class="divider"></hr> 
+      <h2>Grado di un monomio</h2>
+      <br>
+      <p>Il grado di un monomio rispetto a una lettera è l’esponente che la lettera ha nel monomio. Il <span class="blue">grado complessivo</span> del monomio è la somma degli esponenti delle lettere.
+      Per fissare meglio il concetto vediamo alcuni esempi:
+      </p>
+      <br>
+      <p>• &nbsp&nbsp \(7a^2b^3c\) &nbsp - questo monomio è di grado \(3\) rispetto a \(b\) e il suo grado complessivo è \(6\)
+      </p>
+      <br>
+      <p>• &nbsp&nbsp \(-{1 \over 4}x^5yz^2\) &nbsp - questo monomio è di grado \(5\) rispetto a \(x\) e il suo grado complessivo è \(8\)
+      </p>
+      <br>
 
+      <!-- Divider -->
+      <hr class="divider"></hr> 
 
-        <h2>Prodotto di monomi
-        </h2>
-        <br>
-        <p>Per calcolare il prodotto di duo o più monomi si usano le proprietà delle moltiplicazioni e delle potenze e il risultato è <u>sempre</u> un monomio di cui il coefficiente è il prodotto dei coefficienti e ogni lettera della parte letterale ha come esponente la somma degli esponenti con cui la lettera compare nei fattori.</p>
-        <br>
-        <p class="bbk">Esempi:</p>
-        <br>
-        <p>• &nbsp&nbsp \(2x^3y \cdot 3ax\) &nbsp  moltiplichiamo i coefficienti &nbsp \((2 \cdot3)x^3y \cdot ax\) &nbsp e poi le parti letterali &nbsp \(6ax^4y\)</p>
-        <br>
-        <p>• &nbsp&nbsp \(-1ab \cdot 4bc \longrightarrow (-1 \cdot 4)ab \cdot bc \longrightarrow -4ab^2c\)</p>
-        <br>
-        <p>Notiamo che, a differenza dell’addizione, il prodotto tra due monomi è sempre un monomio. Per questo si dice che la moltiplicazione, per i monomi, è un'<span class="blue">operazione interna</span>.</p>
-        <br>
-        <!-- Divider -->
-        <hr class="divider"></hr> 
+      <h2>Monomi simili, opposti e uguali</h2>
+      <br>
+      <p>Due monomi in forma normale sono detti <span class="blue">simili</span> se hanno la stessa parte letterale:
+      </p>
+      <br>
+      <p>\(3a^3b \)&nbsp  si dice simile a &nbsp \(\sqrt {2}a^3b\)&nbsp perché hanno la parte letterale &nbsp \(a^3b\) &nbsp in comune.</p>
+      <br>
+      <p>Due monomi in forma normale sono detti <span class="blue">opposti</span> se sono simili e hanno i coefficienti opposti:</p>
+      <br>
+      <p>\({1\over 2}xyz\) &nbsp si dice opposto a &nbsp \(-{1\over 2}xyz\) &nbsp perché il coefficiente &nbsp \(1 \over 2\) &nbsp  è di segno opposto.</p>
+      <br>
+      <p>Due monomi in forma normale sono detti <span class="blue">uguali</span> se sono simili e hanno lo stesso coefficiente:</p>
+      <br>
+      <p id="classif3">\(16xy\) &nbsp si dice uguale a &nbsp \((2^2)^2xy\) &nbsp perché hanno la stessa parte letterale e &nbsp \(16 = (2^2)^2\).</p>
+      <br>
 
+      <!-- Divider -->
+      <hr class="divider"></hr> 
 
-        <h2>Divisione e potenza
-        </h2>
-        <p>Per effettuare una divisione tra monomi è <u>necessario</u> che il primo monomio abbia la stessa parte letterale del secondo <i>(possono comparire anche più lettere)</i>. Il primo monomio deve anche avere l’esponente di ogni lettera maggiore o uguale maggiore o uguale all’esponente della stessa lettera nel secondo.
-        </p>
-        <br>
-        <p>Verificate queste condizioni si procede alla divisione:
-        </p>
-        <br>
-        <p>\(3abc^4 : 4bc^2\) &nbsp il coefficiente del monomio ottenuto sarà il quoziente tra i coefficienti:
-        </p>
-        <p>\[{3 \over {4}} (abc^4):(bc^2)\]</p>
-        <p>Per la parte letterale, gli esponenti di ogni lettera saranno la differenza tra i quozienti della stessa lettera nei monomi di partenza:
-        </p>
-        <p>\[{ 3 \over 4}ab^{1-1}c^{4-2} \longrightarrow { 3 \over 4}ac^2\]</p>
-        <p>Calcolare la potenza di un monomio consiste semplicemente nell’elevare prima il coefficiente e poi ogni lettera della parte letterale:
-        </p>
-        <p id="classif4">\[(-5x^2z)^4 \longrightarrow 25x^8z^4\]</p>
-        <br>
-        <!-- Divider -->
-        <hr class="divider"></hr> 
+      <h2>Somma e differenza di monomi simili</h2>
+      <br>
+      <p>Dalla somma o dalla differenza tra monomi simili e non opposti si ottiene sempre un monomio simile ai monomi di partenza. Se i monomi coinvolti non sono simili si ottiene un’espressione che <span class="blue">non</span> può essere semplificata per ottenere un monomio, queste espressioni si chiamano <span class="blue">polinomi</span> e le approfondiremo in seguito.
+      </p>
+      <br>
+      <p class="bbk">Esempi:</p>
+      <br>
+      <p>• &nbsp&nbsp \(3ac+ac =4ac\)</p>
+      <br>
+      <p>• &nbsp&nbsp \(3x-5x=-2x\)</p>
+      <br>
+      <p class="bbk">Esempio di somma tra monomi non simili:</p>
+      <br>
+      <p>• &nbsp&nbsp 2ac -2x = 2(ac-x)</p>
+      <br>
+      <p><i>Il risultato della somma tra monomi opposti è il <u>monomio nullo</u>:</i></p>
+      <br>
+      <p>\(2xy+(-2xy)= 2xy-2xy=0\)</p>
+      <br>
 
+      <!-- Divider -->
+      <hr class="divider"></hr> 
 
-        <h2>Cos’è un polinomio?
-        </h2>
-        <p>Un polinomio è una somma algebrica tra monomi. I monomi che formano un polinomio sono <span class="blue">termini</span> del polinomio. I polinomi si classificano in base al numero di monomi da cui sono formati. Se un polinomio è composto da \(2\) monomi si chiama <span class="blue">binomio</span>, se i monomi sono \(3\) si chiama <span class="blue">trinomio</span> e se sono \(4\) si chiama <span class="blue">quadrinomio</span>. Da \(5\) termini in poi si dice che un polinomio ha \(N\) termini. 
-        </p>
-        <br>
-        <p class="bbk">Esempi di polinomi:</p>
-        <br>
-        <p>• &nbsp&nbsp \(2xy-3z\)</p>
-        <br>
-        <p>• &nbsp&nbsp \(5a^2+\sqrt{3}xy\)</p>
-        <br>
-        <p>• &nbsp&nbsp \(ac-4x+4b^2\)</p>
-        <br>
-        <p>Un polinomio si dice <span class="blue">opposto</span> a un altro polinomio se i suoi termini sono monomi opposti ai termini del primo.
-        </p>
-        <br>
-        <p class="bbk">Esempi di polinomi opposti:
-        </p>
-        <br>
-        <p>• &nbsp&nbsp \(b^2+3ac \longrightarrow -b^2-3ac\)</p>
-        <br>
-        <p>• &nbsp&nbsp \(\sqrt{3}x-4ab \longrightarrow -\sqrt{3}x+4ab\)</p>
-        <br>
-        <p id="classif5">• &nbsp&nbsp \(-\frac{3}{4}ab+3k^2 \longrightarrow \frac{3}{4}ab-3k^2\)</p>
-        <br>
-        <!-- Divider -->
-        <hr class="divider"></hr> 
+      <h2>Prodotto di monomi
+      </h2>
+      <br>
+      <p>Per calcolare il prodotto di duo o più monomi si usano le proprietà delle moltiplicazioni e delle potenze e il risultato è <u>sempre</u> un monomio di cui il coefficiente è il prodotto dei coefficienti e ogni lettera della parte letterale ha come esponente la somma degli esponenti con cui la lettera compare nei fattori.</p>
+      <br>
+      <p class="bbk">Esempi:</p>
+      <br>
+      <p>• &nbsp&nbsp \(2x^3y \cdot 3ax\) &nbsp  moltiplichiamo i coefficienti &nbsp \((2 \cdot3)x^3y \cdot ax\) &nbsp e poi le parti letterali &nbsp \(6ax^4y\)</p>
+      <br>
+      <p>• &nbsp&nbsp \(-1ab \cdot 4bc \longrightarrow (-1 \cdot 4)ab \cdot bc \longrightarrow -4ab^2c\)</p>
+      <br>
+      <p>Notiamo che, a differenza dell’addizione, il prodotto tra due monomi è sempre un monomio. Per questo si dice che la moltiplicazione, per i monomi, è un'<span class="blue">operazione interna</span>.</p>
+      <br>
 
+      <!-- Divider -->
+      <hr class="divider"></hr> 
 
-        <h2>Forma normale dei polinomi
-        </h2>
-        <br>
-        <p>Un polinomio si dice ridotto in <span class="blue">forma normale</span> se tra i suoi termini non compaiono monomi simili. Per ridurre un polinomio alla sua forma normale basta sommare i suoi termini.
-        </p>
-        <br>
-        <p class="bbk">Esempio:
-        </p>
-        <br>
-        <p id="classif6">\(4ab+x^3y-ab \)\( \longrightarrow (4-1)ab+x^3y \longrightarrow 3ab+x^3y\)</p>
-        <br>
-        <!-- Divider -->
-        <hr class="divider"></hr> 
+      <h2>Divisione e potenza
+      </h2>
+      <p>Per effettuare una divisione tra monomi è <u>necessario</u> che il primo monomio abbia la stessa parte letterale del secondo <i>(possono comparire anche più lettere)</i>. Il primo monomio deve anche avere l’esponente di ogni lettera maggiore o uguale maggiore o uguale all’esponente della stessa lettera nel secondo.
+      </p>
+      <br>
+      <p>Verificate queste condizioni si procede alla divisione:
+      </p>
+      <br>
+      <p>\(3abc^4 : 4bc^2\) &nbsp il coefficiente del monomio ottenuto sarà il quoziente tra i coefficienti:
+      </p>
+      <p>\[{3 \over {4}} (abc^4):(bc^2)\]</p>
+      <p>Per la parte letterale, gli esponenti di ogni lettera saranno la differenza tra i quozienti della stessa lettera nei monomi di partenza:
+      </p>
+      <p>\[{ 3 \over 4}ab^{1-1}c^{4-2} \longrightarrow { 3 \over 4}ac^2\]</p>
+      <p>Calcolare la potenza di un monomio consiste semplicemente nell’elevare prima il coefficiente e poi ogni lettera della parte letterale:
+      </p>
+      <p id="classif4">\[(-5x^2z)^4 \longrightarrow 25x^8z^4\]</p>
+      <br>
 
+      <!-- Divider -->
+      <hr class="divider"></hr> 
 
-        <h2>Grado di un polinomio
-        </h2>
-        <br>
-        <p>Per conoscere il grado di un polinomio bisogna guardare ai suoi <u>termini</u>, il grado del polinomio corrisponderà al grado del monomio di grado <u>maggiore</u> tra quelli che lo compongono. In poche parole il grado di un polinomio è il grado maggiore tra i gradi complessivi dei suoi termini.
-        </p>
-        <br>
-        <p class="bbk">Vediamo qualche esempio:</p>
-        <br>
-        <p>• &nbsp&nbsp \(4xy^3-k+2ab\) &nbsp - il grado è \(4\) perché è il grado complessivo di \(4xy^3\)
-        </p>
-        <br>
-        <p>• &nbsp&nbsp \(x-z\) &nbsp - il grado è \(1\) perché è il grado di entrambi i termini
-        </p>
-        <br>
-        <p id="classif7">• &nbsp&nbsp \(2ac -4x^3+abc\) &nbsp - il grado è \(3\) perché è il grado massimo tra i termini
-        </p>
-        <br>
-        <!-- Divider -->
-        <hr class="divider"></hr> 
+      <h2>Cos’è un polinomio?
+      </h2>
+      <p>Un polinomio è una somma algebrica tra monomi. I monomi che formano un polinomio sono <span class="blue">termini</span> del polinomio. I polinomi si classificano in base al numero di monomi da cui sono formati. Se un polinomio è composto da \(2\) monomi si chiama <span class="blue">binomio</span>, se i monomi sono \(3\) si chiama <span class="blue">trinomio</span> e se sono \(4\) si chiama <span class="blue">quadrinomio</span>. Da \(5\) termini in poi si dice che un polinomio ha \(N\) termini. 
+      </p>
+      <br>
+      <p class="bbk">Esempi di polinomi:</p>
+      <br>
+      <p>• &nbsp&nbsp \(2xy-3z\)</p>
+      <br>
+      <p>• &nbsp&nbsp \(5a^2+\sqrt{3}xy\)</p>
+      <br>
+      <p>• &nbsp&nbsp \(ac-4x+4b^2\)</p>
+      <br>
+      <p>Un polinomio si dice <span class="blue">opposto</span> a un altro polinomio se i suoi termini sono monomi opposti ai termini del primo.
+      </p>
+      <br>
+      <p class="bbk">Esempi di polinomi opposti:
+      </p>
+      <br>
+      <p>• &nbsp&nbsp \(b^2+3ac \longrightarrow -b^2-3ac\)</p>
+      <br>
+      <p>• &nbsp&nbsp \(\sqrt{3}x-4ab \longrightarrow -\sqrt{3}x+4ab\)</p>
+      <br>
+      <p id="classif5">• &nbsp&nbsp \(-\frac{3}{4}ab+3k^2 \longrightarrow \frac{3}{4}ab-3k^2\)</p>
+      <br>
 
+      <!-- Divider -->
+      <hr class="divider"></hr> 
 
-        <h2>Operazioni tra polinomi
-        </h2>
-        <br>
-        <p><span class="blue">Addizione</span> e <span class="blue">sottrazione</span>:  
-        </p>
-        <br>
-        <p>La <u>somma</u> tra polinomi è un nuovo polinomio formato dalla somma dei monomi simili degli addendi.
-        </p>
-        <br>
-        <p>\((2xy-4z)+(3xy+3z) \)\(\longrightarrow (2+3)xy+(-4+3)z \)\(\longrightarrow 5xy-z\)</p>
-        <br>
-        <p>La <u>differenza</u> tra polinomi è un nuovo polinomio che si ottiene sommando il primo polinomio all'opposto del secondo.
-        </p>
-        <br>
-        <p>\((2xy-4z)-(3xy+3z)\)\( \longrightarrow (2xy-4z)+(-3xy-3z)\)\( \longrightarrow -xy-7z\)</p>
-        <br>
-        <p><span class="blue">Moltiplicazione</span> e <span class="blue">potenza</span>:  
-        </p>
-        <br>
-        <p>Il <u>prodotto</u> tra polinomi si calcola moltiplicando tutti i termini del primo fattore per tutti i termini del secondo fattore.
-        </p>
-        <br>
-        <p>\((2ac-4b) \cdot (5a+2b^2) \)\(\longrightarrow 2ac \cdot 5a -4ab \cdot 5a +2ac \cdot 2b^2 -4ab \cdot 2b^2\)</p>
-        <br>
-        <p class="bbk">semplificando</p>
-        <p>\[10a^2c-20a^2b+4ab^2c-4ab^3\]</p>
-        <p>La <u>potenza</u> di un polinomio consiste semplicemente nel moltiplicare un polinomio per se stesso il numero di volte indicato dall'esponente.
-        </p>
-        <p>\[(2x-y)^3=(2x-y)\cdot(2x-y)\cdot(2x-y)\]</p>
-        <br>
-        <p><span class="blue">Divisione</span>:  
-        </p>
-        <br>
-        <p>La divisione tra polinomi è un argomento difficile da spiegare sinteticamente e per questo abbiamo deciso di dedicarci una pagina apposita che potete trovare nell'indice o cliccando <a href="index.html"><span class="link">qui</span></a>.
-        </p>
+      <h2>Forma normale dei polinomi
+      </h2>
+      <br>
+      <p>Un polinomio si dice ridotto in <span class="blue">forma normale</span> se tra i suoi termini non compaiono monomi simili. Per ridurre un polinomio alla sua forma normale basta sommare i suoi termini.
+      </p>
+      <br>
+      <p class="bbk">Esempio:
+      </p>
+      <br>
+      <p id="classif6">\(4ab+x^3y-ab \)\( \longrightarrow (4-1)ab+x^3y \longrightarrow 3ab+x^3y\)</p>
+      <br>
 
+      <!-- Divider -->
+      <hr class="divider"></hr> 
 
+      <h2>Grado di un polinomio
+      </h2>
+      <br>
+      <p>Per conoscere il grado di un polinomio bisogna guardare ai suoi <u>termini</u>, il grado del polinomio corrisponderà al grado del monomio di grado <u>maggiore</u> tra quelli che lo compongono. In poche parole il grado di un polinomio è il grado maggiore tra i gradi complessivi dei suoi termini.
+      </p>
+      <br>
+      <p class="bbk">Vediamo qualche esempio:</p>
+      <br>
+      <p>• &nbsp&nbsp \(4xy^3-k+2ab\) &nbsp - il grado è \(4\) perché è il grado complessivo di \(4xy^3\)
+      </p>
+      <br>
+      <p>• &nbsp&nbsp \(x-z\) &nbsp - il grado è \(1\) perché è il grado di entrambi i termini
+      </p>
+      <br>
+      <p id="classif7">• &nbsp&nbsp \(2ac -4x^3+abc\) &nbsp - il grado è \(3\) perché è il grado massimo tra i termini
+      </p>
+      <br>
 
+      <!-- Divider -->
+      <hr class="divider"></hr> 
 
+      <h2>Operazioni tra polinomi
+      </h2>
+      <br>
+      <p><span class="blue">Addizione</span> e <span class="blue">sottrazione</span>:  
+      </p>
+      <br>
+      <p>La <u>somma</u> tra polinomi è un nuovo polinomio formato dalla somma dei monomi simili degli addendi.
+      </p>
+      <br>
+      <p>\((2xy-4z)+(3xy+3z) \)\(\longrightarrow (2+3)xy+(-4+3)z \)\(\longrightarrow 5xy-z\)</p>
+      <br>
+      <p>La <u>differenza</u> tra polinomi è un nuovo polinomio che si ottiene sommando il primo polinomio all'opposto del secondo.
+      </p>
+      <br>
+      <p>\((2xy-4z)-(3xy+3z)\)\( \longrightarrow (2xy-4z)+(-3xy-3z)\)\( \longrightarrow -xy-7z\)</p>
+      <br>
+      <p><span class="blue">Moltiplicazione</span> e <span class="blue">potenza</span>:  
+      </p>
+      <br>
+      <p>Il <u>prodotto</u> tra polinomi si calcola moltiplicando tutti i termini del primo fattore per tutti i termini del secondo fattore.
+      </p>
+      <br>
+      <p>\((2ac-4b) \cdot (5a+2b^2) \)\(\longrightarrow 2ac \cdot 5a -4ab \cdot 5a +2ac \cdot 2b^2 -4ab \cdot 2b^2\)</p>
+      <br>
+      <p class="bbk">semplificando</p>
+      <p>\[10a^2c-20a^2b+4ab^2c-4ab^3\]</p>
+      <p>La <u>potenza</u> di un polinomio consiste semplicemente nel moltiplicare un polinomio per se stesso il numero di volte indicato dall'esponente.
+      </p>
+      <p>\[(2x-y)^3=(2x-y)\cdot(2x-y)\cdot(2x-y)\]</p>
+      <br>
+      <p><span class="blue">Divisione</span>:  
+      </p>
+      <br>
+      <p>La divisione tra polinomi è un argomento difficile da spiegare sinteticamente e per questo abbiamo deciso di dedicarci una pagina apposita che potete trovare nell'indice o cliccando <a href="index.html"><span class="link">qui</span></a>.
+      </p>
+    </section>
 
-
-        </body>
-        </section>
-        <!-- Site footer -->
-        <div id="footer"></div>
-        <script src="custom.js"></script>
-        <script src="bookmark.js"></script>
-        <!-- Including MathJax -->
-        <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
-    </body>
+    <!-- Site footer -->
+    <div id="footer"></div>
+    <script src="custom.js"></script>
+    <script src="bookmark.js"></script>
     <script src="index.js"></script>
-            
+    
+    <!-- Including MathJax -->
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+  </body>        
 </html>

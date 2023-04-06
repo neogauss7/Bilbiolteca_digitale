@@ -39,8 +39,9 @@
     </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   </head>
-         <div id="header"></div>
-        
+
+  <body>
+    <div id="header"></div>
       <section class="home">
 
         <label class="container">
@@ -51,22 +52,24 @@
             <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
           </div>
         </label>
-            <div class="welcome"> 
-                <h1 class="welcome1" >Equazioni con valore assoluto</h1>
-                <h3 class="p1">Di seguito analizzeremo le equazioni dove compaiono uno o più valori assoluti.</h3>
-             </div>  
-             <!-- Mini-index -->
-    <div class="minimenu">
-<a href="#classif" class="mini-item" ><div class=""><p class="minitext">1 modulo</p></div></a>
-<a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Modulo + cost.</p></div></a>
-<a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Modulo + var.</p></div></a>
-<a href="#classif4" class="mini-item" ><div class=""><p class="minitext">2+ moduli</p></div></a>
 
-    </div>
-              <!-- Divider -->
-         <hr class="divider"></hr>  
-        <body>
-         <h2>Equazioni con modulo (valore assoluto)
+        <div class="welcome"> 
+            <h1 class="welcome1" >Equazioni con valore assoluto</h1>
+            <h3 class="p1">Di seguito analizzeremo le equazioni dove compaiono uno o più valori assoluti.</h3>
+          </div>  
+
+        <!-- Mini-index -->
+        <div class="minimenu">
+          <a href="#classif" class="mini-item" ><div class=""><p class="minitext">1 modulo</p></div></a>
+          <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Modulo + cost.</p></div></a>
+          <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Modulo + var.</p></div></a>
+          <a href="#classif4" class="mini-item" ><div class=""><p class="minitext">2+ moduli</p></div></a>
+        </div>
+
+        <!-- Divider -->
+        <hr class="divider"></hr> 
+
+        <h2>Equazioni con modulo (valore assoluto)
         </h2>
         <br>
         <p>Un’equazione con modulo, come dice il suo nome, è un’equazione in cui appaiono uno o più <span class="blue">moduli</span>. 
@@ -103,9 +106,9 @@
         <p>Dove <u id="classif2"> \(A(x)\) e \(B(x)\) sono funzioni di \(x\)</u>. 
         </p>
         <br>
-         <!-- Divider -->
-         <hr class="divider"></hr>  
 
+        <!-- Divider -->
+        <hr class="divider"></hr>  
 
         <h2>Modulo e una constante
         </h2>
@@ -121,7 +124,7 @@
         <p> Quindi se \(k<0\) l’equazione è impossibile.
         </p>
         <br>
-        <p>Se invece \(k\) è positivo basta mettere un \(\pm\) davanti a \(k\) per togliere il modulo. Questo perché siccome \(k\) non varia a seconda di\(x\) , per avere l’equazione verificata dobbiamo avere: 
+        <p>Se invece \(k\) è positivo basta mettere un \(\pm\) davanti a \(k\) per togliere il modulo. Questo perché siccome \(k\) non varia a seconda di\(x\) , per avere l’equazione verificata dobbiamo avere: 
         </p>
         <br>
         <p>\(A(x) = k\)</p>
@@ -171,9 +174,9 @@
         <p id="classif3">Sappiamo subito che è <span class="blue">impossibile</span>, perché qualunque sia l’<span class="blue">argomento del modulo</span>, la parte a sinistra dell’uguale sarà positiva e non potrà mai e poi mai essere uguale a \(-2\). 
         </p>
         <br>
+
          <!-- Divider -->
          <hr class="divider"></hr>  
-
 
         <h2>Modulo e una variabile
         </h2>
@@ -239,9 +242,9 @@
         <p id="classif4">Con questa formula potrete risolvere qualsiasi equazione con un modulo!
         </p>
         <br>
-          <!-- Divider -->
-          <hr class="divider"></hr>  
-        
+
+        <!-- Divider -->
+        <hr class="divider"></hr>  
 
         <h2>Equazioni con due o più moduli
         </h2>
@@ -336,10 +339,10 @@
         <p>La soluzione dell’equazione sarà quindi \(x= -{10 \over 7}\)
         </p>
         <br>
-         <!-- Divider -->
-         <hr class="divider"></hr>  
-        
 
+        <!-- Divider -->
+        <hr class="divider"></hr>  
+        
         <h2>Equazioni con moduli dentro altri moduli
         </h2>
         <br>
@@ -378,22 +381,17 @@
         <br>
         <p>Ora risolviamo entrambe separatamente con il metodo già visto e troviamo le soluzioni.
         </p>
-        
+      </section>
 
+      <!-- Site footer -->
+      <div id="footer"></div>
+      <script src="custom.js"></script>
+      <script src="bookmark.js"></script>
+      <script src="index.js"></script>
 
-
-
-        </body>
-        </section>
-        <!-- Site footer -->
-        <div id="footer"></div>
-        <script src="custom.js"></script>
-        <script src="bookmark.js"></script>
-        <!-- Including MathJax -->
-        <script type="text/javascript" async
+      <!-- Including MathJax -->
+      <script type="text/javascript" async
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
-    </body>
-    <script src="index.js"></script>
-            
+      </script>
+    </body>      
 </html>

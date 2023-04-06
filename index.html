@@ -1,148 +1,228 @@
 <!DOCTYPE html>
 <html lang="it">
-   <head>
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <link rel="stylesheet" type="text/css" href="general.css">
-      <link rel="stylesheet" type="text/css" href="header.css">
-      <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8ffc82e5-ed8c-43b1-997c-5038a49290f0" data-blockingmode="auto" type="text/javascript"></script>
-      <link rel=“canonical” href=“https://theoremz.com/index.html/” />
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="general.css" />
+    <link rel="stylesheet" type="text/css" href="header.css" />
+    <script
+      id="Cookiebot"
+      src="https://consent.cookiebot.com/uc.js"
+      data-cbid="8ffc82e5-ed8c-43b1-997c-5038a49290f0"
+      data-blockingmode="auto"
+      type="text/javascript"
+    ></script>
+    <link rel=“canonical” href=“https://theoremz.com/index.html/” />
 
+    <link rel="icon" href="favicon.png" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-2Z6FRX1VZF");
+    </script>
+    <title>Theoremz | Home</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
 
-      <link rel="icon" href="favicon.png">
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         gtag('config', 'G-2Z6FRX1VZF');
-      </script>
-      <title>Theoremz | Home</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta
+      name="description"
+      content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti."
+    />
 
-   <meta name="description" content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti.">
+    <script
+      type="text/javascript"
+      src="//cdn.iubenda.com/cs/gpp/stub.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.iubenda.com/cs/iubenda_cs.js"
+      charset="UTF-8"
+      async
+    ></script>
 
-   <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
-   <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+    <!-- Including header and footer -->
+    <script src="custom.js"></script>
 
-   <!-- Including header and footer -->
-   <script src="custom.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
 
-   <!-- The core Firebase JS SDK is always required and must be listed first -->
-   <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-   <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
-   <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
-   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-   <script>
-     $(function () {
-       $("#header").load("header.html");
-       $("#footer").load("footer.html");
-     });
-   </script>
-   </head>
-    <body>
-      <div id="header"></div>
-      <!-- Home page body -->
-     
-      <section>
-         <button onclick="location.href = 'https://buy.stripe.com/00gaIa36Xb21eSk4gh'" class="donate">
-            <p>Offrici un</p>
-            <div class="arrow-wrapper">
-            <img style="height: 20px;" src='images/coffee.webp'>
-            &nbsp&nbsp
-            <div class="arrow"></div>
-            </div>
-         </button>
+  <body>
+    <div id="header"></div>
+    <section>
+      <button
+        onclick="location.href = 'https://buy.stripe.com/00gaIa36Xb21eSk4gh'"
+        class="donate"
+      >
+        <p>Offrici un</p>
+        <div class="arrow-wrapper">
+          <img style="height: 20px" src="images/coffee.webp" />
+          &nbsp&nbsp
+          <div class="arrow"></div>
+        </div>
+      </button>
 
-         <div class="welcome index-container">
-            <div class="right-side">
-               <h1 class="welcome-title">
-                  Theoremz, scopri la matematica <br> <div id="text"></div> 
-               </h1>
-               <p class="welcome-description">
-                  Unisciti alle migliaia di studenti che stanno studiando su Theoremz in questo momento e scopri le nostre lezioni <u><b>gratuite</b></u> con grafici e schemi, abbiamo trattato tutti gli argomenti delle scuole superiori! Nuove lezioni sono in arrivo ogni giorno... <u><b>inizia subito ad imparare!</b></u>
-               </p>
-               <button onclick="location.href = 'login.html'" class="btn btn1" id="login-button">
-                  Sign Up
-               </button>
-            </div> 
-            <div class="left-side">
-               <img class="welcome-image" alt="Welcome image Theoremz" src="images/wimage.svg" id="icon">
-            </div>
-         </div>
-         <div class="arguments-container">
-            <div class="argument">
-               <div class="argument-text">
+      <div class="welcome index-container">
+        <div class="right-side">
+          <h1 class="welcome-title">
+            Theoremz, scopri la matematica <br />
+            <div id="text"></div>
+          </h1>
+          <p class="welcome-description">
+            Unisciti alle migliaia di studenti che stanno studiando su Theoremz
+            in questo momento e scopri le nostre lezioni
+            <u><b>gratuite</b></u> con grafici e schemi, abbiamo trattato tutti
+            gli argomenti delle scuole superiori! Nuove lezioni sono in arrivo
+            ogni giorno... <u><b>inizia subito ad imparare!</b></u>
+          </p>
+          <button
+            onclick="location.href = 'login.html'"
+            class="btn btn1"
+            id="login-button"
+          >
+            Sign Up
+          </button>
+        </div>
 
-                  <span style="color: var(--pc);">2500+</span> studenti iscritti </div> <div class="user-container"> <img src="images/user.svg" style="height: 30px; width: 30px; " alt="User"><img src="images/user.svg" style="height: 30px; width: 30px; margin-left: 4px;" alt="User"><img src="images/user.svg" style="height: 30px; width: 30px; margin-left: 4px; " alt="User"></div>
-               </div>
-            <div class="argument">
-               <div class="argument-text">
-                  <span style="color: var(--pc);">80K+</span> likes e commenti positivi <br> <img src="images/chat.webp" style="height: 45px; width: 45px;" alt="Comments">
-               </div>
-            </div>
-            <div class="argument" id="last-argument">
-               <div class="argument-text">
-                  <i class="quote">"Theoremz mi ha salvato la vita, grazie ragazzi"</i> <img src="images/rating.webp" alt="Rating" class="rating">
-               </div>
-            </div>
-         </div>
+        <div class="left-side">
+          <img
+            class="welcome-image"
+            alt="Welcome image Theoremz"
+            src="images/wimage.svg"
+            id="icon"
+          />
+        </div>
       </div>
-         <div class="grid-container index-container">
+      <div class="arguments-container">
+        <div class="argument">
+          <div class="argument-text">
+            <span style="color: var(--pc)">2500+</span> studenti iscritti
+          </div>
+          <div class="user-container">
+            <img
+              src="images/user.svg"
+              style="height: 30px; width: 30px"
+              alt="User"
+            /><img
+              src="images/user.svg"
+              style="height: 30px; width: 30px; margin-left: 4px"
+              alt="User"
+            /><img
+              src="images/user.svg"
+              style="height: 30px; width: 30px; margin-left: 4px"
+              alt="User"
+            />
+          </div>
+        </div>
+        <div class="argument">
+          <div class="argument-text">
+            <span style="color: var(--pc)">80K+</span> likes e commenti positivi
+            <br />
+            <img
+              src="images/chat.webp"
+              style="height: 45px; width: 45px"
+              alt="Comments"
+            />
+          </div>
+        </div>
+        <div class="argument" id="last-argument">
+          <div class="argument-text">
+            <i class="quote"
+              >"Theoremz mi ha salvato la vita, grazie ragazzi"</i
+            >
+            <img src="images/rating.webp" alt="Rating" class="rating" />
+          </div>
+        </div>
+      </div>
 
-            <a href="Matematica.html"><div class="grid-element">
-               <img alt="Matematica Theoremz" src="images/maths.svg" class="grid-icons">
-               <h2 class="grid-title">
-                  Matematica
-               </h2>
-              
-            </div></a>
+      <div class="grid-container index-container">
+        <a href="Matematica.html"
+          ><div class="grid-element">
+            <img
+              alt="Matematica Theoremz"
+              src="images/maths.svg"
+              class="grid-icons"
+            />
+            <h2 class="grid-title">Matematica</h2>
+          </div></a
+        >
 
-            <a href="Fisica.html"><div class="grid-element"> 
-               <img alt="Fisica Theoremz" src="images/fisica.svg" class="grid-icons">
-               <h2 class="grid-title">
-                  Fisica
-               </h2>
-               
-            </div></a>
+        <a href="Fisica.html"
+          ><div class="grid-element">
+            <img
+              alt="Fisica Theoremz"
+              src="images/fisica.svg"
+              class="grid-icons"
+            />
+            <h2 class="grid-title">Fisica</h2>
+          </div></a
+        >
 
-            <a href="esercizi.html"><div class="grid-element">
-               <img alt="Esercizi Theoremz" src="images/homework.svg" class="grid-icons">
-               <h2 class="grid-title">
-                  Esercizi
-               </h2>
-              
-            </div></a>
+        <a href="esercizi.html"
+          ><div class="grid-element">
+            <img
+              alt="Esercizi Theoremz"
+              src="images/homework.svg"
+              class="grid-icons"
+            />
+            <h2 class="grid-title">Esercizi</h2>
+          </div></a
+        >
 
-            <a href="scienze.html"><div class="grid-element">
-               <img alt="Scienze Theoremz" src="images/scienze.svg" class="grid-icons">
-               <h2 class="grid-title">
-                  Scienze 
-               </h2>
-              
-            </div></a>
+        <a href="scienze.html"
+          ><div class="grid-element">
+            <img
+              alt="Scienze Theoremz"
+              src="images/scienze.svg"
+              class="grid-icons"
+            />
+            <h2 class="grid-title">Scienze</h2>
+          </div></a
+        >
 
-            <a href="formulario.html"><div class="grid-element">
-               <img alt="Formulario Theoremz" src="images/book.svg" class="grid-icons">
-               <h2 class="grid-title">
-                  Formulario
-               </h2>
-              
-            </div></a>
+        <a href="formulario.html"
+          ><div class="grid-element">
+            <img
+              alt="Formulario Theoremz"
+              src="images/book.svg"
+              class="grid-icons"
+            />
+            <h2 class="grid-title">Formulario</h2>
+          </div></a
+        >
 
-            <a href="newsletter.html"><div class="grid-element">
-               <img alt="Newsletter Theoremz" src="images/envelope.svg" class="grid-icons">
-               <h2 class="grid-title">
-                  Newsletter
-               </h2>
-               
-            </div></a>
-
-         </div>
-      </section>
-      <div id="footer"></div>
-   </body>
-   <script src="index.js"></script>
+        <a href="newsletter.html"
+          ><div class="grid-element">
+            <img
+              alt="Newsletter Theoremz"
+              src="images/envelope.svg"
+              class="grid-icons"
+            />
+            <h2 class="grid-title">Newsletter</h2>
+          </div>
+        </a>
+      </div>
+    </section>
+    <div id="footer"></div>
+  </body>
+  <script src="index.js"></script>
 </html>
-

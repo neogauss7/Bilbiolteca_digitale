@@ -40,31 +40,30 @@
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     </head>
 
-         <div id="header"></div>
-        
-      <section class="home">
-
-        <label class="container">
-            <input onclick="save()" id="bookmark" type="checkbox">
-            <div class="checkmark">
-              <svg viewBox="0 0 256 256">
-              <rect fill="none" height="256" width="256"></rect>
-              <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
-            </div>
-          </label>
+    <body>
+        <div id="header"></div>
+        <section class="home">
+            <label class="container">
+                <input onclick="save()" id="bookmark" type="checkbox">
+                <div class="checkmark">
+                <svg viewBox="0 0 256 256">
+                <rect fill="none" height="256" width="256"></rect>
+                <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
+                </div>
+            </label>
             <div class="welcome"> 
                 <h1 class="welcome1" >Funzioni esponenziali</h1>
                 <h3 class="p1">Di seguito analizzeremo le funzioni esponenziali.</h3>
-             </div>  
-             <!-- Mini-index -->
-    <div class="minimenu">
-<a href="#classif" class="mini-item" ><div class=""><p class="minitext">Base > 1</p></div></a>
-<a href="#classif2" class="mini-item" ><div class=""><p class="minitext"> 0 < Base < 1</p></div></a> 
+            </div> 
 
-    </div>
-              <!-- Divider -->
-         <hr class="divider"></hr>  
-         <body>
+            <!-- Mini-index -->
+            <div class="minimenu">
+                <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Base > 1</p></div></a>
+                <a href="#classif2" class="mini-item" ><div class=""><p class="minitext"> 0 < Base < 1</p></div></a> 
+            </div>
+
+            <!-- Divider -->
+            <hr class="divider"></hr>  
 
             <h2> Cos’è una funzione esponenziale?
             </h2>
@@ -78,28 +77,24 @@
 
             <p>
                 \(f(x)=a^x\)
-
             </p>
 
             <br>
 
             <p>
                 Esempi di funzioni esponenziali sono: 
-
             </p>
 
             <br>
 
             <p>
                 \(f(x)=2^x\)
-
             </p>
 
             <br>
 
             <p>
                 \(f(x)=4^x\)
-
             </p>
 
             <br>
@@ -140,7 +135,7 @@
             <br>
 
             <!-- Divider -->
-         <hr class="divider"></hr> 
+            <hr class="divider"></hr> 
 
             <h2>
                 Funzioni esponenziali con base maggiore di 1
@@ -160,7 +155,6 @@
             <br>
             <p>
                 Inoltre è una funzione <u>monotona crescente</u> <i>(aumenta sempre)</i> ed è quindi anche <span class="blue">biunivoca</span>. Questo è molto importante perché ci permette di definire una funzione inversa, il <span class="blue">logaritmo</span>, che vedremo in un’altra lezione <i>(<a class="link" href="logeprop.html">qui</a>)</i>. 
-
             </p>
 
             <br>
@@ -180,7 +174,7 @@
             <br>
 
             <!-- Divider -->
-         <hr class="divider"></hr> 
+            <hr class="divider"></hr> 
 
             <h2>
                 Funzione esponenziale con base compresa tra \(0\) ed \(1\) 
@@ -191,7 +185,6 @@
 
             <p>
                 Nel caso in cui la base sia \(1\), siccome \(1^n=1\) per ogni \(n\), otterremo la funzione continua: 
-
             </p>
 
             <br>
@@ -319,32 +312,17 @@
                 Talvolta infatti quando si dice <i>“funzione esponenziale”</i> è sottinteso che ci stiamo riferendo ad essa e non ad una funzione esponenziale generica. Spesso la troverete scritta come \(exp(x)\) <i>(notazione usata dalla maggior parte delle calcolatrici scientifiche)</i>. 
 
             </p>
-
-            <br>
-
-            <p>
-
-            </p>
-            
-
-
-
-
-
-        
-
-        
-  
-        </body>
         </section>
+
         <!-- Site footer -->
         <div id="footer"></div>
         <script src="custom.js"></script>
         <script src="bookmark.js"></script>
+        <script src="index.js"></script>
+
         <!-- Including MathJax -->
         <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
     </body>
-    <script src="index.js"></script>
 </html>

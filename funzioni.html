@@ -39,267 +39,275 @@
     </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   </head>
-         <div id="header"></div>
-        
-      <section class="home">
 
-        <label class="container">
-          <input onclick="save()" id="bookmark" type="checkbox">
-          <div class="checkmark">
-            <svg viewBox="0 0 256 256">
-            <rect fill="none" height="256" width="256"></rect>
-            <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
-          </div>
-        </label>
-            <div class="welcome"> 
-                <h1 class="welcome1" >Funzioni</h1>
-                <h3 class="p1">Di seguito analizzeremo le funzioni.</h3>
-             </div>  
-             <!-- Mini-index -->
-    <div class="minimenu">
-<a href="#classif" class="mini-item" ><div class=""><p class="minitext">Classificazione</p></div></a>
-<a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Studio</p></div></a>
-<a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Iniettive</p></div></a>
-<a href="#classif4" class="mini-item" ><div class=""><p class="minitext">Suriettive</p></div></a>
-<a href="#classif5" class="mini-item" ><div class=""><p class="minitext">Biettive</p></div></a>
-<a href="#classif6" class="mini-item" ><div class=""><p class="minitext">Inverse</p></div></a>
+  <body>
+    <div id="header"></div>
+    <section class="home">
+      <label class="container">
+        <input onclick="save()" id="bookmark" type="checkbox">
+        <div class="checkmark">
+          <svg viewBox="0 0 256 256">
+          <rect fill="none" height="256" width="256"></rect>
+          <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
+        </div>
+      </label>
 
-    </div>
-              <!-- Divider -->
-         <hr class="divider"></hr>  
-         <body>
-         <h2>Cos'è una funzione?</h2>
-         <br>
-         <p> <i>Una <span class="blue">funzione</span> è una corrispondenza (o legge) tra gli elementi di un insieme, <span class="blue">dominio</span>, e quelli di un altro insieme, il <span class="blue">codominio</span>. Ad ogni elemento del dominio non può essere associato più di un elemento del <span class="underlined">codominio</span>.</i> In una rappresentazione cartesiana di una funzione dai numeri reali a i numeri reali (con una sola variabile) il domino comprende i valori delle <span class="blue">ascisse</span>, mentre il codominio quelli delle <span class="blue">ordinate</span>.
-         </p>
-         <br>
-         <p>Quindi, chiamato l’insieme dominio \(A\) e l’insieme codominio <i>(o <span class="blue">immagine</span> di \(\alpha\)</i> mediante la funzione \(f\)) , assegniamo ad ogni elemento \(\alpha\) di \(A\) un elemento  di :
-         </p>
-         
-         \[f:a \rightarrow b\]
+      <div class="welcome"> 
+        <h1 class="welcome1" >Funzioni</h1>
+        <h3 class="p1">Di seguito analizzeremo le funzioni.</h3>
+      </div>  
 
-         <p>E scriviamo che:</p>
-
-         <p>\[f(a)=b\]</p>
-
-         <p>Questa è la scrittura matematica per dire che assegnamo ad \(\alpha\) il valore \(\beta\) in funzione di \(f\).</p>
-         <br>
-         <div class="funzioni">
-         <img class='funzione' src="images/funzione.png" alt="funzione">
-         <img class='funzione' src="images/nonfunzione.png" alt="nonfunzione">
+      <!-- Mini-index -->
+      <div class="minimenu">
+        <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Classificazione</p></div></a>
+        <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Studio</p></div></a>
+        <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Iniettive</p></div></a>
+        <a href="#classif4" class="mini-item" ><div class=""><p class="minitext">Suriettive</p></div></a>
+        <a href="#classif5" class="mini-item" ><div class=""><p class="minitext">Biettive</p></div></a>
+        <a href="#classif6" class="mini-item" ><div class=""><p class="minitext">Inverse</p></div></a>
       </div>
-      <br id="classif">
-      <br>
+
+      <!-- Divider -->
       <hr class="divider"></hr>  
 
-         <h2>Classificazione delle funzioni</h2>
-         <br>
-         <p>Prima di studiare una funzione è importante classificarla.</p>
-         <br>
-         <p>Di seguito uno schema sulla classificazione delle funzioni:</p>
-         <br>
-         <img class='image' src="images/classif.png" alt="classificazione">
-         <br>
+      <h2>Cos'è una funzione?</h2>
+      <br>
+      <p> <i>Una <span class="blue">funzione</span> è una corrispondenza (o legge) tra gli elementi di un insieme, <span class="blue">dominio</span>, e quelli di un altro insieme, il <span class="blue">codominio</span>. Ad ogni elemento del dominio non può essere associato più di un elemento del <span class="underlined">codominio</span>.</i> In una rappresentazione cartesiana di una funzione dai numeri reali a i numeri reali (con una sola variabile) il domino comprende i valori delle <span class="blue">ascisse</span>, mentre il codominio quelli delle <span class="blue">ordinate</span>.
+      </p>
+      <br>
+      <p>Quindi, chiamato l’insieme dominio \(A\) e l’insieme codominio <i>(o <span class="blue">immagine</span> di \(\alpha\)</i> mediante la funzione \(f\)) , assegniamo ad ogni elemento \(\alpha\) di \(A\) un elemento  di :
+      </p>
+      
+      \[f:a \rightarrow b\]
 
-         <h2>Legge di una funzione</h2>
-         <br>
-         <p>La <span class="blue">legge di una funzione</span> è la regola che definisce la corrispondenza tra i due insiemi. Una legge di una funzione può essere espressa in qualunque forma, vale a dire che non deve essere obbligatoriamente scritta in lettere, numeri o simboli matematici, bensì può anche essere enunciata a voce.
-         </p>
-         <br>
-         <p class="bbk">Esempio di legge di una funzione:</p>
-         <br>
-         <p class="bbk">Descrizione a parole:</p>
-         <p>Dati gli insiemi \(A=(N)\) e \(B = \)(tutti i pianeti), la legge che associa un numero naturale a ogni pianeta è una funzione.</p>
-         <br>
-         <p class="bbk">Definizione analitica:</p>
-         <p >\(f:N\rightarrow N\) <i>(definita nell’insieme dei numeri naturali)</i></p>
-         <br id="classif2">
-         <p>\(y = 2x\)</p>
-         <br>
-         <br>
-         <hr class="divider"></hr>  
-         
-         <h2>Studio di funzione basilare</h2>
-         <br>
-         <p>Per studiare una funzione, è necessario svolgere più passaggi, l’ordine dei passaggi non è importante ma noi li riportiamo nell’ordine che consideriamo più facile e intuitivo.</p>
-         <br>
+      <p>E scriviamo che:</p>
+
+      <p>\[f(a)=b\]</p>
+
+      <p>Questa è la scrittura matematica per dire che assegnamo ad \(\alpha\) il valore \(\beta\) in funzione di \(f\).</p>
+      <br>
+      <div class="funzioni">
+        <img class='funzione' src="images/funzione.png" alt="funzione">
+        <img class='funzione' src="images/nonfunzione.png" alt="nonfunzione">
+      </div>
+      <br id="classif">
+
+      <hr class="divider"></hr>  
+
+      <h2>Classificazione delle funzioni</h2>
+      <br>
+      <p>Prima di studiare una funzione è importante classificarla.</p>
+      <br>
+      <p>Di seguito uno schema sulla classificazione delle funzioni:</p>
+      <br>
+      <img class='image' src="images/classif.png" alt="classificazione">
+      <br>
+
+      <h2>Legge di una funzione</h2>
+      <br>
+      <p>La <span class="blue">legge di una funzione</span> è la regola che definisce la corrispondenza tra i due insiemi. Una legge di una funzione può essere espressa in qualunque forma, vale a dire che non deve essere obbligatoriamente scritta in lettere, numeri o simboli matematici, bensì può anche essere enunciata a voce.
+      </p>
+      <br>
+      <p class="bbk">Esempio di legge di una funzione:</p>
+      <br>
+      <p class="bbk">Descrizione a parole:</p>
+      <p>Dati gli insiemi \(A=(N)\) e \(B = \)(tutti i pianeti), la legge che associa un numero naturale a ogni pianeta è una funzione.</p>
+      <br>
+      <p class="bbk">Definizione analitica:</p>
+      <p >\(f:N\rightarrow N\) <i>(definita nell’insieme dei numeri naturali)</i></p>
+      <br id="classif2">
+      <p>\(y = 2x\)</p>
+      <br>
+      <br>
+      <hr class="divider"></hr>  
+      
+      <h2>Studio di funzione basilare</h2>
+      <br>
+      <p>Per studiare una funzione, è necessario svolgere più passaggi, l’ordine dei passaggi non è importante ma noi li riportiamo nell’ordine che consideriamo più facile e intuitivo.</p>
+      <br>
 
 
-         <h2>1)   Studio del dominio</h2>
-         <br>
-         <p>Il <span class="blue">dominio della funzione</span>, come detto in precedenza, è l’insieme degli elementi del primo insieme. Molte volte si dà per scontato che il dominio comprenda tutti i numeri reali ma spesso capita che alcuni numeri in particolare siano da escludere per vari motivi.</p>
-         <br>
-         <p>Potrebbe capitare, ad esempio, una funzione di questo tipo \(y=\sqrt x\) , a primo impatto un occhio allenato si accorgerebbe che questa funzione non è definita per tutti i numeri reali, infatti se la \(x\) dovesse essere un numero negativo la funzione sarebbe indefinita.
-         </p>
-         <br>
-         <p>Quindi come fare lo studio del dominio? In questo caso è facile, basta escludere i numeri negativi ed il gioco è fatto. Ma in altre situazioni potrebbe capitare di dovere porre il denominatore \(\neq 0\), il radicando \(\geq 0\), l’argomento di un logaritmo \(>0\) ecc…
-         </p>
-         <br>
-         <p>Una volta trovato il dominio lo possiamo scrivere in questa forma \(D_x: \) i valori di \(x\) per i quali la funzione è definita</p>
-         <br>
-         <p class="bbk">Esempio:</p>
-         <br>
-         <p>\(y=\sqrt x \rightarrow D_x: [0, +\infty[ \) o \(D_x : x \in N\)</p>
-         <p>\[y=\sqrt x \rightarrow D_x: [0, +\infty[ \]</p>
-         <br>
-         <p><i>In alcuni casi il dominio è già dato dal testo degli esercizi.</i></p>
-         <br>
-         
-         
-         <h2>2)   Studio del segno</h2>
-         <br>
-         <p>Lo studio del segno consiste nel trovare i valori per cui la \(y\) è positiva e quindi, nel piano cartesiano, dove la funzione è sopra l’asse delle ascisse.</p>
-         <br>
-         <p>Per fare questo è necessario porre la funzione \(>0\) e risolvere l’equazione con incognita in  come se fosse una normale disequazione. </p>
-         <br>
-         <p class="bbk">Esempio:</p>
-         <br>
-         <p>\(y=4x-3\) \( \longrightarrow D_x: x \in R\)</p>
-         <br>
-         <p>\(4x-3>0\) \(\longrightarrow x>{3\over 4}\)</p>
-         <br>
-         <p>Il risultato saranno i valori della \(x\)  per cui la funzione è positiva. Da questi ricaviamo i valori per cui la funzione è negativa che saranno tutti gli altri valori del dominio.
-         </p>
-         <br>
-         <p class="bbk">Esempio:</p>
-         <br>
-         <p>\(y=4x-3\) \( \longrightarrow D_x: x \in R\)</p>
-         <br>
-         <p class="bbk">Funzione positiva \(\longrightarrow x>{3\over 4}\)</p>
-         <br>
-         <p class="bbk">Funzione negativa \(\longrightarrow x < {3\over 4}\)</p>
-         <br>
-         
-         
-         <h2>3) Trovare le intersezioni con gli assi
-         </h2>
-         <br>
-         <p>Questo passaggio consiste nel trovare i valori di \(x\) per cui \(y\) è uguale a \(0\) e viceversa. Per fare questo ci basterà sostituire prima la \(x\) e poi la \(y\) con \(0\) e risolvere le equazioni.
-         </p>
-         <br>
-         <p class="bbk">Esempio:</p>
-         <br>
-         <p>\(y=4x-3\) \( \longrightarrow D_x: x \in R\)</p>
-         <br>
-         <p>\( \begin{cases} x = 0\\ y= 0\end{cases} \)</p>
-         <br>
-         <p>\( \begin{cases} y = 4 \cdot 0 -3\\ 0= 4x-3\end{cases} \)</p>
-         <br>
-         <p>\( \begin{cases} y = -3\\ x= {3 \over 4}\end{cases} \)</p>
-         <br>
-         <p>Fatto ciò i risultati ottenuti saranno, nel grafico cartesiano, <span class="underlined">le intersezioni con l’asse delle ascisse e quelle con l’asse delle ordinate.</span></p>
-         <br>
-         <p><i>In questo caso la funzione è una retta ed ha solo un’intersezione con l’asse delle ascisse ma può succedere che ce ne siano di più.</i></p>
-         <br>
-         
-         
-         <h2>4) Disegnare il grafico</h2>
-         <br>
-         <p>L’ultimo passo è, ora che abbiamo molte più informazioni sulla nostra funzione, rappresentarla sul piano cartesiano.</p>
-         <br>
-         <p>Per questa lezione ci fermeremo alla rappresentazione delle zone dove la funzione è positiva o negativa e delle intersezioni con gli assi cartesiani. 
-         </p>
-         <br>
-         <p>Il primo passo è disegnare il nostro grafico e escludere le zone dove la funzione non è definita, questi dati li abbiamo ricavati prima nello studio del dominio.</p>
-         <br>
-         <p>grafico</p>
-         <p>Il secondo step è rappresentare le intersezioni con gli assi, queste sono gli zeri della funzione trovati in precedenza.</p>
-         <br>
-         <p>grafico</p>
-         <p> Ora rappresentiamo le zone dove la funzione è positiva o negativa basandoci sul nostro studio del segno e sulle intersezioni con l’asse delle ascisse. In una zona che sarà sicuramente positiva cancelliamo la parte negativa.</p>
-         <br>
-         <p>grafico</p>
-         <p>Finito, abbiamo studiato la nostra funzione!</p>
-         <br>
+      <h2>1) Studio del dominio</h2>
+      <br>
+      <p>Il <span class="blue">dominio della funzione</span>, come detto in precedenza, è l’insieme degli elementi del primo insieme. Molte volte si dà per scontato che il dominio comprenda tutti i numeri reali ma spesso capita che alcuni numeri in particolare siano da escludere per vari motivi.</p>
+      <br>
+      <p>Potrebbe capitare, ad esempio, una funzione di questo tipo \(y=\sqrt x\) , a primo impatto un occhio allenato si accorgerebbe che questa funzione non è definita per tutti i numeri reali, infatti se la \(x\) dovesse essere un numero negativo la funzione sarebbe indefinita.
+      </p>
+      <br>
+      <p>Quindi come fare lo studio del dominio? In questo caso è facile, basta escludere i numeri negativi ed il gioco è fatto. Ma in altre situazioni potrebbe capitare di dovere porre il denominatore \(\neq 0\), il radicando \(\geq 0\), l’argomento di un logaritmo \(>0\) ecc…
+      </p>
+      <br>
+      <p>Una volta trovato il dominio lo possiamo scrivere in questa forma \(D_x: \) i valori di \(x\) per i quali la funzione è definita</p>
+      <br>
+      <p class="bbk">Esempio:</p>
+      <br>
+      <p>\(y=\sqrt x \rightarrow D_x: [0, +\infty[ \) o \(D_x : x \in N\)</p>
+      <p>\[y=\sqrt x \rightarrow D_x: [0, +\infty[ \]</p>
+      <br>
+      <p><i>In alcuni casi il dominio è già dato dal testo degli esercizi.</i></p>
+      <br>
+      
+      
+      <h2>2)   Studio del segno</h2>
+      <br>
+      <p>Lo studio del segno consiste nel trovare i valori per cui la \(y\) è positiva e quindi, nel piano cartesiano, dove la funzione è sopra l’asse delle ascisse.</p>
+      <br>
+      <p>Per fare questo è necessario porre la funzione \(>0\) e risolvere l’equazione con incognita in  come se fosse una normale disequazione. </p>
+      <br>
+      <p class="bbk">Esempio:</p>
+      <br>
+      <p>\(y=4x-3\) \( \longrightarrow D_x: x \in R\)</p>
+      <br>
+      <p>\(4x-3>0\) \(\longrightarrow x>{3\over 4}\)</p>
+      <br>
+      <p>Il risultato saranno i valori della \(x\)  per cui la funzione è positiva. Da questi ricaviamo i valori per cui la funzione è negativa che saranno tutti gli altri valori del dominio.
+      </p>
+      <br>
+      <p class="bbk">Esempio:</p>
+      <br>
+      <p>\(y=4x-3\) \( \longrightarrow D_x: x \in R\)</p>
+      <br>
+      <p class="bbk">Funzione positiva \(\longrightarrow x>{3\over 4}\)</p>
+      <br>
+      <p class="bbk">Funzione negativa \(\longrightarrow x < {3\over 4}\)</p>
+      <br>
+      
+      <h2>3) Trovare le intersezioni con gli assi
+      </h2>
+      <br>
+      <p>Questo passaggio consiste nel trovare i valori di \(x\) per cui \(y\) è uguale a \(0\) e viceversa. Per fare questo ci basterà sostituire prima la \(x\) e poi la \(y\) con \(0\) e risolvere le equazioni.
+      </p>
+      <br>
+      <p class="bbk">Esempio:</p>
+      <br>
+      <p>\(y=4x-3\) \( \longrightarrow D_x: x \in R\)</p>
+      <br>
+      <p>\( \begin{cases} x = 0\\ y= 0\end{cases} \)</p>
+      <br>
+      <p>\( \begin{cases} y = 4 \cdot 0 -3\\ 0= 4x-3\end{cases} \)</p>
+      <br>
+      <p>\( \begin{cases} y = -3\\ x= {3 \over 4}\end{cases} \)</p>
+      <br>
+      <p>Fatto ciò i risultati ottenuti saranno, nel grafico cartesiano, <span class="underlined">le intersezioni con l’asse delle ascisse e quelle con l’asse delle ordinate.</span></p>
+      <br>
+      <p><i>In questo caso la funzione è una retta ed ha solo un’intersezione con l’asse delle ascisse ma può succedere che ce ne siano di più.</i></p>
+      <br>
+      
+      
+      <h2>4) Disegnare il grafico</h2>
+      <br>
+      <p>L’ultimo passo è, ora che abbiamo molte più informazioni sulla nostra funzione, rappresentarla sul piano cartesiano.</p>
+      <br>
+      <p>Per questa lezione ci fermeremo alla rappresentazione delle zone dove la funzione è positiva o negativa e delle intersezioni con gli assi cartesiani. 
+      </p>
+      <br>
+      <p>Il primo passo è disegnare il nostro grafico e escludere le zone dove la funzione non è definita, questi dati li abbiamo ricavati prima nello studio del dominio.</p>
+      <br>
+      <p>grafico</p>
+      <p>Il secondo step è rappresentare le intersezioni con gli assi, queste sono gli zeri della funzione trovati in precedenza.</p>
+      <br>
+      <p>grafico</p>
+      <p> Ora rappresentiamo le zone dove la funzione è positiva o negativa basandoci sul nostro studio del segno e sulle intersezioni con l’asse delle ascisse. In una zona che sarà sicuramente positiva cancelliamo la parte negativa.</p>
+      <br>
+      <p>grafico</p>
+      <p>Finito, abbiamo studiato la nostra funzione!</p>
+      <br>
 
-         <!-- Divider -->
-         <hr class="divider"></hr>  
-         <h2>Funzioni iniettive, suriettive e biettive</h2>
-         <br>
-         <p>Nella come visto in precedenza, ogni funzione è rappresentabile tramite due insiemi e una freccia che mette in relazione i loro elementi.</p>
-         <br>
-         <p id='classif3'>In molti casi è utile sapere se una funzione è iniettiva, suriettiva e biettiva. Ma cosa sono queste definizioni e cosa servono?</p>
-         <br>
-         
-         <!-- Divider -->
-         <hr class="divider"></hr> 
-         <h2>Funzioni iniettive
-         </h2>
-         <br>
-         
+      <!-- Divider -->
+      <hr class="divider"></hr>  
+      <h2>Funzioni iniettive, suriettive e biettive</h2>
+      <br>
+      <p>Nella come visto in precedenza, ogni funzione è rappresentabile tramite due insiemi e una freccia che mette in relazione i loro elementi.</p>
+      <br>
+      <p id='classif3'>In molti casi è utile sapere se una funzione è iniettiva, suriettiva e biettiva. Ma cosa sono queste definizioni e cosa servono?</p>
+      <br>
+      
+      <!-- Divider -->
+      <hr class="divider"></hr> 
+      <h2>Funzioni iniettive
+      </h2>
+      <br>
+      
       <p><i>Una funzione si dice <span class="blue">iniettiva</span> se ad ogni elemento del <span class="underlined">codominio</span> è associato a non più di un elemento del <span class="underlined">dominio</span>, e quindi in una rappresentazione grafica gli elementi di \(B\) sono raggiunti da una freccia sola.</i>
       </p>
       <br>
       <img  id="classif" class='funzione' src="images/funzionei.png" alt="Funzione Iniettiva">
-         <br id="classif4">
-         <br>
-         <!-- Divider -->
-         <hr class="divider"></hr>  
-         
-         <h2>Funzioni suriettive</h2>
-         <br>
-         <p><i></i>Una funzione si dice <span class="blue">suriettiva</span> se tutti gli elementi del <span class="underlined">dominio</span> sono associati ad almeno un elemento del <span class="underlined">codominio</span>, quindi in una rappresentazione grafica tutti gli elementi di entrambi gli insiemi saranno coinvolti in almeno una corrispondenza.</i></p>
-         <br>
-         <img  id="classif" class='funzione' src="images/funziones.png" alt="Funzione Suriettiva">
-         <br id="classif5">
-         <br>
-          <!-- Divider -->
-         <hr class="divider"></hr>  
-         <h2>Funzioni biettive</h2>
-         <br> 
-         <p><i>Una funzione si dice <span class="blue">biettiva</span> se è sia <span class="underlined">suriettiva</span> che <span class="underlined">iniettiva</span> allo stesso tempo. Quindi ogni elemento del <span class="underlined">dominio</span> è collegato a un elemento del <span class="underlined">codominio</span>.</i></p>
-         <br>
-         <img class='funzione' src="images/funzioneb.png" alt="Funzione Biettiva">
-         <br id="classif">
+      <br id="classif4">
+      <br>
 
-         <!-- Divider -->
-         <hr class="divider"></hr>  
-         <h2>Funzione invertibile</h2>
-         <br>
-         <p>Una funzione è invertibile solo se è <span class="underlined">biettiva</span>.
-         </p>
-         <br>
-         <p><i>Una <span class="blue">funzione invertibile</span> è una funzione per la quale è possibile definire una funzione inversa.</i> </p>
-         <br>
-         <p><i>Una funzione inversa è una funzione con una legge opposta alla legge della funzione di partenza e che quindi possiamo vedere come la funzione di partenza con le frecce al contrario.</i> 
-         </p>
-         <br>
-         <p>Di conseguenza la funzione inversa di una funzione sarà identica alla prima ma con gli insiemi invertiti:
-         </p>
-         <br>
-         <img  id="classif" class='funzione' src="images/funzioneinversa.png" alt="Funzione Inversa">
-         <br id="classif6">
-         <br>
-         <!-- Divider -->
-         <hr class="divider"></hr> 
-         <h2>Come trovare una funzione inversa</h2>
-         <br>
-         <p>Per trovare una funzione inversa bisogna per prima cosa verificare se la funzione di partenza è sia <span class="underlined">iniettiva</span> che <span class="underlined">suriettiva</span> è quindi <span class="underlined">biunivoca</span>.</p>
-         <br>
-         <p>Fatto questo si procede i calcoli. Dato che una funzione inversa può essere vista semplicemente come una funzione con i  insiemi invertiti dovremo prendere la nostra funzione di partenza e scambiare il codominio con il dominio.</p>
-         <br>
-         <p class="bbk">Esempio:</p>
-         <br>
-         <p>\(y=2x\)-invertiamo le lettere</p>
-         <br>
-         <p>\(x=2y\)</p>
-         <br>
-         <p>Ora non ci resta che isolare la \(y\) per ottenere la funzione inversa di \(y=2x\):</p>
-         <br>
-         <p>\(y={1 \over2 }x\)</p>
-         <br>
-         <p>Ricordate che i valori di \(x\) per cui la funzione inversa è definita non sono sempre gli stessi della funzione di partenza, quindi ricordatevi di studiare il dominio di nuovo se necessario.
-         </p>
-        </body>
-        </section>
-        <!-- Site footer -->
-        <div id="footer"></div>
-        <script src="custom.js"></script>
-        <script src="bookmark.js"></script>
-        <!-- Including MathJax -->
-        <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
-    </body>
+      <!-- Divider -->
+      <hr class="divider"></hr>  
+      
+      <h2>Funzioni suriettive</h2>
+      <br>
+      <p><i></i>Una funzione si dice <span class="blue">suriettiva</span> se tutti gli elementi del <span class="underlined">dominio</span> sono associati ad almeno un elemento del <span class="underlined">codominio</span>, quindi in una rappresentazione grafica tutti gli elementi di entrambi gli insiemi saranno coinvolti in almeno una corrispondenza.</i></p>
+      <br>
+      <img  id="classif" class='funzione' src="images/funziones.png" alt="Funzione Suriettiva">
+      <br id="classif5">
+      <br>
+
+      <!-- Divider -->
+      <hr class="divider"></hr> 
+
+      <h2>Funzioni biettive</h2>
+      <br> 
+      <p><i>Una funzione si dice <span class="blue">biettiva</span> se è sia <span class="underlined">suriettiva</span> che <span class="underlined">iniettiva</span> allo stesso tempo. Quindi ogni elemento del <span class="underlined">dominio</span> è collegato a un elemento del <span class="underlined">codominio</span>.</i></p>
+      <br>
+      <img class='funzione' src="images/funzioneb.png" alt="Funzione Biettiva">
+      <br id="classif">
+
+      <!-- Divider -->
+      <hr class="divider"></hr>  
+
+      <h2>Funzione invertibile</h2>
+      <br>
+      <p>Una funzione è invertibile solo se è <span class="underlined">biettiva</span>.
+      </p>
+      <br>
+      <p><i>Una <span class="blue">funzione invertibile</span> è una funzione per la quale è possibile definire una funzione inversa.</i> </p>
+      <br>
+      <p><i>Una funzione inversa è una funzione con una legge opposta alla legge della funzione di partenza e che quindi possiamo vedere come la funzione di partenza con le frecce al contrario.</i> 
+      </p>
+      <br>
+      <p>Di conseguenza la funzione inversa di una funzione sarà identica alla prima ma con gli insiemi invertiti:
+      </p>
+      <br>
+      <img  id="classif" class='funzione' src="images/funzioneinversa.png" alt="Funzione Inversa">
+      <br id="classif6">
+      <br>
+
+      <!-- Divider -->
+      <hr class="divider"></hr> 
+
+      <h2>Come trovare una funzione inversa</h2>
+      <br>
+      <p>Per trovare una funzione inversa bisogna per prima cosa verificare se la funzione di partenza è sia <span class="underlined">iniettiva</span> che <span class="underlined">suriettiva</span> è quindi <span class="underlined">biunivoca</span>.</p>
+      <br>
+      <p>Fatto questo si procede i calcoli. Dato che una funzione inversa può essere vista semplicemente come una funzione con i  insiemi invertiti dovremo prendere la nostra funzione di partenza e scambiare il codominio con il dominio.</p>
+      <br>
+      <p class="bbk">Esempio:</p>
+      <br>
+      <p>\(y=2x\)-invertiamo le lettere</p>
+      <br>
+      <p>\(x=2y\)</p>
+      <br>
+      <p>Ora non ci resta che isolare la \(y\) per ottenere la funzione inversa di \(y=2x\):</p>
+      <br>
+      <p>\(y={1 \over2 }x\)</p>
+      <br>
+      <p>Ricordate che i valori di \(x\) per cui la funzione inversa è definita non sono sempre gli stessi della funzione di partenza, quindi ricordatevi di studiare il dominio di nuovo se necessario.
+      </p>
+    </section>
+
+    <!-- Site footer -->
+    <div id="footer"></div>
+    <script src="custom.js"></script>
+    <script src="bookmark.js"></script>
     <script src="index.js"></script>
+  
+    <!-- Including MathJax -->
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+  </body>
 </html>
