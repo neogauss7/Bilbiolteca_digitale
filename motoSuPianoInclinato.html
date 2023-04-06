@@ -39,106 +39,109 @@
     </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   </head>
-         <div id="header"></div>
-        
-      <section class="home">
 
-        <label class="container">
-          <input onclick="save()" id="bookmark" type="checkbox">
-          <div class="checkmark">
-            <svg viewBox="0 0 256 256">
-            <rect fill="none" height="256" width="256"></rect>
-            <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
-          </div>
-        </label>
-            <div class="welcome"> 
-                <h1 class="welcome1" >Moto su piano inclinato</h1>
-                <h3 class="p1">Di seguito analizzeremo il moto su piano inclinato.</h3>
-             </div>  
-              <!-- Divider -->
-         <hr class="divider"></hr>  
-         <body>
-         <h2>Cos'è il moto su piano inclinato?</h2>
-         <br>
-         <p>Cosa succede se lasciamo scivolare un corpo su un <span class="blue">piano inclinato</span>? Se il piano è liscio <i>(ovvero privo di <span class="blue">attrito</span>)</i>, il moto effettuato dal corpo è un moto su un piano liscio inclinato. Si tratta, come vedremo, di un caso particolare di <span class="blue">moto rettilineo uniformemente accelerato</span>. </p>
-         
-         <br>
-         <p>Consideriamo il caso in cui il corpo parte da fermo ed è libero di scivolare. La <u>forza di gravità</u> è l’unica <span class="blue">forza</span> ad agire su di esso. </p>
-         <img class='image' style="max-width: 600px;" src="images/pianoincl.webp" alt="Piano inclinato">
-         <p>Conoscendo l’<u>altezza</u> del piano possiamo calcolare la <span class="blue">velocità finale</span> \(v_f\) e conoscendo anche l’inclinazione possiamo calcolare il <u>tempo impiegato</u> \(t_f.\) </p>
-         <br>
-         <p>Questa volta però l’<u>accelerazione</u> non è uguale all’<u>accelerazione di gravità</u>(\(g\)). Questo perché la forza di gravità punta verso il basso mentre il corpo si sta muovendo obliquamente. Dobbiamo quindi trovare la componente dell’accelerazione sulla <u>direzione del moto</u>, ovvero \(g_{\parallel}\) <i>(\(g\) parallelo)</i>.</p>
-         <img class='image' style="max-width: 600px;" src="images/pianoincl2.webp" alt="Piano inclinato2">
-         <p>Si può dimostrare che l’angolo \(\alpha\) è uguale all’angolo \(\gamma\). Di conseguenza, avremo: </p>
-         <br>
-         <p>\({{g_{\parallel}} \over g} =\sin (\alpha)\)</p>
-         <br>
-         <p>\(g_{\parallel}=g\cdot \sin(\alpha)\)</p>
-         <br>
-         <p>Abbiamo quindi trovato la nostra <span class="blue">accelerazione</span> <i>(conoscendo l’inclinazione)</i>.  </p>
-         <br>
-         <p>Conoscendo l’altezza del piano inclinato e la sua inclinazione possiamo trovare la sua lunghezza. Infatti: </p>
-         <br>
-         <p>\({h\over l}=\sin(\alpha)\)</p>
-         <br>
-         <p>\(l={h \over \sin(\alpha)}\)</p>
-         <br>
-         <p>Imponiamo l’<span class="blue">origine</span> alla fine del piano, l’orientamento verso il basso e \(t_0=0.\) Siccome \(S_0\) è all’inizio del piano, sarà uguale a \(–l\). Inoltre, siccome parte da fermo, avremo \(v_0=0.\) Questa volta però, siccome l’orientamento è verso il basso, avremo \(a=g_{\parallel}.\) Quindi la nostra <span class="blue">legge oraria</span> sarà: </p>
-         <br>
-         <p>\(S(t)=S_ 0+v_0(t-t_0)+{a(t-t_0)^2 \over 2}\)</p>
-         <br>
-         <p>\(S(t)=-l +0 +{g_{\parallel} t^2 \over 2}\)</p>
-         <br>
-         <p>Nel momento \(t_f\) in cui il corpo giunge alla fine del piano abbiamo \(S(t_f)=0\) <i>(perché abbiamo imposto la fine del piano come origine)</i>, quindi: </p>
-         <br>
-         <p>\(0=-l+{g_{\parallel}{t_f}^2 \over 2}\)</p>
-         <br>
-         <p class="bbk">Isoliamo \(t_f:\)</p>
-         <br>
-         <p>\({g_{\parallel}{t_f}^2 \over 2} = l\)</p>
-         <br>
-         <p>\({t_f}^2={2l \ \over g_{\parallel}}\)</p>
-         <br>
-         <p>\(t_f=\sqrt{2l \over g_{\parallel}}\)</p>
-         <br>
-         <p>Ricordando che \(g_{\parallel}=g\cdot \sin(\alpha)\) e che \(l={h\over \sin(\alpha)}\) , avremo: </p>
-         <br>
-         <p>\(t_f=\sqrt{{2h\over \sin (\alpha)}\over g \sin (\alpha)}\)</p>
-         <br>
-         <p>\(t_f=\sqrt{2h\over g \sin (\alpha)^2 }\)</p>
-         <br>
-         <p>Per trovare invece la <u>velocità finale</u> usiamo la <span class="blue">legge oraria della velocità</span>: </p>
-         <br>
-         <p>\(v(t)=v_0 + a(t-t_0)\)</p>
-         <br>
-         <p>Che siccome \(v_0=0,\) \(t_0=0\) e \(a=g_{\parallel}\) diventa: </p>
-         <br>
-         <p>\(v(t)=g_{\parallel} t\)</p>
-         <br>
-         <p>Quindi al momento \(t_f\) avremo: </p>
-         <br>
-         <p>\(v(t_f)=g_{\parallel} t_f\)</p>
-         <br>
-         <p>\(v_f=g_{\parallel} \cdot \sqrt {2h\over {g  \sin (\alpha)^2}}\)</p>
-         <br>
-         <p>\(v_f=\sqrt{2h{g_{\parallel}}^2 \over {g {\sin (\alpha)}^2}}\)</p>
-         <br>
-         <p>\(v_f=\sqrt{2h g^{2}\sin (\alpha)^2 \over g \sin (\alpha)^2}\)</p>
-         <br>
-         <p>\(v_f=\sqrt{2hg}\)</p>
-         <br>
-         <p>Si nota che la <span class="blue">velocità finale</span> non è influenzata dall’inclinazione ed è infatti uguale alla <u>velocità finale del moto di caduta libera</u>, che sarebbe il moto su un piano inclinato quando \(\alpha =90^{\circ}\) <i>(ovvero quando il piano è verticale)</i>. </p>
-        </body>
-        </section>
-        <!-- Site footer -->
-        <div id="footer"></div>
-        <script src="custom.js"></script>
-        <script src="bookmark.js"></script>
-        <script src="index.js"></script>
-        <!-- Including MathJax -->
-        <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  <body>
+    <div id="header"></div>
+    <section class="home">
+
+      <label class="container">
+        <input onclick="save()" id="bookmark" type="checkbox">
+        <div class="checkmark">
+          <svg viewBox="0 0 256 256">
+          <rect fill="none" height="256" width="256"></rect>
+          <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
+        </div>
+      </label>
+
+      <div class="welcome"> 
+        <h1 class="welcome1" >Moto su piano inclinato</h1>
+        <h3 class="p1">Di seguito analizzeremo il moto su piano inclinato.</h3>
+      </div>  
+
+      <!-- Divider -->
+      <hr class="divider"></hr>  
+
+      <h2>Cos'è il moto su piano inclinato?</h2>
+      <br>
+      <p>Cosa succede se lasciamo scivolare un corpo su un <span class="blue">piano inclinato</span>? Se il piano è liscio <i>(ovvero privo di <span class="blue">attrito</span>)</i>, il moto effettuato dal corpo è un moto su un piano liscio inclinato. Si tratta, come vedremo, di un caso particolare di <span class="blue">moto rettilineo uniformemente accelerato</span>. </p>
+      
+      <br>
+      <p>Consideriamo il caso in cui il corpo parte da fermo ed è libero di scivolare. La <u>forza di gravità</u> è l’unica <span class="blue">forza</span> ad agire su di esso. </p>
+      <img class='image' style="max-width: 600px;" src="images/pianoincl.webp" alt="Piano inclinato">
+      <p>Conoscendo l’<u>altezza</u> del piano possiamo calcolare la <span class="blue">velocità finale</span> \(v_f\) e conoscendo anche l’inclinazione possiamo calcolare il <u>tempo impiegato</u> \(t_f.\) </p>
+      <br>
+      <p>Questa volta però l’<u>accelerazione</u> non è uguale all’<u>accelerazione di gravità</u>(\(g\)). Questo perché la forza di gravità punta verso il basso mentre il corpo si sta muovendo obliquamente. Dobbiamo quindi trovare la componente dell’accelerazione sulla <u>direzione del moto</u>, ovvero \(g_{\parallel}\) <i>(\(g\) parallelo)</i>.</p>
+      <img class='image' style="max-width: 600px;" src="images/pianoincl2.webp" alt="Piano inclinato2">
+      <p>Si può dimostrare che l’angolo \(\alpha\) è uguale all’angolo \(\gamma\). Di conseguenza, avremo: </p>
+      <br>
+      <p>\({{g_{\parallel}} \over g} =\sin (\alpha)\)</p>
+      <br>
+      <p>\(g_{\parallel}=g\cdot \sin(\alpha)\)</p>
+      <br>
+      <p>Abbiamo quindi trovato la nostra <span class="blue">accelerazione</span> <i>(conoscendo l’inclinazione)</i>.  </p>
+      <br>
+      <p>Conoscendo l’altezza del piano inclinato e la sua inclinazione possiamo trovare la sua lunghezza. Infatti: </p>
+      <br>
+      <p>\({h\over l}=\sin(\alpha)\)</p>
+      <br>
+      <p>\(l={h \over \sin(\alpha)}\)</p>
+      <br>
+      <p>Imponiamo l’<span class="blue">origine</span> alla fine del piano, l’orientamento verso il basso e \(t_0=0.\) Siccome \(S_0\) è all’inizio del piano, sarà uguale a \(–l\). Inoltre, siccome parte da fermo, avremo \(v_0=0.\) Questa volta però, siccome l’orientamento è verso il basso, avremo \(a=g_{\parallel}.\) Quindi la nostra <span class="blue">legge oraria</span> sarà: </p>
+      <br>
+      <p>\(S(t)=S_ 0+v_0(t-t_0)+{a(t-t_0)^2 \over 2}\)</p>
+      <br>
+      <p>\(S(t)=-l +0 +{g_{\parallel} t^2 \over 2}\)</p>
+      <br>
+      <p>Nel momento \(t_f\) in cui il corpo giunge alla fine del piano abbiamo \(S(t_f)=0\) <i>(perché abbiamo imposto la fine del piano come origine)</i>, quindi: </p>
+      <br>
+      <p>\(0=-l+{g_{\parallel}{t_f}^2 \over 2}\)</p>
+      <br>
+      <p class="bbk">Isoliamo \(t_f:\)</p>
+      <br>
+      <p>\({g_{\parallel}{t_f}^2 \over 2} = l\)</p>
+      <br>
+      <p>\({t_f}^2={2l \ \over g_{\parallel}}\)</p>
+      <br>
+      <p>\(t_f=\sqrt{2l \over g_{\parallel}}\)</p>
+      <br>
+      <p>Ricordando che \(g_{\parallel}=g\cdot \sin(\alpha)\) e che \(l={h\over \sin(\alpha)}\) , avremo: </p>
+      <br>
+      <p>\(t_f=\sqrt{{2h\over \sin (\alpha)}\over g \sin (\alpha)}\)</p>
+      <br>
+      <p>\(t_f=\sqrt{2h\over g \sin (\alpha)^2 }\)</p>
+      <br>
+      <p>Per trovare invece la <u>velocità finale</u> usiamo la <span class="blue">legge oraria della velocità</span>: </p>
+      <br>
+      <p>\(v(t)=v_0 + a(t-t_0)\)</p>
+      <br>
+      <p>Che siccome \(v_0=0,\) \(t_0=0\) e \(a=g_{\parallel}\) diventa: </p>
+      <br>
+      <p>\(v(t)=g_{\parallel} t\)</p>
+      <br>
+      <p>Quindi al momento \(t_f\) avremo: </p>
+      <br>
+      <p>\(v(t_f)=g_{\parallel} t_f\)</p>
+      <br>
+      <p>\(v_f=g_{\parallel} \cdot \sqrt {2h\over {g  \sin (\alpha)^2}}\)</p>
+      <br>
+      <p>\(v_f=\sqrt{2h{g_{\parallel}}^2 \over {g {\sin (\alpha)}^2}}\)</p>
+      <br>
+      <p>\(v_f=\sqrt{2h g^{2}\sin (\alpha)^2 \over g \sin (\alpha)^2}\)</p>
+      <br>
+      <p>\(v_f=\sqrt{2hg}\)</p>
+      <br>
+      <p>Si nota che la <span class="blue">velocità finale</span> non è influenzata dall’inclinazione ed è infatti uguale alla <u>velocità finale del moto di caduta libera</u>, che sarebbe il moto su un piano inclinato quando \(\alpha =90^{\circ}\) <i>(ovvero quando il piano è verticale)</i>. </p>
+    </section>
+
+    <!-- Site footer -->
+    <div id="footer"></div>
+    <script src="custom.js"></script>
+    <script src="bookmark.js"></script>
+    <script src="index.js"></script>
+
+    <!-- Including MathJax -->
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
-    </body>
-            
+  </body>         
 </html>
