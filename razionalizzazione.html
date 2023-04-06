@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="it">
+   <head>
+      <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8ffc82e5-ed8c-43b1-997c-5038a49290f0" data-blockingmode="auto" type="text/javascript"></script>
+      <link rel="icon" href="favicon.png">
+      
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"></script>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2Z6FRX1VZF');
+      </script>
+
+      <!-- Titolo -->
+      <title>Theoremz | Razionalizzazione</title>
+
+      <!-- Stylesheets -->
+      <link rel="stylesheet" href="funzioni.css">
+      <link rel="stylesheet" type="text/css" href="general.css">
+      <link rel="stylesheet" type="text/css" href="header.css">
+      <meta charset="UTF-8">
+      <meta name="description" content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti.">
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+      <!-- Including header and footer -->
+      <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+      <script>
+          $(function () {
+              $("#header").load("header.html");
+              $("#footer").load("footer.html");
+          });
+      </script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+   </head>
+
+   <body>
+      <div id="header"></div>
+      <section class="home">
+         <label class="container">
+            <input onclick="save()" id="bookmark" type="checkbox">
+            <div class="checkmark">
+              <svg viewBox="0 0 256 256">
+              <rect fill="none" height="256" width="256"></rect>
+              <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
+            </div>
+         </label>
+         <div class="welcome"> 
+            <h1 class="welcome1" >Razionalizzazione</h1>
+            <h3 class="p1">Di seguito analizzeremo la razionalizzazione di una frazione.</h3>
+         </div> 
+
+         <!-- Mini-index -->
+    <div class="minimenu">
+        <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Radice quadrata</p></div></a>
+        <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Radicali</p></div></a>
+        
+            </div>
+                      <!-- Divider -->
+                 <hr class="divider"></hr>  
+
+                    <h2>
+                        Cos'è la razionalizzazione?
+                    </h2>
+        
+                    <br>
+        
+                    <p>
+                        La <span class="blue">razionalizzazione</span> consiste nel semplificare una frazione con <u>radicali</u> al <u>denominatore</u> in maniera tale da rendere il denominatore privo di radicali. 
+                    </p>
+        
+                    <br>
+        <!-- Divider -->
+        <hr class="divider"></hr>
+                    <h2>
+                        Perché razionalizzare?
+                    </h2>
+        
+                    <br>
+        
+                    <p>
+                        Prima di vedere come razionalizzare guardiamo al perché conviene razionalizzare. Le ragioni sono principalmente due: 
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        La prima è che è molto più semplice fare i calcoli con una frazione razionalizzata. I <u>minimi comuni denominatori</u>, ad esempio, risultano molto più semplici. 
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        Inoltre, per esempio nei problemi di fisica, si ha un’idea più chiara della quantità di cui si sta parlando. 
+                    </p>
+        
+                    <br>
+        
+                    <p id="classif">
+                        Se ad esempio vi diciamo \({1\over \sqrt{10}-3}\) è difficile stimare il suo valore, mentre se vi diciamo \({\sqrt{10}+3 \over 1}\) che sarebbe \(\sqrt{10}+3\) è molto più intuitivo. 
+                    </p>
+        
+                    <br>
+        
+                    <!-- Divider -->
+                 <hr class="divider"></hr>  
+        
+                    <h2>
+                        Come razionalizzare
+                    </h2>
+        
+                    <br>
+        
+                    <p>
+                        Partiamo da un caso particolare più semplice che è comunque molto comune: 
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        Se abbiamo qualcosa del tipo: \({A(x)\over \sqrt{n}},\) dove \(A(x)\) è qualcosa che dipende da \(x;\) ma tanto di \(A(x)\) per ora non ce ne importa niente, noi vogliamo far scomparire quel \(\sqrt{n}\) dal denominatore <i>(dove ovviamente \(n\) è un qualsiasi <u>numero reale positivo</u>)</i>. 
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        Per risolvere questo problema usiamo un trucchetto che poi in generale ci permetterà di razionalizzare ogni tipo di frazione: sappiamo che moltiplicare qualcosa per \(1\) non cambia niente, su questo non ci piove. Però è anche vero che: \({\sqrt(n)\over \sqrt{n}}=1.\) Dunque possiamo moltiplicare per \(\sqrt{n} \over \sqrt{n}\) la nostra frazione. 
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        Così facendo otteniamo: 
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        \({A(x)\over \sqrt{n}}={A(x) \over \sqrt{n}} \cdot {\sqrt{n} \over \sqrt{n}} = {A(x)\cdot \sqrt{n} \over {\sqrt{n}}^2}={A(x)\cdot \sqrt{n} \over n}\)
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        Ed ecco che non c’è più alcun radicale al denominatore. 
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        Il processo della razionalizzazione risiede in questo: <u>moltiplicare per un qualcosa che è uguale ad \(1\) e semplificare</u>.
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        Facciamo qualche esempio per chiarire meglio: 
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        \({3 \over \sqrt{5}}={3 \over \sqrt{5}} \cdot {\sqrt{5} \over \sqrt{5}}={3\sqrt{5} \over {\sqrt{5}}^2}={3\sqrt{5}\over 5}\)
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        \({4x \over \sqrt{2}}={4x \over \sqrt{2}} \cdot {\sqrt{2}\over \sqrt{2}} = {4x\sqrt{2}\over 2}=2x\sqrt{2}=2\sqrt{2} x\)
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        \({x^2 \over \sqrt{17}}={x^2 \over \sqrt{17}} \cdot {\sqrt{17} \over \sqrt{17}}={\sqrt{17} x^2 \over 17}\)
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        Guardiamo al caso più generale che possiamo avere con le radici quadrate. Prendiamo una frazione del tipo: 
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        \({A(x)\over a+\sqrt{b}}\)
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        Proviamo ora a ricordare i <span class="blue">prodotti notevoli</span> <i>(lezione <a href="prodottinotevoli.html"><span>qui</span></a> )</i>. Nella somma per differenza \((a+b)\cdot(a-b)=a^2 - b^2\) entrambi i termini vengono elevati al quadrato e questo è perfetto per far scomparire la nostra radice quadrata. </p>
+                        <br>
+                        <p>
+                        Al denominatore abbiamo \(a+\sqrt{b},\) quindi per avere una <u>somma per differenza</u> dobbiamo moltiplicare per \(a-\sqrt{b}.\) Usiamo quindi lo stesso trucchetto del caso precedente: 
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        \({A(x)\over {a+\sqrt{b}}}={A(x)\over {a+\sqrt{b}}}\cdot {a-\sqrt{b}\over a-\sqrt{b}}={A(x)\cdot (a-\sqrt{b})\over a^2-(\sqrt{b})^2}={A(x)\cdot (a-\sqrt{b})\over a^2-b}\)
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        Ed ecco che il nostro denominatore è libero dalle radici quadrate! Facciamo qualche esempio: 
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        \({1\over 4+ \sqrt{3}}= {1 \over 4+\sqrt{3}} \cdot {4-\sqrt{3}\over 4-\sqrt{3}}={4-\sqrt{3}\over 4^2 - (\sqrt{3}^2)}={4-\sqrt{3}\over 16-3}= {4-sqrt{3}\over 13}\)
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        \({1\over 3-\sqrt{8}}={1\over 3-\sqrt{8}} \cdot {3+\sqrt{8}\cdot 3+\sqrt{8}}={3+\sqrt{8}\over 3^2 -(\sqrt{8})^2}={3+\sqrt{8}\over 9-8}=3+\sqrt{8}\)
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        \({x\over \sqrt{3}-1}={x\over \sqrt{3}-1}\cdot {\sqrt{3}+1 \over \sqrt{3}+1}={x(\sqrt{3}+1)\over (\sqrt{3})^2 -1^2}={x(\sqrt{3}+1)\over 3-1}={x(\sqrt{3}+1)\over 2}\)
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        Quindi ecco come si risolve l’esempio proposto nell’introduzione sulla razionalizzazione: 
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        \({1\over \sqrt{10}-3}={1\over \sqrt{10}-3} \cdot {\sqrt{10}+3 \over \sqrt{10}+3}={\sqrt{10}+3\over (\sqrt{10})^2 -3^2}={\sqrt{10}+3 \over 1}=\sqrt{10}+3\)                    
+                    </p>
+        
+                    <br>
+        
+                    <p id="classif2">
+                        Potrebbero apparire \(A(x)\) più complicati, ma poi quello si tratta di semplificare. Per quanto riguarda la razionalizzazione con radici quadrate questo è tutto quello che dovete sapere. 
+                    </p>
+        
+                    <br>
+        
+                    <!-- Divider -->
+                 <hr class="divider"></hr>  
+        
+                    <h2>
+                        Razionalizzazione con radicali
+                    </h2>
+        
+                    <br>
+        
+                    <p>
+                        Possono comparire altri radicali al numeratore che non siano radici quadrate. Il procedimento è più o meno lo stesso e sono molto più rari da trovare, ma siccome si possono comunque trovare, vediamo velocemente come risolverli: 
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        Un caso più semplice può essere quando abbiamo una frazione della forma: 
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        \({A(X)\over \sqrt[n]{a}}\)
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        Come nel caso della radice quadrata vogliamo moltiplicare per qualcosa che sia uguale ad \(1\) e che faccia scomparire quel radicale. Per fare ciò si dovrebbe ottenere qualcosa del tipo \(\sqrt[n]{a^n}.\) Per le proprietà dei radicali sappiamo che possiamo riscriverlo come \(\sqrt[n]{a}\cdot \sqrt[n]{a^{n-1}}.\) Quindi, avendo \(\sqrt[n]{a},\) proviamo a moltiplicare per \({\sqrt[n]{a^{n-1}}\over \sqrt[n]{a^{n-1}}}:\)
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        \({A(x)\over sqrt[n]{a}}={A(x)\over \sqrt[n]{a}}\cdot {\sqrt[n]{a^{n-1}}\over \sqrt[n]{a^{n-1}}}={A(x)\cdot \sqrt[n]{a^{n-1}}\over a}\)
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        Se poi possiamo riscrivere a come \(b^m,\) si ottiene una formula più complicata ma che agevola i calcoli <i>(si lavora con numeri più piccoli)</i>. Bisogna fare lo stesso procedimento di prima ma questa volta sfruttiamo il fatto che \(b=\sqrt[n]{b^n}=\sqrt[n]{b^{m+n-m}}=\sqrt[n]{b^m}\cdot \sqrt[n]{b^{n-m}}.\) Quindi: 
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        \({A(x)\over \sqrt[n]{b^m}}={A(x)\over \sqrt[n]{b^m}}=\cdot {\sqrt[n]{b^{n-m}} \over \sqrt[n]{b^{n-m}}}={A(x)\cdot \sqrt[n]{b^{m-n}} \over b}\)
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        Facciamo qualche esempio:  
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        \({1\over \sqrt[3]{2}}={1\over \sqrt[3]{2}} \cdot {\sqrt[3]{2^2} \over \sqrt[3]{2^2}}={\sqrt[3]{2^2} \over \sqrt[3]{2^3}}={\sqrt[3]{4}\over 2}\)
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        \({7\over \sqrt[5]{3}}={7\over \sqrt[5]{3}} \cdot {\sqrt[5]{3^4} \over \sqrt[5]{3^4}}={7\sqrt[5]{3^4} \over \sqrt[5]{3^5}}={7\sqrt[5]{81}\over 3}\)
+                    </p>
+        
+                    <br>
+        
+                    <p>
+                        \({x+1 \over \sqrt[7]{16}}={x+1 \over \sqrt[7]{2^4}}= {x+1 \over \sqrt[7]{2^4}} \cdot {\sqrt[7]{2^3}\over \sqrt[7]{2^3}}={(x+1)\cdot \sqrt[7]{2^3}\over \sqrt[7]{2^7}}={(x+1)\cdot \sqrt[7]{8} \over 2}\)
+                    </p>
+          </section>
+
+      <!-- Site footer -->
+      <div id="footer"></div>
+      <script src="custom.js"></script>
+      <script src="bookmark.js"></script>
+      
+      <!-- Including MathJax -->
+      <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      <script src="index.js"></script>
+   </body>         
+</html>
