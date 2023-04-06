@@ -39,100 +39,101 @@
     </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   </head>
-         <div id="header"></div>
-         <section class="home">
-          <label class="container">
-            <input onclick="save()" id="bookmark" type="checkbox">
-            <div class="checkmark">
-              <svg viewBox="0 0 256 256">
-              <rect fill="none" height="256" width="256"></rect>
-              <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
-            </div>
-          </label>
-         <div class="welcome"> 
+
+  <body>
+    <div id="header"></div>
+    <section class="home">
+      <label class="container">
+        <input onclick="save()" id="bookmark" type="checkbox">
+        <div class="checkmark">
+          <svg viewBox="0 0 256 256">
+          <rect fill="none" height="256" width="256"></rect>
+          <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
+        </div>
+      </label>
+
+      <div class="welcome"> 
         <h1 class="welcome1" >La regola di Ruffini</h1>
         <h3 class="p1">Cos'è e come si usa.</h3>
-             </div>  
-             <!-- Mini-index -->
-    <div class="minimenu">
-<a href="#classif" class="mini-item" ><div class=""><p class="minitext">Quando si usa</p></div></a>
-<a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Come si usa</p></div></a>
+      </div>  
 
-    </div>
-            <!-- Divider -->
-        <hr class="divider"></hr>  
-        <body>
-         <h2>Cos’è la regola di Ruffini?</h2>
-         <br>
-         <p>La <span class="blue">regola di Ruffini</span> è una tecnica di scomposizione dei polinomi ed è stata introdotta dal matematico<span class="blue">Paolo Ruffini</span>. Risulta utile in quanto riesce a scomporre polinomi non scomponibili con le altre tecniche che abbiamo visto in una lezione apposita <i>(<a href="index.html"><span class="link">qui</span></a> per accedervi)</i>.</p>
-         <br>
-         <p>Questo metodo di scomposizione si basa sul <span class="blue">Teorema di Ruffini</span>, il cui enunciato è <i>“Un polinomio è divisibile per un binomio del tipo \(x-a\) soltanto se scambiando la sua incognita con l’opposto del termine noto del divisore viene annullato”</i>.</p>
-         <br>
-         <p id="classif">In questa lezione ci limiteremo a spiegare come e quando applicare la regola e non dimostreremo il teorema in sé, chiarito questo possiamo procedere.</p>
-         <br>
-         <!-- Divider -->
-         <hr class="divider"></hr>
-         
-         <h2>Quando usare Ruffini</h2>
-         <br>
-         <p>Dato che usare la <span class="blue">regola di Ruffini</span> è il metodo più lento di scomporre un polinomio, consigliamo di provare prima tutte le altre tecniche di scomposizione. Quindi, se il polinomio è di grado inferire uguale al terzo molto probabilmente è scomponibile anche in altri modi.
-        </p>
-        <br>
-        <p id="classif2">Se ci si trova davanti un polinomio di grado elevato e non si riesce a ricondurlo a gradi inferiori usando, ad esempio, <span class="blue">il raccoglimento totale</span>, allora è conveniente procedere con Ruffini in quanto è facile e sicuro.</p>
-        <br>
-        <!-- Divider -->
-        <hr class="divider"></hr>
-        
-        <h2>Come applicare Ruffini</h2>
-        <br>
-        <p>La prima cosa che bisogna fare con il nostro polinomio è trovare un numero che lo annulli, un numero che se sostituito all’incognita faccia venire \(0\).</p>
-        <br>
-        <p>Si potrebbero provare tutti i numeri reali ma fortunatamente sappiamo che deve per forza essere un divisore dell’ultimo termine del polinomio, quindi quello non moltiplicato per la nostra incognita.
-        </p>
-        <br>
-        <p class="bbk">Esempio:</p>
-        <br>
-        <p class="bbk">\(7x^2+4x-3 \longrightarrow \pm1 e \pm 3\) -proviamo le opzioni e scopriamo che \(-1\) è accettabile</p>
-        <br>
-        <p>Ora trovato il nostro numero, sappiamo che il nostro polinomio sarà divisibile per \(x\) più il reciproco di questo numero che in questo caso è \(1\).
-        </p>
-        <br>
-        <p>Potremmo dunque affermare che \((x+1) \cdot (...) = 7x^3+4x-3\)</p>
-        <br>
-        <p>Fatto questo non ci resta che svolgere la <span class="blue">divisione</span> e scoprire per quale polinomio si ottiene se si divide il primo per \(x+1\).</p>
-        <br>
-        <p>Per fare questo disegniamo una tabella, e scriviamo dopo la prima colonna, ordinati in base al grado, i coefficienti numerici dei termini del polinomio di partenza e l’ultimo coefficiente aldilà della seconda linea verticale:</p>
-        <br>
-        <img class="image" src="images/ruffini2.png" alt="Ruffini">
-        <br>
-        <p>Poi procediamo a scrivere il numero che annulla il polinomio a sinistra sopra la linea orizzontale e iniziamo a fare i calcoli:</p>
-        <br>
-        <img class="image" src="images/ruffini1.png" alt="Ruffini">
-        <br>
-        <p>Per svolgere i calcoli si segue questo procedimento: si parte dal primo coefficiente che abbiamo scritto in alto e lo si trascrive sotto la linea orizzontale, ora si svolge la moltiplicazione tra questo numero e il numero scritto a sinistra della linea verticale e il risultato lo si scrive sotto il secondo coefficiente, si somma il secondo coefficiente al risultato della moltiplicazione di prima e si scrive il risultato sotto la linea.</p>
-        <br>
-        <img class="image" src="images/ruffini.png" alt="Ruffini">
-        <br>
-        <p>Si ripete il procedimento fino all’ultimo coefficiente e eseguendo la somma di questo con il numero sottostante si ottiene \(0\) <i>(se tutto è stato fatto correttamente)</i>.</p>
-        <br>
-        <p>Il polinomio risultante avrà per coefficienti i numeri scritti sotto la linea orizzontale <i>(notare che i coefficienti sono uno in meno perché il risultante è di un grado inferiore al polinomio di partenza)</i>.
-        </p>
-        <br>
-        <p>Il risultato della nostra scomposizione sarà quindi \((x+1)(7x-3)\).</p>
+      <!-- Mini-index -->
+      <div class="minimenu">
+        <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Quando si usa</p></div></a>
+        <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Come si usa</p></div></a>
+      </div>
 
+      <!-- Divider -->
+      <hr class="divider"></hr>  
 
+      <h2>Cos’è la regola di Ruffini?</h2>
+      <br>
+      <p>La <span class="blue">regola di Ruffini</span> è una tecnica di scomposizione dei polinomi ed è stata introdotta dal matematico<span class="blue">Paolo Ruffini</span>. Risulta utile in quanto riesce a scomporre polinomi non scomponibili con le altre tecniche che abbiamo visto in una lezione apposita <i>(<a href="index.html"><span class="link">qui</span></a> per accedervi)</i>.</p>
+      <br>
+      <p>Questo metodo di scomposizione si basa sul <span class="blue">Teorema di Ruffini</span>, il cui enunciato è <i>“Un polinomio è divisibile per un binomio del tipo \(x-a\) soltanto se scambiando la sua incognita con l’opposto del termine noto del divisore viene annullato”</i>.</p>
+      <br>
+      <p id="classif">In questa lezione ci limiteremo a spiegare come e quando applicare la regola e non dimostreremo il teorema in sé, chiarito questo possiamo procedere.</p>
+      <br>
+      <!-- Divider -->
+      <hr class="divider"></hr>
+      
+      <h2>Quando usare Ruffini</h2>
+      <br>
+      <p>Dato che usare la <span class="blue">regola di Ruffini</span> è il metodo più lento di scomporre un polinomio, consigliamo di provare prima tutte le altre tecniche di scomposizione. Quindi, se il polinomio è di grado inferire uguale al terzo molto probabilmente è scomponibile anche in altri modi.
+      </p>
+      <br>
+      <p id="classif2">Se ci si trova davanti un polinomio di grado elevato e non si riesce a ricondurlo a gradi inferiori usando, ad esempio, <span class="blue">il raccoglimento totale</span>, allora è conveniente procedere con Ruffini in quanto è facile e sicuro.</p>
+      <br>
+      <!-- Divider -->
+      <hr class="divider"></hr>
+      
+      <h2>Come applicare Ruffini</h2>
+      <br>
+      <p>La prima cosa che bisogna fare con il nostro polinomio è trovare un numero che lo annulli, un numero che se sostituito all’incognita faccia venire \(0\).</p>
+      <br>
+      <p>Si potrebbero provare tutti i numeri reali ma fortunatamente sappiamo che deve per forza essere un divisore dell’ultimo termine del polinomio, quindi quello non moltiplicato per la nostra incognita.
+      </p>
+      <br>
+      <p class="bbk">Esempio:</p>
+      <br>
+      <p class="bbk">\(7x^2+4x-3 \longrightarrow \pm1 e \pm 3\) -proviamo le opzioni e scopriamo che \(-1\) è accettabile</p>
+      <br>
+      <p>Ora trovato il nostro numero, sappiamo che il nostro polinomio sarà divisibile per \(x\) più il reciproco di questo numero che in questo caso è \(1\).
+      </p>
+      <br>
+      <p>Potremmo dunque affermare che \((x+1) \cdot (...) = 7x^3+4x-3\)</p>
+      <br>
+      <p>Fatto questo non ci resta che svolgere la <span class="blue">divisione</span> e scoprire per quale polinomio si ottiene se si divide il primo per \(x+1\).</p>
+      <br>
+      <p>Per fare questo disegniamo una tabella, e scriviamo dopo la prima colonna, ordinati in base al grado, i coefficienti numerici dei termini del polinomio di partenza e l’ultimo coefficiente aldilà della seconda linea verticale:</p>
+      <br>
+      <img class="image" src="images/ruffini2.png" alt="Ruffini">
+      <br>
+      <p>Poi procediamo a scrivere il numero che annulla il polinomio a sinistra sopra la linea orizzontale e iniziamo a fare i calcoli:</p>
+      <br>
+      <img class="image" src="images/ruffini1.png" alt="Ruffini">
+      <br>
+      <p>Per svolgere i calcoli si segue questo procedimento: si parte dal primo coefficiente che abbiamo scritto in alto e lo si trascrive sotto la linea orizzontale, ora si svolge la moltiplicazione tra questo numero e il numero scritto a sinistra della linea verticale e il risultato lo si scrive sotto il secondo coefficiente, si somma il secondo coefficiente al risultato della moltiplicazione di prima e si scrive il risultato sotto la linea.</p>
+      <br>
+      <img class="image" src="images/ruffini.png" alt="Ruffini">
+      <br>
+      <p>Si ripete il procedimento fino all’ultimo coefficiente e eseguendo la somma di questo con il numero sottostante si ottiene \(0\) <i>(se tutto è stato fatto correttamente)</i>.</p>
+      <br>
+      <p>Il polinomio risultante avrà per coefficienti i numeri scritti sotto la linea orizzontale <i>(notare che i coefficienti sono uno in meno perché il risultante è di un grado inferiore al polinomio di partenza)</i>.
+      </p>
+      <br>
+      <p>Il risultato della nostra scomposizione sarà quindi \((x+1)(7x-3)\).</p>
+    </section>
 
-        </body>
-        </section>
-        <!-- Site footer -->
-        <div id="footer"></div>
-        <script src="custom.js"></script>
-        <script src="bookmark.js"></script>
-        <script src="index.js"></script>
-        <!-- Including MathJax -->
-        <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    <!-- Site footer -->
+    <div id="footer"></div>
+    <script src="custom.js"></script>
+    <script src="bookmark.js"></script>
+    <script src="index.js"></script>
+    
+    <!-- Including MathJax -->
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
-    </body>
-            
+  </body>         
 </html>
