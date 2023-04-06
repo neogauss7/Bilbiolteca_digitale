@@ -39,211 +39,207 @@
     </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   </head>
-         <div id="header"></div>
-        
-      <section class="home">
 
-        <label class="container">
-          <input onclick="save()" id="bookmark" type="checkbox">
-          <div class="checkmark">
-            <svg viewBox="0 0 256 256">
-            <rect fill="none" height="256" width="256"></rect>
-            <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
-          </div>
-        </label>
-            <div class="welcome"> 
-                <h1 class="welcome1" >Moto rettilineo uniforme</h1>
-                <h3 class="p1">Di seguito analizzeremo il moto rettilineo uniforme.</h3>
-             </div>  
-             <!-- Mini-index -->
-    <div class="minimenu">
-<a href="#classif" class="mini-item" ><div class=""><p class="minitext">Legge oraria</p></div></a>
-<a href="#classif2" class="mini-item" ><div class=""><p class="minitext">V. media</p></div></a>
-<a href="#classif3" class="mini-item" ><div class=""><p class="minitext">1°caso</p></div></a>
-<a href="#classif4" class="mini-item" ><div class=""><p class="minitext">2°caso</p></div></a>
+  <body>
+    <div id="header"></div>
+    <section class="home">
 
-    </div>
-              <!-- Divider -->
-         <hr class="divider"></hr>  
-         <body>
-            <h2>Moto Rettilineo uniforme
-            </h2>
-            <br>
-            <p>Il <span class="blue">moto rettilineo uniforme</span> è il caso particolare di <span class="blue">moto nel piano</span> più facile da studiare. Per questo inizieremo da qui.
-            </p>
-            <br>
-            <p>Il suo nome ci dice tutto: 
-            </p>
-            <br>
-            <p><i>Il <span class="blue">moto rettilineo uniforme</span> descrive il moto dei corpi che si muovono lungo una traiettoria retta a velocità costante.
-            </i></p>
-            <br>
-            <img  id="classif" class='funzione' src="images/rettilineo.png" alt="Moto rettilineo Theoremz">
-            <br>
-            <!-- Divider -->
-         <hr class="divider"></hr>  
+      <label class="container">
+        <input onclick="save()" id="bookmark" type="checkbox">
+        <div class="checkmark">
+          <svg viewBox="0 0 256 256">
+          <rect fill="none" height="256" width="256"></rect>
+          <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
+        </div>
+      </label>
+      <div class="welcome"> 
+        <h1 class="welcome1" >Moto rettilineo uniforme</h1>
+        <h3 class="p1">Di seguito analizzeremo il moto rettilineo uniforme.</h3>
+      </div> 
 
+      <!-- Mini-index -->
+      <div class="minimenu">
+        <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Legge oraria</p></div></a>
+        <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">V. media</p></div></a>
+        <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">1°caso</p></div></a>
+        <a href="#classif4" class="mini-item" ><div class=""><p class="minitext">2°caso</p></div></a>
+      </div>
 
-            <h2>Legge oraria
-            </h2>
-            <br>
-            <p>Per studiare qualsiasi moto dobbiamo prima conoscere la <span class="blue">legge oraria</span>, ovvero la relazione che lega lo <span class="blue">spazio percorso</span> con il <span class="blue">tempo trascorso</span> per percorrerlo. Nel moto rettilineo uniforme, per conoscere la legge oraria ci basta avere \(3\) dati.
-            </p>
-            <br>
-            <p>Ci serve la <span class="blue">velocità</span> \(v\), che in un moto rettilineo uniforme è costante, lo spazio iniziale \(S_0\), che dipende dalla posizione dell’<u>osservatore</u> <i>(solitamente per facilitare si mette \(0\))</i> e \(t_0\) <i>(che, se possibile, si mette anch’esso uguale a \(0\))</i>.
-            </p>
-            <br>
-            <p>\[S_{t}=S_0+v \cdot (t-t_0)\]</p>
-            <br>
-            <p>Però cosa è effettivamente la velocità? Prima di parlare di essa dobbiamo definire una nuova grandezza fisica: la <span class="blue">velocità media.</span>. 
-            </p>
-            <br>
-            <p>La velocità media è uguale allo spazio percorso diviso il tempo impiegato, ovvero: 
-            </p>
-            <p>\[{v}_{m}=\frac{{S}_{1}-{S}_{0}}{{t}_{1}-{t}_{0}}\]</p>
-            <p>Siccome nel nostro moto la velocità è <span class="blue">costante</span>, possiamo chiamare la velocità media \(v_m\) come una più generale velocità \(v\). È proprio da questo formula che, isolando \(S_1\), possiamo ricavarci la legge oraria vista prima.
-            </p>
-            <br>
-            <p>Il “punto \(0\)” si chiama <span class="blue">origine</span> e, come detto prima, solitamente si fa corrispondere l’origine ad \(S_0\). Se poi siamo liberi anche di decidere da dove fare iniziare il tempo, conviene imporre anche \(t_0\) pari a \(0\) secondi. In tal caso la nostra formula per la velocità si semplificherà in:
-            </p>
-            <br>
-            <p>\(v=\frac{{s}_{1}-0}{{t}_{1}-0}=\frac{{s}_{1}}{{t}_{1}}\)</p>
-            <br>
-            <p>Quindi possiamo chiamare \(s_1\) e \(t_1\) genericamente \(s\) e \(t\): 
-            </p>
-            <p>\[v=\frac{s}{t}\]</p>
-            <p>In generale però non sempre possiamo decidere noi che valore dare a \(s_0\) e a \(t_0\), quindi è importante che vi ricordiate la formula generale. Se poi sapete anche la formula più semplice per i casi particolari, meglio. 
-            </p>
-            <br>
-            <p>Siccome \(S_1-S_0\) e    \(t_1-t_0\) sono delle differenze, alcune volte si scrivono rispettivamente \(\Delta S\) e \(\Delta t\). Infatti, come forse già saprete, la lettera greca \(\Delta\)(Delta) sta, in questi casi, per “differenza di”. Quindi al posto di scrivere “differenza dello spazio (\(S_1-S_0\))” scriviamo \(\Delta S\). 
-            </p>
-            <br>
-            <p>Per questo su molti libri troverete scritta la formula per la velocità come: 
-            </p>
-            <p id="classif2">\[v=\frac{\Delta S}{\Delta t}\]</p>
-            <!-- Divider -->
-         <hr class="divider"></hr>  
-            
-            
-            <h2>Velocità media di due moti rettilinei uniformi
-            </h2>
-            <br>
-            <p>Immaginiamoci un corpo che si muove per un certo tratto (da \(S_0\) a \(S_1\)) in un moto rettilineo uniforme a velocità \(v_1\) e poi per un altro tratto (da \(S_1\) a \(S_2\)) sempre in un moto rettilineo uniforme ma a velocità \(v_2\). Cosa possiamo dire sul <span class="blue">moto totale</span>?
-            </p>
-            <img class='funzione' src="images/motototale.png" alt="2 moti rettilinei uniformi Theoremz">
-            <p id="classif3">Di questo tipo di moto esistono due casi particolari che vengono spesso trattati con attenzione a scuola:
-            </p>
-            <br>
-            <h2>1)  I due tratti sono uguali
-            </h2>
-            <br>
-            <p>Se i due tratti sono uguali, possiamo ricavarci facilmente la velocità media di tutto il moto sapendo le due velocità dei singoli tratti. 
-            </p>
-            <br>
-            <p>Al punto \(S_0\), il tempo percorso sarà \(t_0\), ad \(S_1\) sarà \(t_1\) e ad \(S_2\) sarà \(t_2\). 
-            </p>
-            <br>
-            <p>Dalle legge orarie dei due moti abbiamo: 
-            </p>
-            <br>
-            <p>\(S_1=S_0+v_1(t_1-t_0)\)</p>
-            <br>
-            <p>e</p>
-            <br>
-            <p>\(S_2=S_1+v_2(t_2-t_1)\)</p>
-            <br>
-            <p>Possiamo isolare le differenze dei tempi ed ottenere: 
-            </p>
-            <br>
-            <p>\((t_1-t_0)=\frac{S_1-S_0}{v_1}={s \over v_1}\)</p>
-            <br>
-            <p>\((t_2-t_1)=\frac{S_2-S_1}{v_2}={s \over v_2}\)</p>
-            <br>
-            <p>Siamo pronti ora a trovare la velocità media \(v_m\) conoscendo soltanto \(v_1\) e \(v_2\): 
-            </p>
-            <p>Sappiamo che:</p>
-            <br>
-            <p>\(v_m=\frac{\Delta S}{\Delta t}\)</p>
-            <br>
-            <p>Quindi siccome il nostro tratto inizia a \(S_0\) e  finisce a \(S_1\): 
-            </p>
-            <br>
-            <p>\(v_m=\frac{S_2-S_0}{t_2-t_0}\)</p>
-            <br>
-            <p>Possiamo aggiungere e sottrarre \(S_1\) al numeratore, mentre aggiungiamo e sottraiamo \(t_1\) al denominatore: 
-            </p>
-            <br>
-            <p>\(v_m=\frac{S_2-S_0+S_1-S_1}{t_2-t_0+t_1-t_1}\)</p>
-            <br>
-            <p>\(Riordiniamo:\)</p>
-            <br>
-            <p>\(v_m=\frac{S_2-S_1+S_1-S_0}{t_2-t_1+t_1-t_0}\)</p>
-            <br>
-            <p>\(v_m=\frac{(S_2-S_1)+(S_1-S_0)}{(t_2-t_1)+(t_1-t_0)}\)</p>
-            <br>
-            <p>Sostituiamo: 
-            </p>
-            <br>
-            <p>\(v_m=\frac{s+s}{{s \over v_1}+{s \over v_2}}\)</p>
-            <br>
-            <p>\(v_m={2s \over {{s\over v_1}+{s \over v_2}}}\)</p>
-            <br>
-            <p>\(v_m={2\over {{1\over v_1}+{1\over v_2}}}\)</p>
-            <br>
-            <p id="classif4">Ovvero \(v_m\) è uguale alla <span class="blue">media armonica</span> tra \(v_1\) e \(v_2\).
-            </p>
-            <br>
-            <h2>2)  I tempi trascorsi sono uguali
-            </h2>
-            <br>
-            <p>Le equazioni sono le stesse di prima, ma questa volta sono \(t_1-t_0\) e \(t_2-t_1\) ad essere uguali. Chiamiamo questa quantità \(t\).
-            </p>
-            <br>
-            <p>Questa volta però dalle leggi orarie ricaviamo: 
-            </p>
-            <br>
-            <p>\(S_1=S_0+v_1t \rightarrow \) \( S_1-S_0=v_1t\)</p>
-            <br>
-            <p>\(S_2=S_1+v_2t \rightarrow \) \(S_2-S_1=v_2t\)</p>
-            <br>
-            <p>Ricordiamo che: 
-            </p>
-            <br>
-            <p>\(v_m=\frac{\Delta S}{\Delta t}=\frac{S_2-S_0}{t_2-t_0}\)</p>
-            <br>
-            <p>Anche questa volta aggiungiamo e sottraiamo  al numeratore e \(S_1\) al \(t_1\) denominatore: 
-            </p>
-            <br>
-            <p>\(v_m=\frac{S_2-S_0+S_1-S_1}{t_2-t_0+t_1-t_1}\)</p>
-            <br>
-            <p>Riordiniamo e sostituiamo:</p>
-            <br>
-            <p>\(v_m=\frac{(S_2-S_1)+(S_1-S_0)}{(t_2-t_1)+(t_1-t_0)}\)</p>
-            <br>
-            <p>\(v_m=\frac{v_2t+v_1t}{t+t}\)</p>
-            <br>
-            <p>\(v_m=\frac{(v_1+v_2)t}{2t}\)</p>
-            <br>
-            <p>\(v_m={v_1+v_2 \over 2}\)</p>
-            <br>
-            <p>Ovvero \(v_m\) è uguale alla <span class="blue">media aritmetica</span> tra \(v_1\) e \(v_2\). 
-            </p>
+      <!-- Divider -->
+      <hr class="divider"></hr>  
 
+      <h2>Moto Rettilineo uniforme
+      </h2>
+      <br>
+      <p>Il <span class="blue">moto rettilineo uniforme</span> è il caso particolare di <span class="blue">moto nel piano</span> più facile da studiare. Per questo inizieremo da qui.
+      </p>
+      <br>
+      <p>Il suo nome ci dice tutto: 
+      </p>
+      <br>
+      <p><i>Il <span class="blue">moto rettilineo uniforme</span> descrive il moto dei corpi che si muovono lungo una traiettoria retta a velocità costante.
+      </i></p>
+      <br>
+      <img  id="classif" class='funzione' src="images/rettilineo.png" alt="Moto rettilineo Theoremz">
+      <br>
 
+      <!-- Divider -->
+      <hr class="divider"></hr>  
 
+      <h2>Legge oraria
+      </h2>
+      <br>
+      <p>Per studiare qualsiasi moto dobbiamo prima conoscere la <span class="blue">legge oraria</span>, ovvero la relazione che lega lo <span class="blue">spazio percorso</span> con il <span class="blue">tempo trascorso</span> per percorrerlo. Nel moto rettilineo uniforme, per conoscere la legge oraria ci basta avere \(3\) dati.
+      </p>
+      <br>
+      <p>Ci serve la <span class="blue">velocità</span> \(v\), che in un moto rettilineo uniforme è costante, lo spazio iniziale \(S_0\), che dipende dalla posizione dell’<u>osservatore</u> <i>(solitamente per facilitare si mette \(0\))</i> e \(t_0\) <i>(che, se possibile, si mette anch’esso uguale a \(0\))</i>.
+      </p>
+      <br>
+      <p>\[S_{t}=S_0+v \cdot (t-t_0)\]</p>
+      <br>
+      <p>Però cosa è effettivamente la velocità? Prima di parlare di essa dobbiamo definire una nuova grandezza fisica: la <span class="blue">velocità media.</span>. 
+      </p>
+      <br>
+      <p>La velocità media è uguale allo spazio percorso diviso il tempo impiegato, ovvero: 
+      </p>
+      <p>\[{v}_{m}=\frac{{S}_{1}-{S}_{0}}{{t}_{1}-{t}_{0}}\]</p>
+      <p>Siccome nel nostro moto la velocità è <span class="blue">costante</span>, possiamo chiamare la velocità media \(v_m\) come una più generale velocità \(v\). È proprio da questo formula che, isolando \(S_1\), possiamo ricavarci la legge oraria vista prima.
+      </p>
+      <br>
+      <p>Il “punto \(0\)” si chiama <span class="blue">origine</span> e, come detto prima, solitamente si fa corrispondere l’origine ad \(S_0\). Se poi siamo liberi anche di decidere da dove fare iniziare il tempo, conviene imporre anche \(t_0\) pari a \(0\) secondi. In tal caso la nostra formula per la velocità si semplificherà in:
+      </p>
+      <br>
+      <p>\(v=\frac{{s}_{1}-0}{{t}_{1}-0}=\frac{{s}_{1}}{{t}_{1}}\)</p>
+      <br>
+      <p>Quindi possiamo chiamare \(s_1\) e \(t_1\) genericamente \(s\) e \(t\): 
+      </p>
+      <p>\[v=\frac{s}{t}\]</p>
+      <p>In generale però non sempre possiamo decidere noi che valore dare a \(s_0\) e a \(t_0\), quindi è importante che vi ricordiate la formula generale. Se poi sapete anche la formula più semplice per i casi particolari, meglio. 
+      </p>
+      <br>
+      <p>Siccome \(S_1-S_0\) e    \(t_1-t_0\) sono delle differenze, alcune volte si scrivono rispettivamente \(\Delta S\) e \(\Delta t\). Infatti, come forse già saprete, la lettera greca \(\Delta\)(Delta) sta, in questi casi, per “differenza di”. Quindi al posto di scrivere “differenza dello spazio (\(S_1-S_0\))” scriviamo \(\Delta S\). 
+      </p>
+      <br>
+      <p>Per questo su molti libri troverete scritta la formula per la velocità come: 
+      </p>
+      <p id="classif2">\[v=\frac{\Delta S}{\Delta t}\]</p>
 
-         
-        </body>
-        </section>
-        <!-- Site footer -->
-        <div id="footer"></div>
-        <script src="custom.js"></script>
-        <script src="bookmark.js"></script>
-        <script src="index.js"></script>
-        <!-- Including MathJax -->
-        <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      <!-- Divider -->
+      <hr class="divider"></hr>  
+      
+      <h2>Velocità media di due moti rettilinei uniformi
+      </h2>
+      <br>
+      <p>Immaginiamoci un corpo che si muove per un certo tratto (da \(S_0\) a \(S_1\)) in un moto rettilineo uniforme a velocità \(v_1\) e poi per un altro tratto (da \(S_1\) a \(S_2\)) sempre in un moto rettilineo uniforme ma a velocità \(v_2\). Cosa possiamo dire sul <span class="blue">moto totale</span>?
+      </p>
+      <img class='funzione' src="images/motototale.png" alt="2 moti rettilinei uniformi Theoremz">
+      <p id="classif3">Di questo tipo di moto esistono due casi particolari che vengono spesso trattati con attenzione a scuola:
+      </p>
+      <br>
+      <h2>1)  I due tratti sono uguali
+      </h2>
+      <br>
+      <p>Se i due tratti sono uguali, possiamo ricavarci facilmente la velocità media di tutto il moto sapendo le due velocità dei singoli tratti. 
+      </p>
+      <br>
+      <p>Al punto \(S_0\), il tempo percorso sarà \(t_0\), ad \(S_1\) sarà \(t_1\) e ad \(S_2\) sarà \(t_2\). 
+      </p>
+      <br>
+      <p>Dalle legge orarie dei due moti abbiamo: 
+      </p>
+      <br>
+      <p>\(S_1=S_0+v_1(t_1-t_0)\)</p>
+      <br>
+      <p>e</p>
+      <br>
+      <p>\(S_2=S_1+v_2(t_2-t_1)\)</p>
+      <br>
+      <p>Possiamo isolare le differenze dei tempi ed ottenere: 
+      </p>
+      <br>
+      <p>\((t_1-t_0)=\frac{S_1-S_0}{v_1}={s \over v_1}\)</p>
+      <br>
+      <p>\((t_2-t_1)=\frac{S_2-S_1}{v_2}={s \over v_2}\)</p>
+      <br>
+      <p>Siamo pronti ora a trovare la velocità media \(v_m\) conoscendo soltanto \(v_1\) e \(v_2\): 
+      </p>
+      <p>Sappiamo che:</p>
+      <br>
+      <p>\(v_m=\frac{\Delta S}{\Delta t}\)</p>
+      <br>
+      <p>Quindi siccome il nostro tratto inizia a \(S_0\) e  finisce a \(S_1\): 
+      </p>
+      <br>
+      <p>\(v_m=\frac{S_2-S_0}{t_2-t_0}\)</p>
+      <br>
+      <p>Possiamo aggiungere e sottrarre \(S_1\) al numeratore, mentre aggiungiamo e sottraiamo \(t_1\) al denominatore: 
+      </p>
+      <br>
+      <p>\(v_m=\frac{S_2-S_0+S_1-S_1}{t_2-t_0+t_1-t_1}\)</p>
+      <br>
+      <p>\(Riordiniamo:\)</p>
+      <br>
+      <p>\(v_m=\frac{S_2-S_1+S_1-S_0}{t_2-t_1+t_1-t_0}\)</p>
+      <br>
+      <p>\(v_m=\frac{(S_2-S_1)+(S_1-S_0)}{(t_2-t_1)+(t_1-t_0)}\)</p>
+      <br>
+      <p>Sostituiamo: 
+      </p>
+      <br>
+      <p>\(v_m=\frac{s+s}{{s \over v_1}+{s \over v_2}}\)</p>
+      <br>
+      <p>\(v_m={2s \over {{s\over v_1}+{s \over v_2}}}\)</p>
+      <br>
+      <p>\(v_m={2\over {{1\over v_1}+{1\over v_2}}}\)</p>
+      <br>
+      <p id="classif4">Ovvero \(v_m\) è uguale alla <span class="blue">media armonica</span> tra \(v_1\) e \(v_2\).
+      </p>
+      <br>
+      <h2>2)  I tempi trascorsi sono uguali
+      </h2>
+      <br>
+      <p>Le equazioni sono le stesse di prima, ma questa volta sono \(t_1-t_0\) e \(t_2-t_1\) ad essere uguali. Chiamiamo questa quantità \(t\).
+      </p>
+      <br>
+      <p>Questa volta però dalle leggi orarie ricaviamo: 
+      </p>
+      <br>
+      <p>\(S_1=S_0+v_1t \rightarrow \) \( S_1-S_0=v_1t\)</p>
+      <br>
+      <p>\(S_2=S_1+v_2t \rightarrow \) \(S_2-S_1=v_2t\)</p>
+      <br>
+      <p>Ricordiamo che: 
+      </p>
+      <br>
+      <p>\(v_m=\frac{\Delta S}{\Delta t}=\frac{S_2-S_0}{t_2-t_0}\)</p>
+      <br>
+      <p>Anche questa volta aggiungiamo e sottraiamo  al numeratore e \(S_1\) al \(t_1\) denominatore: 
+      </p>
+      <br>
+      <p>\(v_m=\frac{S_2-S_0+S_1-S_1}{t_2-t_0+t_1-t_1}\)</p>
+      <br>
+      <p>Riordiniamo e sostituiamo:</p>
+      <br>
+      <p>\(v_m=\frac{(S_2-S_1)+(S_1-S_0)}{(t_2-t_1)+(t_1-t_0)}\)</p>
+      <br>
+      <p>\(v_m=\frac{v_2t+v_1t}{t+t}\)</p>
+      <br>
+      <p>\(v_m=\frac{(v_1+v_2)t}{2t}\)</p>
+      <br>
+      <p>\(v_m={v_1+v_2 \over 2}\)</p>
+      <br>
+      <p>Ovvero \(v_m\) è uguale alla <span class="blue">media aritmetica</span> tra \(v_1\) e \(v_2\). 
+      </p>
+
+    </section>
+    <!-- Site footer -->
+    <div id="footer"></div>
+    <script src="custom.js"></script>
+    <script src="bookmark.js"></script>
+    <script src="index.js"></script>
+    <!-- Including MathJax -->
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
-    </body>
-            
+  </body>          
 </html>
