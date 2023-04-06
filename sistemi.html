@@ -39,8 +39,9 @@
       </script>
       <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
    </head>
-   <div id="header"></div>
 
+   <body>
+      <div id="header"></div>
       <section class="home">
 
          <label class="container">
@@ -51,529 +52,536 @@
               <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
             </div>
           </label>
-            <div class="welcome"> 
-                <h1 class="welcome1" >Sistemi</h1>
-                <h3 class="p1">Di seguito analizzeremo i sistemi lineari a due incognite.</h3>
-             </div>  
-             <!-- Mini-index -->
-      <div class="minimenu">
-         <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Definizione</p></div></a>
-         <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Sostituzione</p></div></a>
-         <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Confronto</p></div></a>
-         <a href="#classif4" class="mini-item" ><div class=""><p class="minitext">Riduzione</p></div></a>
-         <a href="#classif5" class="mini-item" ><div class=""><p class="minitext">Cramer</p></div></a>
-      </div>
+
+         <div class="welcome"> 
+            <h1 class="welcome1" >Sistemi</h1>
+            <h3 class="p1">Di seguito analizzeremo i sistemi lineari a due incognite.</h3>
+         </div>
+
+         <!-- Mini-index -->
+         <div class="minimenu">
+            <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Definizione</p></div></a>
+            <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Sostituzione</p></div></a>
+            <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Confronto</p></div></a>
+            <a href="#classif4" class="mini-item" ><div class=""><p class="minitext">Riduzione</p></div></a>
+            <a href="#classif5" class="mini-item" ><div class=""><p class="minitext">Cramer</p></div></a>
+         </div>
+
+         <!-- Divider -->
+         <hr class="divider"></hr> 
+          
+         <h2>
+            Sistemi di equazioni: definizione generale
+         </h2>
+         <br>
+         <h2>
+            1. Equazioni lineari a due incognite
+         </h2>
+         <br>
+         <p>
+            Un’<span class="blue">equazione</span> nelle incognite \(x\) e \(y\) del tipo \(ax+by+c=0\) è un’equazione di primo grado sia rispetto alla \(x\) sia rispetto alla \(y\). </p>
+            <br>
+            <p> Ogni equazione di questo tipo si chiama <span class="blue">equazione lineare a due incognite</span>. Le soluzioni di queste equazioni sono tutte le coppie ordinate \((x,y)\) che le verificano. 
+         </p>
+         <br>
+         
+         <ul class="lesson-list">
+            <li>
+               <p>
+                  Nell’equazione \(3x+y+1=0\) una possibile soluzione potrebbe essere la coppia di valori \((x,y)=(-1,2)\) perché \(3\cdot (-1)+2+1=0\longrightarrow -3+2+1=0\) è vero. Questa però non è l’unica. Infatti, per fare qualche esempio, le coppie \((2,-7)\) e \((-3; 8)\) sono anch’esse soluzioni dell’equazione.
+               </p>
+            </li> 
+         </ul>
+         <br>
+         <p>
+            Per capire quale sia il numero di soluzioni di un’equazione lineare a due incognite, dobbiamo notare che \(ax+by+c=0\) è l’equazione in forma implicita di una retta sul piano. </p><br><p id="classif"> Essa può essere anche posta nella sua forma esplicita \(y=mx+q\), isolando la \(y\). Vista in questo modo, possiamo notare che le soluzioni dell’equazione corrispondono ai punti della retta e quindi sono infinite. 
+         </p>
+         <br>
+         <hr class="divider"></hr> 
+         <h2>
+            2. Sistema di equazioni
+         </h2>
+         <br>
+         <p>
+            Si dice sistema di equazioni un inseme di due o più equazioni considerate contemporaneamente. Una soluzione per un sistema di equazioni è una coppia di numeri \((x,y)\) che soddisfa contemporaneamente tutte le equazoni presenti nel sistema.
+         </p>
+         <br>
+         <p>
+            Prendiamo due equazioni a due incognite di primo grado (a caso) e, come si dice in linguaggo matematico, <i>le mettiamo a sistema</i>. La notazione grafica che si utilizza per rappresentare un sistema è la seguente: 
+         </p>
+         <br>
+         <p>
+            \(\begin{cases} 
+            2x+y=5
+            \\ 3x-y=5
+            \end{cases}\)
+         </p>
+         <br>
+         <p>
+            Per risolvere il sistema dobbiamo trovare una coppia di valori \((x,y)\) che, sostituiti alla \(x\) e alla \(y\), rendono vere entrambe le equazioni. Come si può immaginare, questa cosa è molto laboriosa e per nulla banale in quanto bisogna trovare, tra le infinte soluzioni di entrambe le equazioni, quelle che concidono.
+         </p>
+         <br>
+         <p>
+            Un metodo intelligente per cercare di risolvere il sistema <i>(e quindi per trovare le soluzioni comuni)</i> è quello di rappresentare graficamente le due equazoni come abbiamo spiegato in precedenza, cercando il punto di intersezione tra le due rette. La coordinate \((x,y)\) del punto trovato saranno le soluzioni del sistema. 
+         </p>
+         <br>
+         <ul class="lesson-list">
+            <li>
+               <p>
+                  Rappresentiamo graficamente le equazioni del seguente sistema e troviamo le soluzioni
+               </p>
+            </li> 
+         </ul>
+         <br>
+         <p>
+            \(\begin{cases} 
+            2x+y=5
+            \\ 3x-y=5
+            \end{cases}\)
+         </p>
+         <br>
+         <p>
+            Il punto di intersezione \(P(2;1)\) trovato è soluzione del sistema. Per verificarlo proviamo a sostituire la coppia di valori trovata all’interno del sstema per controllare se entrambe le uguaglianze sono verificate.
+         </p>
+         <br>
+         <p>
+            \(\begin{cases} 
+            2\cdot2+1=5
+            \\ 3\cdot 2-1=5
+            \end{cases}
+
+            \longrightarrow
+
+            \begin{cases} 
+            4+1=5
+            \\ 6-1=5
+            \end{cases}\)
+         </p>
+         <br>
+         <p>
+            Le uguaglianze sono verificate e quindi la coppia di soluzioni trovata è corretta.
+         </p>
+         <br>
+         <p>
+            Per verificare che essa sia l’unica, proviamo a prendere le coordinate di un punto che appartiene a una retta, ma non all’altra, come ad esempio \((0;5)\). Sostituendo la coppia di valori all’interno del sistema otteniamo
+         </p>
+         <br>
+         <p>
+            \(\begin{cases} 
+            2\cdot0+5=5
+            \\ 3\cdot 0-5=5
+            \end{cases}
+
+            \longrightarrow
+
+            \begin{cases} 
+            5=5
+            \\ -5=5
+            \end{cases}\)
+         </p>
+         <br>
+         <p>
+            Come si può notare l’uguaglianza è verificata solo per la prima equazione. Questo perché graficamente il punto si trova solo sulla prima retta. Secondo voi cosa succederebbe se il punto non appartenesse a nessuna delle due rette? Verificatelo inserendo le coordinate del punto scelto all’interno del sistema.
+         </p>
+         <br>
+         <p>
+            Nonostante sia un buon metodo, quello grafico risulta troppo lungo e laborioso da applicare e per questo non viene utilizzato spesso. Infatti sono stati inventati  metodi che permettono di risolvere velocemente e semplicemente ogni sistema di equazioni. Nei prossimi paragrafi vi daremo, per ognuno di essi, una spegazione dettagliata.
+         </p>
+         <br>
+         <p>
+            Prima di fare ciò analizziamo le soluzioni di un sistema. Esso infatti può essere:
+         </p>
+         <br>
+         <ul class="lesson-list">
+            <li>
+               <p>
+                  <b>Determinato</b> se ha un numero finito di soluzioni;
+               </p>
+            </li>
+            <br> 
+            <li>
+               <p>
+                  <b>Impossibile</b> se non ha soluzioni
+               </p>
+               <br>
+               <p>
+                  \(\begin{cases} 
+                  5x+9=1
+                  \\ 5x+9=8
+                  \end{cases}\)
+               </p>
+               <br>
+               <p>
+                  Il sistema è impossibile perché \(5x+9\) non può valere nello stesso momento sia \(1\) sia \(8\). Quindi le due equazioni non hanno soluzioni comuni (graficamente sarebbero rette parallele che, infatti, non hanno punti di intersezione);
+               </p>
+            </li>
+            <br>
+            <li>
+               <p>
+                  <b>Indeterminato</b> se ha infinite soluzioni
+               </p>
+               <br>
+               <p>
+                  \(\begin{cases} 
+                  3x+9=1
+                  \\ 3\cdot(x+3)=1
+                  \end{cases}
+
+                  \longrightarrow
+
+                  \begin{cases} 
+                  3x+9=1
+                  \\ 3x+9=1
+                  \end{cases}\)
+               </p>
+               <br>
+               <p id="classif2">
+                  Il sistema è indeterminato perché le due equazioni sono identiche e quindi hanno le stesse soluzoni (che sono infinite).
+               </p>
+            </li>
+         </ul>
+         <br>
 
          <!-- Divider -->
          <hr class="divider"></hr>  
-         <body>
-            <h2>
-               Sistemi di equazioni: definizione generale
-            </h2>
-            <br>
-            <h2>
-               1. Equazioni lineari a due incognite
-            </h2>
-            <br>
-            <p>
-               Un’<span class="blue">equazione</span> nelle incognite \(x\) e \(y\) del tipo \(ax+by+c=0\) è un’equazione di primo grado sia rispetto alla \(x\) sia rispetto alla \(y\). </p>
+         <h2>
+            3. Metodo di sostituzione
+         </h2>
+         <br>
+         <p>
+            Il metodo di sostituzione è senza dubbio il più conosciuto e il più semplice da applicare dei \(4\). Per vedere di cosa si tratta procediamo con un esempio:
+         </p>
+         <br>
+         <p>
+            \(\begin{cases} 
+            a-3b=1
+            \\ 2a-5b=7
+            \end{cases}\)
+         </p>
+         <br>
+         <p>
+            Utilizzando questo metodo, la prima cosa da fare è quella di <i>isolare</i> un’incognita in una delle due equazioni (nel nostro caso nella prima).
+         </p>
+         <br>
+         <p>
+            \(\begin{cases} 
+            \color{#1e76e9}{a=3b+1}
+            \\ 2a-5b=7
+            \end{cases}\)
+         </p>
+         <br>
+         <p>
+            La prima equazione ci dice in realtà che ogni volta che vediamo scritto  nel sistema, possiamo scrivere \(1-b\). Possiamo quindi fare una sostituzione nella seconda equazione in modo da ottenere un equazione a un’incognita che viene detta <i>equazione risolvente</i>.
+         </p>
+         <br>
+         <p>
+            \(\begin{cases} 
+            a=3b+1
+            \\ \color{#1e76e9}{2\cdot(3b+1)-5b=7}
+            \end{cases}\)
+
+         </p>
+         <br>
+         <p>
+            Fatto ciò dobbiamo risolvere l’equazione ottenuta in modo da ottenere il valore di \(b\).
+         </p>
+         <br>
+         <p>
+            \(\begin{cases} 
+            a=1-b
+            \\ \color{#1e76e9}{6b-5b=7-2}
+            \end{cases}
+
+            \longrightarrow
+
+            \begin{cases} 
+            a=1-b
+            \\ \color{#1e76e9}{b=5}
+            \end{cases}\)
+         </p>
+         <br>
+         <p>
+            Ora che abbiamo trovato il valore di  \(b\) possiamo sostituirlo all’interno della prima equazione in modo da trovare il valore di \(a\).
+         </p>
+         <br>
+         <p>
+            \(\begin{cases} 
+            \color{#1e76e9}{a=1-5} \rightarrow \color{#1e76e9}{a=-4}
+            \\ b=5
+            \end{cases}\)
+         </p>
+         <br>
+         <p id="classif3">
+            Quindi le soluzioni del nostro sistema sono la coppia di valori \((a,b)=(-4,5)\).
+         </p>
+         <br>
+
+         <!-- Divider -->
+         <hr class="divider"></hr>  
+
+         <h2>
+            4. Metodo del confronto
+         </h2>
+         <br>
+         <p>
+            Come nel caso del primo metodo, iniziamo la spiegazione del metodo del confronto partendo da un esempio:
+         </p>
+         <br>
+         <p>
+            \(\begin{cases} 
+            x+3y=1
+            \\ 5y-x=7
+            \end{cases}\)
+         </p>
+         <br>
+         <p>
+            Prendiamo ciascuna delle equazoni del sistema ed esplicitiamo una delle due variabili, a nostra scelta. Per semplicità, in questo esercizio scegliamo la \(x\):
+         </p>
+         <br>
+         <p>
+            \(\begin{cases} 
+            x+3y=1
+            \\ -x=7-5y
+            \end{cases}
+
+            \longrightarrow
+
+            \begin{cases} 
+            x=1-3y
+            \\ x=5y-7
+            \end{cases}\)
+         </p>
+         <br>
+         <p>
+            Ciascuna delle due equazioni ci dice quanto vale \(x\) in funzione di \(y\) e, per la definizione di sistema, entrambe devono valere contemporaneamente. Possiamo quindi confrontarle, ponendo una uguale all’altra, ottenendo quindi un’equazione risolvente:
+         </p>
+         <br>
+         <p>
+            \(\begin{cases} 
+            \color{#1e76e9}{1-3y=5y-7}
+            \\ x=1-3y
+            \end{cases}\)
+         </p>
+         <br>
+         <p>
+            \(\begin{cases} 
+            \color{#1e76e9}{-8y=-8}
+            \\ x=1-3y
+            \end{cases}
+
+            \longrightarrow
+
+            \begin{cases} 
+            \color{#1e76e9}{y=1}
+            \\ x=1-3y
+            \end{cases}\)
+         </p>
+         <br>
+         <p>
+            A questo punto possiamo sostituire il valore di \(y\) trovato all’interno della seconda equazione per ottenere il valore di \(x\)
+         </p>
+         <br>
+         <p>
+            \(\begin{cases} 
+            y=1
+            \\ \color{#1e76e9}{x=1-3}
+            \end{cases}
+
+            \longrightarrow
+
+            \begin{cases} 
+            y=1
+            \\ \color{#1e76e9}{x=-2}
+            \end{cases}\)
+         </p>
+         <br>
+         <p id="classif4">
+            Quindi le soluzioni del nostro sistema sono la coppia di valori \((x,y)=(-2;1)\).
+         </p>
+         <br>
+
+         <!-- Divider -->
+         <hr class="divider"></hr>  
+
+         <h2>
+            5. Metodo di riduzione
+         </h2>
+         <br>
+         <p>
+            Il metodo di riduzione in alcuni casi è sicuramente il più pratico in quanto permette di eliminare in una volta sola una delle due incognite in una delle due equazioni, riducendola quindi a un’equazione a un’incognita. Come nel precedenti casi, illustriamo i passaggi tramite un esempio. 
+         </p>
+         <br>
+         <p>
+            \(\begin{cases} 
+            4a+b=5
+            \\ 3a-2b=12
+            \end{cases}\)
+         </p>
+         <br>
+         <p>
+            Per prima cosa dobbiamo andare a moltiplicare una delle due equazioni (o entrambe) per un numero in modo tale che i coefficienti in entrambe le equazioni siano uguali o opposti. Nel nostro caso risulta conveniente moltiplicare per \(2\) la prima equazione:
+         </p>
+         <br>
+         <p>
+            \(\begin{cases} 
+            \color{#1e76e9}{2\cdot(4a+b)=10}
+            \\ 3a-2b=12
+            \end{cases}
+
+            \rightarrow
+
+            \begin{cases} 
+            \color{#1e76e9}{8a+2b=10}
+            \\ 3a-2b=12
+            \end{cases}\)
+         </p>
+         <br>
+         <p>
+            Fatto ciò proseguiamo con l’addizione membro a membro delle due equazioni in modo da andare a eliminare l’incognita \(b\):
+         </p>
+         <br>
+         <p>
+            \(\begin{cases} 
+            \color{#1e76e9}{8a+3a+ \require{cancel} \cancel{2b} - \cancel{2b} =10+12}
+            \\ 3a-2b=12
+            \end{cases}\)
+         </p>
+         <br>
+         <p>
+            \(\begin{cases} 
+            \color{#1e76e9}{11 a=22}
+            \\ 3a-2b=12
+            \end{cases}
+
+            \rightarrow 
+
+            \begin{cases} 
+            \color{#1e76e9}{a=2}
+            \\ 3a-2b=12
+            \end{cases}\)
+         </p>
+         <br>
+         <p>
+            Ora che abbiamo trovato il valore di \(a\) possiamo andarlo a sostituire all’interno della seconda equazione in modo da ricavare \(b\)
+         </p>
+         <br>
+         <p>
+            \(\begin{cases} 
+            a=2
+            \\ \color{#1e76e9}{6-2b=12}
+            \end{cases}
+            \rightarrow
+            \begin{cases} 
+            a=2
+            \\ \color{#1e76e9}{b=-3}
+            \end{cases}\)
+         </p>
+         <br>
+         <p id="classif5">
+            Quindi le soluzioni del nostro sistema sono la coppia di valori \((a,b)=(2;-3)\).
+         </p>
+         <br>
+
+         <!-- Divider -->
+         <hr class="divider"></hr>  
+
+         <h2>
+            6. Metodo di Cramer
+         </h2>
+         <br>
+         <p>
+            Il metodo di Cramer è indubbiamente il più laborioso e il più complesso dei \(4\). Per comprendere totalmente questo metodo occorrerebbe avere una conoscenza approfondita dell’algebra matriciale, argomento che però richiederebbe un approfondimento specifico a parte. Per questo ci limiteremo a illustrare il modello di Cramer nella sua forma generale analizzandone i vari passaggi. Consideriamo il seguente sistema
+         </p>
+         <br>
+         <p>
+            \(\begin{cases} 
+            a_1x+b_1y=c_1
+            \\ a_2x+b_2y=c_2
+            \end{cases}\)
+         </p>
+         <br>
+         <p>
+            Quello che dobbiamo fare come prima cosa è inserire i coefficienti delle incognite in una sorta di tabella che chiameremo matrice dei coefficienti secondo il seguente schema:
+         </p>
+         <br>
+         <p>
+            \(\begin{bmatrix}
+            \color{#1e76e9}{a_1} & \color{#8c0000}{b_1}  \\
+            \color{#8c0000}{a_2} & \color{#1e76e9}{b_2}  
+            \end{bmatrix}\)
+         </p>
+         <br>
+         <p>
+            Successivamente chiamiamo con \(D\) (determinante della matrice \(2x2\) la quantità che si ottiene tramite la seguente formula
+         </p>
+         <br>
+         <p>
+            \(D=\color{#1e76e9}{(a_1\cdot b_2)}-\color{#8c0000}{(a_2\cdot b_1)}\)
+         </p>
+         <br>
+         <p>
+            e distinguiamo due diversi casi:
+         </p>
+         <br>
+         <ul>
+            <li>
+               <p>
+                  Determinante uguale a zero. Se ci troviamo in questa condizione significa che il metodo di Cramer non si può applicare e quindi il sistema è impossibile o indeterminato. 
+               </p>
+            </li>
+            <li>
+               <p>
+                  Determinante diverso da zero. Se ci troviamo in questa condizione significa che il sistema è determinato e quindi si può procedere con la regola di Cramer:
+               </p>
                <br>
-              <p> Ogni equazione di questo tipo si chiama <span class="blue">equazione lineare a due incognite</span>. Le soluzioni di queste equazioni sono tutte le coppie ordinate \((x,y)\) che le verificano. 
-            </p>
-            <br>
-            
-            <ul class="lesson-list">
-               <li>
-                  <p>
-                     Nell’equazione \(3x+y+1=0\) una possibile soluzione potrebbe essere la coppia di valori \((x,y)=(-1,2)\) perché \(3\cdot (-1)+2+1=0\longrightarrow -3+2+1=0\) è vero. Questa però non è l’unica. Infatti, per fare qualche esempio, le coppie \((2,-7)\) e \((-3; 8)\) sono anch’esse soluzioni dell’equazione.
-                  </p>
-               </li> 
-            </ul>
-            <br>
-            <p>
-               Per capire quale sia il numero di soluzioni di un’equazione lineare a due incognite, dobbiamo notare che \(ax+by+c=0\) è l’equazione in forma implicita di una retta sul piano. </p><br><p id="classif"> Essa può essere anche posta nella sua forma esplicita \(y=mx+q\), isolando la \(y\). Vista in questo modo, possiamo notare che le soluzioni dell’equazione corrispondono ai punti della retta e quindi sono infinite. 
-            </p>
-            <br>
-            <hr class="divider"></hr> 
-            <h2>
-               2. Sistema di equazioni
-            </h2>
-            <br>
-            <p>
-               Si dice sistema di equazioni un inseme di due o più equazioni considerate contemporaneamente. Una soluzione per un sistema di equazioni è una coppia di numeri \((x,y)\) che soddisfa contemporaneamente tutte le equazoni presenti nel sistema.
-            </p>
-            <br>
-            <p>
-               Prendiamo due equazioni a due incognite di primo grado (a caso) e, come si dice in linguaggo matematico, <i>le mettiamo a sistema</i>. La notazione grafica che si utilizza per rappresentare un sistema è la seguente: 
-            </p>
-            <br>
-            <p>
-               \(\begin{cases} 
-               2x+y=5
-               \\ 3x-y=5
-               \end{cases}\)
-            </p>
-            <br>
-            <p>
-               Per risolvere il sistema dobbiamo trovare una coppia di valori \((x,y)\) che, sostituiti alla \(x\) e alla \(y\), rendono vere entrambe le equazioni. Come si può immaginare, questa cosa è molto laboriosa e per nulla banale in quanto bisogna trovare, tra le infinte soluzioni di entrambe le equazioni, quelle che concidono.
-            </p>
-            <br>
-            <p>
-               Un metodo intelligente per cercare di risolvere il sistema <i>(e quindi per trovare le soluzioni comuni)</i> è quello di rappresentare graficamente le due equazoni come abbiamo spiegato in precedenza, cercando il punto di intersezione tra le due rette. La coordinate \((x,y)\) del punto trovato saranno le soluzioni del sistema. 
-            </p>
-            <br>
-            <ul class="lesson-list">
-               <li>
-                  <p>
-                     Rappresentiamo graficamente le equazioni del seguente sistema e troviamo le soluzioni
-                  </p>
-               </li> 
-            </ul>
-            <br>
-            <p>
-               \(\begin{cases} 
-               2x+y=5
-               \\ 3x-y=5
-               \end{cases}\)
-            </p>
-            <br>
-            <p>
-               Il punto di intersezione \(P(2;1)\) trovato è soluzione del sistema. Per verificarlo proviamo a sostituire la coppia di valori trovata all’interno del sstema per controllare se entrambe le uguaglianze sono verificate.
-            </p>
-            <br>
-            <p>
-               \(\begin{cases} 
-               2\cdot2+1=5
-               \\ 3\cdot 2-1=5
-               \end{cases}
-
-               \longrightarrow
-
-               \begin{cases} 
-               4+1=5
-               \\ 6-1=5
-               \end{cases}\)
-            </p>
-            <br>
-            <p>
-               Le uguaglianze sono verificate e quindi la coppia di soluzioni trovata è corretta.
-            </p>
-            <br>
-            <p>
-               Per verificare che essa sia l’unica, proviamo a prendere le coordinate di un punto che appartiene a una retta, ma non all’altra, come ad esempio \((0;5)\). Sostituendo la coppia di valori all’interno del sistema otteniamo
-            </p>
-            <br>
-            <p>
-               \(\begin{cases} 
-               2\cdot0+5=5
-               \\ 3\cdot 0-5=5
-               \end{cases}
-
-               \longrightarrow
-
-               \begin{cases} 
-               5=5
-               \\ -5=5
-               \end{cases}\)
-            </p>
-            <br>
-            <p>
-               Come si può notare l’uguaglianza è verificata solo per la prima equazione. Questo perché graficamente il punto si trova solo sulla prima retta. Secondo voi cosa succederebbe se il punto non appartenesse a nessuna delle due rette? Verificatelo inserendo le coordinate del punto scelto all’interno del sistema.
-            </p>
-            <br>
-            <p>
-               Nonostante sia un buon metodo, quello grafico risulta troppo lungo e laborioso da applicare e per questo non viene utilizzato spesso. Infatti sono stati inventati  metodi che permettono di risolvere velocemente e semplicemente ogni sistema di equazioni. Nei prossimi paragrafi vi daremo, per ognuno di essi, una spegazione dettagliata.
-            </p>
-            <br>
-            <p>
-               Prima di fare ciò analizziamo le soluzioni di un sistema. Esso infatti può essere:
-            </p>
-            <br>
-            <ul class="lesson-list">
-               <li>
-                  <p>
-                     <b>Determinato</b> se ha un numero finito di soluzioni;
-                  </p>
-               </li>
-               <br> 
-               <li>
-                  <p>
-                     <b>Impossibile</b> se non ha soluzioni
-                  </p>
-                  <br>
-                  <p>
-                     \(\begin{cases} 
-                     5x+9=1
-                     \\ 5x+9=8
-                     \end{cases}\)
-                  </p>
-                  <br>
-                  <p>
-                     Il sistema è impossibile perché \(5x+9\) non può valere nello stesso momento sia \(1\) sia \(8\). Quindi le due equazioni non hanno soluzioni comuni (graficamente sarebbero rette parallele che, infatti, non hanno punti di intersezione);
-                  </p>
-               </li>
+               <p>
+                  Per prima cosa calcoliamo \(D_x\) (il determinante dell’incognita \(x\))
+               </p>
                <br>
-               <li>
-                  <p>
-                     <b>Indeterminato</b> se ha infinite soluzioni
-                  </p>
-                  <br>
-                  <p>
-                     \(\begin{cases} 
-                     3x+9=1
-                     \\ 3\cdot(x+3)=1
-                     \end{cases}
+               <p>
+                  \(D_X =
+                  \begin{bmatrix}
+                  c_1 & b_1  \\
+                  c_2 & b_2  
+                  \end{bmatrix}
+                  = 
+                  (c_1\cdot b_2)-(c_2\cdot b_1)\)
+               </p>
+               <br>
+               <p>
+                  e successivamente \(D_y\) (il determinante dell’incognita \(y\))
+               </p>
+               <br>
+               <p>
+                  \(D_X =
+                  \begin{bmatrix}
+                  a_1 & c_1  \\
+                  a_2 & c_2  
+                  \end{bmatrix}
+                  = 
+                  (a_1\cdot c_2)-(a_2\cdot c_1)\)
+               </p>
+               <br>
+               <p>
+                  Fatto ciò, tramite due semplici formule si possono ricavare le soluzioni del sistema:
+               </p>
+               <br>
+               <p>
+                  \(\begin{align}x=\frac{D}{D_x}\end{align}\) e \(\begin{align}y=\frac{D}{D_y}\end{align}\)
+               </p>
+            </li>
+         </ul>
+      </section>
 
-                     \longrightarrow
+      <!-- Site footer -->
+      <div id="footer"></div>
 
-                     \begin{cases} 
-                     3x+9=1
-                     \\ 3x+9=1
-                     \end{cases}\)
-                  </p>
-                  <br>
-                  <p id="classif2">
-                     Il sistema è indeterminato perché le due equazioni sono identiche e quindi hanno le stesse soluzoni (che sono infinite).
-                  </p>
-               </li>
-            </ul>
-            <br>
-            <!-- Divider -->
-         <hr class="divider"></hr>  
-            <h2>
-               3. Metodo di sostituzione
-            </h2>
-            <br>
-            <p>
-               Il metodo di sostituzione è senza dubbio il più conosciuto e il più semplice da applicare dei \(4\). Per vedere di cosa si tratta procediamo con un esempio:
-            </p>
-            <br>
-            <p>
-               \(\begin{cases} 
-               a-3b=1
-               \\ 2a-5b=7
-               \end{cases}\)
-            </p>
-            <br>
-            <p>
-               Utilizzando questo metodo, la prima cosa da fare è quella di <i>isolare</i> un’incognita in una delle due equazioni (nel nostro caso nella prima).
-            </p>
-            <br>
-            <p>
-               \(\begin{cases} 
-               \color{#1e76e9}{a=3b+1}
-               \\ 2a-5b=7
-               \end{cases}\)
-            </p>
-            <br>
-            <p>
-               La prima equazione ci dice in realtà che ogni volta che vediamo scritto  nel sistema, possiamo scrivere \(1-b\). Possiamo quindi fare una sostituzione nella seconda equazione in modo da ottenere un equazione a un’incognita che viene detta <i>equazione risolvente</i>.
-            </p>
-            <br>
-            <p>
-               \(\begin{cases} 
-               a=3b+1
-               \\ \color{#1e76e9}{2\cdot(3b+1)-5b=7}
-               \end{cases}\)
-
-            </p>
-            <br>
-            <p>
-               Fatto ciò dobbiamo risolvere l’equazione ottenuta in modo da ottenere il valore di \(b\).
-            </p>
-            <br>
-            <p>
-               \(\begin{cases} 
-               a=1-b
-               \\ \color{#1e76e9}{6b-5b=7-2}
-               \end{cases}
-
-               \longrightarrow
-
-               \begin{cases} 
-               a=1-b
-               \\ \color{#1e76e9}{b=5}
-               \end{cases}\)
-            </p>
-            <br>
-            <p>
-               Ora che abbiamo trovato il valore di  \(b\) possiamo sostituirlo all’interno della prima equazione in modo da trovare il valore di \(a\).
-            </p>
-            <br>
-            <p>
-               \(\begin{cases} 
-               \color{#1e76e9}{a=1-5} \rightarrow \color{#1e76e9}{a=-4}
-               \\ b=5
-               \end{cases}\)
-            </p>
-            <br>
-            <p id="classif3">
-               Quindi le soluzioni del nostro sistema sono la coppia di valori \((a,b)=(-4,5)\).
-            </p>
-            <br>
-            <!-- Divider -->
-         <hr class="divider"></hr>  
-            <h2>
-               4. Metodo del confronto
-            </h2>
-            <br>
-            <p>
-               Come nel caso del primo metodo, iniziamo la spiegazione del metodo del confronto partendo da un esempio:
-            </p>
-            <br>
-            <p>
-               \(\begin{cases} 
-               x+3y=1
-               \\ 5y-x=7
-               \end{cases}\)
-            </p>
-            <br>
-            <p>
-               Prendiamo ciascuna delle equazoni del sistema ed esplicitiamo una delle due variabili, a nostra scelta. Per semplicità, in questo esercizio scegliamo la \(x\):
-            </p>
-            <br>
-            <p>
-               \(\begin{cases} 
-               x+3y=1
-               \\ -x=7-5y
-               \end{cases}
-
-               \longrightarrow
-
-               \begin{cases} 
-               x=1-3y
-               \\ x=5y-7
-               \end{cases}\)
-            </p>
-            <br>
-            <p>
-               Ciascuna delle due equazioni ci dice quanto vale \(x\) in funzione di \(y\) e, per la definizione di sistema, entrambe devono valere contemporaneamente. Possiamo quindi confrontarle, ponendo una uguale all’altra, ottenendo quindi un’equazione risolvente:
-            </p>
-            <br>
-            <p>
-               \(\begin{cases} 
-               \color{#1e76e9}{1-3y=5y-7}
-               \\ x=1-3y
-               \end{cases}\)
-            </p>
-            <br>
-            <p>
-               \(\begin{cases} 
-               \color{#1e76e9}{-8y=-8}
-               \\ x=1-3y
-               \end{cases}
-
-               \longrightarrow
-
-               \begin{cases} 
-               \color{#1e76e9}{y=1}
-               \\ x=1-3y
-               \end{cases}\)
-            </p>
-            <br>
-            <p>
-               A questo punto possiamo sostituire il valore di \(y\) trovato all’interno della seconda equazione per ottenere il valore di \(x\)
-            </p>
-            <br>
-            <p>
-               \(\begin{cases} 
-               y=1
-               \\ \color{#1e76e9}{x=1-3}
-               \end{cases}
-
-               \longrightarrow
-
-               \begin{cases} 
-               y=1
-               \\ \color{#1e76e9}{x=-2}
-               \end{cases}\)
-            </p>
-            <br>
-            <p id="classif4">
-               Quindi le soluzioni del nostro sistema sono la coppia di valori \((x,y)=(-2;1)\).
-            </p>
-            <br>
-            <!-- Divider -->
-         <hr class="divider"></hr>  
-            <h2>
-               5. Metodo di riduzione
-            </h2>
-            <br>
-            <p>
-               Il metodo di riduzione in alcuni casi è sicuramente il più pratico in quanto permette di eliminare in una volta sola una delle due incognite in una delle due equazioni, riducendola quindi a un’equazione a un’incognita. Come nel precedenti casi, illustriamo i passaggi tramite un esempio. 
-            </p>
-            <br>
-            <p>
-               \(\begin{cases} 
-               4a+b=5
-               \\ 3a-2b=12
-               \end{cases}\)
-            </p>
-            <br>
-            <p>
-               Per prima cosa dobbiamo andare a moltiplicare una delle due equazioni (o entrambe) per un numero in modo tale che i coefficienti in entrambe le equazioni siano uguali o opposti. Nel nostro caso risulta conveniente moltiplicare per \(2\) la prima equazione:
-            </p>
-            <br>
-            <p>
-               \(\begin{cases} 
-               \color{#1e76e9}{2\cdot(4a+b)=10}
-               \\ 3a-2b=12
-               \end{cases}
-
-               \rightarrow
-
-               \begin{cases} 
-               \color{#1e76e9}{8a+2b=10}
-               \\ 3a-2b=12
-               \end{cases}\)
-            </p>
-            <br>
-            <p>
-               Fatto ciò proseguiamo con l’addizione membro a membro delle due equazioni in modo da andare a eliminare l’incognita \(b\):
-            </p>
-            <br>
-            <p>
-               \(\begin{cases} 
-               \color{#1e76e9}{8a+3a+ \require{cancel} \cancel{2b} - \cancel{2b} =10+12}
-               \\ 3a-2b=12
-               \end{cases}\)
-            </p>
-            <br>
-            <p>
-               \(\begin{cases} 
-               \color{#1e76e9}{11 a=22}
-               \\ 3a-2b=12
-               \end{cases}
-
-               \rightarrow 
-
-               \begin{cases} 
-               \color{#1e76e9}{a=2}
-               \\ 3a-2b=12
-               \end{cases}\)
-            </p>
-            <br>
-            <p>
-               Ora che abbiamo trovato il valore di \(a\) possiamo andarlo a sostituire all’interno della seconda equazione in modo da ricavare \(b\)
-            </p>
-            <br>
-            <p>
-               \(\begin{cases} 
-               a=2
-               \\ \color{#1e76e9}{6-2b=12}
-               \end{cases}
-               \rightarrow
-               \begin{cases} 
-               a=2
-               \\ \color{#1e76e9}{b=-3}
-               \end{cases}\)
-            </p>
-            <br>
-            <p id="classif5">
-               Quindi le soluzioni del nostro sistema sono la coppia di valori \((a,b)=(2;-3)\).
-            </p>
-            <br>
-            <!-- Divider -->
-         <hr class="divider"></hr>  
-            <h2>
-               6. Metodo di Cramer
-            </h2>
-            <br>
-            <p>
-               Il metodo di Cramer è indubbiamente il più laborioso e il più complesso dei \(4\). Per comprendere totalmente questo metodo occorrerebbe avere una conoscenza approfondita dell’algebra matriciale, argomento che però richiederebbe un approfondimento specifico a parte. Per questo ci limiteremo a illustrare il modello di Cramer nella sua forma generale analizzandone i vari passaggi. Consideriamo il seguente sistema
-            </p>
-            <br>
-            <p>
-               \(\begin{cases} 
-               a_1x+b_1y=c_1
-               \\ a_2x+b_2y=c_2
-               \end{cases}\)
-            </p>
-            <br>
-            <p>
-               Quello che dobbiamo fare come prima cosa è inserire i coefficienti delle incognite in una sorta di tabella che chiameremo matrice dei coefficienti secondo il seguente schema:
-            </p>
-            <br>
-            <p>
-               \(\begin{bmatrix}
-               \color{#1e76e9}{a_1} & \color{#8c0000}{b_1}  \\
-               \color{#8c0000}{a_2} & \color{#1e76e9}{b_2}  
-               \end{bmatrix}\)
-            </p>
-            <br>
-            <p>
-               Successivamente chiamiamo con \(D\) (determinante della matrice \(2x2\) la quantità che si ottiene tramite la seguente formula
-            </p>
-            <br>
-            <p>
-               \(D=\color{#1e76e9}{(a_1\cdot b_2)}-\color{#8c0000}{(a_2\cdot b_1)}\)
-            </p>
-            <br>
-            <p>
-               e distinguiamo due diversi casi:
-            </p>
-            <br>
-            <ul>
-               <li>
-                  <p>
-                     Determinante uguale a zero. Se ci troviamo in questa condizione significa che il metodo di Cramer non si può applicare e quindi il sistema è impossibile o indeterminato. 
-                  </p>
-               </li>
-               <li>
-                  <p>
-                     Determinante diverso da zero. Se ci troviamo in questa condizione significa che il sistema è determinato e quindi si può procedere con la regola di Cramer:
-                  </p>
-                  <br>
-                  <p>
-                     Per prima cosa calcoliamo \(D_x\) (il determinante dell’incognita \(x\))
-                  </p>
-                  <br>
-                  <p>
-                     \(D_X =
-                     \begin{bmatrix}
-                     c_1 & b_1  \\
-                     c_2 & b_2  
-                     \end{bmatrix}
-                     = 
-                     (c_1\cdot b_2)-(c_2\cdot b_1)\)
-                  </p>
-                  <br>
-                  <p>
-                     e successivamente \(D_y\) (il determinante dell’incognita \(y\))
-                  </p>
-                  <br>
-                  <p>
-                     \(D_X =
-                     \begin{bmatrix}
-                     a_1 & c_1  \\
-                     a_2 & c_2  
-                     \end{bmatrix}
-                     = 
-                     (a_1\cdot c_2)-(a_2\cdot c_1)\)
-                  </p>
-                  <br>
-                  <p>
-                     Fatto ciò, tramite due semplici formule si possono ricavare le soluzioni del sistema:
-                  </p>
-                  <br>
-                  <p>
-                     \(\begin{align}x=\frac{D}{D_x}\end{align}\) e \(\begin{align}y=\frac{D}{D_y}\end{align}\)
-                  </p>
-               </li>
-            </ul>
-            
-         </body>
-         </section>
-
-         <!-- Site footer -->
-         <div id="footer"></div>
-
-         <script src="custom.js"></script>
-         <script src="bookmark.js"></script>
-         <script src="index.js"></script>
-         <!-- Including MathJax -->
-         <script type="text/javascript" async
+      <script src="custom.js"></script>
+      <script src="bookmark.js"></script>
+      <script src="index.js"></script>
+      <!-- Including MathJax -->
+      <script type="text/javascript" async
          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
-    </body>        
+      </script>
+   </body>        
 </html>
