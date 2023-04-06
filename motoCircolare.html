@@ -39,150 +39,145 @@
     </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   </head>
-         <div id="header"></div>
-        
-      <section class="home">
 
-        <label class="container">
-          <input onclick="save()" id="bookmark" type="checkbox">
-          <div class="checkmark">
-            <svg viewBox="0 0 256 256">
-            <rect fill="none" height="256" width="256"></rect>
-            <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
-          </div>
-        </label>
-            <div class="welcome"> 
-                <h1 class="welcome1" >Moto circolare</h1>
-                <h3 class="p1">Di seguito analizzeremo il moto circolare uniforme.</h3>
-             </div>  
-             <!-- Mini-index -->
-    <div class="minimenu">
-<a href="#classif" class="mini-item" ><div class=""><p class="minitext">Frequenza</p></div></a>
-<a href="#classif2" class="mini-item" ><div class=""><p class="minitext">V. angolare</p></div></a>
-<a href="#classif3" class="mini-item" ><div class=""><p class="minitext">A. centrip.</p></div></a>
+  <body>
+    <div id="header"></div>
+    <section class="home">
 
-    </div>
-              <!-- Divider -->
-         <hr class="divider"></hr>  
-         <body>
-         <h2>Moto circolare uniforme
-        </h2>
-        <br>
-        <p>Ora che abbiamo visto i principali moti in una <span class="blue">retta</span>, è arrivato il momento di analizzare i moti in un cerchio. Iniziamo guardando un caso particolare di <span class="blue">moto circolare</span>: il <span class="blue">moto circolare uniforme</span>. In questo caso, la velocità è costante ed è un <span class="blue">vettore</span> tangente alla circonferenza, come nel grafico seguente: 
-        </p>
-        <img class='quadrato' src="images/motocirc.png" alt="Moto circolare Theoremz">
-        <p class="bbk">Ricordiamo che: 
-        </p>
-        <br>
-        <p>\(v={\Delta S \over \Delta t}\)</p>
-        <br>
-        <p>Siccome la <span class="blue">velocità</span> è costante, possiamo calcolarla usando qualsiasi tragitto. Quindi possiamo prendere un giro completo come tragitto. Di conseguenza la distanza percorsa \(\Delta S\) sarà uguale alla <span class="blue">circonferenza</span>. 
-        </p>
-        <br>
-        <p>Il tempo impiegato per percorrere un giro completo è molto importante in fisica e si chiama <span class="blue">periodo</span>. Si indica solitamente con la lettera \(T\). 
-        </p>
-        <br>
-        <p class="bbk">Di conseguenza avremo: 
-        </p>
-        <br>
-        <p id="classif">\(v={2\pi r \over T}\)</p>
-        <br>
-         <!-- Divider -->
-         <hr class="divider"></hr> 
+      <label class="container">
+        <input onclick="save()" id="bookmark" type="checkbox">
+        <div class="checkmark">
+          <svg viewBox="0 0 256 256">
+          <rect fill="none" height="256" width="256"></rect>
+          <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
+        </div>
+      </label>
+      <div class="welcome"> 
+        <h1 class="welcome1" >Moto circolare</h1>
+        <h3 class="p1">Di seguito analizzeremo il moto circolare uniforme.</h3>
+      </div>  
 
+      <!-- Mini-index -->
+      <div class="minimenu">
+        <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Frequenza</p></div></a>
+        <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">V. angolare</p></div></a>
+        <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">A. centrip.</p></div></a>
+      </div>
 
-        <h2>Frequenza</h2>
-        <br>
-        <p>Un’altra importante grandezza fisica è la <span class="blue">frequenza</span>. Essa è uguale al numero di giri effettuati in un’unità di tempo. Siccome il corpo impiega un periodo per completare un giro, avremo: 
-        </p>
-        <br>
-        <p>\(\ f={1 \over T}\)</p>
-        <br>
-        <p>Di conseguenza possiamo riscrivere la nostra velocità anche come: 
-        </p>
-        <br>
-        <p id="classif2">\(\ v={2 \pi r} \cdot {1 \over T}=2\pi rf\)</p>
-        <br>
-         <!-- Divider -->
-         <hr class="divider"></hr> 
+      <!-- Divider -->
+      <hr class="divider"></hr>  
+
+      <h2>Moto circolare uniforme
+      </h2>
+      <br>
+      <p>Ora che abbiamo visto i principali moti in una <span class="blue">retta</span>, è arrivato il momento di analizzare i moti in un cerchio. Iniziamo guardando un caso particolare di <span class="blue">moto circolare</span>: il <span class="blue">moto circolare uniforme</span>. In questo caso, la velocità è costante ed è un <span class="blue">vettore</span> tangente alla circonferenza, come nel grafico seguente: 
+      </p>
+      <img class='quadrato' src="images/motocirc.png" alt="Moto circolare Theoremz">
+      <p class="bbk">Ricordiamo che: 
+      </p>
+      <br>
+      <p>\(v={\Delta S \over \Delta t}\)</p>
+      <br>
+      <p>Siccome la <span class="blue">velocità</span> è costante, possiamo calcolarla usando qualsiasi tragitto. Quindi possiamo prendere un giro completo come tragitto. Di conseguenza la distanza percorsa \(\Delta S\) sarà uguale alla <span class="blue">circonferenza</span>. 
+      </p>
+      <br>
+      <p>Il tempo impiegato per percorrere un giro completo è molto importante in fisica e si chiama <span class="blue">periodo</span>. Si indica solitamente con la lettera \(T\). 
+      </p>
+      <br>
+      <p class="bbk">Di conseguenza avremo: 
+      </p>
+      <br>
+      <p id="classif">\(v={2\pi r \over T}\)</p>
+      <br>
+        <!-- Divider -->
+        <hr class="divider"></hr> 
 
 
-        <h2>Velocità angolare</h2>
-        <br>
-        <p>Ora vediamo un'altra grandezza, la <span class="blue">velocità angolare</span>. Spesso indicata con la lettera  \(\omega ,\) è la velocità con cui viene <u>spazzato</u> l’angolo del tratto percorso, questa velocità corrisponde a un vettore <span class="blue">perpendicolare</span> al piano del moto. 
-        </p>
-        <img class='quadrato' src="images/angoloteta.png" alt="Velocità angolare Theoremz">
-        <p>La <u>velocità angolare</u> ci permette quindi di capire quanto sta ruotando velocemente. 
-        </p>
-        <br>
-        <p>Se chiamiamo l'angolo \(\theta\) avremo:</p>
-        <br>
-        <p>\(\omega = {\Delta \theta \over \Delta t}\)</p>
-        <br>
-        <p>Siccome anche \(\omega\) è costante, possiamo calcolarla usando un intero giro. Quindi: 
-        </p>
-        <br>
-        <p>\(w=\frac{2\pi}{T}\)</p>
-        <br>
-        <p>Non abbiamo scritto \(\ 360^{\circ} \) ma il suo valore in radianti perché quando calcoliamo la <u>velocità angolare</u> dobbiamo usare i <span class="blue">radianti</span>. 
-        </p>
-        <br>
-        <p>Ricordiamo che per tramutare un angolo <u>da gradi a radianti o viceversa</u>, basta usare la seguente proporzione: 
-        </p>
-        <br>
-        <p>\(\ a:360^{\circ}=b:2\pi\)</p>
-        <br>
-        <p>Dove \(a\) è l’angolo in gradi e \(b\) è quello in radianti. 
-        </p>
-        <br>
-        <p>Grazie a questo troviamo un’altra formula per calcolare la nostra velocità: 
-        </p>
-        <br>
-        <p id="classif3">\(\ v={2\pi \over T}\cdot r=wr\)</p>
-        <br>
-         <!-- Divider -->
-         <hr class="divider"></hr> 
+      <h2>Frequenza</h2>
+      <br>
+      <p>Un’altra importante grandezza fisica è la <span class="blue">frequenza</span>. Essa è uguale al numero di giri effettuati in un’unità di tempo. Siccome il corpo impiega un periodo per completare un giro, avremo: 
+      </p>
+      <br>
+      <p>\(\ f={1 \over T}\)</p>
+      <br>
+      <p>Di conseguenza possiamo riscrivere la nostra velocità anche come: 
+      </p>
+      <br>
+      <p id="classif2">\(\ v={2 \pi r} \cdot {1 \over T}=2\pi rf\)</p>
+      <br>
+
+      <!-- Divider -->
+      <hr class="divider"></hr> 
+
+      <h2>Velocità angolare</h2>
+      <br>
+      <p>Ora vediamo un'altra grandezza, la <span class="blue">velocità angolare</span>. Spesso indicata con la lettera  \(\omega ,\) è la velocità con cui viene <u>spazzato</u> l’angolo del tratto percorso, questa velocità corrisponde a un vettore <span class="blue">perpendicolare</span> al piano del moto. 
+      </p>
+      <img class='quadrato' src="images/angoloteta.png" alt="Velocità angolare Theoremz">
+      <p>La <u>velocità angolare</u> ci permette quindi di capire quanto sta ruotando velocemente. 
+      </p>
+      <br>
+      <p>Se chiamiamo l'angolo \(\theta\) avremo:</p>
+      <br>
+      <p>\(\omega = {\Delta \theta \over \Delta t}\)</p>
+      <br>
+      <p>Siccome anche \(\omega\) è costante, possiamo calcolarla usando un intero giro. Quindi: 
+      </p>
+      <br>
+      <p>\(w=\frac{2\pi}{T}\)</p>
+      <br>
+      <p>Non abbiamo scritto \(\ 360^{\circ} \) ma il suo valore in radianti perché quando calcoliamo la <u>velocità angolare</u> dobbiamo usare i <span class="blue">radianti</span>. 
+      </p>
+      <br>
+      <p>Ricordiamo che per tramutare un angolo <u>da gradi a radianti o viceversa</u>, basta usare la seguente proporzione: 
+      </p>
+      <br>
+      <p>\(\ a:360^{\circ}=b:2\pi\)</p>
+      <br>
+      <p>Dove \(a\) è l’angolo in gradi e \(b\) è quello in radianti. 
+      </p>
+      <br>
+      <p>Grazie a questo troviamo un’altra formula per calcolare la nostra velocità: 
+      </p>
+      <br>
+      <p id="classif3">\(\ v={2\pi \over T}\cdot r=wr\)</p>
+      <br>
+        <!-- Divider -->
+        <hr class="divider"></hr> 
 
 
-        <h2>Accelerazione centripeta</h2>
-        <br>
-        <p>L’ultima grandezza fisica da studiare è l’<span class="blue">accelerazione centripeta</span>. Si chiama centripeta perché punta sempre verso il centro.
-        </p>
-        <img class='quadrato' src="images/accetntr.png" alt="Accelerazione centripeta Theoremz">
-        <p>Perché abbiamo un’<u>accelerazione</u> anche se la velocità è <u>costante</u>?
-        </p>
-        <br>
-        <p>Perchè in questo caso non sta cambiando il suo modulo ma la sua posizione. La velocità infatti ruota mentre il corpo si muove: 
-        </p>
-        <img class='quadrato' src="images/velang.png" alt="Accelerazione centripeta Theoremz">
-        <p>Possiamo calcolare l’accelerazione centripeta con la seguente formula: 
-        </p>
-        <br>
-        <p>\(\ a_c ={v^2 \over r}\)</p>
-        <br>
-        <p>Se invece vogliamo esprimerla attraverso la velocità angolare e non la velocità, possiamo calcolarla come: 
-        </p>
-        <br>
-        <p>\(\ a_c={v^2 \over r}=\) \({(wr)^2 \over r}=\) \(w^2 r\)</p>
-        <br>
-        <p>Questo è tutto quello che c’è da sapere sul moto circolare uniforme. 
-        </p>
-
-    
-        
-
-        </p>
-        </body>
-        </section>
-        <!-- Site footer -->
-        <div id="footer"></div>
-        <script src="custom.js"></script>
-        <script src="bookmark.js"></script>
-        <script src="index.js"></script>
-        <!-- Including MathJax -->
-        <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      <h2>Accelerazione centripeta</h2>
+      <br>
+      <p>L’ultima grandezza fisica da studiare è l’<span class="blue">accelerazione centripeta</span>. Si chiama centripeta perché punta sempre verso il centro.
+      </p>
+      <img class='quadrato' src="images/accetntr.png" alt="Accelerazione centripeta Theoremz">
+      <p>Perché abbiamo un’<u>accelerazione</u> anche se la velocità è <u>costante</u>?
+      </p>
+      <br>
+      <p>Perchè in questo caso non sta cambiando il suo modulo ma la sua posizione. La velocità infatti ruota mentre il corpo si muove: 
+      </p>
+      <img class='quadrato' src="images/velang.png" alt="Accelerazione centripeta Theoremz">
+      <p>Possiamo calcolare l’accelerazione centripeta con la seguente formula: 
+      </p>
+      <br>
+      <p>\(\ a_c ={v^2 \over r}\)</p>
+      <br>
+      <p>Se invece vogliamo esprimerla attraverso la velocità angolare e non la velocità, possiamo calcolarla come: 
+      </p>
+      <br>
+      <p>\(\ a_c={v^2 \over r}=\) \({(wr)^2 \over r}=\) \(w^2 r\)</p>
+      <br>
+      <p>Questo è tutto quello che c’è da sapere sul moto circolare uniforme. 
+      </p>
+    </section>
+    <!-- Site footer -->
+    <div id="footer"></div>
+    <script src="custom.js"></script>
+    <script src="bookmark.js"></script>
+    <script src="index.js"></script>
+    <!-- Including MathJax -->
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
-    </body>
-            
+  </body>         
 </html>
