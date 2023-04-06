@@ -31,7 +31,9 @@ function register() {
   }
 
   // Move on with Auth
-  firebase.auth().createUserWithEmailAndPassword(email, password)
+  firebase
+    .auth()
+    .createUserWithEmailAndPassword(email, password)
     .then(function () {
       // Declare user variable
       var user = auth.currentUser;
@@ -57,7 +59,6 @@ function register() {
       // Firebase will use this to alert of its errors
       var error_code = error.code;
       var error_message = error.message;
-
     });
 }
 
@@ -74,7 +75,9 @@ function login() {
     // Don't continue running the code
   }
 
-  firebase.auth().signInWithEmailAndPassword(email, password)
+  firebase
+    .auth()
+    .signInWithEmailAndPassword(email, password)
     .then(function () {
       // Declare user variable
       var user = auth.currentUser;
@@ -99,8 +102,6 @@ function login() {
       // Firebase will use this to alert of its errors
       var error_code = error.code;
       var error_message = error.message;
-
-      alert(error_message);
     });
 }
 
