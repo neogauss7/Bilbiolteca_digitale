@@ -5,6 +5,10 @@ p {
   font-size: 18px;
   user-select: none;
 }
+ul,
+ol {
+  font-size: 18px;
+}
 
 h2 {
   font-size: 25px;
