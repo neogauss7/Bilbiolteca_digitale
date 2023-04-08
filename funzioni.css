@@ -9,6 +9,11 @@ p {
 h2 {
   font-size: 25px;
   color: var(--pc);
+  user-select: none;
+}
+
+br {
+  user-select: none;
 }
 .bookmark {
   color: var(--drkblue);
