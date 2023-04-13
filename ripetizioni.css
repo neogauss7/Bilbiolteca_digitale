@@ -99,7 +99,6 @@
   grid-template-columns: auto auto;
   grid-gap: 10px;
 }
-
 .request:hover {
   background-color: var(--pc);
   color: #fff;
