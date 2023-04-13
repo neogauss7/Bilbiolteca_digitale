@@ -13,6 +13,7 @@
   --gray: #222222;
   --white: #fff;
   --drkblue: #050959;
+  --red: #CC0829;
 }
 
 #CybotCookiebotDialog {
@@ -56,6 +57,10 @@
 #CybotCookiebotDialog #CybotCookiebotDialogBodyContentText a {
   color: var(--pc) !important;
 }
+#CybotCookiebotDialog .CybotCookiebotScrollContainer {
+  border-bottom: none !important;
+}
+
 .darktheme {
   --pc: #1e76e9;
   --blk: #fff;
@@ -119,7 +124,12 @@ body.hidden-scrolling {
   max-width: 200px;
   border-top: 0.5px solid var(--drkblue);
 }
-
+@media screen and (min-width: 1280px) {
+  #CybotCookiebotDialog.CybotEdge.CybotMultilevel
+    .CybotCookiebotDialogBodyBottomWrapper {
+    border-top: none !important;
+  }
+}
 @media (max-width: 760px) {
   .home {
     padding-left: 30px;
@@ -157,6 +167,12 @@ body.hidden-scrolling {
   #CybotCookiebotDialogBodyButtonDecline {
     width: 167px !important;
     margin-right: 10px !important;
+  }
+}
+@media screen and (min-width: 601px) {
+  #CybotCookiebotDialogBodyLevelButtonsSelectPane
+    .CybotCookiebotDialogBodyLevelButtonWrapper:not(:last-of-type) {
+    border-right: none !important;
   }
 }
 
