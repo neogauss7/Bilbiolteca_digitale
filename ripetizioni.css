@@ -1,7 +1,5 @@
 .big-grid {
   display: grid;
-
-  height: 700px;
   grid-template-columns: auto auto;
 }
 .teach-container {
@@ -112,4 +110,26 @@
 
 .explaination {
   max-width: 500px;
+}
+.contattaci {
+  color: var(--red);
+  text-decoration: underline;
+}
+.contattaci-box {
+  font-size: 13px;
+  color: var(--drkblue);
+}
+@media (max-width: 865px) {
+  .big-grid {
+    grid-template-columns: auto;
+  }
+  .teach-container {
+    grid-template-columns: auto;
+  }
+  .card {
+    max-width: none;
+  }
+  .contattaci-box {
+    font-size: 11px;
+  }
 }
