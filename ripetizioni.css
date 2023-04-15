@@ -42,11 +42,7 @@
 }
 .i2 {
   background-color: rgb(31, 170, 149);
-  background: linear-gradient(
-    to bottom right,
-    rgb(31, 170, 149),
-    rgb(113, 237, 219)
-  );
+  background: linear-gradient(to bottom right, #1faa95, rgb(113, 237, 219));
 }
 .info {
   height: 4rem;

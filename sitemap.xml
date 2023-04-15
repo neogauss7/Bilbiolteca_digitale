@@ -9,178 +9,258 @@
 
 <url>
   <loc>https://www.theoremz.com/</loc>
-  <lastmod>2023-01-31T21:34:42+00:00</lastmod>
+  <lastmod>2023-04-10T13:20:24+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/login.html</loc>
-  <lastmod>2023-01-31T21:34:42+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://www.theoremz.com/Matematica.html</loc>
-  <lastmod>2023-01-31T21:34:42+00:00</lastmod>
+  <lastmod>2023-04-10T13:20:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.theoremz.com/Fisica.html</loc>
-  <lastmod>2023-01-31T21:34:42+00:00</lastmod>
+  <lastmod>2023-04-10T13:20:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.theoremz.com/esercizi.html</loc>
+  <lastmod>2023-04-10T13:20:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.theoremz.com/scienze.html</loc>
-  <lastmod>2023-01-31T21:34:41+00:00</lastmod>
+  <lastmod>2023-04-10T13:20:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/index.html</loc>
-  <lastmod>2023-01-31T21:34:42+00:00</lastmod>
+  <loc>https://www.theoremz.com/formulario.html</loc>
+  <lastmod>2023-04-10T13:20:24+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.theoremz.com/newsletter.html</loc>
-  <lastmod>2023-01-31T21:34:41+00:00</lastmod>
+  <lastmod>2023-04-10T13:20:22+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.theoremz.com/funzioni.html</loc>
-  <lastmod>2023-01-31T21:34:42+00:00</lastmod>
+  <lastmod>2023-04-10T13:20:24+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/ruffini.html</loc>
-  <lastmod>2023-01-31T21:34:41+00:00</lastmod>
+  <loc>https://www.theoremz.com/regolaDiRuffini.html</loc>
+  <lastmod>2023-04-10T13:20:22+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/scomposizione.html</loc>
-  <lastmod>2023-01-31T21:34:40+00:00</lastmod>
+  <loc>https://www.theoremz.com/scomposizioneDeiPolinomi.html</loc>
+  <lastmod>2023-04-10T13:20:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/monepol.html</loc>
-  <lastmod>2023-01-31T21:34:41+00:00</lastmod>
+  <loc>https://www.theoremz.com/entiGeometriciFondamentali.html</loc>
+  <lastmod>2023-04-10T13:20:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/divisione.html</loc>
-  <lastmod>2023-01-31T21:34:43+00:00</lastmod>
+  <loc>https://www.theoremz.com/teoremiEAssiomi.html</loc>
+  <lastmod>2023-04-10T13:20:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/prodottinotevoli.html</loc>
-  <lastmod>2023-01-31T21:34:41+00:00</lastmod>
+  <loc>https://www.theoremz.com/monomiEPolinomi.html</loc>
+  <lastmod>2023-04-10T13:20:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.theoremz.com/divisioneTraPolinomi.html</loc>
+  <lastmod>2023-04-10T13:20:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.theoremz.com/propriet%C3%A0DellePotenze.html</loc>
+  <lastmod>2023-04-10T13:20:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.theoremz.com/prodottiNotevoli.html</loc>
+  <lastmod>2023-03-23T18:04:46+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.theoremz.com/circonferenza.html</loc>
-  <lastmod>2023-01-31T21:34:43+00:00</lastmod>
+  <lastmod>2023-04-10T13:20:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/fratte.html</loc>
-  <lastmod>2023-01-31T21:34:42+00:00</lastmod>
+  <loc>https://www.theoremz.com/equzioniFratte.html</loc>
+  <lastmod>2023-04-10T13:20:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.theoremz.com/sistemi.html</loc>
-  <lastmod>2023-01-31T21:34:41+00:00</lastmod>
+  <lastmod>2023-04-10T13:20:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.theoremz.com/moduli.html</loc>
-  <lastmod>2023-01-31T21:34:41+00:00</lastmod>
+  <lastmod>2023-04-10T13:20:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.theoremz.com/equazioniBiquadratiche.html</loc>
+  <lastmod>2023-04-10T13:20:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.theoremz.com/luogoGeometrico.html</loc>
+  <lastmod>2023-04-10T13:20:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.theoremz.com/parabole.html</loc>
+  <lastmod>2023-04-10T13:20:22+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.theoremz.com/rette.html</loc>
-  <lastmod>2023-01-31T21:34:41+00:00</lastmod>
+  <lastmod>2023-04-10T13:20:22+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.theoremz.com/equazioni.html</loc>
-  <lastmod>2023-01-31T21:34:43+00:00</lastmod>
+  <lastmod>2023-04-10T13:20:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/eqsecondogrado.html</loc>
-  <lastmod>2023-01-31T21:34:43+00:00</lastmod>
+  <loc>https://www.theoremz.com/equazioniDiSecondoGrado.html</loc>
+  <lastmod>2023-04-10T13:20:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/diseq.html</loc>
-  <lastmod>2023-01-31T21:34:43+00:00</lastmod>
+  <loc>https://www.theoremz.com/radicali.html</loc>
+  <lastmod>2023-04-10T13:20:22+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/parametriche.html</loc>
-  <lastmod>2023-01-31T21:34:41+00:00</lastmod>
+  <loc>https://www.theoremz.com/razionalizzazione.html</loc>
+  <lastmod>2023-04-10T13:20:22+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/logeprop.html</loc>
-  <lastmod>2023-01-31T21:34:42+00:00</lastmod>
+  <loc>https://www.theoremz.com/disequazioniDiSecondoGrado.html</loc>
+  <lastmod>2023-04-10T13:20:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/funzioneesp.html</loc>
-  <lastmod>2023-01-31T21:34:42+00:00</lastmod>
+  <loc>https://www.theoremz.com/equazioniParametriche.html</loc>
+  <lastmod>2023-04-10T13:20:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/funzionelog.html</loc>
-  <lastmod>2023-01-31T21:34:42+00:00</lastmod>
+  <loc>https://www.theoremz.com/numerImmaginari.html</loc>
+  <lastmod>2023-04-10T13:20:22+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/eqdislog.html</loc>
-  <lastmod>2023-01-31T21:34:43+00:00</lastmod>
+  <loc>https://www.theoremz.com/numeriComplessi.html</loc>
+  <lastmod>2023-04-10T13:20:22+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/equesp.html</loc>
-  <lastmod>2023-01-31T21:34:43+00:00</lastmod>
+  <loc>https://www.theoremz.com/formaTrigonometricaDeiNumeriComplessi.html</loc>
+  <lastmod>2023-04-10T13:20:24+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/disesp.html</loc>
-  <lastmod>2023-01-31T21:34:43+00:00</lastmod>
+  <loc>https://www.theoremz.com/funzioneEsponenziale.html</loc>
+  <lastmod>2023-04-10T13:20:24+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/motorettunif.html</loc>
-  <lastmod>2023-01-31T21:34:41+00:00</lastmod>
+  <loc>https://www.theoremz.com/logaritmi.html</loc>
+  <lastmod>2023-04-10T13:20:23+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/mrua.html</loc>
-  <lastmod>2023-01-31T21:34:41+00:00</lastmod>
+  <loc>https://www.theoremz.com/funzioneLogaritmica.html</loc>
+  <lastmod>2023-04-10T13:20:24+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/motocirc.html</loc>
-  <lastmod>2023-01-31T21:34:41+00:00</lastmod>
+  <loc>https://www.theoremz.com/equazioniEDisequazioniLogaritmiche.html</loc>
+  <lastmod>2023-04-10T13:20:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/cadutalibera.html</loc>
-  <lastmod>2023-01-31T21:34:43+00:00</lastmod>
+  <loc>https://www.theoremz.com/equazioniEsponenziali.html</loc>
+  <lastmod>2023-04-10T13:20:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/pianoincl.html</loc>
-  <lastmod>2023-01-31T21:34:41+00:00</lastmod>
+  <loc>https://www.theoremz.com/disequazioniEsponenziali.html</loc>
+  <lastmod>2023-04-10T13:20:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/motoarmonico.html</loc>
-  <lastmod>2023-01-31T21:34:41+00:00</lastmod>
+  <loc>https://www.theoremz.com/motoRettilineoUniforme.html</loc>
+  <lastmod>2023-04-10T13:20:23+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.theoremz.com/motoparabolico.html</loc>
-  <lastmod>2023-01-31T21:34:41+00:00</lastmod>
+  <loc>https://www.theoremz.com/MRUA.html</loc>
+  <lastmod>2023-03-23T17:47:32+00:00</lastmod>
   <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.theoremz.com/motoCircolare.html</loc>
+  <lastmod>2023-04-10T13:20:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.theoremz.com/motoDiCadutaLibera.html</loc>
+  <lastmod>2023-04-10T13:20:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.theoremz.com/motoSuPianoInclinato.html</loc>
+  <lastmod>2023-04-10T13:20:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.theoremz.com/motoArmonico.html</loc>
+  <lastmod>2023-02-26T12:35:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.theoremz.com/motoParabolico.html</loc>
+  <lastmod>2023-02-26T12:35:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.theoremz.com/tavolaPeriodica.html</loc>
+  <lastmod>2023-04-10T13:20:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.theoremz.com/leggiDiMendel.html</loc>
+  <lastmod>2023-04-10T13:20:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.theoremz.com/termini.html</loc>
+  <lastmod>2023-04-10T13:20:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.theoremz.com/index.html</loc>
+  <lastmod>2023-04-10T13:20:24+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.theoremz.com/prodottinotevoli.html</loc>
+  <lastmod>2023-04-10T13:20:22+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 
 
