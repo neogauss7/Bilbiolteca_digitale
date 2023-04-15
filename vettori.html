@@ -314,6 +314,149 @@
 
 
             <h2>Prodotto scalare e prodotto vettoriale</h2>
+            <br>
+            <p>Sappiamo come sommare due vettori, ma come possiamo moltiplicarli tra di loro? Esistono in realtà più modi. Uno di essi è il prodotto scalare: 
+            </p>
+            <br>
+            <p>Il prodotto scalare tra due vettori \(\overrightarrow{v}\) e \(overrightarrow{w}\) è uguale al prodotto tra i due moduli per il coseno dell‘angolo fra i due. Si indica con un puntino \(\cdot\) : 
+            </p>
+            <br>
+            <p>\(\overrightarrow{v} \cdot \overrightarrow{w} = v w \cos(\theta)\)
+            </p>
+            <br>
+            <p>Si chiama prodotto scalare perchè da come risultato uno scalare. Possiamo proiettare \(\overrightarrow{v}\) sulla direzione di \(\overrightarrow{w}\): 
+            </p>
+            <br>
+            <p>E siccome avremo: 
+            </p>
+            <br>
+            <p>\(v_{\parallel}= v \cos(\theta)\)
+            </p>
+            <br>
+            <p>Possiamo riscrivere il prodotto scalare come: 
+            </p>
+            <br>
+            <p>\(\overrightarrow{v} \cdot \overrightarrow{w} = w v \cos(\theta) = wv_{\parallel}\)
+            </p>
+            <br>
+            <p>Possiamo effettuare lo stesso procedimento per \(\overrightarrow{w}\) ed ottenere: 
+            </p>
+            <br>
+            <p>\(\overrightarrow{v} \cdot \overrightarrow{w} = vw\cos(\theta) = v w_{\parallel}\)
+            </p>
+            <br>
+            <p>Siccome \(\cos(90^{\circ})=0\), il prodotto scalare fra due vettori perpendicolare è uguale a \(0\). 
+            </p>
+            <br>
+            <p>Siccome il coseno di angoli compresi tra \(90^{\circ}\) e \(270^{\circ}\) è negativo, quindi un prodotto scalare può dare risultati negativi.
+            </p>
+            <br>
+            <p>Se scriviamo i due vettori scomposti nelle loro componenti: 
+            </p>
+            <br>
+            <p>\(\overrightarrow{v} = \begin{pmatrix} v_x \\ v_y \end{pmatrix}\)
+            </p>
+            <br>
+            <p>\(\overrightarrow{w}=\begin{pmatrix} w_x \\ w_y \end{pmatrix}\)
+            </p>
+            <br>
+            <p>Il prodotto scalare fra i due è uguale alla somma dei prodotti delle componenti di ogni asse: 
+            </p>
+            <br>
+            <p>\(\overrightarrow{v} \cdot \overrightarrow{w} = \begin{pmatrix} v_x \\ v_y \end{pmatrix} \cdot \begin{pmatrix} w_x \\ w_y \end{pmatrix} = v_x w_x + v_y w_y\)
+            </p>
+            <br>
+            <p>Quindi conoscendo le componenti dei due vettori, il loro prodotto scalare si può calcolare molto velocemente. 
+            </p>
+            <br>
+            <p>Il prodotto scalare è inoltre commutativo: 
+            </p>
+            <br>
+            <p>\(\overrightarrow{v} \cdot \overrightarrow{w} = \overrightarrow{w} \cdot \overrightarrow{v}\)
+            </p>
+            <br>
+            <p>E distributivo: 
+            </p>
+            <br>
+            <p>\(\overrightarrow{v} \cdot (\overrightarrow{w} + \overrightarrow{u}) = \overrightarrow{v} \cdot \overrightarrow {w} + \overrightarrow{v} \cdot \overrightarrow{u}\) 
+            </p>
+            <br>
+            <p>Possiamo moltiplicare due vettori anche usando il prodotto vettoriale. Esso si indica con una croce \(\times\) e da come risultato un vettore perpendicolare ai due e con modulo pari al prodotto dei loro moduli per il seno dell‘angolo fra i due: 
+            </p>
+            <br>
+            <p>\(\left | \overrightarrow{v} \times \overrightarrow{w} \right | = vw\sin(\theta)\)
+            </p>
+            <br>
+            <p>Quindi se avete disegnato i due vettori sul vostro foglio, il loro prodotto vettoriale sarà un vettore entrante o uscente dal foglio. 
+            </p>
+            <br>
+            <p>Siccome il seno di \(0^{\circ}\) e di \(180^{\circ}\) sono entrambi uguali a \(0\), il prodotto vettoriali tra due vettori con stessa direzione è sempre nullo: 
+            </p>
+            <br>
+            <p>Se abbiamo due vettori nello spazio tridimensionale scomposti nelle loro componenti: 
+            </p>
+            <br>
+            <p>\(\overrightarrow{v} = \begin{pmatrix} v_x \\ v_y \\ v_z \end{pmatrix}\) 
+            </p>
+            <br>
+            <p>\(\overrightarrow{w}= \begin{pmatrix} w_x \\ w_y \\ w_z \end{pmatrix}\)
+            </p>
+            <br>
+            <p>Possiamo calcolare il loro prodotto vettoriale nel seguente modo: 
+            </p>
+            <br>
+            <p>Prendiamo una matrice {3\times 3} e mettiamo nella prima riga i versori degli assi e nelle altre due le componenti dei vettori sotto il corrispettivo versore: 
+            </p>
+            <br>
+            <p>\(\begin \hat{x} & \hat{y} & \hat{z} \\ v_x & v_y & v_z \\ w_x & w_y & w_z \end\)
+            </p>
+            <br>
+            <p>  Il prodotto vettoriale è uguale al determinante di questa matrice. Per calcolarlo dobbiamo momentaneamente eliminare la prima riga e la prima colonna: 
+            </p>
+            <br>
+            <p>E calcoliamo il determinante della matrice \(2\times 2\) rimasta e moltiplichiamolo per \(\hat{i}\): 
+            </p>
+            <br>
+            <p>Ora invece cancelliamo la prima riga e la seconda colonna e moltiplichiamolo per \(\hat{j}\): 
+            </p>
+            <br>
+            <p>E calcoliamo il determinante della matrice rimasta e moltiplichiamolo per \(\hat{k}\): 
+            </p>
+            <br>
+            <p>Cancelliamo quindi la prima riga e la terza colonna e calcoliamo il determinante dell‘ultima matrice: 
+            </p>
+            <br>
+            <p>Ed ora sommiamo lil primo e il terzo, mentre sottraiamo il secondo. Il risultato equivale al prodotto vettoriale dei due vettori: 
+            </p>
+            <br>
+            <p>\( \overrightarrow{v} \times \overrightarrow{w} = (v_y w_z - v_1 w_3) \hat{i} - (v_x w_z - v_z w_x) \hat{j} + ( v_x w_y - v_y w_x)
+            </p>
+            <br>
+            <p>Potete memorizzare il procedimento ricordando che per trovare i determinanti moltiplicate le componenti disegnando delle croci. Infatti il prodotto vettoriale viene spesso chiamato prodotto in croce e in inglese si dice cross product. 
+            </p>
+            <br>
+            <p>Il prodotto vettoriale è distributivo: 
+            </p>
+            <br>
+            <p>\(\overrightarrow{v} \times (\overrightarrow{w}+ \overrightarrow{u}) = \overrightarrow{v} \times \overrightarrow{w} + \overrightarrow{v} \times \overrightarrow{u}\) 
+            </p>
+            <br>
+            <p>Ma non è commutativo, infatti: 
+            </p>
+            <br>
+            <p>\(\overrightarrow{v} \times \overrightarrow{w} = - \overrightarrow{w} \times \overrightarrow{v}\)
+            </p>
+            <br>
+            <p>Infatti, per calcolare il verso (che determina il segno) dobbiamo usare la regola della mano destra: 
+            </p>
+            <br>
+            <p>Con la mano destra, fingiamo di ruotare il primo vettore sul secondo. La direzione che indica il vostro pollice equivale al verso del vettore: 
+            </p>
+            <br>
+            <p>Se ruotiamo il secondo sul primo invece che il primo sul secondo, il nostro pollice punterà nel verso opposto, dunque il prodotto vettoriale non è commutativo. 
+            </p>
+
+
 
 
        </section>
