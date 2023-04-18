@@ -6,6 +6,7 @@
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 10px;
+  height: fit-content;
 }
 .propic {
   height: 50px;
