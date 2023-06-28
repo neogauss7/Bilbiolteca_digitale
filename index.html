@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="general.css" />
     <link rel="stylesheet" type="text/css" href="header.css" />
+    <link rel="stylesheet" type="text/css" href="footer.css" />
     <script
       id="Cookiebot"
       src="https://consent.cookiebot.com/uc.js"
@@ -57,17 +58,10 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script>
-      $(function () {
-        $("#header").load("header.html");
-        $("#footer").load("footer.html");
-      });
-    </script>
   </head>
 
   <body>
-    <div id="header"></div>
+    <div class="header"></div>
     <section>
       <button
         onclick="location.href = 'https://buy.stripe.com/00gaIa36Xb21eSk4gh'"
@@ -89,9 +83,9 @@
                <p class="welcome-description">
                   Unisciti alle migliaia di studenti che stanno studiando su Theoremz in questo momento e scopri le nostre lezioni <u><b>gratuite</b></u> con grafici e schemi, abbiamo trattato tutti gli argomenti delle scuole superiori! Nuove lezioni sono in arrivo ogni giorno... <u><b>inizia subito ad imparare!</b></u>
                </p>
-               <button onclick="location.href = 'login.html'" class="btn btn1" id="login-button">
-                  Sign Up
-               </button>
+               <div class="btn1-box"><button onclick="location.href = 'login.html'" class="btn btn1" id="login-button">
+                Sign Up
+             </button></div>
             </div> 
             <div class="left-side">
                <img class="welcome-image" alt="Welcome image Theoremz" src="images/wimage.svg" id="icon">
@@ -101,7 +95,7 @@
             <div class="argument">
                <div class="argument-text">
 
-                  <span style="color: var(--pc);">3100+</span> studenti iscritti </div> <div class="user-container"> <img src="images/user.svg" style="height: 30px; width: 30px; " alt="User"><img src="images/user.svg" style="height: 30px; width: 30px; margin-left: 4px;" alt="User"><img src="images/user.svg" style="height: 30px; width: 30px; margin-left: 4px; " alt="User"></div>
+                  <span style="color: var(--pc);">3800+</span> studenti iscritti </div> <div class="user-container"> <img src="images/user.svg" style="height: 30px; width: 30px; " alt="User"><img src="images/user.svg" style="height: 30px; width: 30px; margin-left: 4px;" alt="User"><img src="images/user.svg" style="height: 30px; width: 30px; margin-left: 4px; " alt="User"></div>
                </div>
             <div class="argument">
                <div class="argument-text">
@@ -184,7 +178,7 @@
         </a>
       </div>
     </section>
-    <div id="footer"></div>
+    <div class="footer"></div>
   </body>
   <script src="index.js"></script>
 </html>

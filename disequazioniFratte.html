@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8ffc82e5-ed8c-43b1-997c-5038a49290f0" data-blockingmode="auto" type="text/javascript"></script>
+        <link rel="icon" href="favicon.png">
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-2Z6FRX1VZF');
+        </script>
+
+        <!-- Titolo -->
+        <title>Theoremz | Disequazioni fratte</title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="funzioni.css">
+        <link rel="stylesheet" type="text/css" href="general.css">
+        <link rel="stylesheet" type="text/css" href="header.css">
+        <link rel="stylesheet" type="text/css" href="footer.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    </head>
+
+    <body>
+        <div class="header"></div>
+        <section class="home">
+
+            <label class="container">
+                <input onclick="save()" id="bookmark" type="checkbox">
+                <div class="checkmark">
+                <svg viewBox="0 0 256 256">
+                <rect fill="none" height="256" width="256"></rect>
+                <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
+                </div>
+            </label>
+
+            <div class="welcome"> 
+                <h1 class="welcome1" >Disequazioni fratte</h1>
+                <h3 class="p1">Di seguito analizzeremo le disequazioni fratte.</h3>
+            </div> 
+
+             <!-- Mini-index -->
+            <div class="minimenu">
+                <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Risoluzione</p></div></a>
+                
+            </div>
+
+            <!-- Divider -->
+            <hr class="divider"></hr>  
+            <h2>Cosa sono le disequazioni fratte?
+            </h2>
+            <br>
+            <p>Le <span class="blue">disequazioni fratte</span> sono disequazioni con <u>incognite</u> al denominatore. Di conseguenza queste sono disequazioni del tipo: </p>
+            <br>
+            <p>\(\frac{N(x)}{D(x)}>0\)</p>
+            <br>
+            <p>o con \(<, \geq, \neq\) al posto di \(>.\) </p>
+            <br>
+            <p> <i>Esempi di disequazioni fratte sono:</i> </p>
+            <br>
+            <ul>
+                <li>\({x+1 \over x-3}≤0\)</li>
+                <br>
+                <li>\({t-5 \over t+2}+ {t^2-2 \over t-2}≥9 \)</li>
+                <br>
+                <li>\({x^4-1 \over x^2+3x-2}<0 \) </li>
+            </ul>
+            <br>
+            <p><i><b>Non</b> sono invece disequazioni fratte le seguenti: </i></p>
+            <br>
+            <ul>
+                <li>\({x^4-1 \over 4}>0\)- Perché non c’è nessuna incognita al denominatore.</li>
+                <br>
+                <li id="classif">\( {j \over 25}+j^4< {12 \over 177}\)   Perché non c’è nessuna incognita al denominatore.</li>
+
+            </ul>
+            <br>
+            <!-- Divider -->
+            <hr class="divider"></hr>  
+
+
+            <h2>Risoluzione delle disequazioni fratte</h2>
+            <br>
+            <p>Per risolverle dobbiamo saper fare solo due cose: </p>
+            <br>
+            <ol>
+                <li>Saper <span class="blue">fattorizzare</span> il numeratore e il denominatore</li>
+                <br>
+                <li>Saper <u>studiare il segno</u> dei singoli fattori</li>
+            </ol>
+            <br>
+            <p>Dobbiamo saper fattorizzare perché studiare il segno di un polinomio di quarto grado, per esempio, è piuttosto complicato <i>(tranne che per qualche caso particolare)</i> ed è molto più semplice fattorizzarlo in \(4\) <u>polinomi di primo grado</u>, studiarli singolarmente e poi <u>studiare il segno</u> del prodotto grazie al <span class="blue">grafico dei segni</span>. </p>
+            <br>
+            <p>Per rendere i calcoli più ordinati solitamente si studia prima il <u>numeratore</u> da solo, poi il <u>denominatore</u> e solo infine si mettono insieme.</p>
+            <br>
+            <p><span class="bbk">Facciamo un esempio per chiarezza:</span> </p>
+            <br>
+            <p>Prendiamo la seguente disequazione fratta: </p>
+            <br>
+            <p>\(\frac{{x}^{3}+5{x}^{2}+6x}{2x}>0\)</p>
+            <br>
+            <p>Come abbiamo detto prima, iniziamo dal numeratore: </p>
+            <br>
+            <p>Abbiamo un <u>polinomio di terzo grado</u> e non sappiamo come studiare il suo segno. Possiamo però fattorizzarlo. </p> <br>
+            <p> Notiamo infatti che:</p>
+            <br>
+            <p>\({x}^{3}+5{x}^{2}+6x=x({x}^{2}+5x+6)\)</p>
+            <br>
+            <p>Inoltre \({x}^{2}+5x+6\) è un trinomio speciale che possiamo riscrivere come: </p><br> <p> \((x+2) \cdot (x+3)\) </p>
+            <br>
+            <p>Quindi abbiamo fattorizzato \({x}^{3}+5{x}^{2}+6x\) in \(x \cdot (x+2) \cdot (x+3)\)</p>
+            <br>
+            <p><i>Ora studiamo il segno dei singoli fattori:</i> </p>
+            <br>
+            <ol class="bbk">
+                <li>  &nbsp \(x>0\)</li>
+                <br>
+                <li> &nbsp \(x+2 > 0 \longrightarrow x > -2\)</li>
+                <br>
+                <li> &nbsp \(x+3 > 0 \longrightarrow x > -3\)
+                </li>
+            </ol>
+            <br>
+            <p>Possiamo quindi tracciare il <u>grafico dei segni</u>: </p>
+            <img src="images/graficodis.webp" class="funzione" alt="Grafico diequazione fratta">
+            <p>Grazie al grafico sappiamo che quando \(-3< x < -2\) oppure \(0 < x\) allora \(N(x)>0 \)</p>
+            <br>
+            <p>Dobbiamo ora studiare il segno del denominatore: </p>
+            <br>
+            <p>In questo caso è piuttosto semplice perché avremo: </p>
+            <br>
+            <p>\(D(x)>0 \longrightarrow 2x>0 \longrightarrow x>0\)</p>
+            <br>
+            <p>Quindi quando \(x>0, D(x)>0.\) </p>
+            <br>
+            <p>Ora possiamo unirli con un nuovo grafico dei segni. Dobbiamo però stare attenti ad escludere i valori per i quali \(D(x)=0\) perché non si può dividere per \(0\). </p> <br><p> sono varie notazioni per indicare che si escludono dei punti nel grafico dei segni. Noi metteremo una \(x\) sui punti di escludere. In ogni caso, il grafico è il seguente: </p>
+            <img src="images/graaficodis2.webp" class="funzione" alt="Grafico diequazione fratta">
+            <p>Ricordiamoci che stavamo cercando per quale valore di \(x\) la nostra frazione sarà positiva, quindi le nostre soluzioni saranno: </p>
+            <br>
+            <p>\(x <-3\) o \( -2< x<0\) o \(x>0. \)</p>
+            <br>
+            <p><span class="red">Notare</span> che non si possono unire i due ultimi intervalli perché avevamo escluso \(0.\) </p>
+            <br>
+            <p>Quindi, ricapitolando, dobbiamo soltanto studiare singolarmente il segno del denominatore e del denominatore singolarmente.</p> <br><p> Per semplificare questo passaggio conviene spesso fattorizzare. Tutto qua. </p> <br> <p>
+            Talvolta le frazioni potranno essere un po’ più complicate, ma si tratterà soltanto di fare qualche calcolo in più, il processo è lo stesso. </p>
+
+
+        </section>
+
+        <!-- Site footer -->
+        <div class="footer"></div>
+        <script src="custom.js"></script>
+        <script src="bookmark.js"></script>
+        <script src="index.js"></script>
+
+        <!-- Including MathJax -->
+        <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+    </body>
+</html>
+            

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8ffc82e5-ed8c-43b1-997c-5038a49290f0" data-blockingmode="auto" type="text/javascript"></script>
+        <link rel="icon" href="favicon.png">
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-2Z6FRX1VZF');
+        </script>
+
+        <!-- Titolo -->
+        <title>Theoremz | Insiemi numerici</title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="funzioni.css">
+        <link rel="stylesheet" type="text/css" href="general.css">
+        <link rel="stylesheet" type="text/css" href="header.css">
+        <link rel="stylesheet" type="text/css" href="footer.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    </head>
+
+    <body>
+        <div class="header"></div>
+        <section class="home">
+
+            <label class="container">
+            <input onclick="save()" id="bookmark" type="checkbox">
+            <div class="checkmark">
+                <svg viewBox="0 0 256 256">
+                <rect fill="none" height="256" width="256"></rect>
+                <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
+            </div>
+            </label>
+
+            <div class="welcome"> 
+                <h1 class="welcome1" >Insiemi numerici</h1>
+                <h3 class="p1">Di seguito analizzeremo gli insiemi numerici.</h3>
+             </div>  
+
+            <!-- Mini-index -->
+            <div class="minimenu">
+                <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Relativi</p></div></a>
+                <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Razionali</p></div></a>
+                <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Irrazionali</p></div></a>
+                <a href="#classif4" class="mini-item" ><div class=""><p class="minitext">Reali</p></div></a>
+            </div>
+
+            <!-- Divider -->
+            <hr class="divider"></hr>  
+         
+            <h2>
+                Cosa sono gli insiemi numerici?
+            </h2>
+
+            <br>
+
+            <p>
+                Gli <span class="blue">insiemi numerici</span> sono insiemi infiniti che raggruppano una determinata categoria di numeri. Partiamo subito con il primo...
+
+            </p>
+
+            <br>
+
+            <h2>
+                Insieme dei numeri naturali \(\mathbb{N}\)
+
+            </h2>
+            <br>
+            <p>Il simbolo è semplice da ricordare: \(\mathbb{N}\) di <span class="bbk">“naturali”</span>. Il tratto obliquo si scrive due volte per differenziarlo da una generica  \(N\) maiuscola. </p> <br> <p>
+            Allora cosa sono i <span class="blue">numeri naturali</span>? Concettualmente si possono immaginare come tutti i numeri interi positivi. Si definiscono però come tutti i numeri che puoi ottenere partendo da \(0\) ed aggiungendo una unità alla volta (ovvero sommando \(1\)). Quindi avremo: </p>
+            <br>
+            <p>\[\mathbb{N} = {0,1,2,3,4,5,6,7,…}\]</p>
+            <br>
+            <p>Sono diffusi online video matematici che litigano per decidere se \(0\) appartiene ai numeri naturali o no. Infatti ci sono ancora dei dibattiti su questo argomento, ma in generale <u>\(0\) viene accettato come appartenente ai numeri naturali</u>. </p>
+            <br>
+            <p id="classif">Siccome li usiamo per contare, gli elementi di \(\mathbb{N}\) oltre ad essere chiamati <u>numeri naturali</u>, vengono talvolta chiamati <span class="blue">numeri cardinali</span>. </p>
+            <br>
+            <!-- Divider -->
+            <hr class="divider"></hr> 
+
+
+
+            <h2>Insieme dei numeri relativi \(\mathbb{Z}\)</h2>
+            <br>
+            <p>Il simbolo da ricordare questa volta è meno intuitivo, ma anche in  questo caso, per differenziare \(\mathbb{Z}\) da una generica \(Z\), scriviamo due volte il lato obliquo. </p> <br>
+            <p> I <span class="blue">numeri relativi</span> sono tutti gli interi caratterizzati da un segno, che può essere positivo <i>(\(+\))</i>, nullo <i>(lo \(0\))</i>, o negativo <i>(\(-\))</i>. Quindi ad \(\mathbb{N}\) aggiungiamo tutti gli interi negativi. </p>
+            <br>
+            <p>\[\mathbb{Z} ={…,-3,-2,-1,0,+1,+2,+3,…}\]</p>
+            <br>
+            <p>Notare che se chiamiamo tutti i numeri negativi \(\mathbb{N^-}\) </p>
+            <br>
+            <p>\[\mathbb{Z} ={0, -1, -2, -3, -4,…}\]</p>
+            <br>
+            <p>Avremo che \(\mathbb{Z}\) sarà l’<u>unione</u> di \(\mathbb{N}\) e \(\mathbb{N^-}\): </p>
+            <br>
+            <p>\[\mathbb{Z} =\mathbb{N} \cup \mathbb{N^-}\]</p>
+            <br>
+            <p id="classif2">Di conseguenza \(\mathbb{N}\) è un sottoinsieme di \(\mathbb{Z}\).</p>
+            <br>
+            <!-- Divider -->
+            <hr class="divider"></hr> 
+            
+
+            <h2>Insieme dei numeri razionali \(\mathbb{Q}\)</h2>
+            <br>
+            <p>Se si pensa che in inglese <i>“rapporto”</i> si dice <i>“quotient”</i>, il perché della \(\mathbb{Q}\) come simbolo ha più senso. Come per gli altri, mettiamo due volte il cerchietto per differenziare \(\mathbb{Q}\) dalla generica \(Q\). </p>
+            <br>
+            <p>I <span class="blue">numeri razionali</span> sono i
+                <i>tutti i numeri esprimibili come rapporto tra due numeri relativi</i>. In altre parole, sono tutte le frazioni formate da numeri interi. Quindi, come per i numeri relativi, i numeri razionali sono caratterizzati da un segno: positivo <i>(\(+\))</i>, nullo <i>(lo \(0\))</i>, o negativo <i>(\(-\))</i>.</p>
+            <br>
+            <p>Dobbiamo però aggiungere una restrizione. Il numero relativo che sta al denominatore <u>non può essere uguale</u> a \(0\), perché <i>non si può dividere per \(0.\)</i> </p>
+            <br>
+            <p>Quindi: </p>
+            <br>
+            <p>\(c \in \mathbb{Q}  \leftrightarrow  c={ a \over b}, \) con \( a,b \in \mathbb{Q},b \neq 0\)</p>
+            <br>
+            <p>Esempi di numeri razionali sono: </p>
+            <br>
+            <p>\[{1 \over 2},{10 \over 7},-8,-{2 \over 3},-{9 \over 17},5,{4 \over 3}\]</p>
+            <br>
+            <p>\(-8\) e \(5\) sono numeri razionali? Certo, hanno soltanto \(1\) al denominatore. Infatti \(-8={-8 \over 1}.\) </p>
+            <br>
+            <br>
+            <p id="classif3">Di conseguenza <i>i numeri razionali contengono tutti i numeri relativi</i>, ovvero \(\mathbb{Z}\) è un sottoinsieme di \(\mathbb{Z}.\)</p>
+            <br>
+            <!-- Divider -->
+            <hr class="divider"></hr> 
+            
+            
+
+            <h2>Insieme dei numeri irrazionali \(\mathbb{I}\)</h2>
+            <br>
+            <p>Questa volta la \(\mathbb{I}\) è facile da ricordare perché sta per <span class="bbk">“irrazionale”</span>. Come per gli altri mettiamo un doppio tratto per differenziarla dalla generica \(I.\) </p>
+            <br>
+            <p>Ai tempi di <span class="blue">Pitagora</span> si pensava che tutti i numeri fossero esprimibili tramite frazioni di numeri interi <i>(i nostri numeri razionali)</i>. Però, osservarono che la diagonale di un quadrato di lato \(1\), per il <u>teorema di Pitagora</u> doveva essere uguale a \(\sqrt2). Dimostrarono che questo numero non era esprimibile tramite rapporto di numeri interi. Nascono così i numeri irrazionali. </p>
+            <br>
+            <p>Come avrete intuito, <i>i numeri irrazionali sono tutti i numeri che non sono esprimibili tramite una frazione formata da numeri interi</i>. Tra questi ci sono tutte le frazioni di numeri che non sono quadrati perfetti, ma anche \( \pi\) e molte altre costanti che si trovano in natura. </p>
+            <br>
+            <p>Quindi esempi di numeri irrazionali sono: </p>
+            <br>
+            <p id="classif4">\[\sqrt2 ,\sqrt5 , \pi,\sqrt{7 \over 3},{1 \over \sqrt{10}}\]</p>
+            <br>
+            <!-- Divider -->
+            <hr class="divider"></hr> 
+
+
+            <h2>Insieme dei numeri reali \(\mathbb{R}\)</h2>
+            <br>
+            <p>La \(\mathbb{R}\) che sta per <span class="bbk">“reali”</span> anche questa volta ha un doppio tratto per differenziarla dalla generica \(R\).</p>
+             <br>
+            <p>Adesso che conosciamo i numeri razionali ed irrazionali, sarebbe molto pratico avere un insieme che li contiene entrambi, l’<span class="blue">insieme dei numeri reali</span>: </p>
+            <br>
+            <p>\[ \mathbb{R} = \mathbb{Q} \in \mathbb{I}\]
+            </p>
+            <br>
+            <p>Quindi esempi di numeri reali sono: </p>
+            <br>
+            <p>\[2,{7 \over 4},\sqrt7\]</p>
+            <br>
+            <p>Per comprendere poi meglio i legami tra i vari insiemi numerici proponiamo il seguente <span class="blue">grafico di Eulero-Venn</span>:</p>
+            <img src="images/insiemi.webp" class="funzione" alt="Insiemi numerici">
+        </section>
+
+        <!-- Site footer -->
+        <div class="footer"></div>
+        <script src="custom.js"></script>
+        <script src="bookmark.js"></script>
+        <script src="index.js"></script>
+
+        <!-- Including MathJax -->
+        <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+    </body>    
+</html>
