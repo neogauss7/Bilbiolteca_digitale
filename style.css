@@ -134,7 +134,7 @@ body {
 }
 
 .btn {
-  width: 9em;
+  width: 12em;
   height: 3em;
   background: var(--pc);
   color: white;
@@ -343,7 +343,11 @@ body {
 }
 
 @media (max-width: 650px) {
+  .btn {
+    width: 15em;
+  }
   .grid-container {
+
     grid-template-columns: auto;
   }
   .donate {
