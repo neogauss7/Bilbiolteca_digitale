@@ -10,7 +10,9 @@
   position: relative;
   z-index: 5;
 }
-
+.documents{
+  text-align: right;
+}
 .footer-container {
   width: 1280px;
 }
