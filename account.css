@@ -73,3 +73,12 @@ a {
     transform: translateY(30px);
     transition-duration: .3s;
   }
+  @media (max-width: 745px) {
+    .box {
+      width: 270px;
+               
+  }
+  .buttond:hover {
+    width: 100px;
+  }
+  }
