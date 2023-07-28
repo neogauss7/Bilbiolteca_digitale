@@ -5,31 +5,32 @@ for (i in img) {
 
 }
 console.log(gulp);
-const titles = [
+const titlesP = [
     'Moto rettilineo uniforme',
     'Moto rett. unif. accelerato',
     'Moto circolare',
     'Moto di caduta libera',
-    'Moto su un piano inclunato', 'Moto armonico',
+    'Moto su un piano inclinato', 'Moto armonico',
     'Moto parabolico'
 
 ]
-const images = [
+const imagesP = [
     'images/rettunifthumb.webp', 'images/unifaccthumb.webp', 'images/motocircthumb.webp', 'images/cadutathumb.webp', 'images/pianoinclinatothumb.webp', 'images/armonicothumb.webp', 'images/parabolicothumb.webp',
 ]
-for (let i = 0; i< titles.length; i++) {
-document.querySelector('.grid-container').insertAdjacentHTML("afterbegin", `<a href="motoRettilineoUniforme.html"
+const levelsP = ['easy', 'easy', 'easy', 'easy', 'easy', 'medium', 'medium', ]
+for (let i = 0; i< titlesP.length; i++) {
+document.querySelector('.grid-container').insertAdjacentHTML("beforeend", `<a href="motoRettilineoUniforme.html"
 ><div class="grid-element">
   <div class="photo photodiv">
     <img
-      alt="${titles[i]} Theoremz"
+      alt="${titlesP[i]} Theoremz"
       class="photo"
-      src="${images[i]}"
+      src="${imagesP[i]}"
     />
     <img
       class="level"
       alt="Level Theoremz"
-      src="images/easy.svg"
+      src="images/${levelsP[i]}.svg"
     />
     <img
       class="blob"
@@ -38,7 +39,7 @@ document.querySelector('.grid-container').insertAdjacentHTML("afterbegin", `<a h
     />
   </div>
   <div class="text">
-    <h2 class="p2">${titles[i]}</h2>
+    <h2 class="p2">${titlesP[i]}</h2>
   </div>
 </div></a
 >`)}
