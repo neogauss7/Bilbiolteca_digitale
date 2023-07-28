@@ -1,13 +1,21 @@
 .box {
-    padding: 10px;
+    padding: 12px;
     border-radius: 15px;
     border: solid;
     width: 400px;
     margin-top: 5px;
     display: inline-block;
+    border-radius: 0.5em;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 2px 2px 4px #ebebeb,
+             -4px -4px 8px #ffffff;
+    margin-top: 10px;
+             
 }
 a {
-    display: inline-block;
+    color: var(--gray);
 }
 .buttond {
     width: 50px;

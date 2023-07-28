@@ -151,6 +151,7 @@ function logout() {
 const loggedIn = function (user) {
   console.log(user.email + " is logged in!");
   document.getElementById("account-img").classList.remove("invisible");
+  document.getElementById('form_container').classList.toggle('visible');
   document.getElementById("login-button").textContent = "Il mio account";
   document.getElementById("login-button").onclick = function () {
     location.href = "account.html";
