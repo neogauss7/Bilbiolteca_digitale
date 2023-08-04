@@ -31,31 +31,12 @@ function register() {
   }
 
   // Move on with Auth
-  firebase
-    .auth()
-    .createUserWithEmailAndPassword(email, password)
-    .then(function () {
+  firebase.auth().createUserWithEmailAndPassword(email, password).then(function () {
       // Declare user variable
-      var user = auth.currentUser;
-
-      // Add this user to Firebase Database
-      var database_ref = database.ref();
-
-      // Create User data
-      var user_data = {
-        email: email,
-        last_login: Date.now(),
-      };
-      location.href = "index.html";
-      // Push to Firebase Database
-      database_ref.child("users/" + user.uid).set(user_data);
+      let user = auth.currentUser;
       // DOne
       alert("Utente creato!!");
-    })
-    .then(() => {
-      location.href = "index.html";
-    })
-    .catch(function (error) {
+    }).catch(function (error) {
       // Firebase will use this to alert of its errors
       var error_code = error.code;
       var error_message = error.message;
@@ -75,24 +56,10 @@ function login() {
     // Don't continue running the code
   }
 
-  firebase
-    .auth()
-    .signInWithEmailAndPassword(email, password)
+firebase.auth().signInWithEmailAndPassword(email, password)
     .then(function () {
       // Declare user variable
       var user = auth.currentUser;
-
-      // Add this user to Firebase Database
-      var database_ref = database.ref();
-
-      // Create User data
-      var user_data = {
-        last_login: Date.now(),
-      };
-
-      // Push to Firebase Database
-      database_ref.child("users/" + user.uid).update(user_data);
-
       // DOne
     })
     .then(() => {
