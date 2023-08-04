@@ -25,10 +25,6 @@ function register() {
     return;
     // Don't continue running the code
   }
-  if (document.getElementById("policy").checked == false) {
-    alert("Ricorda di accettare il trattamento dei tuoi dati");
-    return;
-  }
 
   // Move on with Auth
   firebase.auth().createUserWithEmailAndPassword(email, password).then(function () {
@@ -55,15 +51,13 @@ function login() {
     return;
     // Don't continue running the code
   }
+  
 
 firebase.auth().signInWithEmailAndPassword(email, password)
     .then(function () {
       // Declare user variable
       var user = auth.currentUser;
       // DOne
-    })
-    .then(() => {
-      location.href = "index.html";
     })
     .catch(function (error) {
       // Firebase will use this to alert of its errors
@@ -115,21 +109,27 @@ function logout() {
       // An error happened
     });
 }
+
+const account = function() {
+  document.querySelector('.btn1').textContent = "Il mio account";
+  document.querySelector('.btn1').onclick = function () {
+    location.href = "account.html";
+  };
+}
+
 const loggedIn = function (user) {
   console.log(user.email + " is logged in!");
   document.getElementById("account-img").classList.remove("invisible");
-  document.getElementById('form_container').classList.add('invisible');
-  document.getElementById("login-button").textContent = "Il mio account";
-  document.getElementById("login-button").onclick = function () {
-    location.href = "account.html";
-  };
 };
 
 auth.onAuthStateChanged((user) => {
   if (user) {
+    console.log(user.email + " is logged in!");
     if (window.location.href.indexOf("account.html") > -1) {
       document.getElementById("account-name").innerHTML = user.email;
     }
+    account()
+    window.location.href = "index.html"
     loggedIn(user);
   } else {
     console.log("User is logged out!");
