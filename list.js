@@ -25,7 +25,7 @@ const levelsP = ['easy', 'easy', 'easy', 'easy', 'easy', 'medium', 'medium', ]
 
 if (window.location.href == 'https://www.theoremz.com/Fisica.html') {
 for (let i = 0; i< titlesP.length; i++) {
-document.querySelector('.grid-container').insertAdjacentHTML("beforeend", `<a href="${linksP[i]}"
+document.querySelector('.grid-container').insertAdjacentHTML("beforeend", `<a class='n${i}' href="${linksP[i]}"
 ><div class="grid-element">
   <div class="photo photodiv">
     <img
@@ -53,7 +53,7 @@ document.querySelector('.grid-container').insertAdjacentHTML("beforeend", `<a hr
 if (window.location.href == 'https://www.theoremz.com/Matematica.html') {
 
 for (let i = 0; i< titlesM.length; i++) {
-    document.querySelector('.grid-container').insertAdjacentHTML("beforeend", `<a href="${linksM[i]}"
+    document.querySelector('.grid-container').insertAdjacentHTML("beforeend", `<a class='n${i}' href="${linksM[i]}"
     ><div class="grid-element">
       <div class="photo photodiv">
         <img
@@ -77,3 +77,21 @@ for (let i = 0; i< titlesM.length; i++) {
       </div>
     </div></a
     >`)}}
+
+const search = function() {
+  let input = document.getElementById('ricerca').value
+  input=input.toLowerCase();
+  let x = titlesM;
+  if (window.location.href == 'https://www.theoremz.com/Fisica.html') {
+    x = titlesP;
+  }
+    
+  for (i = 0; i < x.length; i++) { 
+      if (!x[i].toLowerCase().includes(input)) {
+          document.querySelector(`.n${i}`).style.display="none";
+      }
+      else {
+        document.querySelector(`.n${i}`).style.display="block";                 
+      }
+  }
+}

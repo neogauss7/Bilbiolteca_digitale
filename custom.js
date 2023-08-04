@@ -8,18 +8,8 @@ const closeNavMenu = document.querySelector(".close-nav-menu");
 const navMenu = document.querySelector(".nav-menu");
 const menuOverlay = document.querySelector(".menu-overlay");
 const mediaSize = 991;
-//send email newsletter
-function sendEmail() {
-  Email.send({
-    Host: "smtp.gmail.com",
-    Username: "ggpignagg@gmail.com",
-    Password: "wlepigne",
-    To: "theoremz.team@gmail.com",
-    From: document.getElementById("name").value,
-    Subject: "Nuova email per la newsletter",
-    Body: "Mail: " + document.getElementById("name").value,
-  }).then((message) => alert(message));
-}
+
+
 
 (() => {
   const toggleNav = function () {
@@ -81,6 +71,7 @@ function sendEmail() {
   });
 })();
 
+
 // function([string1, string2],target id,[color1,color2])
 consoleText(
   ["semplice", "divertente", "creativa", "gratuita", "originale"],
@@ -124,3 +115,4 @@ function consoleText(words, id, colors) {
     }
   }, 120);
 }
+

@@ -5,7 +5,9 @@ html {
   transition: all 0.4s ease-in;
   scroll-behavior: smooth;
 }
-
+html, body {
+  min-height: 100%;
+}
 div {
   transition: all 0.4s ease-in;
 }
@@ -13,7 +15,9 @@ div {
 p {
   transition: all 0.4s ease-in;
 }
-
+.invisible {
+  display: none;
+}
 
 * {
   margin: 0;

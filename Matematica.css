@@ -17,8 +17,11 @@ hr {
 .welcome {
   margin-bottom: 20px;
   padding: 20px 3px 20px 3px;
-  text-align: center;
   margin-top: 100px;
+  text-align: center;
+}
+.welcome1 {
+  display: inline-block;
 }
 .grid-container {
   display: grid;
@@ -125,6 +128,33 @@ hr {
   margin-top: 1.3px;
   margin-right: 5px;
 }
+.container-input {
+  display: inline-block;
+  position: relative;
+  margin-left: 30px;
+}
+
+.input {
+  width: 150px;
+  padding: 10px 0px 10px 40px;
+  border-radius: 9999px;
+  border: solid 1.5px var(--gray);
+  transition: all .2s ease-in-out;
+  outline: none;
+  opacity: 0.8;
+}
+
+.container-input svg {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+}
+
+.input:focus {
+  opacity: 1;
+  width: 250px;
+}
 
 /* Start Responsive */
 @media (max-width: 1250px) {
@@ -141,10 +171,21 @@ hr {
   .welcome-title {
     font-size: 26px;
     margin-bottom: 0;
+    margin-right: 20px;
   }
 
   .welcome-description {
     font-size: 17px;
+  }
+  .welcome1 {
+    display: block;
+  }
+  .container-input {
+    margin-left: 0px;
+    
+  }
+  .input{
+    width: 250px;
   }
 }
 
