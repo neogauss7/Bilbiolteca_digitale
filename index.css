@@ -7,14 +7,8 @@
   overflow: hidden;
   margin: auto;
   width: 100%;
-  margin-bottom: 30px;
-  margin-left: auto; 
-  margin-right: auto; 
-  
 }
-.invisible{
-  display: none;
-}
+
 #form_header_container {
   max-width: 400px;
   height: 40px;
@@ -201,10 +195,5 @@ button:active {
 @media (max-width: 745px) {
   button {
     padding: 10px 25px;
-  }
-  #form_container {
-    max-width: 350px;
-    height: 370px;
-    top: 350px;   
   }
 }

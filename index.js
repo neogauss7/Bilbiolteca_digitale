@@ -25,14 +25,37 @@ function register() {
     return;
     // Don't continue running the code
   }
+  if (document.getElementById("policy").checked == false) {
+    alert("Ricorda di accettare il trattamento dei tuoi dati");
+    return;
+  }
 
   // Move on with Auth
-  firebase.auth().createUserWithEmailAndPassword(email, password).then(function () {
+  firebase
+    .auth()
+    .createUserWithEmailAndPassword(email, password)
+    .then(function () {
       // Declare user variable
-      let user = auth.currentUser;
+      var user = auth.currentUser;
+
+      // Add this user to Firebase Database
+      var database_ref = database.ref();
+
+      // Create User data
+      var user_data = {
+        email: email,
+        last_login: Date.now(),
+      };
+      location.href = "index.html";
+      // Push to Firebase Database
+      database_ref.child("users/" + user.uid).set(user_data);
       // DOne
       alert("Utente creato!!");
-    }).catch(function (error) {
+    })
+    .then(() => {
+      location.href = "index.html";
+    })
+    .catch(function (error) {
       // Firebase will use this to alert of its errors
       var error_code = error.code;
       var error_message = error.message;
@@ -51,13 +74,29 @@ function login() {
     return;
     // Don't continue running the code
   }
-  
 
-firebase.auth().signInWithEmailAndPassword(email, password)
+  firebase
+    .auth()
+    .signInWithEmailAndPassword(email, password)
     .then(function () {
       // Declare user variable
       var user = auth.currentUser;
+
+      // Add this user to Firebase Database
+      var database_ref = database.ref();
+
+      // Create User data
+      var user_data = {
+        last_login: Date.now(),
+      };
+
+      // Push to Firebase Database
+      database_ref.child("users/" + user.uid).update(user_data);
+
       // DOne
+    })
+    .then(() => {
+      location.href = "index.html";
     })
     .catch(function (error) {
       // Firebase will use this to alert of its errors
@@ -109,27 +148,20 @@ function logout() {
       // An error happened
     });
 }
-
-const account = function() {
-  document.querySelector('.btn1').textContent = "Il mio account";
-  document.querySelector('.btn1').onclick = function () {
-    location.href = "account.html";
-  };
-}
-
 const loggedIn = function (user) {
   console.log(user.email + " is logged in!");
   document.getElementById("account-img").classList.remove("invisible");
+  document.getElementById("login-button").textContent = "Il mio account";
+  document.getElementById("login-button").onclick = function () {
+    location.href = "account.html";
+  };
 };
 
 auth.onAuthStateChanged((user) => {
   if (user) {
-    console.log(user.email + " is logged in!");
     if (window.location.href.indexOf("account.html") > -1) {
       document.getElementById("account-name").innerHTML = user.email;
     }
-    account()
-    window.location.href = "index.html"
     loggedIn(user);
   } else {
     console.log("User is logged out!");
