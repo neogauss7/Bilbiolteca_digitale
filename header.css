@@ -10,6 +10,85 @@
   padding-right: 50px;
   height: 75px;
 }
+.black-box {
+  background-color: var(--gray);
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 74px;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 45px;
+  align-content: center;
+  display: flex;
+
+}
+.black-flex {
+  justify-content: center;
+  display: inline-flex;
+}
+.black-text {
+  padding-top: 12px;
+  display: flex;
+  color: #ffffff;
+  font-size: 15px;
+  max-width: 500px;
+  flex-wrap: nowrap;
+}
+.black-logo {
+  padding-top: 15px;
+  display: flex;
+  height: 38px;
+}
+.arrow {
+  margin-top: 13px;
+  height: 20px;
+  margin-right: 8px;
+}
+.button {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 45px;
+  border: none;
+  background: none;
+  margin-right: 20em;
+}
+
+.X {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  width: 1em;
+  height: 1.5px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+
+.Y {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  width: 1em;
+  height: 1.5px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+}
+
+.button:hover {
+  background-color: rgb(210, 0, 0);
+}
+
+.button:active {
+  background-color: rgb(130, 0, 0);
+}
+
+.button:hover > .close {
+  animation: close 0.2s forwards 1.25s;
+}
+
 .account {
   display: none;
 }
@@ -206,85 +285,6 @@ a {
   opacity: 0;
   transition: all 0.3s ease;
 }
-.black-box {
-  background-color: var(--gray);
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 74px;
-  padding-left: 50px;
-  padding-right: 50px;
-  height: 45px;
-  align-content: center;
-  display: flex;
-
-}
-.black-flex {
-  justify-content: center;
-  display: inline-flex;
-}
-.black-text {
-  padding-top: 12px;
-  display: flex;
-  color: #ffffff;
-  font-size: 15px;
-  max-width: 500px;
-  flex-wrap: nowrap;
-}
-.black-logo {
-  padding-top: 15px;
-  display: flex;
-  height: 38px;
-}
-.arrow {
-  margin-top: 13px;
-  height: 20px;
-  margin-right: 8px;
-}
-.button {
-  display: inline-block;
-  position: relative;
-  width: 50px;
-  height: 45px;
-  border: none;
-  background: none;
-  margin-right: 20em;
-}
-
-.X {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 33%;
-  width: 1em;
-  height: 1.5px;
-  background-color: #fff;
-  transform: rotate(45deg);
-}
-
-.Y {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 33%;
-  width: 1em;
-  height: 1.5px;
-  background-color: #fff;
-  transform: rotate(-45deg);
-}
-
-.button:hover {
-  background-color: rgb(210, 0, 0);
-}
-
-.button:active {
-  background-color: rgb(130, 0, 0);
-}
-
-.button:hover > .close {
-  animation: close 0.2s forwards 1.25s;
-}
-
 @keyframes close {
   100% {
     opacity: 1;
