@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5568938815963264"
+     crossorigin="anonymous"></script>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8ffc82e5-ed8c-43b1-997c-5038a49290f0" data-blockingmode="auto" type="text/javascript"></script>
+    <link rel="icon" href="favicon.png">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2Z6FRX1VZF');
+    </script>
+
+    <!-- Titolo -->
+    <title>Theoremz | Limiti notevoli</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/funzioni.css">
+    <link rel="stylesheet" type="text/css" href="/general.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Including header and footer -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <section class="home">
+      <label class="container">
+        <input onclick="save()" id="bookmark" type="checkbox">
+        <div class="checkmark">
+          <svg viewBox="0 0 256 256">
+          <rect fill="none" height="256" width="256"></rect>
+          <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
+        </div>
+      </label>
+
+      <div class="welcome"> 
+        <h1 class="welcome1" >Limiti notevoli</h1>
+        <h3 class="p1">Di seguito analizzeremo i limiti notevoli.</h3>
+      </div>  
+
+      <!-- Mini-index -->
+      <div class="minimenu">
+        <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Classificazione</p></div></a>
+        <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Studio</p></div></a>
+        <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Iniettive</p></div></a>
+        <a href="#classif4" class="mini-item" ><div class=""><p class="minitext">Suriettive</p></div></a>
+        <a href="#classif5" class="mini-item" ><div class=""><p class="minitext">Biettive</p></div></a>
+        <a href="#classif6" class="mini-item" ><div class=""><p class="minitext">Inverse</p></div></a>
+      </div>
+
+      <hr id="classif">
+
+      <br>
+      <h2>Cosa sono i limiti notevoli?</h2>
+      <br>
+      <p>
+        Come nel caso dei prodotti notevoli, i limiti notevoli ci permettono di semplificare e velocizzare i calcoli, in modo da risolvere velocemente i nostri limiti:
+      </p>
+
+      <br>
+      <p>Solitamente, per risolvere un limite, la strada più veloce è quella di semplificare</p>
+      <br>
+      <p>Facciamo un esempio:</p>
+<br>
+      <p>
+        \(\displaystyle \lim_{x \to 3} 2x = 2\cdot 3 = 6\)
+      </p>
+
+      <br>
+
+      <p>
+        In questo caso abbiamo potuto usare le proprietà dei limiti (lezione <a href=""><span class="link">qui</span></a>)ma non sempre questo è possibile. Spesso otteniamo forme indeterminate. A volte però possiamo effettuare delle semplificazioni per poi sostituire:      
+      </p>
+
+      <br>
+
+      <p>
+        \(\displaystyle \lim_{x \to 0} {x^2 \over x} = \displaystyle \lim_{x \to 0} x = 0\)
+      </p>
+
+      <br>
+
+      <p>
+        Ricordatevi che abbiamo potuto fare ciò perché anche se \(x\) tende a \(0\), non è uguale a \(0\), è questo il punto di usare un limite, dunque abbiamo potuto semplificare.
+      </p>
+
+      <br>
+
+      <p>
+        A volte però possiamo incontrare delle forme indeterminate in cui appare difficile trovare delle semplificazioni:
+      </p>
+
+      <br>
+
+      <p>
+        \(\displaystyle \lim_{x \to 0} {\sin(x)\over x}\)
+      </p>
+
+      <br>
+
+      <p>
+        Nell'esempio qui sopra otteniamo una frazione del tipo \({0\over 0}\) e non sembrano esserci semplificazioni veloci.
+      </p>
+
+      <br>
+
+      <p>
+        Ci vengono quindi in aiuto i limiti notevoli. Essi sono una serie di limiti ben noti di cui conosciamo già il risultato. Il limite proposto poco fa è uno di essi ed è ben risaputo che valga \(1\):
+      </p>
+
+      <br>
+
+      <p>
+        \(\displaystyle \lim_{x \to 0} {\sin(x)\over x} = 1\)
+      </p>
+
+      <br>
+
+      <p>
+        Quindi se otteniamo qualcosa del tipo:
+      </p>
+
+      <br>
+
+      <p>
+        \(\displaystyle \lim_{x \to 0} {\sin(x) \cos(x)\over 2x}\)
+      </p>
+
+      <br>
+
+      <p>
+        Possiamo facilmente calcolarlo usando le proprietà dei limiti:
+      </p>
+
+      <br>
+
+      <p>
+        \(\displaystyle \lim_{x \to 0} {\sin(x) \cos(x)\over 2x}=\displaystyle \lim_{x \to 0}{\sin(x)\over x} \cdot \displaystyle \lim_{x \to 0}{\cos(x)\over 2}= 1 \cdot {1\over 2} = {1\over 2}\) 
+      </p>
+
+      <br>
+
+      <p>
+        Ovviamente abbiamo usato il fatto che \(\cos(0)=1\)
+      </p>
+
+      <br>
+
+      <p>
+        Impararli tutti può richiedere un po' di tempo, ma sono molto utili, quindi è bene conoscerli. Vediamo quindi anche gli altri:
+      </p>
+
+      <br>
+
+      <p>
+        \(\displaystyle \lim_{x \to 0}{{\ln(1+x)\over x}}=1\)
+      </p>
+
+      <br>
+
+      <p>
+        Se fossimo andati a sostituire, sapendo che \(\ln(1)=0\) avremmo ottenuto una forma indeterminata. Questo limite notevole può essere generalizzato per qualsiasi base del logaritmo usando la formula per il cambiamento di base: 
+      </p>
+
+      <br>
+
+      <p>
+        \(\displaystyle \lim_{x \to 0}{{\log_{a}(1+x)\over x}}=\displaystyle \lim_{x \to 0}{{\ln(1+x)\over \ln(a)\cdot x}}={1\over \ln(a)}\)
+      </p>
+
+      <br>
+
+      <p>
+        Dal logaritmo ora passiamo all'esponenziale:
+      </p>
+
+      <br>
+
+      <p>
+        \(\displaystyle \lim_{x \to 0}{{e^x -1\over x}}=1\)
+      </p>
+
+      <br>
+
+      <p>
+        Per una base in generale otteniamo:
+      </p>
+
+      <br>
+
+      <p>
+        \(\displaystyle \lim_{x \to 0}{{a^x -1 \over x}}=\ln(a)\)
+      </p>
+
+      <br>
+
+      <p>
+        Ricordatevi di questi due limiti perchè li rivedremo quando parleremo della derivata di una funzione esponenziale.
+      </p>
+
+      <br>
+
+      <p>
+        Il seguente limite sfrutta un concetto che vedremo più avanti nella dimostrazione della derivata di una funzione polinomiale:
+      </p>
+
+      <br>
+
+      <p>
+        \(\displaystyle \lim_{x \to 0}{(1+x)^a-1\over x}=a\)
+      </p>
+
+      <p>
+        Prima avevamo visto un limite con \(\sin(x)\), quindi ora guardiamo pure alle altre funzioni trigonometriche:
+      </p>
+
+      <br>
+
+      <p>
+        \(\displaystyle \lim_{x \to 0}{1 -\cos(x)\over x^2}={1\over 2}\)
+      </p>
+
+      <br>
+
+      <p>
+        Ricordatevi che questa volta non c'è \(x\) ma \(x^2\), è una grande differenza. Passando alla tangente:
+      </p>
+
+      <br>
+
+      <p>
+        \(\displaystyle \lim_{x \to 0}{\tan(x)\over x}=1\)
+      </p>
+
+      <br>
+
+      <p>
+        Questo limite in realtà può essere facilmente calcolando utilizzando il limite notevole del seno:
+      </p>
+
+      <br>
+
+      <p>
+        \(\displaystyle \lim_{x \to 0}{\tan(x)\over x}=\displaystyle \lim_{x \to 0}{\sin(x)\over \cos(x)\cdot x}=\displaystyle \lim_{x \to 0}{\sin(x)\over x} \cdot \displaystyle \lim_{x \to 0}{1\over \cos(x)}=1\)
+      </p>
+
+      <br>
+
+      <p>
+        I limiti notevoli del seno e della tangente valgono anche per l'arcoseno e per l'arcotangente:
+      </p>
+
+      <br>
+
+      <p>
+        \(\displaystyle \lim_{x \to 0}{\arcsin(x)\over x}=1\)
+      </p>
+
+      <br>
+
+      <p>
+        \(\displaystyle \lim_{x \to 0}{\arctan(x)\over x}=1\)
+      </p>
+
+      <br>
+
+      <p>
+        I limiti delle loro corrispettive funzioni iperboliche sono uguali:
+      </p>
+
+      <br>
+
+      <p>
+        \(\displaystyle \lim_{x \to 0}{\sinh(x)\over x}=1\)
+      </p>
+
+      <br>
+
+      <p>
+        \(\displaystyle \lim_{x \to 0}{1-\cosh(x)\over x^2}={1\over 2}\)
+      </p>
+
+      <br>
+
+      <p>
+        \(\displaystyle \lim_{x \to 0}{\tanh(x)\over x}=1\)
+      </p>
+
+      <br>
+
+      <p>
+        Abbiamo tenuto uno dei limiti notevoli più famosi per ultimo perché vorremmo parlarne più approfonditamente.
+      </p>
+
+      <br>
+
+      <p>
+        Quando avete studiato la funzione esponenziale, avete incontrato il numero di Nepero, \(e\). Questo numero è arrivato un po' a caso, vi è solo stato detto che è utile nelle funzioni esponenziali. 
+      </p>
+
+      <br>
+
+      <p>
+        In questa lezione non vi spiegheremo perché è la base migliore da usare nelle funzioni esponenziali, ma vi mostreremo una proprietà particolare di \(e\). Talvolta \(e\) viene addirittura definito partendo da questa sua caratteristica.
+      </p>
+
+      <br>
+
+      <p>
+        Qualche secolo fa, un matematico di nome Bernoulli stava cercando di risolvere un problema:
+      </p>
+
+      <br>
+
+      <p>
+        Io do una moneta ad una banca e devo scegliere tra una serie di tipologie di interessi, quale mi conviene affinchè alla fine dell'anno abbia più soldi possibili? 
+      </p>
+
+      <br>
+
+      <p>
+        Tra quali tipi di interessi possiamo scegliere?
+      </p>
+
+      <br>
+
+      <p>
+        Possiamo avere un interesse del \(100\%\) che viene applicato alla fine dell'anno. Quindi alla fine avremo due monete.
+      </p>
+
+      <br>
+
+      <p>
+        Oppure possiamo avere un interesse pari alla metà, ovvero il \(50\%\), ma che viene applicato due volte durante l'anno. Quindi a metà anno il nostro capitale diventerà pari a \(1,5\) monete e alla fine dell'anno avremo \(2,25\) monete. Più del caso precedente.
+      </p>
+
+      <br>
+
+      <p>
+        Oppure possiamo anche avere un interesse pari ad un terzo ma che viene applicato tre volte durante l'anno. O uno pari ad un millessimo ma che viene applicato mille volte durante l'anno.
+      </p>
+
+      <br>
+
+      <p>
+        Quindi ogni volta andiamo a diminuire l'interesse ma lo applichiamo più e più volte. Se andiamo a calcolare i primi casi a mano, notiamo che aumenta sempre di più.
+      </p>
+
+      <br>
+
+      <p>
+        Se indico con \(x\) il numero di volte che applico l'interesse, quest'ultimo sarà uguale a \({1\over x}\) (questo perché l'interesse è uguale a quello iniziale (1) diviso per \(x\) perché abbiamo deciso cos' all'inizio)
+      </p>
+
+      <br>
+
+      <p>
+        Dunque il capitale finale è uguale al'interesse più \(1\) moltiplicato \(x\) volte, ovvero a \((1+{1\over x})^x\).
+      </p>
+
+      <br>
+
+      <p>
+        Se abbiamo detto che aumenta sempre di più, il massimo sarà quando \(x\) tende ad infinito, ovvero:
+      </p>
+
+      <br>
+
+      <p>
+        massimo=\(\displaystyle \lim_{x \to +\infty}{(1+{1\over x})^x}\)
+      </p>
+
+      <br>
+
+      <p>
+        Se andiamo ad aumentare sempre di più \(x\), notiamo che il valore si stabilizza intorno a \(2,718281828459045...\), si tratta proprio di \(e\). Quindi l'ultimo limite notevole di questa lezione è proprio:
+      </p>
+
+      <br>
+
+      <p>
+        \(\displaystyle \lim_{x \to +\infty}{(1+{1\over x})^x}=e\)
+      </p>
+
+      <br>
+
+      <p>
+        Che può essere generalizzato in:
+      </p>
+
+      <br>
+
+      <p>
+        \(\displaystyle \lim_{x \to +\infty}{(1+{a\over x})^{bx}}=e^{ab}\)
+      </p>
+   </section>
+    <!-- Site footer -->
+    <div id="footer"></div>
+    <script src="custom.js"></script>
+    <script src="bookmark.js"></script>
+    <script src="index.js"></script>
+  
+    <!-- Including MathJax -->
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+  </body>
+</html>
