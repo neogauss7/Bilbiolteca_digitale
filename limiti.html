@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5568938815963264"
+     crossorigin="anonymous"></script>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8ffc82e5-ed8c-43b1-997c-5038a49290f0" data-blockingmode="auto" type="text/javascript"></script>
+    <link rel="icon" href="favicon.png">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2Z6FRX1VZF');
+    </script>
+
+    <!-- Titolo -->
+    <title>Theoremz | Limiti</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="funzioni.css">
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Including header and footer -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+</head>
+
+
+<body>
+
+    <div id="header"></div>
+    <section class="home">
+      <label class="container">
+        <input onclick="save()" id="bookmark" type="checkbox">
+        <div class="checkmark">
+          <svg viewBox="0 0 256 256">
+          <rect fill="none" height="256" width="256"></rect>
+          <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
+        </div>
+      </label>
+
+      <div class="welcome"> 
+        <h1 class="welcome1" >Limite di una funzione</h1>
+        <h3 class="p1">Di seguito analizzeremo i limiti.</h3>
+      </div>  
+
+      <!-- Mini-index -->
+      <div class="minimenu">
+        <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Limiti</p></div></a>
+        <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Proprietà</p></div></a>
+      </div>
+
+    <hr class="divider" id="classif">
+    <h2>Cosa sono i limiti?</h2>
+    <br>
+    <p>
+        Il <span class="blue">limite </span>è uno strumento che ci permette di studiare il valore di una funzione quando ci si avvicina sempre di più a un <u>punto specifico</u>.
+    </p>
+
+    <br>
+
+    <p>
+        Può capitare di voler studiare una funzione a un valore \(a\). Può però anche capitare che, per qualche ragione, non possiamo calcolare o non ci conviene farlo, il valore di \(f(a)\). Però, grazie ai limiti, possiamo vedere come si comporta la funzione quando si avvicina molto ad \(a\).
+    </p>
+
+    <br>
+
+    <p>
+        Vediamo questo concetto in un caso molto semplice. Prendiamo la parabola di equazione \(y=x^2 + 2\) e supponiamo di voler sapere quanto vale la funzione quando la \(x\) è uguale a 3.
+    </p>
+
+    <br>
+
+    <p>
+        In questo caso basterebbe sostituire \(3\) al posto della \(x\), ma vediamo come possiamo usare il concetto di limite per farlo. In questo modo, quando nel prossimo esempio saremo costretti ad usare un limite, il processo vi apparirà più chiaro. 
+    </p>
+
+    <br>
+
+    <p>
+        Quindi abbiamo detto che vogliamo calcolare \(f(3)\) usando valori della \(x\) molto vicini. Prendiamo per esempio \(f(2)\), che è uguale a \(6\):
+    </p>
+
+    <br>
+
+    <img class="funzione" src="images/lim1.webp"  alt="Limite esempio 1">
+
+    <br>
+
+    <p>
+        Non siamo troppo lontani, ma possiamo fare decisamente di meglio. Prendiamo \(f(2.9)\), che sarebbe uguale a \(10,41\).
+    </p>
+
+    <br>
+
+    <img class="funzione" src="images/lim2.webp"  alt="Limite esempio 2">
+
+    <br>
+
+    <p>
+        Possiamo fare ancora meglio, prendiamo \(f(2.999)\). Ad occhio nudo sono così vicini i valori che sembrano essere uguali, però ancora non lo sono. Sappiamo infatti che \(f(3)=11\), mentre \(f(2.999)=10,994001\). Se infatti ingrandiamo il grafico possiamo notare bene la differenza:
+    </p>
+
+    <br>
+    
+    <img class="funzione" src="images/lim3.webp"  alt="Limite esempio 3">
+
+    <br>
+
+    <p>
+        Possiamo però continuare questo processo ed avvicinarci sempre di più. Più mettiamo numeri vicini e più si avvicina ad \(11\), ma non lo toccherà mai veramente. Arriverà a \(10.9999999999...\) con infiniti \(9\), ma non raggiungerà mai \(11\), è il suo limite, deve stare appena appena di sotto. 
+    </p>
+
+    <br>
+
+    <p>
+        Dunque ora dovrebbe apparire chiara la definzione di limite di una funzione. <i>"Il limite di una funzione \(f(x)\) per \(x\) che tende ad un valore \(a\), è quel valore a cui tende \(f(x)\) quando \(x\), appunto, tende a \(a\)"</i>.
+    </p>
+
+    <br>
+
+    <p>
+        Con il verbo <b>"tendere"</b> si intende proprio che la funzione si avvicina a quel valore sempre di più. Questa definizione che abbiamo dato non è molto rigorosa e forse qualcuno la chiamerebbe imprecisa, ma l'obbiettivo di questa lezione è solo dare un'idea intuitiva di cosa sia un limite. Parleremo più dettagliatamente dei limiti in altre lezioni.
+    </p>
+    
+    <br>
+
+    <p>
+        Vediamo quindi la notazione da usare per un limite: scriviamo <b>"lim"</b> e sotto di esso scriviamo il nome della variabile (solitamente \(x\)) con una freccia che indica il valore a cui tende. Infine scriviamo la funzione di cui prendiamo il limite:
+    </p>
+
+    <br>
+
+    <p>
+        \(\displaystyle \lim_{x \to a} f(x)\)
+    </p>
+
+    <br>
+
+    <p>
+        Nel nostro esempio di prima, quindi, avremo:
+    </p>
+
+    <br>
+
+    <p>
+        \(\displaystyle \lim_{x \to 3} (x^2 +2) = 11\)
+    </p>
+
+    <br>
+
+    <p>
+        Abbiamo messo delle parentesi intorno alla funzione, ma solitamente si sottintendono. Dunque, ricapitolando, il limite di \(x^2 +2\) per \(x\) che tende a \(3\) è uguale a \(11\) perché quando la \(x\) si avvicina sempre di più a \(3\), la nostra funzione si avvicina sempre di più a \(11\).
+    </p>
+
+    <br>
+
+    <p>
+        Adesso, però, viene spontaneo chiedersi perché usare i limiti. Non potevamo direttamente sostituire \(3\) nell'equazione è finirla là? In quel caso sì, ma vediamo un altro esempio in cui invece è fondamentale usare i limiti.
+    </p>
+
+    <br>
+
+    <p>
+        Prendiamo \(f(x)={x^2 \over x}\). Se la disegnamo notiamo che assomiglia molto alla retta di equazione \(y=x\):
+    </p>
+
+    <br>
+    
+    <img class="funzione" src="images/lim4.webp"  alt="Limite esempio 4">
+
+    <br>
+
+    <p>
+        Però c'è un'importante differenza, la nostra funzione non è definita ad \(x=0\). Infatti, per \(x \neq 0\) la frazione si semplifica ed otteniamo \(f(x)=x\), ma nel caso \(x=0\) otteniamo:
+    </p>
+
+    <br>
+
+    <p>
+        \(f(0)={0^2 \over 0} \)
+    </p>
+
+    <br>
+
+    <p>
+        E come sappiamo, frazioni del tipo \({0\over 0}\) sono <u>indeterminate</u>. Quindi, come facciamo a sapere come si comporta quando \(x\) tende a \(0\)? Adesso noi abbiamo già visto il suo grafico, quindi già sappiamo come si comporta, ma in generale è molto difficile predire l'andamento di una funzione in un <u>punto critico</u> come questo e l'unico modo per scoprirlo è usare un <b>limite</b>.
+    </p>
+
+    <br>
+
+    <p>
+        Risolviamo ora il nostro esempio, noi vogliamo trovare quando vale \(\displaystyle \lim_{x \to 0} f(x)\), ovvero:
+    </p>
+
+    <br>
+
+    <p>
+        \(\displaystyle \lim_{x \to 0} {x^2 \over x}\)
+    </p>
+
+    <br>
+
+    <p>
+        Il punto di usare il limite è che la \(x\) dentro al limite non è esattamente uguale a \(0\), ma qualcosa di estremamente vicino, ancora più piccola di \(0.0000000000001\) ma diversa da \(0\), quindi possiamo dividere per essa.
+    </p>
+
+    <br>
+
+    <p>
+        Di conseguenza possiamo semplificare ed ottenere:
+    </p>
+
+    <br>
+
+    <p>
+        \(\displaystyle \lim_{x \to 0} {x^2 \over x} = \displaystyle \lim_{x \to 0} x = 0 \)
+    </p>
+
+    <br>
+
+    <p>
+        Ovviamente il limite è uguale a \(0\) perché abbiamo supposto che, appunto, \(x\) tendesse a \(0\). 
+    </p>
+
+    <br>
+
+    <p>
+        Vediamo un altro esempio molto interessante: prendiamo il limite per \(x\) che tende a \(0\) di \(f(x)={1\over x^2}\). Come nel caso di prima, non possiamo sostituire \(0\) dentro la funzione perché non si può dividere per \(0\).
+    </p>
+
+    <br>
+
+    <p>
+        In questo caso però non abbiamo semplificazioni comode, dunque limitiamoci a sostituire valori di \(x\) sempre più vicini a \(0\) e vediamo come si comporta:
+    </p>
+
+    <br>
+
+    <p>
+        Se mettiamo \(0.1\) otteniamo \(100\), se mettiamo \(0.0000001\) ottenaimo \(1'000'000'000'000.\) Notiamo che più piccoli sono i valori che inseriamo, più grande è il risultato. Quindi non c'è alcun numero intorno a cui si stabilizza.
+    </p>
+
+    <br>
+
+    <p>
+        Qualunque numero reale non va bene come limite, perché se mettiamo un valore abbastanza piccolo nella funzione lo supereremo. Dunque si dice che la funzione <i>"tende a \(+\infty\)"</i>. 
+    </p>
+
+    <br>
+
+    <img class="funzione" src="images/lim5.webp"  alt="Limite esempio 5">
+
+    <br>
+
+    <p>
+        State attenti, sarebbe sbagliato dire che la funzione è uguale a \(+\infty\). Infinito non è un numero, dire che tende a infinito vuol dire che aumenta sempre, non si stabilizza.
+    </p>
+
+    <br>
+
+    <p>
+        Notare che abbiamo scritto \(+\infty\) e non solo \(\infty\) perché bisogna differenziarlo da \(-\infty\). Se infatti avessimo preso il limite di \({-1 \over x^2}\), avremmo ottenuto gli stessi numeri ma con un meno davanti. Nel primo caso quindi la funzione va <i>"verso l'alto"</i>, mentre se ci sta il meno va <i>"verso il basso" </i> ed è dunque ovvio che sono due cose diverse. 
+    </p>
+
+    <br>
+
+    <img class="funzione" src="images/lim6.webp"  alt="Limite esempio 6">
+
+    <br>
+
+    <p>
+        Vediamo un ultimo esempio interessante: prendiamo il limite per \(x\) che tende a \(0\) della funzione \(f(x)={1\over x}\).
+    </p>
+
+    <br>
+
+    <p>
+        Se come prima mettiamo valori sempre più piccoli, notiamo che anche in questo caso aumenta sempre. Dunque anche questo limite è uguale a \(+\infty\)? <span class="red">No</span>, perché c'è un'importantissima differenza.
+    </p>
+
+    <br>
+
+    <p>
+        Quando prendiamo il limite di una funzione, possiamo avvicinarci ad il valore della \(x\) da due "direzioni". Possiamo prendere un valore maggiore di \(x\) ed diminuirlo avvicinandoci sempre di più ad \(x\), oppure possiamo prendere un valore minore di \(x\) ed aumentarlo, come vediamo nel grafico seguente:
+    </p>
+
+    <br>
+
+    <img class="funzione" src="images/lim7.webp"  alt="Limite esempio 7">
+
+    <br>
+
+    <p>
+        Possiamo quindi star arrivando da destra o da sinistra della \(x\), per questo si chiamano <i>"limite destro"</i> e <i>"limite sinistro"</i>. Negli esempi precedenti i due limiti erano uguali, potete dimostrarlo come esercizio, e dunque non c'era alcun problema.
+    </p>
+
+    <br>
+
+    <p>
+        Nell'ultimo esempio, peò, se calcoliamo il <u>limite destro</u> otteniamo valori sempre più grandi ed è dunque uguale a \(+\infty\). Se però calcoliamo il <u>limite sinistro</u>, prendiamo valori di \(x\) poco inferiori a \(0\), quindi sono negativi.
+    </p>
+
+    <br>
+
+    <p>
+        Di conseguenza, \({1\over x}\) darà valori negativi di valore assoluto sempre più grande, dunque il <u>limite sinistro</u> è uguale a \(-\infty\). Quindi quanto vale il limite? Guardiamo il grafico della funzione:
+    </p>
+
+    <br>
+
+    <img class="funzione" src="images/lim8.webp"  alt="Limite esempio 8">
+
+    <br>
+
+    <p>
+        Notiamo che come abbiamo calcolato prima, se arriviamo da destra, andiamo sempre più in alto, mentre se arriviamo da sinistra andiamo sempre più in basso.
+    </p>
+
+    <br>
+
+    <p>
+        In questo caso il limite della funzione <span class="red">non esiste</span>, perché non c'è alcun valor preciso a cui si avvicina sempre di più. 
+    </p>
+
+    <br>
+
+    <p>
+        Quindi, il limite per \(x\) che tende ad un valore \(a\) di una funzione \(f(x)\) esiste se e solo se il suo limite di destra e il suo limite di sinistra sono uguali. 
+    </p>
+
+    <br>
+
+    <p>
+        Se quindi abbiamo una funzione che presenta <i>"un balzo"</i> come la seguente:
+    </p>
+
+    <br>
+
+    <img class="funzione" src="images/lim9.webp"  alt="Limite esempio 9">
+
+    <br>
+
+    <p id="classif2">
+        Il limite a quella discontinuità non esiste.
+    </p>
+
+    <br>
+
+    <hr class="divider">
+
+    <h2>
+        Proprietà dei limiti
+    </h2>
+
+    <br>
+
+    <p>
+        Adesso che sappiamo cosa sia un limite, vediamo qualcuna delle loro proprietà:
+    </p>
+
+    <br>
+
+    <p>
+        Il limite della somma di due funzioni è uguale alla somma dei due limiti:
+    </p>
+
+    <br>
+
+    <p>
+        \(\displaystyle \lim_{x \to a} (f(x)+ g(x))= \displaystyle \lim_{x \to a} f(x) + \displaystyle \lim_{x \to a} g(x)\)
+    </p>
+
+    <br>
+
+    <p>
+        Stessa cosa vale per la differenza:
+    </p>
+
+    <br>
+
+    <p>
+        \(\displaystyle \lim_{x \to a} (f(x)- g(x))= \displaystyle \lim_{x \to a} f(x) - \displaystyle \lim_{x \to a} g(x)\)
+    </p>
+
+    <br>
+
+    <p>
+        Anche il limite di un prodotto di due funzioni è uguale al prodotto dei limiti:
+    </p>
+
+    <br>
+
+    <p>
+        \(\displaystyle \lim_{x \to a} (f(x)\cdot g(x))= \displaystyle \lim_{x \to a} f(x) \cdot \displaystyle \lim_{x \to a} g(x)\)
+    </p>
+
+    <br>
+
+    <p>
+        Perfino il limite di un quoziente (supponendo il denominatore diverso da \(0\)) è uguale al quoziente dei limiti:
+    </p>
+
+    <br>
+
+    <p>
+        \(\displaystyle \lim_{x \to a} ({f(x) \over g(x)})= {\displaystyle \lim_{x \to a} f(x) \over \displaystyle \lim_{x \to a} g(x)}\)
+    </p>
+
+    <br>
+
+    <p>
+        Anche la composizione di due funzioni si comporta bene con i limiti:
+    </p>
+
+    <br>
+
+    <p>
+        \(\displaystyle \lim_{x \to a} f(g(x))= f(\displaystyle \lim_{x \to a} g(x))\)
+    </p>
+
+    <br>
+
+    <p>
+        Con questo concludiamo la lezione introduttiva sui limiti. Per altre informazioni potete guardare la lezione sui limiti notevoli (<a href="limitiNotevoli.html"><span class="link">qui</span></a>).
+    </p>
+    </section>
+<!-- Site footer -->
+<div id="footer"></div>
+<script src="custom.js"></script>
+<script src="bookmark.js"></script>
+<script src="index.js"></script>
+
+<!-- Including MathJax -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+</body>
+</html>
