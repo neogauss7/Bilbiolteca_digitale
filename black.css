@@ -1,0 +1,27 @@
+.blacklogo {
+    height: 50px;
+    display: inline;
+    margin-top: 12px;
+    margin-left: 10px;
+
+}
+.dark-welcome {
+    display: inline;
+    font-size: 40px;
+}
+.dark-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.main {
+    background-color: #222222;
+    height: 500px;
+    border-bottom: solid 1px white;
+}
+.intro {
+    width: 40%;
+    color: white;
+    padding-top: 40px;
+    padding-left: 50px;
+}
