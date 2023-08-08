@@ -9,7 +9,9 @@ const navMenu = document.querySelector(".nav-menu");
 const menuOverlay = document.querySelector(".menu-overlay");
 const mediaSize = 991;
 
-
+if (localStorage.getItem(`darkBanner`)  == 'true') {
+  document.querySelector('.black-box').classList.add('invisible');
+} else console.log('Banner Active');
 
 (() => {
   const toggleNav = function () {
