@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5568938815963264"
+     crossorigin="anonymous"></script>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8ffc82e5-ed8c-43b1-997c-5038a49290f0" data-blockingmode="auto" type="text/javascript"></script>
+    <link rel="icon" href="favicon.png">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2Z6FRX1VZF');
+    </script>
+
+    <!-- Titolo -->
+    <title>Theoremz | Equazioni in C</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="funzioni.css">
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Including header and footer -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <section class="home">
+      <label class="container">
+        <input onclick="save()" id="bookmark" type="checkbox">
+        <div class="checkmark">
+          <svg viewBox="0 0 256 256">
+          <rect fill="none" height="256" width="256"></rect>
+          <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
+        </div>
+      </label>
+
+      <div class="welcome"> 
+        <h1 class="welcome1" >Equazioni in C</h1>
+        <h3 class="p1">Di seguito analizzeremo le equazioni nel campo dei numeri complessi.</h3>
+      </div>  
+
+      <!-- Mini-index -->
+      <div class="minimenu">
+        <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Cos'è</p></div></a>
+        <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Teorema fondamentale dell'algebra</p></div></a>
+        <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Radici dell'unità</p></div></a>
+        <a href="#classif4" class="mini-item" ><div class=""><p class="minitext">\(x^n=c\)</p></div></a>
+      </div>
+
+
+      <hr class="divider" id="classif">
+
+      <p>
+        In questa lezione vedremo cosa significa risolvere un equazione in \(mathbb{C}\) e alcuni metodi generali per risolverle.
+      </p>
+
+      <br>
+
+      <h2>
+        Cos'è un equazione in \(\mathbb{C}\)
+      </h2>
+
+      <br>
+
+      <p>
+        Un <span>equazione in \(\mathbb{C}\)</span> è un'equazione dove la nostra incognita, invece di essere un numero reale come al solito, è un <span class="blue">numero complesso</span>. Cosa cambia?
+      </p>
+
+      <br>
+
+      <p>
+        Cambia che adesso <span class="blue">otterremo altre soluzioni</span> che prima ignoravamo. Prendiamo per esempio questa equazione di secondo grado:
+      </p>
+
+      <br>
+
+      <p>
+        \(x^2 -x +2 =0\)
+      </p>
+
+      <br>
+
+      <p>
+        Se andiamo a risolverla usando la formula risolutrice delle equazioni di secondo grado, notiamo che il Delta è negativo. Prima, quindi, vi sareste fermati ed avreste affermato "Quest'equazione è impossibile nei numeri reali".
+      </p>
+
+      <br>
+
+      <p>
+        Però, invece, <span class="blue">nei numeri complessi è determinata</span>. Infatti, il problema qui è di prendere la radice quadrata di un numero negativo, ma sappiamo benissimo che questo si può fare in \(\mathbb{C}\).
+      </p>
+
+      <br>
+
+      <p>
+        Quindi, risolviamo questa equazione:
+      </p>
+
+      <br>
+
+      <p>
+        \(x_{1;2}={-b \pm \sqrt{b^2 - 4ac}\over 2a}={1 \pm \sqrt{1-8} \over 2}={1\pm \sqrt{-7}\over 2}\)
+      </p>
+
+      <br>
+
+      <p>
+        A quanto equivale \(\sqrt{-7}\)? Per la definizione di \(i\), è proprio uguale a \(7i\). Se questo non vi è chiaro, vi consigliamo di andare a dare un'occhiata alla nostra lezione sui numeri immaginari.
+      </p>
+
+      <br>
+
+      <p>
+        Dunque:
+      </p>
+
+      <br>
+
+      <p>
+        \(x_{1;2}={1\pm 7i \over 2}\)
+      </p>
+
+      <br>
+
+      <p>
+        Ed ecco risolta la nostra equazione.
+      </p>
+
+      <br>
+
+      <p>
+        Prima, quindi, siccome operavamo soltando sui numeri reali, il numero di soluzioni di un'equazione poteva variare. Nei numeri complessi, invece, il <span class="blue">Teorema fondamentale dell'algebra</span> ci dice esattamente quante dobbiamo averne:
+      </p>
+
+      <br>
+
+      <hr class="blue" id="classif2">
+
+      <h2>
+        Teorema fondamentale dell'algebra
+      </h2>
+
+      <br>
+
+      <p>
+        Il Teorema fondamentale dell'algebra è molto importante, altrimenti non si chiamerebbe "fondamentale". Esso afferma che un'equazione di <span class="blue">grado n</span> del tipo:
+      </p>
+
+      <br>
+
+      <p>
+        \(a_{n}x^n + a_{n-1}x^{n-1}+...+a_{2}x^2+a_{1}x+a_0=0\)
+      </p>
+
+      <br>
+
+      <p>
+        Dove \(a_n\), \(a_{n-1}\), ecc. ... sono <span class="blue">coefficienti complessi</span> <i>ha esattamente \(n\) soluzioni nei numeri complessi</i> (ovvero, \(x\) deve essere un numero complesso), contando però ogni soluzione con la corrispettiva molteplicità.
+      </p>
+
+      <br>
+
+      <p>
+        Cosa significa contare ogni soluzione con la corrispettiva molteplicità? Significa che se per esempio abbiamo un'equazione di secondo grado dove il Delta è uguale a \(0\):
+      </p>
+
+      <br>
+
+      <p>
+        \(x^2 +2x + 1=0\)
+      </p>
+
+      <br>
+
+      <p>
+        Quando andiamo a trovare le soluzioni:
+      </p>
+
+      <br>
+
+      <p>
+        \(x_{1;2}={-4+pm 0 \over 2}\)
+      </p>
+
+      <br>
+
+      <p>
+        Dobbiamo considerare sia la soluzione <span class="blue">col \(+\)</span> che quella <span class="blue">col \(-\)</span>, anche se, come in questo caso, sono uguali:
+      </p>
+
+      <br>
+
+      <p>
+        \(x_1={-4+0\over 2}=-2\)
+      </p>
+
+      <br>
+
+      <p>
+        \(x_2={-4-0\over 2}=-2\)
+      </p>
+
+      <br>
+
+      <p>
+        Quindi potrebbe sembrare che ci sia una sola soluzione, ma in realtà <span class="blue">sono due uguali</span>. E' una grande differenza, perché altrimenti non saremo capaci ad applicare il Teorema fondamentale dell'algebra.
+      </p>
+
+      <br>
+
+      <hr class="divider" id="classif3">
+
+      <h2>
+        Radici dell'unità
+      </h2>
+
+      <br>
+
+      <p>
+        A questo punto, però, vi potreste star chiedendo: "ma se un'equazione di grado \(n\) ha sempre \(n\) soluzioni, perché un'equazione tipo \(x^3 =1\) ha solo una soluzione?"
+      </p>
+
+      <br>
+
+      <p>
+        La risposta è che quell'equazione, in realtà, non ha una sola soluzione e non si tratta nemmeno di tre soluzioni uguali. Per trovare le altre due, si potrebbe portare l'\(1\) dall'altra parte, fattorizzando utilizzando la differenza di due cubi e risolvere l'equazione di secondo grado. 
+      </p>
+
+      <br>
+
+      <p>
+        Ma adesso vogliamo cercare di risolverla in un altro modo. Un modo che vi permetterà di risolvere immediatamente <span class="blue">qualsiasi equazione del tipo \(x^n = 1\)</span> e cercheremo di farvi capire geometricamente cosa sta succedendo.
+      </p>
+
+      <br>
+
+      <p>
+        Risolvendola otteniamo:
+      </p>
+
+      <br>
+
+      <p>
+        \(x=\sqrt[3]{1}\)
+      </p>
+
+      <br>
+
+      <p>
+        Fino a qua è tutto giusto, ma il problema è che <span class="blue">\(1\) non è l'unica radice terza di \(1\)</span>. Altrimenti questo paragrafo non si chiamerebbe "radici dell'unità" (unità in parole povere è \(1\)).
+      </p>
+
+      <br>
+
+      <p>
+        Infatti <i>la radice \(n\)-esima di \(1\) ha \(n\) risultati</i>. Come trovarli? Dobbiamo usare i numeri complessi. Potremmo pure usare i numeri complessi in forma trigonometrica, ma risulta più utile usarli in forma esponenziale. Se non doveste conoscere questa forma, potete studiarla sulla loro lezione qui su Theoremz. 
+      </p>
+
+      <br>
+
+      <p>
+        Quindi scriviamo \(1\) in forma esponenziale. Potremmo scrivere:
+      </p>
+
+      <br>
+
+      <p>
+        \(1=e^{0i}\)
+      </p>
+
+      <br>
+
+      <p>
+        ma sarebbe sbagliato, perché essendo la funzione \(e^{ix}\) una <span class="blue">funzione periodica con periodo \(2\pi\)</span>, per ottenere tutte le soluzioni dobbiamo <span class="blue">aggiungere multipli di \(2\pi\) all'argomento</span>:
+      </p>
+
+      <br>
+
+      <p>
+        \(1=e^{(2k\pi +0)i}=e^{2k\pi i}\)
+      </p>
+
+      <br>
+
+      <p>
+        Dove \(k\) è un <span class="blue">numero intero</span>.
+      </p>
+
+      <br>
+
+      <p>
+        Se, infatti, imponiamo \(k=2\), otteniamo:
+      </p>
+
+      <br>
+
+      <p>
+        \(e^{2\cdot 2 \cdot \pi i}= e^{4\pi i}= e^{4\pi i - 2\pi i}=e^{2\pi i}=1\)
+      </p>
+
+      <br>
+
+      <p>
+        Abbiamo usato il fatto che se sottraiamo \(2\pi\) dall'argomento, geometricamente è come fare un giro completo all'indietro, quindi torniamo sullo stesso esatto punto. 
+      </p>
+
+      <br>
+
+      <p>
+        Quindi, aggiungere multipli di \(2\pi\) non cambia niente nel valore della potenza, infatti è sempre uguale a \(1\), ma facendo variare \(k\) potremo trovare le altre soluzioni, altrimenti avremo solo trovato \(x=1\).
+      </p>
+
+      <br>
+
+      <p>
+        Dunque sostituendo nell'equazione:
+      </p>
+
+      <br>
+
+      <p>
+        \(x=\sqrt[3]{e^{2k\pi i}}\)
+      </p>
+
+      <br>
+
+      <p>
+        Possiamo usare le proprietà delle radici per semplificare:
+      </p>
+
+      <br>
+
+      <p>
+        \(x=e^{2k\pi i \over 3}\)
+      </p>
+
+      <br>
+
+      <p>
+        Adesso, quindi, non sommiamo più multipli di \(2\pi\), ma multipli di \(2\pi \over 3\), perché abbiamo preso la radice ed è per questo che troveremo \(3\) soluzioni diverse.
+      </p>
+
+      <br>
+
+      <p>
+        Infatti, se imponiamo \(k=0\), otteniamo:
+      </p>
+
+      <br>
+
+      <p>
+        \(x=e^{2\cdot 0 \cdot \pi i \over 3}= e^0 = 1\)
+      </p>
+
+      <br>
+
+      <p>
+        Se però imponiamo \(k=1\), otteniamo: 
+      </p>
+
+      <br>
+
+      <p>
+        \(x=e^{2\cdot 1 \cdot \pi i \over 3}= e^{2\pi i \over 3}\)
+      </p>
+
+      <br>
+
+      <p>
+        Che è un numero diverso. Se imponiamo \(k=2\), otteniamo:
+      </p>
+
+      <br>
+
+      <p>
+        \(e^{2\cdot 2 \cdot \pi i \over 3}=e^{4\pi i \over 3}\)
+      </p>
+
+      <br>
+
+      <p>
+        Che è un numero diverso ancora. Abbiamo però detto che dobbiamo ottenere esattamente \(3\) soluzioni, quindi cosa succede se mettiamo \(k=3\)? Vediamo:
+      </p>
+
+      <br>
+
+      <p>
+        \(e^{2\cdot 3\cdot \pi i \over 3}= e^{6\pi i \over 3}=e^{2\pi i}= 1\)
+      </p>
+
+      <br>
+
+      <p>
+        Riotteniamo la prima soluzione. Se infatti continuiamo a sommare \(2\pi \over 3\), dopo esattamente \(3\) volte avremo sommato \(2\pi\), dunque torniamo al punto di partenza e riotteniamo la prima soluzione.
+      </p>
+
+      <br>
+
+      <p>
+        Vediamo nel piano complesso cosa sta succedendo. Prendiamo tutte e \(3\) le soluzioni. Siccome hanno modulo pari ad \(1\), si troveranno nel cerchio di raggio \(1\), chiamato <span class="blue">cerchio unitario del piano complesso</span>, e formeranno un angolo pari al loro argomento con l'asse reale. Se questo non vi è chiaro, vi consigliamo di andare a ripassare la nostra lezione sui numeri complessi in forma esponenziale.
+      </p>
+
+      <br>
+
+      <p>
+        Ecco dove stanno le soluzioni:
+      </p>
+
+      <br>
+
+      <img src="" alt="Immagine non disponibile al momento">
+
+      <br>
+
+      <p>
+        Le tre soluzioni dividono esattamente il la circonferenza in \(3\) parti uguali. Sappiamo infatti che moltiplicare due numeri complessi in forma esponenziale equivale a moltiplicare i moduli e sommare gli argomenti, quindi siccome qui hanno modulo \(1\), moltiplicare due numeri sulla circonferenza unitaria equivale a <span class="blue">sommare gli angoli</span>.
+      </p>
+
+      <br>
+
+      <p>
+        Dunque se prendo il punto che sta ad un terzo della circonferenza, e lo elevo alla terza, equivale a sommare il suo angolo tre volte. Quindi arriveremo esattamente ad \(1\). 
+      </p>
+
+      <br>
+
+      <img src="" alt="immagine non disponibile al momento">
+
+      <br>
+
+      <p>
+        Se prendo il punto a due terzi della circonferenza e lo elevo alla terza, equivale a sommare il suo angolo tre volte, ovvero a moltiplicarlo per \(3\). Dunque tutti gli angoli del tipo \(2\pi n\over 3\) arriveranno ad \(1\), perché elevare il numero complesso alla terza significa sommare \(3\) volte l'angolo, che però equivale a moltiplicare l'angolo per \(3\), dunque il denominatore si semplifica ed otteniamo un multiplo di \(2\pi\) e dunque arriviamo ad \(1\).
+      </p>
+
+      <br>
+
+      <p>
+        Quindi, se abbiamo un'equazione del tipo \(x^n = 1\), riscriviamo \(1\) in forma esponenziale e prendiamo la radice:
+      </p>
+
+      <br>
+
+      <p>
+        \(x=\sqrt[n]{e^{2k\pi i}}\)
+      </p>
+
+      <br>
+
+      <p>
+        quindi semplifichiamo:
+      </p>
+
+      <br>
+
+      <p>
+        \(x=e^{2k\pi i \over n}\)
+      </p>
+
+      <br>
+
+      <p>
+        e facendo variare \(k\) da \(0\) ad \(n\) otteniamo tutte le soluzioni. Geometricamente, quello che stiamo facendo è prendere la circonferenza unitaria e dividerla in <span class="blue">\(n\) parti uguali partendo da \(1\)</span>, ottenendo \(n\) punti che saranno proprio le soluzioni.
+      </p>
+
+      <br>
+
+      <hr class="divider" id="classif4">
+
+      <h2>
+        Equazioni del tipo \(x^n=c\)
+      </h2>
+
+      <br>
+
+      <p>
+        Adesso che sappiamo come risolvere equazioni del tipo \(x^n=1\), vediamo cosa succede se al posto di \(1\) mettiamo un <span class="blue">numero complesso in generale</span>.
+      </p>
+
+      <br>
+
+      <p>
+        \(1\) si comportava particolarmente bene ed era facile da lavorarci, ma possiamo risolvere questo tipo di equazioni pure se la costante è qualsiasi altro numero complesso. Vediamo come fare:
+      </p>
+
+      <br>
+
+      <p>
+        Supponiamo di avere \(c\) in forma algebrica:
+      </p>
+
+      <br>
+
+      <p>
+        \(c=a+ib\)
+      </p>
+
+      <br>
+
+      <p>
+        Trasformiamolo in forma trigonometrica:
+      </p>
+
+      <br>
+
+      <p>
+        \(c= r\cdot [\cos(\theta)+i\sin(\theta)]\)
+      </p>
+
+      <br>
+
+      <p>
+        e quindi in forma esponenziale:
+      </p>
+
+      <br>
+
+      <p>
+        \(c=r\cdot e^{i\theta}\)
+      </p>
+
+      <br>
+
+      <p>
+        Pure questa volta, se prendessimo direttamente la radice, otterremo soltanto una soluzione e <span class="blue">mancheremmo le altre \(n-1\) soluzioni</span>. Per risolvere questo problema, anche questa volta <span class="blue">aggiungiamo multipli di \(2\pi\) all'argomento</span>:
+      </p>
+
+      <br>
+
+      <p>
+        \(c=re^{(\theta + 2k\pi)i}\)
+      </p>
+
+      <br>
+
+      <p>
+        E solo adesso prendiamo la radice:
+      </p>
+
+      <br>
+
+      <p>
+        \(x=\sqrt[n]{re^{(\theta + 2k\pi)i}}\)
+      </p>
+
+      <br>
+
+      <p>
+        Usiamo le proprietà delle potenze per semplificare:
+      </p>
+
+      <br>
+
+      <p>
+        \(x=\sqrt[n]{r} \cdot e^{(\theta + 2k\pi)i\over n}\)
+      </p>
+
+      <br>
+
+      <p>
+        Ed ecco trovate <span class="blue">tutte e \(n\)</span> le soluzioni, ma cosa significano geometricamente?
+      </p>
+
+      <br>
+
+      <p>
+        Usiamo le proprietà delle potenze per dividere la potenza in due:
+      </p>
+
+      <br>
+
+      <p>
+        \(x=\sqrt[n]{r} \cdot e^{\theta i\over n} \cdot e^{2k\pi i}\)
+      </p>
+
+      <br>
+
+      <p>
+        Il primo fattore, \(\sqrt[n] {r}\), equivale al <span class="blue">modulo della soluzione</span> (siccome gli altri due fattori sono del tipo \(e^{ix}\), essi hanno modulo pari ad \(1\)). Siccome al variare di \(k\) il modulo non cambia, vuol dire che tutti i punti staranno alla stessa distanza dal centro.
+      </p>
+
+      <br>
+
+      <p>
+        In altre parole, si trovano sulla <span class="blue">circonferenza incentrata all'origine e con raggio pari a \(\sqrt[n]{r}\)</span>. 
+      </p>
+
+      <br>
+
+      <p>
+        L'ultimo fattore equivale alla \(k\)-esima radice dell'unità. Quindi equivale anche questa volta a dividere la circonferenza in \(n\) parti uguali. Però questa volta <span class="blue">non iniziamo da un punto sull'asse reale</span>, come avevamo fatto prima con \(1\). Questo perché non dobbiamo dimenticarci della presenza del secondo fattore.
+      </p>
+
+      <br>
+
+      <p>
+        Essendo della forma \(e^{ix}\), come abbiamo visto nel paragrafo precedente, la moltiplicazione per esso equivale a <span class="blue">sommare \(x\) radianti</span> all'angolo del numero che stiamo moltiplicando.
+      </p>
+
+      <br>
+
+      <p>
+        Quindi se non ci fosse stato lui, saremmo partiti dal punto con modulo \(\sqrt[n]{r}\) sull'asse reale, ovvero \(\sqrt[n]{r}\), avremmo diviso la circonferenza in \(n\) parti e i punti trovati sarebbero state le soluzioni, ma siccome ci sta questo ulteriore fattore, preso il punto sull'asse reale \(\sqrt[n]{r}\), dobbiamo ruotare in senso antiorario di \(\theta\over n\) radianti e partendo da quel punto cominciare a dividere la circonferenza:
+      </p>
+
+      <br>
+
+      <img src="" alt="Immagine non disponibile al momento">
+
+
+
+    
+
+
+
+    </section>
+
+    <!-- Site footer -->
+    <div id="footer"></div>
+    <script src="custom.js"></script>
+    <script src="bookmark.js"></script>
+    <script src="index.js"></script>
+  
+    <!-- Including MathJax -->
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+  </body>
+</html>

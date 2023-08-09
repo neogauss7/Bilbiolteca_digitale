@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5568938815963264"
+     crossorigin="anonymous"></script>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8ffc82e5-ed8c-43b1-997c-5038a49290f0" data-blockingmode="auto" type="text/javascript"></script>
+    <link rel="icon" href="favicon.png">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2Z6FRX1VZF');
+    </script>
+
+    <!-- Titolo -->
+    <title>Theoremz | Piani nello spazio</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="funzioni.css">
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Including header and footer -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <section class="home">
+      <label class="container">
+        <input onclick="save()" id="bookmark" type="checkbox">
+        <div class="checkmark">
+          <svg viewBox="0 0 256 256">
+          <rect fill="none" height="256" width="256"></rect>
+          <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
+        </div>
+      </label>
+
+      <div class="welcome"> 
+        <h1 class="welcome1" >Piani nello spazio</h1>
+        <h3 class="p1">Di seguito analizzeremo i piani nello spazio.</h3>
+      </div>  
+
+      <!-- Mini-index -->
+      <div class="minimenu">
+        <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Equazione</p></div></a>
+        <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Piani particolari</p></div></a>
+        <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Relazioni tra piani</p></div></a>
+      </div>
+
+
+      <p>
+        In questa lezione sui piano nello spazio vedremo come trovare le loro equazioni e come possono interagire tra loro.
+      </p>
+
+      <br>
+
+      <hr class="divider" id="classif">
+
+      <p>
+        Equazione di un piano nello spazio
+      </p>
+
+      <br>
+
+      <p>
+        Iniziamo ricordandoci l'equazione di una retta in uno spazio \(2D\). Essa era nella forma:
+      </p>
+
+      <br>
+
+      <p>
+        \(ax+by+c=0\)
+      </p>
+
+      <br>
+
+      <p>
+        Il suo grafico era qualcosa del seguente tipo:
+      </p>
+
+      <br>
+
+      <img src="" alt="Immagine al momento non disponibile">
+
+      <br>
+
+      <p>
+        Ora, vediamo invece il grafico di questa stessa equazione, ma questa volta in un spazio <span class="blue">\(3D\)</span>:
+      </p>
+
+      <br>
+
+      <p>
+        Siccome la nuova variabile \(z\) <span class="blue">non influisce</span> sull'equazione, otterremo la stessa identica retta per tutti i valori di zeta.
+      </p>
+
+      <br>
+
+      <img src="" alt="immagine non disponibile al momento">
+
+      <br>
+
+      <p>
+        Se disegnassimo una retta per ogni singolo valore di \(z\), otterremo una serie di rette parallele una attaccata all'altra:
+      </p>
+
+      <br>
+
+      <img src="" alt="immagine non disponibile al momento">
+
+      <br>
+
+      <p>
+        Se poi nell'equazione introduciamo \(z\), al suo variare le rette si <span class="blue">alzeranno o abbasseranno</span> a seconda del suo coefficiente. 
+      </p>
+
+      <br>
+
+      <p>
+        Se prendiamo per esempio l'equazione:
+      </p>
+
+      <br>
+
+      <p>
+        \(2x+3y+2z+1=0\)
+      </p>
+
+      <br>
+
+      <p>
+        Per \(z=0\) otteniamo la retta:
+      </p>
+
+      <br>
+
+      <p>
+        \(2x+3y+1=0\)
+      </p>
+
+      <br>
+
+      <p>
+        mentre per \(z=2\) otteniamo la retta:
+      </p>
+
+      <br>
+
+      <p>
+        \(2x+3y+5=0\)
+      </p>
+
+      <br>
+
+      <p>
+        Otteniamo quindi un piano "più inclinato":
+      </p>
+
+      <br>
+
+      <img src="" alt="immagine non disponibile al momento">
+
+      <br>
+
+      <p>
+        E' facile convincerci che tutte le equazioni di questo tipo danno vita a un piano nello spazio, ma tutti i piani nello spazio hanno questo tipo di equazione o abbiamo preso solo un caso particolare?
+      </p>
+
+      <br>
+
+      <p>
+        <span class="blue">Tutti i piani</span> hanno questa tipologia di equazione ma adesso non lo dimostreremo. Invece, vogliamo chiederci come trovare l'equazione di un piano che passa per <span class="blue">\(3\) punti</span>:
+      </p>
+
+      <br>
+
+      <p>
+        Dalla geometria euclidea sappiamo che <i>per tre punti passa uno e soltanto un piano</i>, dunque deve esistere un modo per trovarlo. 
+      </p>
+
+      <br>
+
+      <p>
+        Dunque prendiamo tre punti \(P(x_p;y_p;z_p)\), \(T(x_t;y_t;z_t)\) e \(S(x_s;y_s;z_s)\) e l'equazione generale del piano:
+      </p>
+
+      <br>
+
+      <p>
+        \(ax+bx+cz+d=0\)
+      </p>
+
+      <br>
+
+      <p>
+        Siccome i punti appartengono al piano, possiamo sostituire le loro coordinate nel piano ed ottenere un sistema con <span class="blue">tre equazioni</span>:
+      </p>
+
+      <br>
+
+      <p>
+        \(\left\{\begin{matrix}ax_p+by_p+cz_p+d=0 \\ ax_t+by_t+cz_t+d=0 \\ax_s+by_s+cz_s+d=0\end{matrix}\right.\)
+      </p>
+
+      <br>
+
+      <p>
+        Dobbiamo trovare \(a\), \(b\), \(c\) e \(d\), \(4\) incognite ma solo \(3\) equazioni, come facciamo? 
+      </p>
+
+      <br>
+
+      <p>
+        Questa problema si era già presentato quando volevamo trovare l'equazione di una retta scritta in forma implicita di una retta conoscendo due punti.
+      </p>
+
+      <br>
+
+      <p>
+        Anche lì avevamo <span class="blue">un'incognita in più</span> di quante equazioni avessimo. Quindi, sappiamo già che in realtà le vere incognite sono solo \(3\). Infatti, non esiste una sola serie di coefficienti dell'equazione per un piano, ma infinite. In che senso?
+      </p>
+
+      <br>
+
+      <p>
+        Prendiamo l'equazione di un piano:
+      </p>
+
+      <br>
+
+      <p>
+        \(3x+2y+z+3=0\)
+      </p>
+
+      <br>
+
+      <p>
+        Possiamo moltiplicare entrambi i lati per \(2\) ed ottenere:
+      </p>
+
+      <br>
+
+      <p>
+        \(6x+4y+2z+6=0\)
+      </p>
+
+      <br>
+
+      <p>
+        I coefficienti sono tutti diversi, ma l'equazione è la stessa. Per risolvere questo problema possiamo esprimere \(3\) delle incognite in funzione della quarta e sostituendo potremo seplificare. Vediamo un esempio:
+      </p>
+
+      <br>
+
+      <p>
+        Cerchiamo il piano passante per i punti \(P(1;0;0)\), \(T(4;1;0)\), \(S(2;1;-4)\)
+      </p>
+
+      <br>
+
+      <p>
+        Mettendo a sistema otteniamo:
+      </p>
+
+      <br>
+
+      <p>
+        \(\left\{\begin{matrix}
+        a+d=0 
+        \\
+        4a+b+d=0
+         \\
+        2a+b-4c+d=0
+        \end{matrix}\right.\)
+      </p>
+
+      <br>
+
+      <p>
+        Isoliamo quindi tutte le incognite in funzione di \(d\):
+      </p>
+
+      <br>
+
+      <p>
+        \(\left\{\begin{matrix}
+        a=-d
+        \\
+        4a+b+d=0
+         \\
+        2a+b-4c+d=0
+        \end{matrix}\right.\)
+      </p>
+
+      <br>
+
+      <p>
+        \( \left\{\begin{matrix}
+        a=-d
+        \\
+        -4d+b+d=0
+         \\
+        -2d+b-4c+d=0
+        \end{matrix}\right.\)
+      </p>
+
+      <br>
+
+      <p>
+        \( \left\{\begin{matrix}
+        a=-d
+        \\
+        b=3d
+         \\
+        -2d+3d-4c+d=0
+        \end{matrix}\right.\)
+      </p>
+
+      <br>
+
+      <p>
+        \(\left\{\begin{matrix}
+        a=-d
+        \\
+        b=3d
+         \\
+        c={d\over 2}
+        \end{matrix}\right.\)
+      </p>
+
+      <br>
+
+      <p>
+        Adesso sostituiamo all'interno dell'equazione del piano:
+      </p>
+
+      <br>
+
+      <p>
+        \(ax+by+cz+d=0\)
+      </p>
+
+      <br>
+
+      <p>
+        \(-dx+3dy+{d\over 2}z+d=0\)
+      </p>
+
+      <br>
+
+      <p>
+        Ovviamente \(d\) è diverso da \(0\), altrimenti non otterremo più un'equazione di un piano ma un'equazione del tipo \(0=0\), dunque possiamo dividere per \(d\):
+      </p>
+
+      <br>
+
+      <p>
+        \(-x+3y+{1\over 2}z+1=0\)
+      </p>
+
+      <br>
+
+      <p>
+        Il concetto è che appunto perché moltiplicare entrambi i lati dell'equazione per un qualche numero non cambia l'equazione, possiamo scrivere tutto <span class="blue">in funzione di una delle incognite</span> e quindi semplificare per ottenere l'equazione del piano.
+      </p>
+
+      <br>
+
+      <p>
+        Se sostituiamo i punti nell'equazione trovata, noteremo che la soddisfano, come aspettato.
+      </p>
+
+      <br>
+
+      <hr class="divider" id="classif2">
+
+      <h2>
+        Piani particolari
+      </h2>
+
+      <br>
+
+      <p>
+        Fra tutti i piani, ne esistono alcuni di particolare interesse:
+      </p>
+
+      <br>
+
+      <p>
+        Se imponiamo tutti i coefficenti tranne quello della \(x\) uguali a \(0\), otteniamo:
+      </p>
+
+      <br>
+
+      <p>
+        \(ax+0y+0z+0=0\)
+      </p>
+
+      <br>
+
+      <p>
+        Ovvero:
+      </p>
+
+      <br>
+
+      <p>
+        \(ax=0\)
+      </p>
+
+      <br>
+
+      <p>
+        Che equivale a:
+      </p>
+
+      <br>
+
+      <p>
+        \(x=0\)
+      </p>
+
+      <br>
+
+      <p>
+        I punti che soddisfano questa condizione sono quelli sul piano \(y-z\):
+      </p>
+
+      <br>
+
+      <img src="" alt="Immagine non disponibile al momento">
+
+      <br>
+
+      <p>
+        Analogamento, il piano \(x-y\) avrà equazione \(z=0\) e il piano \(x-z\) avrà equazione \(y=0\)
+      </p>
+
+      <br>
+
+      <img src="" alt="Immagine non disponibile al momento">
+
+      <br>
+
+      <img src="" alt="Immagine non disponibile al momento">
+
+      <br>
+
+      <p>
+        Questi piani risultono molto utili in varie situazione quindi è bene conoscere le lore equazioni.
+      </p>
+
+      <br>
+
+      <hr class="divider" id="classif3">
+
+      <br>
+
+      <h2>
+        Relazioni tra piani nello spazio
+      </h2>
+
+      <br>
+
+      <p>
+        Esistono tre tipi di relazioni tra piani:
+      </p>
+
+      <br>
+
+      <p>
+        La prima è che siano due <span class="blue">piani coincidenti</span>. Questo avviene quando tutti i punti del primo appartengono anche al secondo e viceversa.
+      </p>
+
+      <br>
+
+      <img src="" alt="Immagine non disponibile al momento">
+
+      <br>
+
+      <p>
+        Oppure, se i due piani non hanno alcun punto in comune, i due piani sono <span class="blue">paralleli</span>.
+      </p>
+
+      <br>
+
+      <img src="" alt="Immagine non disponibile al momento">
+
+      <br>
+
+      <p>
+        Infine, se hanno dei punti in comune, ma non tutti, si dice che sono due <span class="blue">piani incidenti</span>. 
+      </p>
+
+      <br>
+
+      <img src="" alt="Immagine non disponibile al momento">
+
+      <br>
+
+      <p>
+        In particolari, se due piani sono incidenti, la loro intersezione genera una <span class="blue">retta</span>. Ricordatevi di questo perché lo useremo quando studieremo la retta nello spazio.
+      </p>
+
+      <br>
+
+      <p>
+        Come sapere che relazione c'è tra due piani conoscendo la loro equazione?
+      </p>
+
+      <br>
+
+      <p>
+        Per essere dei piani coincidenti, devono avere la <span class="blue">stessa equazione</span>. Dunque basta guardare se la seconda equazione è esattamente un <span class="blue">multiplo della prima</span>.
+      </p>
+
+      <br>
+
+      <p>
+        Per esempio i due piani con equazione:
+      </p>
+
+      <br>
+
+      <p>
+        \(x+y+3z+4=0\)
+      </p>
+
+      <br>
+
+      <p>
+        e
+      </p>
+
+      <br>
+
+      <p>
+        \(2x+2y+6z+8=0\)
+      </p>
+
+      <br>
+
+      <p>
+        Sono coincidenti perché moltiplicando per \(2\) la prima equazione otteniamo la seconda.
+      </p>
+
+      <br>
+
+      <p>
+        Per verificare in casi più difficili se la seconda è un multiplo della prima, basta guardare se i rapporti tra i corrispettivi coefficienti è uguale. Nel caso di prima, infatti, il rapport è sempre uguale 2.
+      </p>
+
+      <br>
+
+      <p>
+        Possiamo pensare a due piani paralleli come a due piani coincidenti dove abbiamo preso uno dei due piani e l'abbiamo abbassato o alzato nello spazio per una certa costante \(k\):
+      </p>
+
+      <br>
+
+      <img src="" alt="Immagine non disponibile al momento">
+
+      <br>
+
+      <p>
+        Dunque, se due piani sono paralleli, dobbiamo poter scrivere l'equazione del secondo come quella di un piano coincidente al primo a cui è stata aggiounta una costante \(k\).
+      </p>
+
+      <br>
+
+      <p>
+        Questo vuol dire che i <span class="blue">rapporti</span> tra i coefficienti della \(x\), della \(y\) e della \(z\) devono essere <span class="blue">uguali</span>, ma quello dei <span class="blue">termini noti deve essere diverso</span>. Vediamo un esempio:
+      </p>
+
+      <br>
+
+      <p>
+        Prendiamo i due piani di equazione:
+      </p>
+
+      <br>
+
+      <p>
+        \(2x+3y+z+1=0\)
+      </p>
+
+      <br>
+
+      <p>
+        e 
+      </p>
+
+      <br>
+
+      <p>
+        \(6x+9y+3x+10=0\)
+      </p>
+
+      <br>
+
+      <p>
+        Il rapporto tra i coefficienti delle \(x\) è uguale a \(6\over 2\), ovvero a \(3\).
+      </p>
+
+      <br>
+
+      <p>
+        Il rapporto tra i coefficenti delle \(y\) è uguale a \(9\over 3\), ovvero a \(3\).
+      </p>
+
+      <br>
+
+      <p>
+        Anche il rapporto tra i coefficenti delle \(z\), essendo pari a \(3\over 1\), è uguale a \(3\).
+      </p>
+
+      <br>
+
+      <p>
+        Però, il rapporto tra i coefficenti dei termini noti è pari a \(10\over 1\), ovvero a \(10\), che ovviamente è diverso da \(3\).
+      </p>
+
+      <br>
+
+      <p>
+        Dunque i due piani sono paralleli.
+      </p>
+
+      <br>
+
+      <p>
+        Infine, se i due piani non sono nè coincidenti nè paralleli, devono essere incidenti.
+      </p>
+
+
+
+
+    
+
+    </section>
+
+    <!-- Site footer -->
+    <div id="footer"></div>
+    <script src="custom.js"></script>
+    <script src="bookmark.js"></script>
+    <script src="index.js"></script>
+  
+    <!-- Including MathJax -->
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+  </body>
+</html>
