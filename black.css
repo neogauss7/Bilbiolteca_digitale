@@ -21,12 +21,55 @@
     display: grid;
     grid-template-columns: auto auto;
 }
+.vantaggi {
+    height: 50px;
+    display: inline-flex;
+}
+.description {
+    display: inline-flex;
+    bottom: 20px;
+    margin-left: 10px;
+    padding-top: 16px;
+} 
+.v2 {
+    height: 35px;
+    margin-left: 7px;
+}
+.v4 {
+    height: 40px;
+    border-radius: 8px;
+    margin-left: 5px;
+}
+.d4 {
+    padding-top: 7px;
+    margin-left: 17px;  
+}
+.d2 {
+ padding-top: 7px;
+ margin-left: 17px;
+}
+.v3 {
+    height: 35px;
+    margin-left: 10px;
+}
+.d3{
+    padding-top: 5px;
+ margin-left: 15px;
+}
+li {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+}
 .intro {
     color: white;
     padding-top: 40px;
     padding-left: 50px;
     margin-bottom: 40px;
     padding-right: 50px;
+}
+.button-text {
+    font-size: 22px;
 }
 #bottone1 {
     padding-left: 33px;
@@ -58,7 +101,7 @@
    }
 @media (max-width: 991px) {
 .dark-welcome{
-    font-size: 30px;
+    font-size: 25px;
     color: black;
 }
 .main {
@@ -66,11 +109,14 @@
     grid-template-rows: auto auto;
 }
 .blacklogo {
-    height: 40px;
+    height: 30px;
     margin-top: 7px;
 }
 .intro {
     font-size: 15px;
+}
+.text1 {
+    margin-bottom: 0;
 }
 #bottone1 {
     width: 50%;

@@ -16,14 +16,16 @@
   width: 100%;
   left: 0;
   top: 74px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
   height: 45px;
   align-content: center;
   display: flex;
+  margin-bottom: 15px;
 
 }
 .black-flex {
+  margin-left: 25%;
   justify-content: center;
   display: inline-flex;
 }
@@ -52,14 +54,13 @@
   height: 45px;
   border: none;
   background: none;
-  margin-right: 20em;
 }
 
 .X {
   content: '';
   position: absolute;
   top: 50%;
-  left: 33%;
+  left: 0%;
   width: 1em;
   height: 1.5px;
   background-color: #fff;
@@ -70,7 +71,7 @@
   content: '';
   position: absolute;
   top: 50%;
-  left: 33%;
+  left: 0%;
   width: 1em;
   height: 1.5px;
   background-color: #fff;
@@ -291,8 +292,33 @@ a {
   }
 }
 /*Start responsive <992px*/
-
+@media (max-width: 1200px) { 
+  .black-box {
+    height:40px;
+  }
+  .button {
+    height: 40px;
+    width: 17px;
+  }
+  .black-flex {
+    margin-left: 18%;
+  }
+  
+  .black-logo {
+    height: 34px;
+    padding-top: 12px;
+  } 
+  .black-text {
+    padding-top: 7px;
+    margin-right: 4px;
+    font-size: 17px;
+  }
+  .arrow {
+    height: 15px;
+  }
+}
 @media (max-width: 991px) {
+  
   .header .menu-overlay.active {
     visibility: visible;
     opacity: 1;

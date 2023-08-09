@@ -8,10 +8,14 @@ const closeNavMenu = document.querySelector(".close-nav-menu");
 const navMenu = document.querySelector(".nav-menu");
 const menuOverlay = document.querySelector(".menu-overlay");
 const mediaSize = 991;
+let widthh = screen.width;
 
 if (localStorage.getItem(`darkBanner`)  == 'true') {
   document.querySelector('.black-box').classList.add('invisible');
-} else console.log('Banner Active');
+} else {if (widthh < 991) {
+      document.querySelector('.black-text').textContent = 'Scopri'
+}};
+
 
 (() => {
   const toggleNav = function () {
