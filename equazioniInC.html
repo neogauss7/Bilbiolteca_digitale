@@ -56,26 +56,19 @@
 
       <div class="welcome"> 
         <h1 class="welcome1" >Equazioni in C</h1>
-        <h3 class="p1">Di seguito analizzeremo le equazioni nel campo dei numeri complessi.</h3>
+        <h3 class="p1">In questa lezione vedremo cosa significa risolvere un equazione in \(\mathbb{C}\) e alcuni metodi generali per risolverle.</h3>
       </div>  
 
       <!-- Mini-index -->
       <div class="minimenu">
-        <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Cos'è</p></div></a>
-        <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">Teorema fondamentale dell'algebra</p></div></a>
+        <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Definizione</p></div></a>
+        <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">T. F. dell'algebra</p></div></a>
         <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">Radici dell'unità</p></div></a>
         <a href="#classif4" class="mini-item" ><div class=""><p class="minitext">\(x^n=c\)</p></div></a>
       </div>
 
 
       <hr class="divider" id="classif">
-
-      <p>
-        In questa lezione vedremo cosa significa risolvere un equazione in \(mathbb{C}\) e alcuni metodi generali per risolverle.
-      </p>
-
-      <br>
-
       <h2>
         Cos'è un equazione in \(\mathbb{C}\)
       </h2>
@@ -101,7 +94,7 @@
       <br>
 
       <p>
-        Se andiamo a risolverla usando la formula risolutrice delle equazioni di secondo grado, notiamo che il Delta è negativo. Prima, quindi, vi sareste fermati ed avreste affermato "Quest'equazione è impossibile nei numeri reali".
+        Se andiamo a risolverla usando la formula risolutrice delle equazioni di secondo grado, notiamo che il Delta è negativo. Prima, quindi, vi sareste fermati ed avreste affermato <i>"Quest'equazione è impossibile nei numeri reali"</i>.
       </p>
 
       <br>
@@ -119,13 +112,13 @@
       <br>
 
       <p>
-        \(x_{1;2}={-b \pm \sqrt{b^2 - 4ac}\over 2a}={1 \pm \sqrt{1-8} \over 2}={1\pm \sqrt{-7}\over 2}\)
+        \(x_{1;2}={-b \pm \sqrt{b^2 - 4ac}\over 2a}={1 \pm \sqrt{1-8} \over 2}\) \(={1\pm \sqrt{-7}\over 2}\)
       </p>
 
       <br>
 
       <p>
-        A quanto equivale \(\sqrt{-7}\)? Per la definizione di \(i\), è proprio uguale a \(7i\). Se questo non vi è chiaro, vi consigliamo di andare a dare un'occhiata alla nostra lezione sui numeri immaginari.
+        A quanto equivale \(\sqrt{-7}?\) Per la definizione di \(i,\) è proprio uguale a \(7i.\) Se questo non vi è chiaro, vi consigliamo di andare a dare un'occhiata alla nostra lezione sui numeri immaginari.
       </p>
 
       <br>
@@ -149,12 +142,12 @@
       <br>
 
       <p>
-        Prima, quindi, siccome operavamo soltando sui numeri reali, il numero di soluzioni di un'equazione poteva variare. Nei numeri complessi, invece, il <span class="blue">Teorema fondamentale dell'algebra</span> ci dice esattamente quante dobbiamo averne:
+        Prima, quindi, siccome operavamo soltando sui numeri reali, il numero di soluzioni di un'equazione poteva variare. Nei numeri complessi, invece, il <span id="classif2" class="blue">Teorema fondamentale dell'algebra</span> ci dice esattamente quante dobbiamo averne:
       </p>
 
       <br>
 
-      <hr class="blue" id="classif2">
+      <hr class="divider">
 
       <h2>
         Teorema fondamentale dell'algebra
@@ -163,7 +156,7 @@
       <br>
 
       <p>
-        Il Teorema fondamentale dell'algebra è molto importante, altrimenti non si chiamerebbe "fondamentale". Esso afferma che un'equazione di <span class="blue">grado n</span> del tipo:
+        Il <span class="blue">Teorema fondamentale dell'algebra</span> è molto importante, altrimenti non si chiamerebbe <i>"fondamentale"</i>. Esso afferma che un'equazione di <span class="blue">grado n</span> del tipo:
       </p>
 
       <br>
@@ -175,13 +168,13 @@
       <br>
 
       <p>
-        Dove \(a_n\), \(a_{n-1}\), ecc. ... sono <span class="blue">coefficienti complessi</span> <i>ha esattamente \(n\) soluzioni nei numeri complessi</i> (ovvero, \(x\) deve essere un numero complesso), contando però ogni soluzione con la corrispettiva molteplicità.
+        Dove \(a_n\), \(a_{n-1}\), ecc. ... sono <span class="blue">coefficienti complessi</span> <b>ha esattamente \(n\) soluzioni nei numeri complessi</b> <i>(ovvero, \(x\) deve essere un numero complesso),</i> contando però ogni soluzione con la corrispettiva molteplicità.
       </p>
 
       <br>
 
       <p>
-        Cosa significa contare ogni soluzione con la corrispettiva molteplicità? Significa che se per esempio abbiamo un'equazione di secondo grado dove il Delta è uguale a \(0\):
+        Cosa significa contare ogni soluzione con la <u>corrispettiva molteplicità</u>? Significa che se per esempio abbiamo un'equazione di secondo grado dove il <span class="blue">Delta</span> è uguale a \(0\):
       </p>
 
       <br>
@@ -205,7 +198,7 @@
       <br>
 
       <p>
-        Dobbiamo considerare sia la soluzione <span class="blue">col \(+\)</span> che quella <span class="blue">col \(-\)</span>, anche se, come in questo caso, sono uguali:
+        Dobbiamo considerare sia la soluzione <span class="blue">con il \(+\)</span> che quella <span class="blue">con il \(-\)</span>, anche se, come in questo caso, sono uguali:
       </p>
 
       <br>
@@ -223,12 +216,12 @@
       <br>
 
       <p>
-        Quindi potrebbe sembrare che ci sia una sola soluzione, ma in realtà <span class="blue">sono due uguali</span>. E' una grande differenza, perché altrimenti non saremo capaci ad applicare il Teorema fondamentale dell'algebra.
+        Quindi potrebbe sembrare che ci sia una sola soluzione, ma in realtà <span class="blue">sono due uguali</span>. E' una grande differenza, perché altrimenti non saremo capaci ad applicare il Teorema fondamentale dell'algebra. <span id="classif3"></span>
       </p>
 
       <br>
 
-      <hr class="divider" id="classif3">
+      <hr class="divider">
 
       <h2>
         Radici dell'unità
@@ -237,7 +230,7 @@
       <br>
 
       <p>
-        A questo punto, però, vi potreste star chiedendo: "ma se un'equazione di grado \(n\) ha sempre \(n\) soluzioni, perché un'equazione tipo \(x^3 =1\) ha solo una soluzione?"
+        A questo punto, però, vi potreste stare chiedendo: <i>"ma se un'equazione di grado \(n\) ha sempre \(n\) soluzioni, perché un'equazione tipo \(x^3 =1\) ha solo una soluzione?"</i>
       </p>
 
       <br>
@@ -267,13 +260,13 @@
       <br>
 
       <p>
-        Fino a qua è tutto giusto, ma il problema è che <span class="blue">\(1\) non è l'unica radice terza di \(1\)</span>. Altrimenti questo paragrafo non si chiamerebbe "radici dell'unità" (unità in parole povere è \(1\)).
+        Fino a qua è tutto giusto, ma il problema è che <span class="blue">\(1\) non è l'unica radice terza di \(1\)</span>. Altrimenti questo paragrafo non si chiamerebbe "radici dell'unità" <i>(unità in parole povere è \(1\))</i>.
       </p>
 
       <br>
 
       <p>
-        Infatti <i>la radice \(n\)-esima di \(1\) ha \(n\) risultati</i>. Come trovarli? Dobbiamo usare i numeri complessi. Potremmo pure usare i numeri complessi in forma trigonometrica, ma risulta più utile usarli in forma esponenziale. Se non doveste conoscere questa forma, potete studiarla sulla loro lezione qui su Theoremz. 
+        Infatti <i>la radice \(n\)-esima di \(1\) ha \(n\) risultati</i>. Come trovarli? Dobbiamo usare i numeri complessi. Potremmo pure usare i numeri complessi in forma trigonometrica, ma risulta più utile usarli in forma esponenziale. In caso non vi ricordaste bene questa forma, potete studiarla nella lezione <a href="/formaTrigonometricaDeiNumeriComplessi.html"><span class="link">qui</span></a>. 
       </p>
 
       <br>
@@ -479,12 +472,12 @@
       <br>
 
       <p>
-        e facendo variare \(k\) da \(0\) ad \(n\) otteniamo tutte le soluzioni. Geometricamente, quello che stiamo facendo è prendere la circonferenza unitaria e dividerla in <span class="blue">\(n\) parti uguali partendo da \(1\)</span>, ottenendo \(n\) punti che saranno proprio le soluzioni.
+        e facendo variare \(k\) da \(0\) ad \(n\) otteniamo tutte le soluzioni. Geometricamente, quello che stiamo facendo è prendere la <u>circonferenza unitaria </u>e dividerla in <span class="blue">\(n\) parti uguali partendo da \(1\)</span>, ottenendo \(n\) punti che saranno proprio le soluzioni. <span id="classif4" ></span>
       </p>
 
       <br>
 
-      <hr class="divider" id="classif4">
+      <hr class="divider">
 
       <h2>
         Equazioni del tipo \(x^n=c\)
@@ -499,7 +492,7 @@
       <br>
 
       <p>
-        \(1\) si comportava particolarmente bene ed era facile da lavorarci, ma possiamo risolvere questo tipo di equazioni pure se la costante è qualsiasi altro numero complesso. Vediamo come fare:
+        \(1\) si comportava particolarmente bene ed era facile da lavorarci, ma possiamo risolvere questo tipo di equazioni anche se la costante è qualsiasi altro numero complesso. Vediamo come fare:
       </p>
 
       <br>
@@ -541,7 +534,7 @@
       <br>
 
       <p>
-        Pure questa volta, se prendessimo direttamente la radice, otterremo soltanto una soluzione e <span class="blue">mancheremmo le altre \(n-1\) soluzioni</span>. Per risolvere questo problema, anche questa volta <span class="blue">aggiungiamo multipli di \(2\pi\) all'argomento</span>:
+        Pure questa volta, se prendessimo direttamente la radice, otterremmo soltanto una soluzione e <span class="blue">mancheremmo le altre \(n-1\) soluzioni</span>. Per risolvere questo problema, anche questa volta <span class="blue">aggiungiamo multipli di \(2\pi\) all'argomento</span>:
       </p>
 
       <br>
@@ -565,7 +558,7 @@
       <br>
 
       <p>
-        Usiamo le proprietà delle potenze per semplificare:
+        Usiamo le <span class="blue">proprietà delle potenze</span> per semplificare:
       </p>
 
       <br>
@@ -583,7 +576,7 @@
       <br>
 
       <p>
-        Usiamo le proprietà delle potenze per dividere la potenza in due:
+        Usiamo le <u>proprietà delle potenze</u> per dividere la potenza in due:
       </p>
 
       <br>
@@ -595,7 +588,7 @@
       <br>
 
       <p>
-        Il primo fattore, \(\sqrt[n] {r}\), equivale al <span class="blue">modulo della soluzione</span> (siccome gli altri due fattori sono del tipo \(e^{ix}\), essi hanno modulo pari ad \(1\)). Siccome al variare di \(k\) il modulo non cambia, vuol dire che tutti i punti staranno alla stessa distanza dal centro.
+        Il primo fattore, \(\sqrt[n] {r},\) equivale al <span class="blue">modulo della soluzione</span> <i>(siccome gli altri due fattori sono del tipo \(e^{ix}\)</i>, essi hanno modulo pari ad \(1\)). Siccome al variare di \(k\) il modulo non cambia, vuol dire che tutti i punti <u>avranno la stessa distanza dal centro</u>.
       </p>
 
       <br>
@@ -619,7 +612,7 @@
       <br>
 
       <p>
-        Quindi se non ci fosse stato lui, saremmo partiti dal punto con modulo \(\sqrt[n]{r}\) sull'asse reale, ovvero \(\sqrt[n]{r}\), avremmo diviso la circonferenza in \(n\) parti e i punti trovati sarebbero state le soluzioni, ma siccome ci sta questo ulteriore fattore, preso il punto sull'asse reale \(\sqrt[n]{r}\), dobbiamo ruotare in senso antiorario di \(\theta\over n\) radianti e partendo da quel punto cominciare a dividere la circonferenza:
+        Quindi se non ci fosse stato lui, saremmo partiti dal punto con modulo \(\sqrt[n]{r}\) sull'asse reale, ovvero \(\sqrt[n]{r}\), avremmo diviso la circonferenza in \(n\) parti e i punti trovati sarebbero state le soluzioni, ma siccome è presente questo ulteriore fattore, preso il punto sull'asse reale \(\sqrt[n]{r}\), dobbiamo ruotare in senso antiorario di \(\theta\over n\) radianti e partendo da quel punto cominciare a dividere la circonferenza:
       </p>
 
       <br>
