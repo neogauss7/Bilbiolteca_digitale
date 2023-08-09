@@ -5,6 +5,9 @@
     margin-left: 10px;
 
 }
+ul {
+    padding-inline-start: 0;
+}
 .dark-welcome {
     display: inline;
     font-size: 40px;
@@ -52,7 +55,7 @@
     height: 35px;
     margin-left: 10px;
 }
-.d3{
+.d3, .d5{
     padding-top: 5px;
  margin-left: 15px;
 }
@@ -72,15 +75,13 @@ li {
     font-size: 22px;
 }
 #bottone1 {
-    padding-left: 33px;
-    padding-right: 33px;
     padding-bottom: 16px;
     padding-top: 16px;
     border-radius: 9px;
     background: #ffffff;
     border: none;
     width: 200px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     font-family: inherit;
     text-align: center;
     cursor: pointer;
@@ -121,4 +122,17 @@ li {
 #bottone1 {
     width: 50%;
 }
+}
+@media (max-width: 450px) {
+    .d2, .d4 {
+        padding-top: 0;
+       }
+}
+@media (max-width: 450px) {
+    .d2, .d4, .description {
+        padding-top: 0;
+       }
+       .d5 {
+        padding-top: 5px;
+       }
 }
