@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5568938815963264"
+     crossorigin="anonymous"></script>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8ffc82e5-ed8c-43b1-997c-5038a49290f0" data-blockingmode="auto" type="text/javascript"></script>
+    <link rel="icon" href="favicon.png">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2Z6FRX1VZF');
+    </script>
+
+    <!-- Titolo -->
+    <title>Theoremz | Teoremi di Pitagora e di Euclide</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="funzioni.css">
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Including header and footer -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    </head>
+
+    <body>
+
+        <div id="header"></div>
+    <section class="home">
+      <label class="container">
+        <input onclick="save()" id="bookmark" type="checkbox">
+        <div class="checkmark">
+          <svg viewBox="0 0 256 256">
+          <rect fill="none" height="256" width="256"></rect>
+          <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
+        </div>
+      </label>
+
+      <div class="welcome"> 
+        <h1 class="welcome1" >Teorema di Pitagora e i due Teoremi di Euclide</h1>
+        <h3 class="p1">Abbiamo già studiato cosa sono i triangoli rettangoli. Ad essi si possono applicare tre teoremi: il teorema di Pitagora e i due teoremi di Euclide.</h3>
+      </div>  
+
+      <!-- Mini-index -->
+      <div class="minimenu">
+        <a href="#classif" class="mini-item" ><div class=""><p class="minitext">Pitagora</p></div></a>
+        <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">1° Euclide</p></div></a>
+        <a href="#classif3" class="mini-item" ><div class=""><p class="minitext">2°Euclide</p></div></a>
+      </div>
+
+        <hr class="divider" id="classif">
+
+        <h2>
+            Teorema di pitagora
+        </h2>
+
+        <br>
+
+        <p> Prendiamo un <span class="blue">triangolo rettangolo</span></p>
+
+        <br>
+
+        <p>I due lati adiacenti all'<u>angolo retto</u> (\(a\) e \(b\)) sono detti <u>cateti</u>, mentre il terzo lato, quello <i>"lontano"</i> dall'angolo retto è detto <u>ipotenusa</u></p>
+
+        <br>
+
+        <p>
+            Il <span class="blue">teorema di Pitagora</span> lega tra loro la lunghezza dei cateti e quella dell'ipotenusa, esso infatti afferma che: 
+        </p>
+
+        <br>
+
+        <p>
+            <i>La somma dei <u>quadrati costruiti sui cateti </u>(di un triangolo rettangolo) è uguale al <u>quadrato costruito sull'ipotenusa</u>.</i>
+        </p>
+
+        <br>
+
+        <p> Algebricamente lo si può tradurre come: </p>
+
+        <br>
+
+        <p>
+            \(a^2 + b^2 = c^2\)
+        </p>
+
+        <br>
+
+        <p>
+            Quindi, a cosa ci serve questo teorema? Con esso possiamo trovare l'<u>ipotenusa</u> conoscendo i <u>cateti</u>, oppure possiamo trovare un cateto conoscendo l'altro e l'ipotenusa, basta isolare l'incognita desiderata nell'equazione:
+        </p>
+
+        <br>
+
+        <p>
+            \(c=\sqrt{a^2 + b^2 }\)    per trovare l'ipotenusa
+        </p>
+
+        <br>
+
+        <p>
+            \(a=\sqrt{c^2 -b^2}\)      per trovare il cateto \(a\)
+        </p>
+
+        <br>
+
+        <p>
+            \(b=\sqrt{c^2 -a^2 }\)     per trovare il cateto \(b\) 
+        </p>
+
+        <br>
+
+        <p>
+            Vediamo un esempio di come possiamo applicarlo:
+        </p>
+
+        <br>
+
+        <p>
+            un triangolo rettangolo ha cateti \(a\) e \(b\) sono lunghi rispettivamente \(3cm\) e \(4cm\), trovare la lunghezza dell'ipotenusa
+        </p>
+
+        <br>
+
+        <p>
+            Per farlo basta utilizzare il <u>Teorema di Pitagora</u>, che ci dice:
+        </p>
+
+        <br>
+
+        <p> 
+            \(c^2 = a^2 + b^2\)
+        </p>
+
+        <br>
+
+        <p>
+            ovvero:
+        </p>
+
+        <br>
+
+        <p>
+            \(c=\sqrt{a^2 +b^2}\)
+        </p>
+
+        <br>
+
+        <p>
+            Quindi basta sostituire \(a\) e \(b\) per trovare l'ipotenusa \(c\):
+        </p>
+
+        <br>
+
+        <p>
+            \(c=\sqrt{(3cm)^2 + (4cm)^2 }\) \( = \sqrt{9cm^2 + 16cm^2}=\) \(\sqrt{25cm^2}=5cm \)
+        </p>
+
+        <br>
+
+        <p>
+            Ed ecco risolto. In questo caso abbiamo ottenuto tre valori interi per i lati del triangolo \((3,4,5)\) e siccome dobbiamo prendere un radice quadrata è piuttosto raro che escano dei numeri interi.
+        </p>
+
+        <br>
+
+        <p>
+            Questa terna di numeri viene chiamata <span class="blue">terna pitagorica</span> e quella che abbiamo appena visto \(3,4,5\) è la più piccola che esista. Perchè ci interessano le terne pitagoriche? Perché in alcuni casi ci aiutano a semplificare i calcoli.
+        </p>
+
+        <br>
+
+        <p>
+            Notiamo infatti una cosa interessante: <u>se moltiplichiamo ogni termine della terna pitagorica per un numero intero \(k\), otteniamo un'altra tenra pitagorica</u>. Perchè? 
+        </p>
+
+        <br>
+
+        <p>
+            Dimostriamo quindi che la nuova terna ottenuta è una <u>terna Pitagorica</u> nel caso della nostra terna \(3,4,5\), per le altre terne basta applicare lo stesso ragionamento. 
+        </p>
+
+        <br>
+
+        <p>
+            una volta moltiplicati per \(k\), la nuova terna divcenterà \((3k,4k,5k)\), applichiamo il teorema di pitagora e vediamo se lo verificano:
+        </p>
+
+        <br>
+
+        <p>
+            \(c^2 = a^2 + b^2\)
+        </p>
+
+        <br>
+
+        <p>
+            \(25k^2 = 9k^2 + 16k^2\)
+        </p>
+
+        <br>
+
+        <p>
+            \(25k^2 = 25k^2\)
+        </p>
+
+        <br>
+
+        <p>
+            L'uguaglianza è verificata. Geometricamente questo ha senso perchè moltiplicare ogni lato per una costante \(k\) equivale a rimpicciolire o ingrandire il triangolo, quindi è ovvio che rimarrà un triangolo rettangolo.
+        </p>
+
+        <br>
+
+        <p>
+            Ma perchè abbiamo fatto tutto? Perchè ora se abbiamo, ad esempio, due cateti di lunghezza \(6cm\) e \(8cm\), sappiamo subito che l'ipotenusa sarà lunga \(10cm\).
+        </p>
+
+        <br>
+
+        <p>
+            I cateti sono infatti quelli della terna pitagorica ma moltiplicati per \(2\), quindi \(k=2\) e dunque l'ipotenusa deve essere il doppio di \(5cm\), ovvero \(10cm\).
+        </p>
+
+        <br>
+
+        <p>
+            Se quindi vi capita di trovare due cateti nella forma \(3k\) e \(4k\), sapete già che l'ipotenusa sarà \(5k\). Questo è specialmente utile per \(k\) molto grandi.
+        </p>
+
+        <br>
+
+        <p>
+            Se per esempio avessimo due cateti lunghi \(39cm\) e \(52cm\), sarebbe un po' lungo fare i calcoli perchè li dovreste elevare al quadrato, sommarli e prendere la radice quadrata. Se però notate che:
+        </p>
+
+        <br>
+
+        <p>
+            \(39=13 \cdot 3\) e \(52= 13 \cdot 4\), sapete già che l'ipotenusa sarà \(13 \cdot 5 \), ovvero \(60\). Esistono poi altre terne pitagoriche utili da sapere a memoria, ma per ora ci fermiamo qui. <section id="classif2"></section>
+        </p>
+
+        <br>
+
+        <hr class="divider">
+
+        <h2>Primo teorema di Euclide</h2>
+
+        <br>
+
+        <p>
+            Passiamo quindi ai <span class="blue">Teoremi di Euclide</span>, sono molto meno famosi e generalmente meno utili del <u>Teorema di Pitagora</u>, ma ci possono aiutare a risolvere molti problemi.
+        </p>
+
+        <br>
+
+        <p>
+            Il <span class="blue">primo teorema di Euclide</span> enuncia che:
+        </p>
+
+        <br>
+
+        <p>
+            <i>Il quadrato costruito su uno dei cateti (in un triangolo rettangolo) è uquivalente al rettangolo che ha per dimensioni la proiezione del cateto sull'ipotenusa e l'ipotenusa stessa.</i>
+        </p>
+
+        <br>
+
+        <p>
+            Cosa si intende per proiezione del cateto sull'ipotenusa? Si intende che dal vertice che il cateto non ha in comune con l'ipotenusa, in questo caso \(A\), facciamo partire una retta perpendicolare all'ipotenusa, che la intersecherà in un punto \(H\). 
+        </p>
+
+        <br>
+
+        <p>
+            Finora abbiamo effettuato un procedimentio analogo a quello per trovare l'altezza di un triangolo, adesso però la proiezione è il segmento \(BH\), ovvero quello che parte del vertice in comune \((B)\) e l'intersezione \(H\).
+        </p>
+
+        <br>
+
+        <p>
+            Potete visualizzare il processo di prendere la proiezione come al guardrae l'ombra del cateto se la luce viene dall'alto. 
+        </p>
+
+        <br>
+
+        <p>
+            Proviamo a tradurre in forma algebrica quello che enuncia il teorema. Se chiamiamo la proiezione \(p\), avremo:
+        </p>
+
+        <br>
+
+        <p>
+            \(a^2 = p \cdot c\)
+        </p>
+
+        <br>
+
+        <p>
+            Utilizzando la proprietà fondamentale delle proporzioni possiamo riscriverla come: 
+        </p>
+
+        <br>
+
+        <p>
+            \(c:a=a:p\)
+        </p>
+
+        <br>
+
+        <p>
+            Ovvero, il rapporto tra l'ipotenusa ed un cateto è uguale al rapporto tra quel cateto e la sua proiezione sull'ipotenusa. <span id="classif3"></span>
+        </p>
+
+        <br>
+        <hr class="divider">
+        <h2>Secondo teorema di Euclide</h2>
+
+        <br>
+
+        <p>
+            Il <span class="blue">secondo teorema di Euclide</span> enuncia che:
+        </p>
+
+        <br>
+
+        <p>
+            <i>Il quadrato costruito sull'altezza (in un triangolo rettangolo) riferita all'ipotenusa è uguale al rettangolo che ha come dimensioni le due proiezioni dei cateti sull'ipotenusa.</i>
+        </p>
+
+        <br>
+
+        <p>
+            Guardando al disegno del capitolo precedente, se chiamiamo le due proiezioni \(p_1\) e \(p_2\) e l'altezza la chiamiamo \(h\), avremo:
+        </p>
+
+        <br>
+
+        <p>
+            \(h^2 = p_1 \cdot p_2\)
+        </p>
+
+        <br>
+
+        <p>
+            Anche in questo caso possiamo riscriverla come proporzione grazie alla proprietà fondamentale delle proporzioni:
+        </p>
+
+        <br>
+
+        <p>
+            \(p_1:h=h:p_2\)
+        </p>
+
+    </section>
+        <!-- Site footer -->
+    <div id="footer"></div>
+    <script src="custom.js"></script>
+    <script src="bookmark.js"></script>
+    <script src="index.js"></script>
+  
+    <!-- Including MathJax -->
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+    </body>
+
+</html>
