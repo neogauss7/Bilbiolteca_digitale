@@ -1,5 +1,5 @@
 .header {
-  background-color: white;
+  background-color: var(--white1);
   position: fixed;
   width: 100%;
   left: 0;
@@ -9,6 +9,7 @@
   padding-left: 50px;
   padding-right: 50px;
   height: 75px;
+  border-bottom: solid 1px white;
 }
 .black-box {
   background-color: var(--gray);
@@ -47,7 +48,7 @@
   height: 20px;
   margin-right: 8px;
 }
-.button {
+.x-button {
   display: inline-block;
   position: relative;
   width: 50px;
@@ -78,15 +79,15 @@
   transform: rotate(-45deg);
 }
 
-.button:hover {
+.x-button:hover {
   background-color: rgb(210, 0, 0);
 }
 
-.button:active {
+.x-button:active {
   background-color: rgb(130, 0, 0);
 }
 
-.button:hover > .close {
+.x-button:hover > .close {
   animation: close 0.2s forwards 1.25s;
 }
 
@@ -218,7 +219,7 @@ a {
   padding: 10px 20px;
   font-size: 16px;
   font-weight: 400;
-  color: var(--blk);
+  color: #000;
   transition: all 0.3s ease;
   text-transform: capitalize;
 }
@@ -296,7 +297,7 @@ a {
   .black-box {
     height:40px;
   }
-  .button {
+  .x-button {
     height: 40px;
     width: 17px;
   }
@@ -343,7 +344,7 @@ a {
     height: 100%;
     top: 0;
     overflow-y: auto;
-    background-color: var(--gray);
+    background-color: #222222;
     z-index: 1000;
     padding: 15px 0;
     transition: all 0.5s ease;
@@ -402,7 +403,7 @@ a {
 
   .header .menu > .menu-item > .sub-menu > .menu-item > a {
     padding: 12px 45px;
-    color: #ffffff;
+    color: white;
     border-bottom: 1px solid #333333;
   }
 

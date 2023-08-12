@@ -8,14 +8,37 @@ const closeNavMenu = document.querySelector(".close-nav-menu");
 const navMenu = document.querySelector(".nav-menu");
 const menuOverlay = document.querySelector(".menu-overlay");
 const mediaSize = 991;
+const html = document.querySelector('html');
+const headerLogo = document.querySelector('.logo-img');
 let widthh = screen.width;
-
+const darkMode = function() {
+  if (localStorage.getItem(`darkMode`)  == 'true') {
+    localStorage.removeItem(`darkMode`);
+    html.classList.remove('darktheme');
+    document.querySelector('.logo-img').src = 'images/logo.png'
+  } else {
+    html.classList.add('darktheme');
+    localStorage.setItem(`darkMode`, true);
+    document.querySelector('.logo-img').src = 'images/white.svg'
+  }
+}
+if (localStorage.getItem(`darkMode`)  == 'true') {
+  html.classList.add('darktheme');
+  if (document.querySelector('.dark-check')) {
+  document.querySelector('.dark-check').checked = true;}
+  headerLogo.src = 'images/white.svg'
+};
 if (localStorage.getItem(`darkBanner`)  == 'true') {
   document.querySelector('.black-box').classList.add('invisible');
 } else {if (widthh < 991) {
       document.querySelector('.black-text').textContent = 'Scopri'
 }};
 
+if (document.querySelector('.minimenu')){
+ if (document.querySelector('.minimenu').childElementCount < 4) {
+document.querySelector('.minimenu').classList.add('center')
+ }
+}
 
 (() => {
   const toggleNav = function () {

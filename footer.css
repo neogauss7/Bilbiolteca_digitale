@@ -1,5 +1,5 @@
 .site-footer {
-  background-color: var(--gray);
+  background-color: #121212;
   padding: 45px 30px 20px 30px;
   line-height: 24px;
   color: #737373;
@@ -187,7 +187,7 @@
   border-radius: 500px;
   overflow: hidden;
   background: var(--pc);
-  color: var(--gray);
+  color: #222222;
 }
 
 .donations span {
@@ -197,7 +197,7 @@
 }
 
 .donations:hover span {
-  color: var(--white);
+  color: #fff;
 }
 
 .donations::before,

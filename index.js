@@ -8,11 +8,11 @@ const firebaseConfig = {
   appId: "1:527958805167:web:20658414672a2ca784a25a",
   measurementId: "G-0Z6EVRPDYH",
 };
+const blackList = ['luigi.miraglia006@gmail.com', 'wdlmqò@wdomqm.com']
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 // Initialize variables
 const auth = firebase.auth();
-const database = firebase.database();
 // Set up our register function
 function register() {
   // Get all our input fields
@@ -37,19 +37,7 @@ function register() {
     .then(function () {
       // Declare user variable
       var user = auth.currentUser;
-
-      // Add this user to Firebase Database
-      var database_ref = database.ref();
-
-      // Create User data
-      var user_data = {
-        email: email,
-        last_login: Date.now(),
-      };
       location.href = "index.html";
-      // Push to Firebase Database
-      database_ref.child("users/" + user.uid).set(user_data);
-      // DOne
       alert("Utente creato!!");
     })
     .then(() => {
@@ -81,21 +69,10 @@ function login() {
     .then(function () {
       // Declare user variable
       var user = auth.currentUser;
-
-      // Add this user to Firebase Database
-      var database_ref = database.ref();
-
-      // Create User data
-      var user_data = {
-        last_login: Date.now(),
-      };
-
-      // Push to Firebase Database
-      database_ref.child("users/" + user.uid).update(user_data);
-
       // DOne
     })
     .then(() => {
+      alert('Login avvenuto con successo!')
       location.href = "index.html";
     })
     .catch(function (error) {
@@ -150,17 +127,27 @@ function logout() {
 }
 const loggedIn = function (user) {
   console.log(user.email + " is logged in!");
-  document.getElementById("account-img").classList.remove("invisible");
+  if (document.querySelector('.account')) {
+    document.querySelector('.account').classList.remove("invisible");
+  }
+  if (document.getElementById("login-button")) {
   document.getElementById("login-button").textContent = "Il mio account";
   document.getElementById("login-button").onclick = function () {
     location.href = "account.html";
-  };
+  };}
 };
 
 auth.onAuthStateChanged((user) => {
   if (user) {
     if (window.location.href.indexOf("account.html") > -1) {
       document.getElementById("account-name").innerHTML = user.email;
+    }
+    if(document.querySelector('.switch')) {
+    if (blackList.includes(user.email))
+    {
+      document.querySelector('.switch').classList.remove('invisible')
+    } else console.log(false);
+
     }
     loggedIn(user);
   } else {

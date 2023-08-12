@@ -26,10 +26,12 @@ p {
 }
 
 :root {
+  --wwhite: rgb(248, 248, 248);
   --pc: #1e76e9;
   --blk: black;
   --gray: #222222;
   --white: #fff;
+  --white1: #fff;
   --drkblue: #050959;
   --red: #CC0829;
 }
@@ -80,12 +82,13 @@ p {
 }
 
 .darktheme {
-  --pc: #1e76e9;
-  --blk: #fff;
-  --gray: #222222;
-  --white: rgb(47, 47, 47);
-  --white1: #222222;
-  --drkblue: #fff;
+  --pc: #1e76e9 !important;
+  --blk: #fff !important;
+  --gray: #f1f1f1 !important;
+  --white: rgb(22, 22, 22) !important;
+  --white1: #050505 !important;
+  --drkblue: #fff !important;
+  --wwhite: rgb(22, 22, 22);
 }
 
 .hidden {
@@ -102,15 +105,6 @@ p {
 .invisible {
   opacity: 0%;
 }
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 170%;
-  background-color: rgba(172, 172, 172, 0.4);
-}
 
 body {
   background-color: var(--white1);
@@ -121,7 +115,7 @@ img {
 }
 
 html {
-  background-color: var(--white);
+  background-color: var(--white1);
 }
 
 body.hidden-scrolling {

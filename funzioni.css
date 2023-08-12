@@ -153,7 +153,7 @@ h4 {
 
 .welcome1 {
   font-size: 30px;
-  color: var(--gray);
+  color: #222222;
 }
 
 .welcome {
@@ -245,7 +245,7 @@ h4 {
 
 h3 {
   text-align: center;
-  color: var(--gray);
+  color: #222222;
 }
 
 figure {
@@ -314,10 +314,12 @@ body.hidden-scrolling {
 .fff {
   height: 40px;
 }
+.center {
+  justify-content: center !important;
+}
 @media (max-width: 550px) {
   .minimenu {
     justify-content: left;
-
     overflow: scroll;
   }
   .mini-item {

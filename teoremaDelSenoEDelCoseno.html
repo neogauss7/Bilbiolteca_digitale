@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5568938815963264"
+     crossorigin="anonymous"></script>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8ffc82e5-ed8c-43b1-997c-5038a49290f0" data-blockingmode="auto" type="text/javascript"></script>
+    <link rel="icon" href="favicon.png">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z6FRX1VZF"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2Z6FRX1VZF');
+    </script>
+
+    <!-- Titolo -->
+    <title>Theoremz | Teoremi del seno e del coseno</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="funzioni.css">
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Studia grauitamente le materie scientifiche su Theoremz! Qui troverai anche esercizi per allenarti.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Including header and footer -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <section class="home">
+      <label class="container">
+        <input onclick="save()" id="bookmark" type="checkbox">
+        <div class="checkmark">
+          <svg viewBox="0 0 256 256">
+          <rect fill="none" height="256" width="256"></rect>
+          <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#050959" fill="none"></path></svg>
+        </div>
+      </label>
+
+      <div class="welcome"> 
+        <h1 class="welcome1" >Teorema del seno e Teorema del coseno</h1>
+        <h3 class="p1">Il teorema del seno e il teorema del coseno ci permettono di risolvere moltissimi problemi geometrici sfruttando un poco di trigonometria.</h3>
+      </div>  
+
+      <!-- Mini-index -->
+      <div class="minimenu">
+        <a href="#classif" class="mini-item" ><div class=""><p class="minitext">T. del seno</p></div></a>
+        <a href="#classif2" class="mini-item" ><div class=""><p class="minitext">T. del coseno</p></div></a>
+      </div>
+<hr class="divider" id="classif">
+      <h2>
+        Teorema del seno
+      </h2>
+
+      <br>
+
+      <p>
+        Iniziamo prendendo un <span class="blue">triangolo qualsiasi</span>:
+      </p>
+
+      <br>
+
+      <img class="funzione" src="images/sen1.webp"
+       alt="Esempio Seno 1">
+
+      <br>
+
+      <p>
+        Adesso tracciamo l'altezza rispetto a \(c\):
+      </p>
+
+      <br>
+
+      <img class="funzione" src="images/sen2.webp"
+       alt="Esempio Seno 2">
+
+      <br>
+
+      <p>
+        Adesso, siccome abbiamo ottenuto due <span class="blue">triangoloi rettangoli</span>, possiamo usare un po' di <span class="blue">trigonometria</span>:
+      </p>
+
+      <br>
+
+      <p>
+        Per la definizione di \(\sin(x)\), avremo:
+      </p>
+
+      <br>
+
+      <p>
+        \(h=a\cdot \sin(\beta)\)
+      </p>
+
+      <br>
+
+      <p>
+        e anche:
+      </p>
+
+      <br>
+
+      <p>
+        \(h=b\cdot \sin(\alpha) \)
+      </p>
+
+      <br>
+
+      <p>
+        Quindi:
+      </p>
+
+      <br>
+
+      <p>
+        \(a\cdot \sin(\beta)=b\cdot \sin(\alpha)\)
+      </p>
+
+      <br>
+
+      <p>
+        Ovvero:
+      </p>
+
+      <br>
+
+      <p>
+        \({a\over \sin(\alpha)}={b\over \sin(\beta)}\)
+      </p>
+
+      <br>
+
+      <p>
+        Possiamo applicare lo stesso ragionamento con l'altezza rispetto ad \(a\) per ottenere:
+      </p>
+
+      <br>
+
+      <p>
+        \({b\over \sin(\beta)}={c\over \sin(\gamma)}\)
+      </p>
+
+      <br>
+
+      <p>
+        e quindi otteniamo:
+      </p>
+
+      <br>
+
+      <p>
+        \({a\over \sin(\alpha)}={b\over \sin(\beta)}={c\over \sin(\gamma)}\)
+      </p>
+
+      <br>
+
+      <p>
+        Cosa significa?
+      </p>
+
+      <br>
+
+      <p>
+        Significa che <i>il rapporto tra un lato e il seno dell'angolo opposto è uguale per tutti i lati del triangolo</i>.
+      </p>
+
+      <br>
+
+      <p>
+        Quindi, per esempio, se conosciamo i tre lati ed un angolo, possiamo calcolare gli altri due molto facilmente. Vediamo un esempio:
+      </p>
+
+      <br>
+
+      <p>
+        Supponiamo che, nel triangolo di prima, \(a\), \(b\) e \(c\) siano uguali corrispettivamente a \(5cm\), \(3cm\) e \(7cm\) e che \(\alpha\) sia uguale a \({\pi \over 4}\). Quanto valgono \(\beta\) e \(\gamma\)? 
+      </p>
+
+      <br>
+
+      <p>
+        Grazie al teorema del seno abbiamo:
+      </p>
+
+      <br>
+
+      <p>
+        \({a\over \sin(\alpha)}={b\over \sin(\beta)}\)
+      </p>
+
+      <br>
+
+      <p>
+        quindi:
+      </p>
+
+      <br>
+
+      <p>
+        \(\sin(\beta)={\sin(\alpha)\cdot b\over a}\)
+      </p>
+
+      <br>
+
+      <p>
+        Ricordando che \(\sin({\pi\over 4})={\sqrt 2\over 2}\) avremo:
+      </p>
+
+      <p>
+        \(\beta=\arcsin({\sqrt 2 \cdot 3 \over 10}) \approx 0.4381\)
+      </p>
+
+      <br>
+
+      <p>
+        Ovviamente abbiamo dato il risultato in radianti.
+      </p>
+
+      <br>
+
+      <p>
+        Possiamo fare lo stesso ragionamento per \(\gamma\) ed ottenere:
+      </p>
+
+      <br>
+
+      <p id="classif2">
+        \(\gamma=\arcsin({\sqrt 2 \cdot 7 \over 10})\approx 1.4289\)
+      </p>
+
+      <br>
+
+      <hr class="divider">
+
+      <h2>
+        Teorema del coseno
+      </h2>
+
+      <br>
+
+      <p>
+        Quando studiai il <span class="blue">Teorema del coseno</span> qualche hanno fa lo conobbi con il nome di <span class="blue">Teorema di Al-kashi</span>, dal nome del matematico persiano che lo dimostrò, anche se in Italia viene solitamente chiamato <span class="blue">Teorema di Carnot</span>, dal nome di un matematico francese che scrisse un libro che conteneva anche questo teorema.
+      </p>
+
+      <br>
+
+      <p>
+        Noi quindi preferiamo chiamarlo Teorema di Al-Kashi o teorema del coseno, ma il vostro prof potrebbe chiamarlo in un altro modo.
+      </p>
+
+      <br>
+
+      <p>
+        Passiamo dunque al teorema in sè. Prendiamo un <span class="blue">triangolo qualsiasi</span>:
+      </p>
+
+      <br>
+
+      <img class="funzione" src="images/sen3.webp"
+      alt="Esempio Coseno 1">
+
+      <br>
+
+      <p>
+        Tracciamo l'altezza rispetto a \(c\) e chiamiamo le proiezioni di \(a\) e di \(b\) su \(c\) rispettivamente \(p_1\) e \(p_2\):
+      </p>
+
+      <br>
+
+      <img class="funzione" src="images/sen4.webp"
+       alt="Esempio Coseno 2">
+
+      <br>
+
+      <p>
+        Siccome otteniamo due <span class="blue">triangoli rettangoli</span> possiamo usare un po' di trignometria. Per le definizioni del seno e del coseno, avremo:
+      </p>
+
+      <br>
+
+      <p>
+        \(h=a\cdot \sin(\beta)\)
+      </p>
+
+      <br>
+      
+      <p>
+        \(p_1 = a\cdot \cos(\beta)\)
+      </p>
+
+      <br>
+
+      <p>
+        Notiamo facilmente che:
+      </p>
+
+      <br>
+
+      <p>
+        \(p_2 = c-p_1\)
+      </p>
+
+      <br>
+
+      <p>
+        Ovvero:
+      </p>
+
+      <br>
+
+      <p>
+        \(p_2 = c- a\cdot \cos(\beta)\)
+      </p>
+
+      <br>
+
+      <p>
+        Grazie al <span class="blue">teorema di Pitagora</span> avremo:
+      </p>
+
+      <br>
+
+      <p>
+        \(b^2 = p_{2}^{2} + h^2\)
+      </p>
+
+      <br>
+
+      <p>
+        sostituendo \(p_2\) e \(h\) otteniamo:
+      </p>
+
+      <br>
+
+      <p>
+        \(b^2 = (c- a\cdot \cos(\beta))^2 + \) \(  (a\cdot \sin(\beta))^2 \)
+      </p>
+
+      <br>
+
+      <p>
+        Esapandiamo e semplifichiamo:
+      </p>
+
+      <br>
+
+      <p>
+        \(b^2 = c^2 - 2ac\cdot \cos(\beta) \) \( + a^2 \cdot \cos^2(\beta) + \) \(  a^2 \cdot \sin^2(\beta)\)
+      </p>
+
+      <br>
+
+      <p>
+        Ricordando che \(\cos^2(x) \) \( +\sin^2(x)=1\), possiamo raccogliere \(a^2\) e semplificare:
+      </p>
+
+      <br>
+
+      <p>
+        \(b^2 = c^2 - 2ac\cdot \cos(\beta) + \) \(  a^2 \cdot (\cos^2(\beta) + \) \(  \cdot \sin^2(\beta))\)
+      </p>
+
+      <br>
+
+      <p>
+        \(b^2 = c^2 - 2ac\cdot \cos(\beta) + a^2\)
+      </p>
+
+      <br>
+
+      <p>
+        Ovvero:
+      </p>
+
+      <br>
+
+      <p>
+        \(b^2 = c^2 +a^2  - 2ac\cdot \cos(\beta)\)
+      </p>
+
+      <br>
+
+      <p>
+        Questo teorema è utilissimo perché ci permette di <span class="blue">calcolare il terzo lato di un triangolo conoscendo gli altri lati e l'angolo tra i due</span>.
+      </p>
+
+      <br>
+
+      <p>
+        Il teorema del coseno viene spesso visto come una <span class="blue">generalizzazione del teorema di Pitagora</span>. Se infatti \(\beta\) è un angolo retto, otteniamo \(\cos(\beta)=0\) e quindi:
+      </p>
+
+      <br>
+
+      <p>
+        \(b^2 = a^2 + c^2\)
+      </p>
+
+      <br>
+
+      <p>
+        Normalmente è \(c\) l'ipotenusa ma qui abbiamo cambiato l'ordine delle lettere.
+      </p>
+
+      <br>
+
+      <p>
+        Quindi, se prima potevamo calcolare il terzo lato conoscendo gli altri due solo se era un triangolo rettangolo, ora possiamo calcolarlo per <span class="blue">qualsiasi triangolo</span> conoscendo però anche <span class="blue">l'angolo fra i due lati conosciuti</span>.
+      </p>
+
+    </section>  
+
+    <!-- Site footer -->
+    <div id="footer"></div>
+    <script src="custom.js"></script>
+    <script src="bookmark.js"></script>
+    <script src="index.js"></script>
+  
+    <!-- Including MathJax -->
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+  </body>
+</html>
