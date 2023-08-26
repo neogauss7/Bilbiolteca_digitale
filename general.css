@@ -2,18 +2,17 @@
 /* General */
 
 html {
-  transition: all 0.4s ease-in;
   scroll-behavior: smooth;
 }
 html, body {
   min-height: 100%;
 }
 div {
-  transition: all 0.4s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 p {
-  transition: all 0.4s ease-in;
+  transition: all 0.2s ease-in;
 }
 .invisible {
   display: none;
@@ -32,7 +31,7 @@ p {
   --gray: #222222;
   --white: #fff;
   --white1: #fff;
-  --drkblue: #050959;
+  --drkblue: #051d59;
   --red: #CC0829;
 }
 

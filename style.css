@@ -394,7 +394,7 @@ input:checked + .slider:before {
 
 @media (max-width: 991px) {
   .switch {
-    top: 10%;
+    top: 15%;
   }
   .grid-container {
     grid-template-columns: auto auto;

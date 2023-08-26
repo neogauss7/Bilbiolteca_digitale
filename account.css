@@ -1,5 +1,5 @@
 .box {
-    padding: 12px;
+    padding: 6px 10px;
     border-radius: 15px;
     border: solid;
     width: 400px;
@@ -9,17 +9,117 @@
     background: #fff;
     border: 1px solid #e8e8e8;
     transition: all .3s;
-    box-shadow: 2px 2px 4px #ebebeb,
-             -4px -4px 8px #ffffff;
     margin-top: 10px;
+    color: black;
              
 }
+.card {
+  --main-color: var(--white);
+  --submain-color: #78858F;
+  --bg-color: var(--gray);
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background: var(--bg-color);
+}
+
+.card__img {
+  height: 192px;
+  width: 100%;
+}
+
+.card__img svg {
+  height: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.card__avatar {
+  top: 22%;
+  border: solid 2px rgb(208, 208, 208);
+  left: 7%;
+  position: absolute;
+  width: 114px;
+  height: 114px;
+  background: var(--bg-color);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preferiti {
+  position: absolute;
+  bottom: 7%;
+  left: 5%;
+  min-height: 30px;
+}
+.card__avatar svg {
+  width: 100px;
+  height: 100px;
+}
+.infos {
+  position: absolute;
+  left: 7%;
+  top: 35%;
+  align-items: center;
+
+}
+.card__title {
+  margin-top: 60px;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--main-color);
+}
+
+.card__subtitle {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--submain-color);
+}
+
+.card__btn {
+  margin-top: 15px;
+  width: 150px;
+  height: 31px;
+  border: 2px solid var(--main-color);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--main-color);
+  background: var(--bg-color);
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.card__btn-solid {
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+
+.card__btn:hover {
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+
+.card__btn-solid:hover {
+  background: var(--bg-color);
+  color: var(--main-color);
+}
+.propic{
+  height: 60px;
+  width: 60px;
+  border-radius: 20px;
+}
 a {
-    color: var(--gray);
+    color: black;
 }
 .buttond {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: rgb(20, 20, 20);
     border: none;
@@ -33,12 +133,12 @@ a {
     overflow: hidden;
     position: relative;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 5px;
     
   }
   
   .svgIcon {
-    width: 12px;
+    width: 11px;
     transition-duration: .3s;
   }
   
@@ -47,18 +147,10 @@ a {
   }
   
   .buttond:hover {
-    width: 140px;
-    border-radius: 50px;
     transition-duration: .3s;
     background-color: rgb(255, 69, 69);
-    align-items: center;
   }
   
-  .buttond:hover .svgIcon {
-    width: 20px;
-    transition-duration: .3s;
-    transform: translateY(10%);
-  }
   
   .buttond::before {
     position: absolute;
@@ -66,19 +158,16 @@ a {
     transition-duration: .3s;
     font-size: 2px;
   }
-  
-  .buttond:hover::before {
-    font-size: 13px;
-    opacity: 1;
-    transform: translateY(30px);
-    transition-duration: .3s;
+
+  @media (max-width: 900px) {
+    .grid {
+      grid-template-columns: auto !important;
+    }
   }
+
   @media (max-width: 745px) {
     .box {
-      width: 270px;
+      width: 250px;
                
-  }
-  .buttond:hover {
-    width: 100px;
   }
   }

@@ -60,14 +60,17 @@ h4 {
 .checkmark {
   top: 0;
   left: 0;
-  height: 2em;
-  width: 2em;
+  height: 1.7em;
+  width: 1.7em;
   transition: 100ms;
   animation: dislike_effect 400ms ease;
 }
+path {
+  stroke: black;
+}
 
 .container input:checked ~ .checkmark path {
-  fill: var(--drkblue);
+  fill: var(--black);
   stroke-width: 0;
 }
 
@@ -277,22 +280,22 @@ body.hidden-scrolling {
   margin: auto;
 }
 .button {
-  position: relative;
+  position: absolute;
   background-color: rgb(230, 34, 77);
   border-radius: 5px;
   box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
-  padding: 15px;
   background-repeat: no-repeat;
   box-sizing: border-box;
-  width: 124px;
-  height: 49px;
+  width: 80px;
+  height: 32px;
   color: #fff;
   border: none;
-  font-size: 17px;
+  bottom: 15px;
+  right: 12px;
+  font-size: 14px;
   transition: all 0.3s ease-in-out;
   z-index: 1;
   overflow: hidden;
-  margin-bottom: 50px;
 }
 
 .button::before {
