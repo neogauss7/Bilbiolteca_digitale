@@ -8,11 +8,9 @@ const firebaseConfig = {
   appId: "1:527958805167:web:20658414672a2ca784a25a",
   measurementId: "G-0Z6EVRPDYH",
 };
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+!firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app()
 // Initialize variables
 const auth = firebase.auth();
-const database = firebase.database();
 // Set up our register function
 function register() {
   // Get all our input fields
@@ -29,7 +27,7 @@ function register() {
     alert("Ricorda di accettare il trattamento dei tuoi dati");
     return;
   }
-
+  
   // Move on with Auth
   firebase
     .auth()
@@ -37,20 +35,6 @@ function register() {
     .then(function () {
       // Declare user variable
       var user = auth.currentUser;
-
-      // Add this user to Firebase Database
-      var database_ref = database.ref();
-
-      // Create User data
-      var user_data = {
-        email: email,
-        last_login: Date.now(),
-      };
-      location.href = "index.html";
-      // Push to Firebase Database
-      database_ref.child("users/" + user.uid).set(user_data);
-      // DOne
-      alert("Utente creato!!");
     })
     .then(() => {
       location.href = "index.html";
@@ -81,18 +65,6 @@ function login() {
     .then(function () {
       // Declare user variable
       var user = auth.currentUser;
-
-      // Add this user to Firebase Database
-      var database_ref = database.ref();
-
-      // Create User data
-      var user_data = {
-        last_login: Date.now(),
-      };
-
-      // Push to Firebase Database
-      database_ref.child("users/" + user.uid).update(user_data);
-
       // DOne
     })
     .then(() => {
@@ -150,20 +122,32 @@ function logout() {
 }
 const loggedIn = function (user) {
   console.log(user.email + " is logged in!");
-  document.getElementById("account-img").classList.remove("invisible");
-  document.getElementById("login-button").textContent = "Il mio account";
-  document.getElementById("login-button").onclick = function () {
-    location.href = "account.html";
-  };
+  if (document.getElementById("login-button")) {
+    document.getElementById("login-button").textContent = "Il mio account";
+    document.getElementById("login-button").onclick = function () {
+      location.href = "/account.html";
+    }} 
+  if (document.querySelector('.account')) {
+    document.querySelector('.account').classList.remove("invisible");
+  }
+
 };
+const blackList = ['luigi.miraglia006@gmail.com', 'wdlmqò@wdomqm.com', 'francesco.dresti@gmail.com', 'gabry.lucian@gmail.com', 'flavionicco06@gmail.com', 'falsina.maura@yahoo.it']
 
 auth.onAuthStateChanged((user) => {
   if (user) {
-    if (window.location.href.indexOf("account.html") > -1) {
+    if (document.getElementById("account-name")) {
       document.getElementById("account-name").innerHTML = user.email;
     }
+    if (blackList.includes(user.email))
+    {
+      localStorage.setItem('black', true);
+    } else console.log(false);
+
+    
     loggedIn(user);
   } else {
+    localStorage.setItem('black', false)
     console.log("User is logged out!");
   }
 });

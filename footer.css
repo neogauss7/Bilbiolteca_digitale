@@ -1,5 +1,5 @@
 .site-footer {
-  background-color: var(--gray);
+  background-color: #121212;
   padding: 45px 30px 20px 30px;
   line-height: 24px;
   color: #737373;
@@ -11,7 +11,7 @@
   z-index: 5;
 }
 .documents{
-  text-align: right;
+  display: inline-block;
 }
 .footer-container {
   width: 1280px;
@@ -92,6 +92,12 @@
     margin: auto;
     width: 100%;
   }
+  .documents {
+    font-size: 18px;
+  }
+  .copyright-text {
+    font-size: 18px;
+  }
 }
 
 .social-icons {
@@ -158,7 +164,7 @@
   .social-icons {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     margin-top: 30px;
   }
 }
@@ -168,6 +174,7 @@
 }
 
 .copyright-text {
+  display: inline-block;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -187,7 +194,7 @@
   border-radius: 500px;
   overflow: hidden;
   background: var(--pc);
-  color: var(--gray);
+  color: #222222;
 }
 
 .donations span {
@@ -197,7 +204,7 @@
 }
 
 .donations:hover span {
-  color: var(--white);
+  color: #fff;
 }
 
 .donations::before,
