@@ -1,5 +1,4 @@
 .index-container {
-  margin-top: 110px;
   max-width: 1350px;
   margin-left: auto;
   margin-right: auto;
@@ -215,16 +214,15 @@ body {
  }
  
 .btn:hover {
-  color: var(--white);
-
-  box-shadow: 6px 6px 12px var(--white1),
-             -6px -6px 12px var(--white);
+  color: var(--gray);
+  box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
              transition: all 0.4s ease-in;
  }
  
 .btn:after {
   content: "";
-  background: var(--drkblue);
+  background: white;
   position: absolute;
   z-index: -1;
   left: -20%;
@@ -249,7 +247,7 @@ body {
   justify-content: space-between;
   margin-bottom: 30px;
   margin-bottom: 50px;
-  background-color: var(--wwhite);
+  background-color: rgb(248, 248, 248);
   height: 200px;
 }
 .argument {
@@ -268,10 +266,10 @@ body {
 }
 
 .argument-text {
-  color: var(--gray);
   text-align: center;
   font-size: 30px;
   font-weight: 900;
+  color: rgb(33, 33, 33);
   max-width: 300px;
 }
 
@@ -298,7 +296,7 @@ body {
 
 .grid-element {
   color: var(--gray);
-  background-color: var(--white1);
+  background-color: var(--white);
   border: 1.5px solid var(--drkblue);
   padding: 20px;
   text-align: center;
@@ -329,73 +327,10 @@ body {
 #text {
   display: inline-block;
 }
-/* The switch - the box around the slider */
-.switch {
-  display: block;
-  --width-of-switch: 3em;
-  --height-of-switch: 1.7em;
-  /* size of sliding icon -- sun and moon */
-  --size-of-icon: 1.4em;
-  /* it is like a inline-padding of switch */
-  --slider-offset: 0.3em;
-  position: absolute;
-  top: 15%;
-  right: 3%;
-  width: var(--width-of-switch);
-  height: var(--height-of-switch);
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #f4f4f5;
-  transition: .4s;
-  border-radius: 30px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: var(--size-of-icon,1em);
-  width: var(--size-of-icon,1em);
-  border-radius: 20px;
-  left: var(--slider-offset,0.3em);
-  top: 50%;
-  transform: translateY(-50%);
-  background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
-  ;
- transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #303136;
-}
-
-input:checked + .slider:before {
-  left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
-  background: #303136;
-  /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
-  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
-}
 
 /* Start Responsive */
 
 @media (max-width: 991px) {
-  .switch {
-    top: 15%;
-  }
   .grid-container {
     grid-template-columns: auto auto;
   }
@@ -426,7 +361,7 @@ input:checked + .slider:before {
   .welcome-description {
     max-width: none;
   }
-  
+
   .left-side {
     width: 400px;
     margin-bottom: 10px;
@@ -434,7 +369,6 @@ input:checked + .slider:before {
   .arguments-container {
     height: 400px;
     flex-direction: column;
-    background-color: var(--white);
   }
   .argument {
     width: 650px;
