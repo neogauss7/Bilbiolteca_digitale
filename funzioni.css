@@ -60,17 +60,14 @@ h4 {
 .checkmark {
   top: 0;
   left: 0;
-  height: 1.7em;
-  width: 1.7em;
+  height: 2em;
+  width: 2em;
   transition: 100ms;
   animation: dislike_effect 400ms ease;
 }
-path {
-  stroke: black;
-}
 
 .container input:checked ~ .checkmark path {
-  fill: var(--black);
+  fill: var(--drkblue);
   stroke-width: 0;
 }
 
@@ -156,7 +153,7 @@ path {
 
 .welcome1 {
   font-size: 30px;
-  color: #222222;
+  color: var(--gray);
 }
 
 .welcome {
@@ -248,7 +245,7 @@ path {
 
 h3 {
   text-align: center;
-  color: #222222;
+  color: var(--gray);
 }
 
 figure {
@@ -280,22 +277,22 @@ body.hidden-scrolling {
   margin: auto;
 }
 .button {
-  position: absolute;
+  position: relative;
   background-color: rgb(230, 34, 77);
   border-radius: 5px;
   box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+  padding: 15px;
   background-repeat: no-repeat;
   box-sizing: border-box;
-  width: 80px;
-  height: 32px;
+  width: 124px;
+  height: 49px;
   color: #fff;
   border: none;
-  bottom: 15px;
-  right: 12px;
-  font-size: 14px;
+  font-size: 17px;
   transition: all 0.3s ease-in-out;
   z-index: 1;
   overflow: hidden;
+  margin-bottom: 50px;
 }
 
 .button::before {
@@ -317,12 +314,10 @@ body.hidden-scrolling {
 .fff {
   height: 40px;
 }
-.center {
-  justify-content: center !important;
-}
 @media (max-width: 550px) {
   .minimenu {
     justify-content: left;
+
     overflow: scroll;
   }
   .mini-item {
